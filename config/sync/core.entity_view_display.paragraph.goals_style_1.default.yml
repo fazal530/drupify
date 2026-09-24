@@ -1,0 +1,51 @@
+uuid: b383ecb5-e97e-44c7-a154-ea5e7e2ea64a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.goals_style_1.field_goal_style_1
+    - field.field.paragraph.goals_style_1.field_image
+    - field.field.paragraph.goals_style_1.field_video_link
+    - paragraphs.paragraphs_type.goals_style_1
+  module:
+    - entity_reference_revisions
+    - image
+    - link
+id: paragraph.goals_style_1.default
+targetEntityType: paragraph
+bundle: goals_style_1
+mode: default
+content:
+  field_goal_style_1:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_video_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

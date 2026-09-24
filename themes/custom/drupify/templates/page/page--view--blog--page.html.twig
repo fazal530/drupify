@@ -1,0 +1,69 @@
+{{ attach_library('drupify/drupify_homepage') }}
+
+<div class="drupify-home drupify-blog-page" id="page-wrapper">
+  <a class="drupify-skip-link" href="#main-content">{{ 'Skip to main content'|t }}</a>
+
+  {% include '@drupify/includes/drupify-header.html.twig' %}
+
+  <main id="main-content" tabindex="-1">
+    <section class="drupify-page-hero drupify-section">
+      <div class="drupify-container drupify-page-hero-grid">
+        <div>
+          <p class="drupify-eyebrow">{{ 'Drupal insights'|t }}</p>
+          <h1>{{ 'Practical Drupal thinking for teams planning better websites.'|t }}</h1>
+          <p class="drupify-lead">{{ 'Articles from Drupify on Drupal development, upgrades, web design, security, performance, and maintainable delivery.'|t }}</p>
+          <div class="drupify-actions">
+            <a class="drupify-button drupify-button-primary" href="{{ base_path }}contact-us">{{ 'Request Drupal audit'|t }}</a>
+            <a class="drupify-button drupify-button-secondary" href="{{ base_path }}services">{{ 'Explore services'|t }}</a>
+          </div>
+        </div>
+
+        <div class="drupify-service-overview drupify-blog-overview">
+          <span>{{ 'Knowledge areas'|t }}</span>
+          <ol>
+            <li>{{ 'Drupal development standards'|t }}</li>
+            <li>{{ 'Updates, migrations, and version planning'|t }}</li>
+            <li>{{ 'Drupal theming and web design'|t }}</li>
+            <li>{{ 'Performance, security, and maintainability'|t }}</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    {{ page.content }}
+
+    <section class="drupify-section drupify-muted" aria-labelledby="editorial-direction-title">
+      <div class="drupify-container drupify-split">
+        <div class="drupify-section-head drupify-align-start">
+          <p class="drupify-eyebrow">{{ 'Editorial direction'|t }}</p>
+          <h2 id="editorial-direction-title">{{ 'The blog should become a trust asset, not only an archive.'|t }}</h2>
+          <p>{{ 'The listing is now powered by a real Blog View page, so new Blog content appears without editing the page template.'|t }}</p>
+        </div>
+        <div class="drupify-blog-topics">
+          <article><strong>{{ 'Upgrade explainers'|t }}</strong><p>{{ 'Drupal version planning, compatibility, and launch risk.'|t }}</p></article>
+          <article><strong>{{ 'Technical audits'|t }}</strong><p>{{ 'What to check before redesigning, migrating, or rebuilding.'|t }}</p></article>
+          <article><strong>{{ 'Frontend quality'|t }}</strong><p>{{ 'Twig, responsive layouts, accessibility, and performance.'|t }}</p></article>
+          <article><strong>{{ 'Support lessons'|t }}</strong><p>{{ 'Maintenance, security, bug fixes, and site stability.'|t }}</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="drupify-audit-band" aria-labelledby="blog-cta-title">
+      <div class="drupify-container drupify-audit-inner">
+        <div>
+          <p class="drupify-eyebrow">{{ 'Free Drupal audit'|t }}</p>
+          <h2 id="blog-cta-title">{{ 'Reading about Drupal issues because your own site has one?'|t }}</h2>
+          <p>{{ 'Send the site and the problem. Drupify can recommend whether you need a quick fix, upgrade plan, redesign, migration, or support path.'|t }}</p>
+          <ul class="drupify-audit-list">
+            <li>{{ 'Version risk'|t }}</li>
+            <li>{{ 'Theme issues'|t }}</li>
+            <li>{{ 'Performance review'|t }}</li>
+          </ul>
+        </div>
+        <a class="drupify-button drupify-button-light" href="{{ base_path }}contact-us">{{ 'Request Drupal audit'|t }}</a>
+      </div>
+    </section>
+  </main>
+
+  {% include '@drupify/includes/drupify-footer.html.twig' %}
+</div>

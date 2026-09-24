@@ -1,0 +1,8 @@
+uuid: 756041ae-18f1-4df1-adac-44bee71773e9
+langcode: en
+status: true
+dependencies: {  }
+id: drupify
+label: Drupify
+threshold: 0.5
+challenge: captcha/Math

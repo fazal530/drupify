@@ -1,0 +1,23 @@
+uuid: fbee8773-30aa-4583-a31a-31e70facfbf5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.client_
+  module:
+    - node
+id: clients_url
+label: 'Clients url'
+type: 'canonical_entities:node'
+pattern: '/client/[node:title]'
+selection_criteria:
+  b8949b24-8169-4f60-a18a-c4471a9b9a89:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      client_: client_
+selection_logic: and
+weight: -5
+relationships: {  }

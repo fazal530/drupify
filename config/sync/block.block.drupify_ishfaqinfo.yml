@@ -1,0 +1,28 @@
+uuid: 548f33fa-111b-4e90-9ce6-65c1653acf2c
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:user_info:6bb46266-cc52-4a51-9647-495b7dad741c'
+  module:
+    - block_content
+    - system
+  theme:
+    - drupify
+id: drupify_ishfaqinfo
+theme: drupify
+region: content
+weight: -12
+provider: null
+plugin: 'block_content:6bb46266-cc52-4a51-9647-495b7dad741c'
+settings:
+  id: 'block_content:6bb46266-cc52-4a51-9647-495b7dad741c'
+  label: 'Ishfaq Info'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /portfolio/ishfaq

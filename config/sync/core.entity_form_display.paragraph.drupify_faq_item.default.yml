@@ -1,0 +1,32 @@
+uuid: 85a7c34d-ffd7-4729-af72-1fc0dc09afca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.drupify_faq_item.field_item_answer
+    - field.field.paragraph.drupify_faq_item.field_item_question
+    - paragraphs.paragraphs_type.drupify_faq_item
+id: paragraph.drupify_faq_item.default
+targetEntityType: paragraph
+bundle: drupify_faq_item
+mode: default
+content:
+  field_item_answer:
+    type: string_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_item_question:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

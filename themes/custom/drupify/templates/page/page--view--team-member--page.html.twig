@@ -1,0 +1,48 @@
+{{ attach_library('drupify/drupify_homepage') }}
+
+<div class="drupify-home drupify-team-page" id="page-wrapper">
+  <a class="drupify-skip-link" href="#main-content">{{ 'Skip to main content'|t }}</a>
+
+  {% include '@drupify/includes/drupify-header.html.twig' %}
+
+  <main id="main-content" tabindex="-1">
+    <section class="drupify-page-hero drupify-section">
+      <div class="drupify-container drupify-page-hero-grid">
+        <div>
+          <p class="drupify-eyebrow">{{ 'Drupify team'|t }}</p>
+          <h1>{{ 'The people behind Drupify delivery.'|t }}</h1>
+          <p class="drupify-lead">{{ 'A compact Drupal team focused on development, frontend implementation, migration support, QA, and dependable delivery.'|t }}</p>
+          <div class="drupify-actions">
+            <a class="drupify-button drupify-button-primary" href="{{ base_path }}contact-us">{{ 'Work with Drupify'|t }}</a>
+            <a class="drupify-button drupify-button-secondary" href="{{ base_path }}portfolio">{{ 'View portfolio'|t }}</a>
+          </div>
+        </div>
+
+        <div class="drupify-service-overview">
+          <span>{{ 'Team strengths'|t }}</span>
+          <ol>
+            <li>{{ 'Drupal architecture and development'|t }}</li>
+            <li>{{ 'Twig theming and frontend QA'|t }}</li>
+            <li>{{ 'Migration, upgrades, and support'|t }}</li>
+            <li>{{ 'Practical client communication'|t }}</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    {{ page.content }}
+
+    <section class="drupify-audit-band" aria-labelledby="team-cta-title">
+      <div class="drupify-container drupify-audit-inner">
+        <div>
+          <p class="drupify-eyebrow">{{ 'Project support'|t }}</p>
+          <h2 id="team-cta-title">{{ 'Need a Drupal team that can clean up, build, and support the site?'|t }}</h2>
+          <p>{{ 'Share the current website, issue, or project plan. Drupify can suggest a practical path for development, migration, theming, or support.'|t }}</p>
+        </div>
+        <a class="drupify-button drupify-button-light" href="{{ base_path }}contact-us">{{ 'Book Free Consultation'|t }}</a>
+      </div>
+    </section>
+  </main>
+
+  {% include '@drupify/includes/drupify-footer.html.twig' %}
+</div>

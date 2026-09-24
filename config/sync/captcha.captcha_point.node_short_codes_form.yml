@@ -1,0 +1,7 @@
+uuid: 23486aa4-03e1-47f2-aee2-0bff5331f6ec
+langcode: en
+status: false
+dependencies: {  }
+formId: node_short_codes_form
+captchaType: default
+label: node_short_codes_form

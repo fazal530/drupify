@@ -1,0 +1,28 @@
+uuid: 5f6cd180-0495-4816-aa73-8ed642cca93d
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:skills:4a7a2bae-a9ab-4ae0-bf56-655317f33a65'
+  module:
+    - block_content
+    - system
+  theme:
+    - drupify
+id: drupify_riazsskills
+theme: drupify
+region: content
+weight: -13
+provider: null
+plugin: 'block_content:4a7a2bae-a9ab-4ae0-bf56-655317f33a65'
+settings:
+  id: 'block_content:4a7a2bae-a9ab-4ae0-bf56-655317f33a65'
+  label: "Riaz's Skills"
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /portfolio/riaz

@@ -1,0 +1,22 @@
+uuid: 5126b0a7-4c01-45d3-8e0b-733e1e674d38
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupify
+_core:
+  default_config_hash: kigu8pTxXt1qGR2NJ5HHdC4G2G1wsDrIjLPKBT5wUBc
+id: drupify_content
+theme: drupify
+region: content
+weight: -9
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

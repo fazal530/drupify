@@ -1,0 +1,29 @@
+{#
+/**
+ * @file paragraph--drupify-audit-cta.html.twig
+ * Free Drupal audit band.
+ */
+#}
+<section class="drupify-audit-band" id="audit" aria-labelledby="audit-title">
+  <div class="drupify-container drupify-audit-inner">
+    <div>
+      <p class="drupify-eyebrow">{{ content.field_eyebrow ?: 'Free Drupal audit'|t }}</p>
+      <h2 id="audit-title">{{ content.field_title }}</h2>
+      {% if content.field_description|render %}
+        <p>{{ content.field_description }}</p>
+      {% endif %}
+      {% if paragraph.field_items.value %}
+        <ul class="drupify-audit-list">
+          {% for item in paragraph.field_items.value|split('\n') %}
+            {% if item|trim %}
+              <li>{{ item|trim }}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+    {% if paragraph.field_link_title.value %}
+      <a class="drupify-button drupify-button-light" href="{{ paragraph.field_link_url.value }}">{{ paragraph.field_link_title.value }}</a>
+    {% endif %}
+  </div>
+</section>

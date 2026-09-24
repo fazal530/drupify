@@ -1,0 +1,8 @@
+uuid: 6e42cfaf-9286-4bda-96f0-fbcc78c9f03f
+langcode: en
+status: true
+dependencies: {  }
+id: blogs_side_bar
+label: 'Blogs Side Bar'
+revision: false
+description: 'Appears in the Grid Pages of Blog'

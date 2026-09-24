@@ -1,0 +1,19 @@
+uuid: 3220e2d3-9425-432e-a30f-eb4ea5db4a90
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.about_me
+    - field.storage.block_content.field_name
+id: block_content.about_me.field_name
+field_name: field_name
+entity_type: block_content
+bundle: about_me
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

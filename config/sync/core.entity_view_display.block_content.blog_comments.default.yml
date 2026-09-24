@@ -1,0 +1,24 @@
+uuid: 7bafa825-fe3a-4716-acb2-2a9867244150
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.blog_comments
+    - field.field.block_content.blog_comments.field_comments_sidebar
+  module:
+    - entity_reference_revisions
+id: block_content.blog_comments.default
+targetEntityType: block_content
+bundle: blog_comments
+mode: default
+content:
+  field_comments_sidebar:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

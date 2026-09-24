@@ -1,0 +1,22 @@
+uuid: 0ddb09d2-542b-4299-b7be-d99b81be6223
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_items
+    - paragraphs.paragraphs_type.drupify_audit_cta
+  module:
+    - text
+id: paragraph.drupify_audit_cta.field_items
+field_name: field_items
+entity_type: paragraph
+bundle: drupify_audit_cta
+label: 'List items (one per line)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

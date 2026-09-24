@@ -1,0 +1,24 @@
+uuid: 10b8dac4-4227-4a74-b6e8-c4c8781f9deb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.short_codes.field_meta_tags
+    - field.field.node.short_codes.field_short_codes
+    - node.type.short_codes
+  module:
+    - user
+id: node.short_codes.teaser
+targetEntityType: node
+bundle: short_codes
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_meta_tags: true
+  field_short_codes: true

@@ -1,0 +1,19 @@
+uuid: 2e9b41ef-e9aa-4db5-bc24-4fe4764d9fa3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_secondary_title
+    - paragraphs.paragraphs_type.drupify_hero
+id: paragraph.drupify_hero.field_secondary_title
+field_name: field_secondary_title
+entity_type: paragraph
+bundle: drupify_hero
+label: 'Secondary button label'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

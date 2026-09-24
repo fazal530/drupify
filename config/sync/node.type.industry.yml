@@ -1,0 +1,11 @@
+uuid: 294626f2-8000-47ce-83c2-f4c4ab988018
+langcode: en
+status: true
+dependencies: {  }
+name: Industry
+type: industry
+description: 'Industry landing pages for Drupify service positioning.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

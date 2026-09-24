@@ -1,0 +1,392 @@
+uuid: d5bdb0f6-a52f-4264-9456-b53ddac1e31c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sections
+    - node.type.portfolio
+  module:
+    - entity_reference_revisions
+id: node.portfolio.field_sections
+field_name: field_sections
+entity_type: node
+bundle: portfolio
+label: Sections
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    negate: 1
+    target_bundles_drag_drop:
+      about_style_1_:
+        weight: 123
+        enabled: false
+      about_style_2:
+        weight: 124
+        enabled: false
+      about_style_3:
+        weight: 125
+        enabled: false
+      about_style_4:
+        weight: 126
+        enabled: false
+      advertisement_image_:
+        weight: 127
+        enabled: false
+      award:
+        weight: 128
+        enabled: false
+      awards:
+        weight: 129
+        enabled: false
+      blog_2_column:
+        weight: 138
+        enabled: false
+      blog_3_column:
+        weight: 139
+        enabled: false
+      blog_4_column:
+        weight: 140
+        enabled: false
+      blog_grid_sidebar:
+        weight: 141
+        enabled: false
+      blogs:
+        weight: 130
+        enabled: false
+      blogs_comment:
+        weight: 131
+        enabled: false
+      blogs_list_1:
+        weight: 132
+        enabled: false
+      blogs_list_2:
+        weight: 133
+        enabled: false
+      blogs_list_sidebar:
+        weight: 134
+        enabled: false
+      blogs_sidebar:
+        weight: 135
+        enabled: false
+      blogs_style_2:
+        weight: 136
+        enabled: false
+      blogs_style_3:
+        weight: 137
+        enabled: false
+      call_to_action_style_1:
+        weight: 142
+        enabled: false
+      call_to_action_style_2:
+        weight: 143
+        enabled: false
+      call_to_action_style_3:
+        weight: 144
+        enabled: false
+      call_to_action_style_4:
+        weight: 145
+        enabled: false
+      category_sidebar_:
+        weight: 146
+        enabled: false
+      clients_grid:
+        weight: 147
+        enabled: false
+      clients_style_1:
+        weight: 148
+        enabled: false
+      clients_style_2:
+        weight: 149
+        enabled: false
+      clients_style_3:
+        weight: 150
+        enabled: false
+      contact_detail_style_2:
+        weight: 152
+        enabled: false
+      contact_details:
+        weight: 151
+        enabled: false
+      contact_page_style_1:
+        weight: 153
+        enabled: false
+      contact_page_style_2:
+        weight: 154
+        enabled: false
+      contact_social:
+        weight: 4
+        enabled: false
+      contact_style_1_:
+        weight: 156
+        enabled: false
+      contact_style_2:
+        weight: 157
+        enabled: false
+      contact_style_3:
+        weight: 158
+        enabled: false
+      counter_style_1:
+        weight: 162
+        enabled: false
+      counter_style_2:
+        weight: 163
+        enabled: false
+      counter_style_3:
+        weight: 164
+        enabled: false
+      counters_style_1:
+        weight: 159
+        enabled: false
+      counters_style_2:
+        weight: 160
+        enabled: false
+      counters_style_3:
+        weight: 161
+        enabled: false
+      detail_image:
+        weight: 165
+        enabled: false
+      detail_images:
+        weight: 166
+        enabled: false
+      error_page:
+        weight: 167
+        enabled: false
+      faq_s_page:
+        weight: 168
+        enabled: false
+      faq_s_style_1:
+        weight: 169
+        enabled: false
+      faq_s_style_2:
+        weight: 170
+        enabled: false
+      faq_s_style_3:
+        weight: 171
+        enabled: false
+      feature_style_1:
+        weight: 175
+        enabled: false
+      feature_style_2:
+        weight: 176
+        enabled: false
+      feature_style_3:
+        weight: 177
+        enabled: false
+      features_style_1:
+        weight: 172
+        enabled: false
+      features_style_2:
+        weight: 173
+        enabled: false
+      features_style_3:
+        weight: 174
+        enabled: false
+      footer_cta:
+        weight: 5
+        enabled: false
+      goal_style_1:
+        weight: 181
+        enabled: false
+      goal_style_2:
+        weight: 182
+        enabled: false
+      goals_style_1:
+        weight: 179
+        enabled: false
+      goals_style_2:
+        weight: 180
+        enabled: false
+      histories:
+        weight: 183
+        enabled: false
+      history:
+        weight: 184
+        enabled: false
+      job:
+        weight: 185
+        enabled: false
+      job_detail:
+        weight: 187
+        enabled: false
+      job_details:
+        weight: 188
+        enabled: false
+      job_responsibilities:
+        weight: 189
+        enabled: false
+      jobs:
+        weight: 186
+        enabled: false
+      our_value_style_2:
+        weight: 193
+        enabled: false
+      our_values_style_1:
+        weight: 190
+        enabled: false
+      our_values_style_2:
+        weight: 191
+        enabled: false
+      our_values_style_3:
+        weight: 192
+        enabled: false
+      palns_style_1:
+        weight: 194
+        enabled: false
+      plan_style_1:
+        weight: 198
+        enabled: false
+      plan_style_2:
+        weight: 199
+        enabled: false
+      plan_style_3:
+        weight: 200
+        enabled: false
+      plans_page:
+        weight: 195
+        enabled: false
+      plans_style_2:
+        weight: 196
+        enabled: false
+      plans_style_3:
+        weight: 197
+        enabled: false
+      portfolio_masonary_2:
+        weight: 208
+        enabled: false
+      portfolio_masonry_1:
+        weight: 209
+        enabled: false
+      portfolio_sidebar:
+        weight: 210
+        enabled: false
+      portfolios_block:
+        weight: 201
+        enabled: false
+      portfolios_page:
+        weight: 202
+        enabled: false
+      portfolios_page_2:
+        weight: 203
+        enabled: false
+      portfolios_page_3:
+        weight: 204
+        enabled: false
+      portfolios_style_1:
+        weight: 205
+        enabled: false
+      portfolios_style_2:
+        weight: 206
+        enabled: false
+      portfolios_style_3:
+        weight: 207
+        enabled: false
+      service_list:
+        weight: 219
+        enabled: false
+      service_lists:
+        weight: 220
+        enabled: false
+      service_sidebar:
+        weight: 221
+        enabled: false
+      services_list_1:
+        weight: 211
+        enabled: false
+      services_list_2:
+        weight: 212
+        enabled: false
+      services_page_1:
+        weight: 213
+        enabled: false
+      services_page_2:
+        weight: 214
+        enabled: false
+      services_page_3:
+        weight: 215
+        enabled: false
+      services_style_1_:
+        weight: 216
+        enabled: false
+      services_style_2:
+        weight: 217
+        enabled: false
+      services_style_3:
+        weight: 218
+        enabled: false
+      short_code:
+        weight: 222
+        enabled: false
+      slide_style_1_:
+        weight: 226
+        enabled: false
+      slide_style_3:
+        weight: 227
+        enabled: false
+      slider_style_1_:
+        weight: 223
+        enabled: false
+      slider_style_2:
+        weight: 224
+        enabled: false
+      slider_style_3:
+        weight: 225
+        enabled: false
+      social_links:
+        weight: 6
+        enabled: false
+      team_members_grid:
+        weight: 229
+        enabled: false
+      team_members_style_1:
+        weight: 230
+        enabled: false
+      team_members_style_2:
+        weight: 231
+        enabled: false
+      team_members_style_3:
+        weight: 232
+        enabled: false
+      team_social_links:
+        weight: 233
+        enabled: false
+      testimonials_:
+        weight: 234
+        enabled: false
+      testimonials_page:
+        weight: 235
+        enabled: false
+      testimonials_style_2:
+        weight: 236
+        enabled: false
+      testimonials_style_3:
+        weight: 237
+        enabled: false
+      value_style_1:
+        weight: 238
+        enabled: false
+      work_process_style_1:
+        weight: 242
+        enabled: false
+      work_process_style_2:
+        weight: 243
+        enabled: false
+      work_process_style_3:
+        weight: 244
+        enabled: false
+      work_processes_style_1:
+        weight: 239
+        enabled: false
+      work_processes_style_2:
+        weight: 240
+        enabled: false
+      work_processes_style_3:
+        weight: 241
+        enabled: false
+field_type: entity_reference_revisions

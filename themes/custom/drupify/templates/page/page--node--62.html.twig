@@ -1,0 +1,139 @@
+{{ attach_library('drupify/drupify_homepage') }}
+
+{% set asset_base = base_path ~ 'sites/default/files' %}
+
+<div class="drupify-home drupify-about-page" id="page-wrapper">
+  <a class="drupify-skip-link" href="#main-content">{{ 'Skip to main content'|t }}</a>
+
+  {% include '@drupify/includes/drupify-header.html.twig' %}
+
+  <main id="main-content" tabindex="-1">
+    <section class="drupify-page-hero drupify-section">
+      <div class="drupify-container drupify-page-hero-grid">
+        <div>
+          <p class="drupify-eyebrow">{{ 'About Drupify'|t }}</p>
+          <h1>{{ 'A focused Drupal team for businesses that need dependable web engineering.'|t }}</h1>
+          <p class="drupify-lead">{{ 'Drupify builds, upgrades, migrates, themes, optimizes, and supports Drupal websites with practical planning and careful implementation.'|t }}</p>
+          <div class="drupify-actions">
+            <a class="drupify-button drupify-button-primary" href="{{ base_path }}contact-us">{{ 'Talk to Drupify'|t }}</a>
+            <a class="drupify-button drupify-button-secondary" href="{{ base_path }}portfolio">{{ 'See our work'|t }}</a>
+          </div>
+        </div>
+
+        <div class="drupify-about-hero-card">
+          <img src="{{ asset_base }}/2024-07/drupal-web-development.jpg" alt="{{ 'Drupal services diagram'|t }}">
+          <div>
+            <span>{{ 'Drupal-first delivery'|t }}</span>
+            <strong>{{ 'Migration, custom modules, theming, maintenance, security, and performance under one roof.'|t }}</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="drupify-section drupify-muted" aria-labelledby="about-proof-title">
+      <div class="drupify-container">
+        <div class="drupify-section-head">
+          <p class="drupify-eyebrow">{{ 'Company proof'|t }}</p>
+          <h2 id="about-proof-title">{{ 'Small enough to stay accountable, specialized enough to be useful.'|t }}</h2>
+          <p>{{ 'The site already contains real portfolio, client, and team records. The redesigned About page makes those trust signals visible.'|t }}</p>
+        </div>
+
+        <div class="drupify-about-proof">
+          <article><strong>{{ drupify_counts.portfolio }}</strong><span>{{ 'Published portfolio entries'|t }}</span></article>
+          <article><strong>{{ drupify_counts.clients }}</strong><span>{{ 'Client records on the site'|t }}</span></article>
+          <article><strong>{{ drupify_counts.team }}</strong><span>{{ 'Team members represented'|t }}</span></article>
+          <article><strong>Drupal</strong><span>{{ 'Core service focus'|t }}</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="drupify-section" aria-labelledby="about-services-title">
+      <div class="drupify-container drupify-about-story">
+        <div class="drupify-about-story-media">
+          <img src="{{ asset_base }}/2024-07/mission.jpg" alt="{{ 'Digital cloud and global network illustration'|t }}">
+        </div>
+        <div>
+          <p class="drupify-eyebrow">{{ 'What we do'|t }}</p>
+          <h2 id="about-services-title">{{ 'Comprehensive Drupal services without the generic agency fog.'|t }}</h2>
+          <p>{{ 'At Drupify, we provide high-quality Drupal development services customized to meet your business needs. Specializing in Drupal migration, custom module development, responsive themes, ongoing maintenance, security updates, and performance optimization.'|t }}</p>
+          <ul class="drupify-about-list">
+            <li>{{ 'Drupal migrations and version upgrades'|t }}</li>
+            <li>{{ 'Custom module and integration development'|t }}</li>
+            <li>{{ 'Responsive Drupal theming and frontend cleanup'|t }}</li>
+            <li>{{ 'Maintenance, security, performance, and support'|t }}</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="drupify-section drupify-muted" aria-labelledby="about-values-title">
+      <div class="drupify-container">
+        <div class="drupify-section-head">
+          <p class="drupify-eyebrow">{{ 'Mission, vision, strategy'|t }}</p>
+          <h2 id="about-values-title">{{ 'The operating ideas behind the work.'|t }}</h2>
+        </div>
+
+        <div class="drupify-about-values">
+          <article>
+            <span>01</span>
+            <h3>{{ 'Our Mission'|t }}</h3>
+            <p>{{ 'Deliver exceptional Drupal-based web solutions that help businesses thrive digitally with high-quality, innovative, and scalable services.'|t }}</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>{{ 'Our Vision'|t }}</h3>
+            <p>{{ 'Create robust digital experiences that help clients achieve business goals and grow online with confidence.'|t }}</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>{{ 'Our Strategy'|t }}</h3>
+            <p>{{ 'Combine expertise, collaboration, agile delivery, rigorous testing, and ongoing support to keep Drupal projects moving safely.'|t }}</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="drupify-section" aria-labelledby="about-team-title">
+      <div class="drupify-container">
+        <div class="drupify-section-head">
+          <p class="drupify-eyebrow">{{ 'Team'|t }}</p>
+          <h2 id="about-team-title">{{ 'People behind the Drupal work.'|t }}</h2>
+          <p>{{ 'The team preview uses existing published Drupify team records. Roles can be sharpened later once each profile is verified.'|t }}</p>
+          <a class="drupify-text-link" href="{{ base_path }}team">{{ 'Meet the full team'|t }}</a>
+        </div>
+
+        <div class="drupify-about-team">
+          {% for member in drupify_team|slice(0, 4) %}
+            <article>
+              {% if member.image %}
+                <img src="{{ member.image }}" alt="{{ member.image_alt }}">
+              {% endif %}
+              <div>
+                <h3>{{ member.title }}</h3>
+                <p>{{ member.designation ?: member.summary ?: 'Drupal delivery and implementation support.'|t }}</p>
+              </div>
+            </article>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <section class="drupify-audit-band" aria-labelledby="about-cta-title">
+      <div class="drupify-container drupify-audit-inner">
+        <div>
+          <p class="drupify-eyebrow">{{ 'Work with Drupify'|t }}</p>
+          <h2 id="about-cta-title">{{ 'Need a Drupal team that can diagnose before it builds?'|t }}</h2>
+          <p>{{ 'Send your current site, upgrade goal, or project idea. Drupify can recommend the safest next step before scope grows.'|t }}</p>
+          <ul class="drupify-audit-list">
+            <li>{{ 'Drupal audit'|t }}</li>
+            <li>{{ 'Migration planning'|t }}</li>
+            <li>{{ 'Ongoing support'|t }}</li>
+          </ul>
+        </div>
+        <a class="drupify-button drupify-button-light" href="{{ base_path }}contact-us">{{ 'Book Free Consultation'|t }}</a>
+      </div>
+    </section>
+  </main>
+
+  {% include '@drupify/includes/drupify-footer.html.twig' %}
+</div>

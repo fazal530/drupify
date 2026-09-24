@@ -1,0 +1,29 @@
+uuid: 393bece3-342e-4bb3-add6-29dcf02167f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.user_info
+    - field.storage.block_content.field_resume
+    - media.type.document
+id: block_content.user_info.field_resume
+field_name: field_resume
+entity_type: block_content
+bundle: user_info
+label: Resume
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

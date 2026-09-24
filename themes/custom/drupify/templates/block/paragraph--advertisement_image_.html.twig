@@ -1,0 +1,10 @@
+<!-- Advertisement -->
+<div class="sidebar aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
+    <div class="space-banner">
+        {%	if  content.field_advertisement_url[0] and content.field_image[0]  %}
+            <a href="{{ content.field_advertisement_url.0['#url'] }}"target="_blank" title="Add-Image"><img src="{{ file_url(content.field_image['#items'].entity.uri.value) }}" alt="{{content.field_image['#items'].alt}}"></a>
+        {% else %}
+            {{ content.field_code.0 }}
+        {% endif %}
+    </div>
+</div>

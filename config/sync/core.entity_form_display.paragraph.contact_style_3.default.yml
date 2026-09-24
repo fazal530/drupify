@@ -1,0 +1,80 @@
+uuid: f11f2a14-06ac-402d-b13b-1e77018bb355
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contact_style_3.field_address
+    - field.field.paragraph.contact_style_3.field_contact_form_style_1
+    - field.field.paragraph.contact_style_3.field_contact_number
+    - field.field.paragraph.contact_style_3.field_description
+    - field.field.paragraph.contact_style_3.field_mail_address
+    - field.field.paragraph.contact_style_3.field_section_title
+    - field.field.paragraph.contact_style_3.field_tag_line
+    - paragraphs.paragraphs_type.contact_style_3
+  module:
+    - text
+    - webform
+id: paragraph.contact_style_3.default
+targetEntityType: paragraph
+bundle: contact_style_3
+mode: default
+content:
+  field_address:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_contact_form_style_1:
+    type: webform_entity_reference_select
+    weight: 3
+    region: content
+    settings:
+      default_data: true
+      webforms: {  }
+    third_party_settings: {  }
+  field_contact_number:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_description:
+    type: string_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_mail_address:
+    type: email_default
+    weight: 6
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  field_section_title:
+    type: text_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_tag_line:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

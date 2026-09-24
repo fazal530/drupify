@@ -1,0 +1,19 @@
+uuid: 4fb524a8-eccf-4887-97d1-bc0260f8dfd8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_period_per
+    - paragraphs.paragraphs_type.plan_style_3
+id: paragraph.plan_style_3.field_period_per
+field_name: field_period_per
+entity_type: paragraph
+bundle: plan_style_3
+label: 'Period per'
+description: 'Mention the Time Period eg: Year, Month, Week'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

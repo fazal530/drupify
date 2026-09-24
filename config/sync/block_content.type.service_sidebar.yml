@@ -1,0 +1,8 @@
+uuid: 2fe96b68-c4be-41ca-8e0e-ee86ab14252c
+langcode: en
+status: true
+dependencies: {  }
+id: service_sidebar
+label: 'Service Sidebar'
+revision: false
+description: 'This is the Side bar block in service page'

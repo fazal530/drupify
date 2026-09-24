@@ -1,0 +1,22 @@
+uuid: 6e264b14-e5bd-4dd7-ab7c-bd1568a4b7ae
+langcode: en
+status: true
+dependencies: {  }
+name: height_300
+label: Height-300
+effects:
+  0b8fc743-0f8c-4ba7-a3c6-942bccb6f451:
+    uuid: 0b8fc743-0f8c-4ba7-a3c6-942bccb6f451
+    id: image_scale
+    weight: 1
+    data:
+      width: 500
+      height: 300
+      upscale: true
+  297642dd-63ce-410b-9411-cd803a28bdf4:
+    uuid: 297642dd-63ce-410b-9411-cd803a28bdf4
+    id: image_resize
+    weight: 2
+    data:
+      width: 500
+      height: 300

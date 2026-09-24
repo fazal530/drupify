@@ -1,0 +1,68 @@
+<!-- Plan -->
+{% if 'Off' in content.field_highlight_it.0 %}
+ <div class="col-lg-4 col-md-7 col-12 aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
+        <div class="item">
+            <div class="pricing-head">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340.05 211">
+                    <path data-name="Union 10" d="M71.281,199.514C28.881,167.5,0,192.4,0,192.4V11H0V8A8,8,0,0,1,8,0H332a8,8,0,0,1,8,8v4h-.011c.022,10.978.21,112.156-.172,141.671-28.672-17.783-49.266,10.277-49.266,10.277s-19.786,41.1-65.416,13.04-78.745,9.484-78.745,9.484S128.587,211,102.213,211C92.846,211,82.394,207.9,71.281,199.514Z" fill="#1b1c21"/>
+                </svg>
+                <div class="head-content">
+                    <h3>{{ content.field_title.0 }}</h3>
+                    <h4><span>{{ content.field_currency_symbol.0 }}</span>{{ content.field_price.0 }}<span>/ {{ content.field_period_per.0 }}</span></h4>
+                </div>
+            </div>
+            <div class="item-content">
+                <ul>
+                    {% for key,value in content.field_benefits['#items'] %}
+                        <li> <i class="fas fa-check"></i>{{ content.field_benefits[key] }}</li>
+                    {% endfor %}
+                </ul>
+                <div class="pricing-btn">
+                    {%	if  content.field_button_link[0]  %}
+                        <a href="{{ content.field_button_link.0['#url'] }}" class="btn btn-primary btn-style-1-lg" title="Buy Now">
+                            <span>{{ content.field_button_link.0['#title'] }}</span>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="59.461" height="41" viewBox="0 0 59.461 41">
+                                    <path data-name="Icon ionic-ios-arrow-round-forward" d="M45.157,12.018a2.772,2.772,0,0,0-.02,3.833L57.483,28.537H10.494a2.71,2.71,0,0,0,0,5.416H57.463L45.117,46.64a2.793,2.793,0,0,0,.02,3.833,2.582,2.582,0,0,0,3.716-.021l16.732-17.29h0a3.049,3.049,0,0,0,.548-.854,2.643,2.643,0,0,0,.2-1.042,2.752,2.752,0,0,0-.751-1.9L48.853,12.08A2.541,2.541,0,0,0,45.157,12.018Z" transform="translate(-7.375 -10.752)" fill="#fff" stroke="#fff" stroke-width="1"></path>
+                                </svg>
+                            </span>
+                        </a>
+                    {% endif %} 
+                </div>
+            </div>
+        </div>
+    </div>
+{% else %}
+    <div class="col-lg-4 col-md-7 col-12 aos-init aos-animate" data-aos="fade-down" data-aos-duration="800">
+        <div class="item recommend-plan">
+            <div class="pricing-head">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340.05 211">
+                    <path data-name="Union 10" d="M71.281,199.514C28.881,167.5,0,192.4,0,192.4V11H0V8A8,8,0,0,1,8,0H332a8,8,0,0,1,8,8v4h-.011c.022,10.978.21,112.156-.172,141.671-28.672-17.783-49.266,10.277-49.266,10.277s-19.786,41.1-65.416,13.04-78.745,9.484-78.745,9.484S128.587,211,102.213,211C92.846,211,82.394,207.9,71.281,199.514Z" fill="#1b1c21"/>
+                </svg>
+                <div class="head-content">
+                    <h3>{{ content.field_title.0 }}</h3>
+                    <h4><span>{{ content.field_currency_symbol.0 }}</span>{{ content.field_price.0 }}<span>/ {{ content.field_period_per.0 }}</span></h4>
+                </div>
+            </div>
+            <div class="item-content">
+                <ul>
+                    {% for key,value in content.field_benefits['#items'] %}
+                        <li><i class="fas fa-check"></i> {{ content.field_benefits[key] }}</li>
+                    {% endfor %}
+                </ul>
+                <div class="pricing-btn">
+                    {%	if  content.field_button_link[0]  %}
+                        <a href="{{ content.field_button_link.0['#url'] }}" class="btn btn-primary btn-style-1-lg" title="Buy Now">
+                            <span>{{ content.field_button_link.0['#title'] }}</span>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="59.461" height="41" viewBox="0 0 59.461 41">
+                                    <path data-name="Icon ionic-ios-arrow-round-forward" d="M45.157,12.018a2.772,2.772,0,0,0-.02,3.833L57.483,28.537H10.494a2.71,2.71,0,0,0,0,5.416H57.463L45.117,46.64a2.793,2.793,0,0,0,.02,3.833,2.582,2.582,0,0,0,3.716-.021l16.732-17.29h0a3.049,3.049,0,0,0,.548-.854,2.643,2.643,0,0,0,.2-1.042,2.752,2.752,0,0,0-.751-1.9L48.853,12.08A2.541,2.541,0,0,0,45.157,12.018Z" transform="translate(-7.375 -10.752)" fill="#fff" stroke="#fff" stroke-width="1"></path>
+                                </svg>
+                            </span>
+                        </a>
+                    {% endif %} 
+                </div>
+            </div>
+        </div>
+    </div>
+{% endif %}

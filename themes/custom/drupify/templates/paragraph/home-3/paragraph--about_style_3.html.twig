@@ -1,0 +1,34 @@
+<!-- About -->
+{%	if  content.field_button_link[0]  %}
+    <section class="careers-3 careers-we-are-hiring section">
+{% else %}
+    <section class="careers-we-are-hiring section">
+{% endif %}
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12 aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
+                        <div class="image">
+                            <img src="{{ file_url(content.field_image['#items'].entity.uri.value) }}" alt="{{content.field_image['#items'].alt}}">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12 aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
+                        <div class="content">
+                            <div class="home-3-title aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
+                                <span>{{ content.field_tag_line.0 }}</span>
+                                <h2>{{ content.field_section_title.0 }}</h2>
+                            </div>
+                            <p>{{ content.field_description.0 }}</p>
+                            {%	if  content.field_button_link[0]  %}
+                                <a href="{{ content.field_button_link.0['#url'] }}" class="btn btn-primary btn-style-1-lg"><span>{{ content.field_button_link.0['#title'] }}</span>
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="59.461" height="41" viewBox="0 0 59.461 41">
+                                            <path data-name="Icon ionic-ios-arrow-round-forward" d="M45.157,12.018a2.772,2.772,0,0,0-.02,3.833L57.483,28.537H10.494a2.71,2.71,0,0,0,0,5.416H57.463L45.117,46.64a2.793,2.793,0,0,0,.02,3.833,2.582,2.582,0,0,0,3.716-.021l16.732-17.29h0a3.049,3.049,0,0,0,.548-.854,2.643,2.643,0,0,0,.2-1.042,2.752,2.752,0,0,0-.751-1.9L48.853,12.08A2.541,2.541,0,0,0,45.157,12.018Z" transform="translate(-7.375 -10.752)" fill="#fff" stroke="#fff" stroke-width="1"></path>
+                                        </svg>
+                                    </span>
+                                </a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>

@@ -1,0 +1,20 @@
+uuid: 5263f0ad-163c-44c9-8b1f-3222fc267c9e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drupify
+_core:
+  default_config_hash: XRdb8LpbArVA6CpuuEZxzi50JIdjsJaCCZ5o3fH0Blk
+id: drupify_local_actions
+theme: drupify
+region: content
+weight: -16
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

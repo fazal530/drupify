@@ -1,0 +1,10 @@
+uuid: 42f1bace-5cc4-4b1a-abdb-3bf68875f3a0
+langcode: en
+status: true
+dependencies: {  }
+id: drupify_why
+label: 'Why Drupify'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

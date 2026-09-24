@@ -1,0 +1,23 @@
+uuid: 0164ea38-66de-44a4-b332-b6291416b461
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ordering
+    - node.type.team_member_
+id: node.team_member_.field_ordering
+field_name: field_ordering
+entity_type: node
+bundle: team_member_
+label: Ordering
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

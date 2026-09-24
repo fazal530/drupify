@@ -1,0 +1,33 @@
+
+    <section class="search-result section">
+        <div class="container">
+            <div class="search-form">
+                <form action="{{base_url}}/search/node" method="get">
+                    <input class="form-control" type="search" placeholder="Type Something..." aria-label="Search" name="keys">
+                    <button class="btn btn-primary" type="submit">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40.49" height="40.501" viewBox="0 0 40.49 40.501">
+                                <path data-name="Icon ionic-ios-search" d="M44.516,42.062,33.254,30.7a16.048,16.048,0,1,0-2.436,2.467L42.006,44.456a1.733,1.733,0,0,0,2.446.063A1.744,1.744,0,0,0,44.516,42.062ZM20.643,33.3a12.672,12.672,0,1,1,8.963-3.712A12.594,12.594,0,0,1,20.643,33.3Z" transform="translate(-4.5 -4.493)" fill="#fff"/>
+                            </svg>
+                        </div>
+                    </button>
+                </form>
+                <h2>Search Result - "{{ keyword }}"</h2>
+                <p>We found {{total_items_count}} Search results for you</p>
+            </div>
+              <div class="wrapper region region-content">
+                {%- if title is not empty -%}
+                  <h2 class="text-center">{{ title }}</h2>
+                {%- endif -%}
+                {%- if items -%}
+                  <ol class="search-list node-results pl-0">
+                      {%- for item in items -%}
+                        {{ item.value }}
+                      {%- endfor -%}
+                  </ol>
+              {%- else -%}
+                {{- empty -}}
+              {%- endif -%}
+            </div>
+        </div>
+    </section>

@@ -1,0 +1,19 @@
+uuid: 464d1000-d9fe-4666-bbe3-1f99e2213691
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tag_line
+    - paragraphs.paragraphs_type.contact_style_3
+id: paragraph.contact_style_3.field_tag_line
+field_name: field_tag_line
+entity_type: paragraph
+bundle: contact_style_3
+label: 'Tag Line'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

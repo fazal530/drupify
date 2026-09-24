@@ -1,0 +1,25 @@
+{{ attach_library('drupify/drupify_homepage') }}
+
+<div class="drupify-home drupify-search-page" id="page-wrapper">
+  <a class="drupify-skip-link" href="#main-content">{{ 'Skip to main content'|t }}</a>
+
+  {% include '@drupify/includes/drupify-header.html.twig' %}
+
+  <main id="main-content" tabindex="-1">
+    <section class="drupify-page-hero drupify-section">
+      <div class="drupify-container">
+        <p class="drupify-eyebrow">{{ 'Drupify search'|t }}</p>
+        <h1>{{ search_banner_title ? search_banner_title : 'Search results'|t }}</h1>
+        <p class="drupify-lead">{{ 'Find pages, blog posts, portfolio work, and services across the site.'|t }}</p>
+      </div>
+    </section>
+
+    <section class="drupify-section">
+      <div class="drupify-container">
+        {{ page.content }}
+      </div>
+    </section>
+  </main>
+
+  {% include '@drupify/includes/drupify-footer.html.twig' %}
+</div>

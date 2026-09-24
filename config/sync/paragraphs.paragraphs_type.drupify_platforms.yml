@@ -1,0 +1,10 @@
+uuid: 4c178a77-f70a-4aa4-94c8-7b8f971a413a
+langcode: en
+status: true
+dependencies: {  }
+id: drupify_platforms
+label: 'Platforms & Technologies'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

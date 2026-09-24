@@ -1,0 +1,8 @@
+uuid: 64573e4a-75d5-4283-ae37-c25772fee3b8
+langcode: en
+status: true
+dependencies: {  }
+id: social_links
+label: 'Social Links'
+revision: false
+description: 'To Provide the Social Media Links'

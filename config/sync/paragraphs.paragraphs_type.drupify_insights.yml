@@ -1,0 +1,10 @@
+uuid: a8fc8c54-37df-4573-848f-6548bd1023ab
+langcode: en
+status: true
+dependencies: {  }
+id: drupify_insights
+label: 'Latest Insights'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

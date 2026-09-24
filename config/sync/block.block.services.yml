@@ -1,0 +1,25 @@
+uuid: 88daa638-9243-4e8f-8d01-78b2c60e4367
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.services
+  module:
+    - system
+  theme:
+    - drupify
+id: services
+theme: drupify
+region: footer_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:services'
+settings:
+  id: 'system_menu_block:services'
+  label: SERVICES
+  label_display: visible
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility: {  }

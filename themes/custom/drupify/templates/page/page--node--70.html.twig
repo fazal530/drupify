@@ -1,0 +1,72 @@
+{{ attach_library('drupify/drupify_homepage') }}
+
+<div class="drupify-home drupify-careers-page" id="page-wrapper">
+  <a class="drupify-skip-link" href="#main-content">{{ 'Skip to main content'|t }}</a>
+
+  {% include '@drupify/includes/drupify-header.html.twig' %}
+
+  <main id="main-content" tabindex="-1">
+    <section class="drupify-page-hero drupify-section">
+      <div class="drupify-container drupify-page-hero-grid">
+        <div>
+          <p class="drupify-eyebrow">{{ 'Careers at Drupify'|t }}</p>
+          <h1>{{ 'Build dependable Drupal work with a team that cares about quality.'|t }}</h1>
+          <p class="drupify-lead">{{ 'Drupify is hiring engineers, themers, and consultants who care about stable, maintainable Drupal delivery. Open roles are listed below.'|t }}</p>
+          <div class="drupify-actions">
+            <a class="drupify-button drupify-button-primary" href="#open-roles">{{ 'View open roles'|t }}</a>
+            <a class="drupify-button drupify-button-secondary" href="{{ base_path }}about-us">{{ 'Meet the team'|t }}</a>
+          </div>
+        </div>
+
+        <div class="drupify-service-overview">
+          <span>{{ 'How we work'|t }}</span>
+          <ol>
+            <li>{{ 'Focused technical delivery'|t }}</li>
+            <li>{{ 'Clear scope and honest planning'|t }}</li>
+            <li>{{ 'Maintainable, documented builds'|t }}</li>
+            <li>{{ 'Long-term support and improvements'|t }}</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="drupify-section drupify-muted" id="open-roles" aria-labelledby="open-roles-title">
+      <div class="drupify-container">
+        <div class="drupify-section-head">
+          <p class="drupify-eyebrow">{{ 'Open roles'|t }}</p>
+          <h2 id="open-roles-title">{{ 'Roles we are hiring for right now.'|t }}</h2>
+          <p>{{ 'Every role is on-site or remote-friendly and backed by Drupify\u0027s delivery support.'|t }}</p>
+        </div>
+
+        <div class="drupify-service-grid drupify-service-page-grid">
+          {% for career in drupify_careers %}
+            <article>
+              <span>{{ 'Full time'|t }}</span>
+              <h3>{{ career.title }}</h3>
+              <p>{{ career.summary ?: 'Join Drupify and help clients ship dependable Drupal work.'|t }}</p>
+              <a class="drupify-text-link" href="{{ career.url }}">{{ 'View role'|t }}</a>
+            </article>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <section class="drupify-audit-band" aria-labelledby="careers-cta-title">
+      <div class="drupify-container drupify-audit-inner">
+        <div>
+          <p class="drupify-eyebrow">{{ 'Not ready to apply?'|t }}</p>
+          <h2 id="careers-cta-title">{{ 'We can also help with your Drupal delivery.'|t }}</h2>
+          <p>{{ 'Send the site and the problem. Drupify can recommend a fix, upgrade, theme, or support path.'|t }}</p>
+          <ul class="drupify-audit-list">
+            <li>{{ 'Free technical review'|t }}</li>
+            <li>{{ 'No-pressure advice'|t }}</li>
+            <li>{{ 'Recommend a team or a path'|t }}</li>
+          </ul>
+        </div>
+        <a class="drupify-button drupify-button-light" href="{{ base_path }}contact-us">{{ 'Talk to Drupify'|t }}</a>
+      </div>
+    </section>
+  </main>
+
+  {% include '@drupify/includes/drupify-footer.html.twig' %}
+</div>

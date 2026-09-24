@@ -1,0 +1,27 @@
+uuid: a1cd9531-1fda-471c-ad4b-dc718d00dd19
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.blog_2_column.field_blog
+    - paragraphs.paragraphs_type.blog_2_column
+  module:
+    - viewsreference
+id: paragraph.blog_2_column.default
+targetEntityType: paragraph
+bundle: blog_2_column
+mode: default
+content:
+  field_blog:
+    type: viewsreference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

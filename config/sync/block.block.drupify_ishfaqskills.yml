@@ -1,0 +1,28 @@
+uuid: 05275535-95d6-4fba-9f1f-579db1c79921
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:skills:673532d5-4a64-456d-849e-809a6c385dba'
+  module:
+    - block_content
+    - system
+  theme:
+    - drupify
+id: drupify_ishfaqskills
+theme: drupify
+region: content
+weight: -10
+provider: null
+plugin: 'block_content:673532d5-4a64-456d-849e-809a6c385dba'
+settings:
+  id: 'block_content:673532d5-4a64-456d-849e-809a6c385dba'
+  label: 'Ishfaq Skills'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /portfolio/ishfaq

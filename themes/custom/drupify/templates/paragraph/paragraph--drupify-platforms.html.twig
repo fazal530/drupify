@@ -1,0 +1,27 @@
+{#
+/**
+ * @file paragraph--drupify-platforms.html.twig
+ * Platforms & Technologies section.
+ */
+#}
+<section class="drupify-section-tight" aria-labelledby="proof-title">
+  <div class="drupify-container">
+    <div class="drupify-section-head drupify-compact">
+      {% if content.field_eyebrow|render %}
+        <p class="drupify-eyebrow">{{ content.field_eyebrow }}</p>
+      {% endif %}
+      {% if content.field_title|render %}
+        <h2 id="proof-title">{{ content.field_title }}</h2>
+      {% endif %}
+    </div>
+    {% if paragraph.field_items.value %}
+      <div class="drupify-proof-grid">
+        {% for item in paragraph.field_items.value|split('\n') %}
+          {% if item|trim %}
+            <span>{{ item|trim }}</span>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</section>

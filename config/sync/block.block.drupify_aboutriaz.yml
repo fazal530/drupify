@@ -1,0 +1,28 @@
+uuid: 9d356231-1f06-4a8e-966d-9bb5e8b92717
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:about_me:16650bdc-7984-4672-8af7-f490f3914100'
+  module:
+    - block_content
+    - system
+  theme:
+    - drupify
+id: drupify_aboutriaz
+theme: drupify
+region: content
+weight: -14
+provider: null
+plugin: 'block_content:16650bdc-7984-4672-8af7-f490f3914100'
+settings:
+  id: 'block_content:16650bdc-7984-4672-8af7-f490f3914100'
+  label: 'About Riaz'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /portfolio/riaz

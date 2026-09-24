@@ -1,0 +1,23 @@
+uuid: 7d994833-ab1a-4853-8394-71f8cae203c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_reference_sections
+    - paragraphs.paragraphs_type.drupify_why
+  module:
+    - entity_reference_revisions
+id: paragraph.drupify_why.field_reference_sections
+field_name: field_reference_sections
+entity_type: paragraph
+bundle: drupify_why
+label: 'Why items'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings: {  }
+field_type: entity_reference_revisions

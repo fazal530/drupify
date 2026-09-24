@@ -1,0 +1,35 @@
+uuid: 4c4229ec-64d0-48ad-bea4-53e37589b78f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_cta
+    - field.storage.block_content.field_footer_cta
+  module:
+    - entity_reference_revisions
+id: block_content.footer_cta.field_footer_cta
+field_name: field_footer_cta
+entity_type: block_content
+bundle: footer_cta
+label: 'Footer Cta'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: {  }
+    negate: 0
+    target_bundles_drag_drop:
+      contact_social:
+        weight: 4
+        enabled: false
+      footer_cta:
+        weight: 5
+        enabled: true
+      social_links:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,36 @@
+uuid: 1fa31714-2bd7-423a-8378-cad207f71507
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:blogs_side_bar:4e2ed061-250a-47d9-a85a-aa64c00b4d20'
+  module:
+    - block_content
+    - node
+    - system
+  theme:
+    - drupify
+id: blogssidebardetailspage
+theme: drupify
+region: sidebar_second
+weight: -11
+provider: null
+plugin: 'block_content:4e2ed061-250a-47d9-a85a-aa64c00b4d20'
+settings:
+  id: 'block_content:4e2ed061-250a-47d9-a85a-aa64c00b4d20'
+  label: 'Blogs Sidebar - Details page'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      blog: blog
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/91

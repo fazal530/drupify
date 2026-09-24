@@ -1,0 +1,32 @@
+uuid: a6df636e-c1a0-4501-9741-84ce0f3485a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.drupify_testimonial_item.field_item_author
+    - field.field.paragraph.drupify_testimonial_item.field_item_quote
+    - paragraphs.paragraphs_type.drupify_testimonial_item
+id: paragraph.drupify_testimonial_item.default
+targetEntityType: paragraph
+bundle: drupify_testimonial_item
+mode: default
+content:
+  field_item_author:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_item_quote:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

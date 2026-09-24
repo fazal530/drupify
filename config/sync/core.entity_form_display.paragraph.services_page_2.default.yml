@@ -1,0 +1,27 @@
+uuid: a226ff72-3392-43c9-a4f4-54df8827e195
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.services_page_2.field_service
+    - paragraphs.paragraphs_type.services_page_2
+  module:
+    - viewsreference
+id: paragraph.services_page_2.default
+targetEntityType: paragraph
+bundle: services_page_2
+mode: default
+content:
+  field_service:
+    type: viewsreference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

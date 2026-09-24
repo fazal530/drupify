@@ -1,0 +1,28 @@
+uuid: ab77ae00-5a70-44c3-bb1e-6a97b656299e
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:advertisement:2cf45623-8932-4887-917b-9d492b907df5'
+  module:
+    - block_content
+    - system
+  theme:
+    - drupify
+id: advertidement
+theme: drupify
+region: sidebar_second
+weight: -13
+provider: null
+plugin: 'block_content:2cf45623-8932-4887-917b-9d492b907df5'
+settings:
+  id: 'block_content:2cf45623-8932-4887-917b-9d492b907df5'
+  label: Advertisement
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/9999

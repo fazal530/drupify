@@ -1,0 +1,23 @@
+uuid: cf9670a7-a6db-4ae7-aac0-332ae076d3de
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:footer_cta:42e56946-9472-45db-9c44-b5bec04c5b04'
+  module:
+    - block_content
+  theme:
+    - drupify
+id: footercta
+theme: drupify
+region: footer_first
+weight: 0
+provider: null
+plugin: 'block_content:42e56946-9472-45db-9c44-b5bec04c5b04'
+settings:
+  id: 'block_content:42e56946-9472-45db-9c44-b5bec04c5b04'
+  label: 'Footer CTA'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility: {  }

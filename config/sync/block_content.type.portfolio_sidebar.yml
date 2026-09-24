@@ -1,0 +1,8 @@
+uuid: 72e81607-6c3f-437f-8da5-ef9315d80fe2
+langcode: en
+status: true
+dependencies: {  }
+id: portfolio_sidebar
+label: 'Portfolio Sidebar'
+revision: false
+description: 'This Sidebar Contains both Services and Advertisement  as sidebar'

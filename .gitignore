@@ -1,0 +1,68 @@
+# macOS/local editor noise.
+.DS_Store
+*/.DS_Store
+
+# Composer/npm dependencies are restored from lock files.
+/vendor/
+/node_modules/
+
+# Composer-managed Drupal packages.
+/core/
+/modules/contrib/
+/themes/contrib/
+/profiles/contrib/
+/drush/Commands/contrib/
+
+# Drupal local/private configuration.
+/sites/*/*settings*.php
+!/sites/*/default.settings.php
+/sites/*/*services*.yml
+!/sites/*/default.services.yml
+
+# User-uploaded/generated Drupal files.
+/sites/*/files/
+/sites/*/private/
+
+# Local environment/secret files (never commit).
+.env
+.env.*
+!.env.example
+
+# Database dumps and local exports.
+*.sql
+*.sql.gz
+*.mysql
+*.dump
+*.zip
+*.tar
+*.tgz
+/drupify-clean-backup.sql
+
+# DDEV generated runtime/build files.
+/.ddev/.dbimageBuild/
+/.ddev/.homeadditions/
+/.ddev/.webimageBuild/
+/.ddev/.ddev-docker-compose-*.yaml
+/.ddev/db_snapshots/
+/.ddev/mutagen/
+/.ddev/traefik/
+
+# Temporary local helper/debug files.
+/_t.php
+/_t2.php
+/_thedump*.php
+/_setlogo.php
+
+# Local visual QA artifacts.
+/visual-screenshots/
+/visual-comparison/
+/design-prototype/
+
+# Local archives generated during cleanup.
+/_archive/
+
+# Environment-specific Drupal config containing secrets.
+/config/sync/smtp.settings.yml
+/config/sync/recaptcha_v3.settings.yml
+/INSTALL.txt
+/example.gitignore

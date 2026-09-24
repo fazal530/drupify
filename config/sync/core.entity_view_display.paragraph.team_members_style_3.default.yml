@@ -1,0 +1,53 @@
+uuid: 7d4422f2-160d-4fa6-ad9f-f0ff8b963c84
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.team_members_style_3.field_background_style
+    - field.field.paragraph.team_members_style_3.field_section_title
+    - field.field.paragraph.team_members_style_3.field_tag_line
+    - field.field.paragraph.team_members_style_3.field_team_member_
+    - paragraphs.paragraphs_type.team_members_style_3
+  module:
+    - text
+    - viewsreference
+id: paragraph.team_members_style_3.default
+targetEntityType: paragraph
+bundle: team_members_style_3
+mode: default
+content:
+  field_background_style:
+    type: boolean
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_section_title:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_tag_line:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_team_member_:
+    type: viewsreference_formatter
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

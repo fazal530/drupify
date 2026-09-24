@@ -1,0 +1,19 @@
+uuid: 92dc1fed-6498-45ef-9a01-4ca788a3cd45
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.drupify_faq
+id: paragraph.drupify_faq.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: drupify_faq
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

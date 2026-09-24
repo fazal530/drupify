@@ -1,0 +1,10 @@
+{#
+/**
+ * @file paragraph--drupify-faq-item.html.twig
+ * Single FAQ item.
+ */
+#}
+<div class="drupify-faq-item">
+  <button type="button" aria-expanded="false">{{ paragraph.field_item_question.value }}</button>
+  <div hidden>{{ paragraph.field_item_answer.processed|raw }}</div>
+</div>

@@ -1,0 +1,26 @@
+uuid: 72b39df6-0fe8-482b-9a85-3e496c511429
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupify
+_core:
+  default_config_hash: ItFhhiUOoeR7oIq73ZaCV7PAYrOwXZ-9fazMzF5DJXM
+id: drupify_page_title
+theme: drupify
+region: breadcrumb
+weight: -15
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/portfolio\r\n/portfolio/*\r\n"

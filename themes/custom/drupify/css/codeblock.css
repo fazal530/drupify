@@ -1,0 +1,94 @@
+.code-block {
+    background-color: #f8f9fa;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: normal;
+    padding: 1rem 1.5rem;
+    display: inline-block;
+    width: 100%;
+    overflow-x: auto;
+    word-wrap: break-word;
+    word-break: break-word;
+  }
+  .code-block pre {
+    padding: 0;
+    margin-top: 0.65rem;
+    margin-bottom: 0.65rem;
+    white-space: pre;
+    background-color: transparent;
+    border: 0;
+  }
+  .code-block {
+    position: relative;
+  }
+  .code-block .clipboard {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: 1px solid #ccc;
+  }
+  .code-block .clipboard:before {
+    content: "\f0ea";
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+  code[class*="language-"],
+  pre[class*="language-"] {
+    color: #393a34;
+    font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier,
+      monospace;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    font-size: 0.95em;
+    line-height: 1.2em;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+  pre[class*="language-"]::-moz-selection,
+  pre[class*="language-"] ::-moz-selection,
+  code[class*="language-"]::-moz-selection,
+  code[class*="language-"] ::-moz-selection {
+    background: #b3d4fc;
+  }
+  pre[class*="language-"]::selection,
+  pre[class*="language-"] ::selection,
+  code[class*="language-"]::selection,
+  code[class*="language-"] ::selection {
+    background: #b3d4fc;
+  }
+  code[class*="language-"],
+  pre[class*="language-"] {
+    line-height: 1.4em;
+  }
+  .token.comment,
+  .token.prolog,
+  .token.doctype,
+  .token.cdata {
+    color: #c1c1c1;
+  }
+  pre[class*="language-"] {
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+    border: none;
+  }
+  :not(pre) > code[class*="language-"] {
+    padding: 0.2em;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background: #f8f8f8;
+    border: 1px solid #dddddd;
+  }

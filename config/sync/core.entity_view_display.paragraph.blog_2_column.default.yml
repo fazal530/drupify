@@ -1,0 +1,24 @@
+uuid: 28c4b878-da4a-4f4e-b9e1-d1477406e131
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.blog_2_column.field_blog
+    - paragraphs.paragraphs_type.blog_2_column
+  module:
+    - viewsreference
+id: paragraph.blog_2_column.default
+targetEntityType: paragraph
+bundle: blog_2_column
+mode: default
+content:
+  field_blog:
+    type: viewsreference_formatter
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

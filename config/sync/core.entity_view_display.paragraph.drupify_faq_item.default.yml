@@ -1,0 +1,32 @@
+uuid: 40308df6-a761-4d7b-a313-351ec74cf507
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.drupify_faq_item.field_item_answer
+    - field.field.paragraph.drupify_faq_item.field_item_question
+    - paragraphs.paragraphs_type.drupify_faq_item
+  module:
+    - text
+id: paragraph.drupify_faq_item.default
+targetEntityType: paragraph
+bundle: drupify_faq_item
+mode: default
+content:
+  field_item_answer:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_item_question:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

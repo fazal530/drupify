@@ -1,0 +1,33 @@
+<div class="full-width">
+    <div class="content aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
+        {{ content.body.0 }}
+        {{ content.field_detail_images }}
+        {{ content.field_contents.0 }}
+    </div>
+    <div class="tags-social aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
+        {% if content.field_blog_category[0] %} 
+            <p class="tags">
+            <span>TAGS : </span>
+            <span>
+            {% for key,value in content.field_blog_category['#items'] %}
+                {% if key == 0 %}
+                    {{ content.field_blog_category[key] }}
+                {% else %}
+                    , {{ content.field_blog_category[key] }}
+                {% endif %}
+            {% endfor %}
+            </span>
+            </p>
+        {% endif %}
+        {{share}}
+    </div>
+    {{prev_next}}
+    <div class="comments aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
+        <div class="comment-title">
+            <h4>COMMENTS</h4>
+        </div>
+        {{ content.field_comment }}
+        <p class="text-center comment-restrict"><a href="/user/login" title="title">Login</a> or <a href="/user/register" title="title">Register</a> to post comments.</p>
+    </div>
+</div>
+           

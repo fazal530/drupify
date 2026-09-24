@@ -1,0 +1,979 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the SASS Starterkit subtheme.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Url;
+use Drupal\file\Entity\File;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Component\Utility\Html;
+use Drupal\Component\Utility\Unicode;
+use Symfony\Component\HttpKernel\Exception\HttpExceptionInterface;
+/**
+ * Implements hook_form_system_theme_settings_alter() for settings form.
+ *
+ * Replace Barrio setting options with subtheme ones.
+ *
+ * Example on how to alter theme settings form
+ */
+
+function drupify_preprocess_html(&$variables) {
+  
+  $variables['time'] = \Drupal::time()->getCurrentTime();
+  global $base_url;
+  $variables['base_url'] = $base_url;
+  $variables['show_pannel'] = theme_get_setting('show_pannel');
+  $variables['primary_color'] = theme_get_setting('primary_color');
+  $variables['secondary_color'] = theme_get_setting('secondary_color');
+  $variables['default_color'] = theme_get_setting('default_color');
+  $variables['sticky'] = theme_get_setting('sticky');
+  $variables['loader'] = theme_get_setting('loader');
+  $variables['styles'] = theme_get_setting('styles');
+  // header
+  $variables['header_variation'] = theme_get_setting('header_variation');
+  $variables['color_set'] = ['set_1' => [
+      'title' => t('color_set_1'),
+      'name' => t('Combo 1'),
+      'colors' => [
+        'primary_color' => '#1b1c21',
+        'secondary_color' => '#5e5e5e',
+      ],
+    ],
+    'set_2' => [
+      'title' => t('color_set_2'),
+      'name' => t('Combo 2'),
+      'colors' => [
+      'primary_color' => '#d2a679',
+      'secondary_color' => '#014b5f',
+      ],
+    ],
+    'set_3' => [
+      'title' => t('color_set_3'),
+      'name' => t('Combo 3'),
+      'colors' => [
+      'primary_color' => '#257378',
+      'secondary_color' => '#153156',
+      ],
+    ],
+    'set_4' => [
+      'title' => t('color_set_4'),
+      'name' => t('Combo 4'),
+      'colors' => [
+      'primary_color' => '#cd6767',
+      'secondary_color' => '#282828',
+      ],
+    ],
+    'set_5' => [
+      'title' => t('color_set_5'),
+      'name' => t('Combo 5'),
+      'colors' => [
+      'primary_color' => '#9f0678',
+      'secondary_color' => '#153156',
+      ],
+    ],
+    'set_6' => [
+      'title' => t('color_set_6'),
+      'name' => t('Combo 6'),
+      'colors' => [
+      'primary_color' => '#608735',
+      'secondary_color' => '#000000',
+      ],
+    ],
+    'set_7' => [
+      'title' => t('color_set_7'),
+      'name' => t('Combo 7'),
+      'colors' => [
+      'primary_color' => '#c98723',
+      'secondary_color' => '#041b45',
+      ],
+    ],
+    'set_8' => [
+      'title' => t('color_set_8'),
+      'name' => t('Combo 8'),
+      'colors' => [
+      'primary_color' => '#f44336',
+      'secondary_color' => '#000000',
+      ],
+    ],
+    'set_9' => [
+      'title' => t('color_set_9'),
+      'name' => t('Combo 9'),
+      'colors' => [
+      'primary_color' => '#99321e',
+      'secondary_color' => '#014b5f',
+      ],
+    ],
+    'set_10' => [
+      'title' => t('color_set_10'),
+      'name' => t('Combo 10'),
+      'colors' => [
+      'primary_color' => '#257378',
+      'secondary_color' => '#000000',
+      ],
+    ],
+  ];
+
+}
+
+/**
+ * Builds the shared navigation/footer data for the redesigned Drupify pages.
+ */
+function drupify_drupify_layout_data() {
+  return [
+    'nav' => [
+      ['title' => t('Services'), 'url' => Url::fromUserInput('/services')->toString()],
+      ['title' => t('Portfolio'), 'url' => Url::fromUserInput('/portfolio')->toString()],
+      ['title' => t('Pricing'), 'url' => Url::fromUserInput('/pricing')->toString()],
+      ['title' => t('Blog'), 'url' => Url::fromUserInput('/blog')->toString()],
+      ['title' => t('About Us'), 'url' => Url::fromUserInput('/about-us')->toString()],
+      ['title' => t('Contact'), 'url' => Url::fromUserInput('/contact-us')->toString()],
+    ],
+    'footer' => [
+      'services' => [
+        ['title' => t('Custom Drupal Development'), 'url' => Url::fromUserInput('/service/custom-drupal-development')->toString()],
+        ['title' => t('Drupal Migration'), 'url' => Url::fromUserInput('/service/drupal-migration')->toString()],
+        ['title' => t('Drupal Theming & Design'), 'url' => Url::fromUserInput('/service/drupal-theming-and-design')->toString()],
+        ['title' => t('Drupal Support'), 'url' => Url::fromUserInput('/service/drupal-support')->toString()],
+      ],
+      'company' => [
+        ['title' => t('About Us'), 'url' => Url::fromUserInput('/about-us')->toString()],
+        ['title' => t('Team'), 'url' => Url::fromUserInput('/team')->toString()],
+        ['title' => t('Clients'), 'url' => Url::fromUserInput('/clients')->toString()],
+        ['title' => t('Portfolio'), 'url' => Url::fromUserInput('/portfolio')->toString()],
+        ['title' => t('Pricing'), 'url' => Url::fromUserInput('/pricing')->toString()],
+        ['title' => t('Contact'), 'url' => Url::fromUserInput('/contact-us')->toString()],
+      ],
+      'resources' => [
+        ['title' => t('Blog'), 'url' => Url::fromUserInput('/blog')->toString()],
+        ['title' => t('Free Drupal Audit'), 'url' => Url::fromUserInput('/contact-us')->toString()],
+        ['title' => t('Drupal Support'), 'url' => Url::fromUserInput('/service/drupal-support')->toString()],
+        ['title' => t('Upgrade Help'), 'url' => Url::fromUserInput('/service/drupal-migration')->toString()],
+      ],
+    ],
+  ];
+}
+
+/**
+ * Executes a drupify_home view display and returns node cards.
+ */
+function drupify_drupify_view_cards($display, $limit = 0) {
+  $view = \Drupal::entityTypeManager()->getStorage('view')->load('drupify_home');
+  if (!$view) {
+    return [];
+  }
+  $executable = $view->getExecutable();
+  $executable->setDisplay($display);
+  if ($limit) {
+    $executable->setItemsPerPage($limit);
+  }
+  $executable->execute();
+  $nids = [];
+  foreach ($executable->result as $row) {
+    $nids[] = $row->nid;
+  }
+  if (!$nids) {
+    return [];
+  }
+  $nodes = \Drupal::entityTypeManager()->getStorage('node')->loadMultiple($nids);
+  // Preserve view order.
+  $ordered = [];
+  foreach ($nids as $nid) {
+    if (isset($nodes[$nid]) && $nodes[$nid]->isPublished()) {
+      $ordered[] = drupify_drupify_node_card($nodes[$nid]);
+    }
+  }
+  return $ordered;
+}
+
+/**
+ * Loads published node cards for redesigned Drupal-driven pages.
+ */
+function drupify_drupify_node_cards($type, $limit = 0) {
+  $query = \Drupal::entityQuery('node')
+    ->condition('type', $type)
+    ->condition('status', 1)
+    ->sort('created', 'DESC')
+    ->accessCheck(TRUE);
+
+  if ($limit) {
+    $query->range(0, $limit);
+  }
+
+  $nids = $query->execute();
+  if (!$nids) {
+    return [];
+  }
+
+  $storage = \Drupal::entityTypeManager()->getStorage('node');
+  $nodes = $storage->loadMultiple($nids);
+  $cards = [];
+
+  foreach ($nodes as $node) {
+    $cards[] = drupify_drupify_node_card($node);
+  }
+
+  return $cards;
+}
+
+/**
+ * Loads published team member cards ordered by the editor-facing ordering field.
+ */
+function drupify_drupify_team_cards($limit = 0) {
+  $query = \Drupal::entityQuery('node')
+    ->condition('type', 'team_member_')
+    ->condition('status', 1)
+    ->sort('field_ordering', 'ASC')
+    ->sort('created', 'DESC')
+    ->accessCheck(TRUE);
+
+  if ($limit) {
+    $query->range(0, $limit);
+  }
+
+  $nids = $query->execute();
+  if (!$nids) {
+    return [];
+  }
+
+  $nodes = \Drupal::entityTypeManager()->getStorage('node')->loadMultiple($nids);
+  $cards = [];
+  foreach ($nodes as $node) {
+    $card = drupify_drupify_node_card($node);
+    $card['name'] = $node->hasField('field_name') && !$node->get('field_name')->isEmpty() ? $node->get('field_name')->value : $node->label();
+    $card['profile_link'] = $node->hasField('field_profile_link') && !$node->get('field_profile_link')->isEmpty() ? $node->get('field_profile_link')->value : '';
+    $cards[] = $card;
+  }
+
+  return $cards;
+}
+
+/**
+ * Loads published career cards for the redesigned careers page.
+ */
+function drupify_drupify_career_cards() {
+  $nids = \Drupal::entityQuery('node')
+    ->condition('type', 'career')
+    ->condition('status', 1)
+    ->sort('created', 'DESC')
+    ->accessCheck(TRUE)
+    ->execute();
+
+  if (!$nids) {
+    return [];
+  }
+
+  $nodes = \Drupal::entityTypeManager()->getStorage('node')->loadMultiple($nids);
+  $cards = [];
+  foreach ($nodes as $node) {
+    $card = drupify_drupify_node_card($node);
+    if (!empty($card['summary'])) {
+      $card['summary'] = $card['summary'];
+    }
+    $cards[] = $card;
+  }
+  return $cards;
+}
+
+/**
+ * Loads FAQ question/answer items from a drupify_faq paragraph.
+ */
+function drupify_drupify_faq_items() {
+  $storage = \Drupal::entityTypeManager()->getStorage('paragraph');
+  $query = $storage->getQuery()
+    ->condition('type', 'drupify_faq')
+    ->accessCheck(FALSE)
+    ->sort('id', 'ASC')
+    ->execute();
+
+  foreach ($query as $id) {
+    $faq = $storage->load($id);
+    if (!$faq) {
+      continue;
+    }
+    $refs = $faq->hasField('field_reference_sections') ? $faq->get('field_reference_sections')->getValue() : [];
+    $pids = array_column(array_filter($refs), 'target_id');
+    if (!$pids) {
+      continue;
+    }
+    $paras = $storage->loadMultiple($pids);
+    $items = [];
+    foreach ($pids as $pid) {
+      $item = $paras[$pid] ?? NULL;
+      if (!$item || $item->bundle() !== 'drupify_faq_item') {
+        continue;
+      }
+      $question = $item->hasField('field_item_question') ? $item->get('field_item_question')->value : '';
+      $answer = '';
+      if ($item->hasField('field_item_answer') && !$item->get('field_item_answer')->isEmpty()) {
+        $answer_text = $item->get('field_item_answer')->value;
+        $answer_format = $item->get('field_item_answer')->format;
+        $answer = check_markup($answer_text, $answer_format);
+      }
+      $items[] = [
+        'question' => $question,
+        'answer' => $answer,
+      ];
+    }
+    if (!$items) {
+      continue;
+    }
+    return [
+      'eyebrow' => $faq->hasField('field_eyebrow') && !$faq->get('field_eyebrow')->isEmpty() ? $faq->get('field_eyebrow')->value : t('FAQ'),
+      'title' => $faq->hasField('field_title') && !$faq->get('field_title')->isEmpty() ? $faq->get('field_title')->value : '',
+      'items' => $items,
+    ];
+  }
+
+  return ['eyebrow' => t('FAQ'), 'title' => '', 'items' => []];
+}
+
+/**
+ * Extracts a lightweight job detail array for a career node.
+ */
+function drupify_drupify_job_detail($node) {
+  $detail = [
+    'title' => $node->label(),
+    'summary' => '',
+    'description' => '',
+    'meta' => [],
+    'responsibilities_title' => t('Job responsibilities'),
+    'responsibilities' => [],
+    'apply_title' => t('Apply for this role'),
+  ];
+
+  if ($node->hasField('field_job_description') && !$node->get('field_job_description')->isEmpty()) {
+    $field_job_description = $node->get('field_job_description');
+    $first = $field_job_description->first();
+    $detail['description'] = check_markup($first->value, $first->format);
+    $detail['summary'] = $first->summary ?: '';
+  }
+
+  if ($node->hasField('field_job_details') && !$node->get('field_job_details')->isEmpty()) {
+    $jd = $node->get('field_job_details')->first()->entity;
+    if ($jd && $jd->hasField('field_detail')) {
+      foreach ($jd->get('field_detail') as $item) {
+        if (!$item->entity) {
+          continue;
+        }
+        $detail['meta'][] = [
+          'title' => $item->entity->get('field_title')->value,
+          'value' => $item->entity->get('field_description')->value,
+        ];
+      }
+    }
+  }
+
+  if ($node->hasField('field_job_responsibilities') && !$node->get('field_job_responsibilities')->isEmpty()) {
+    $jr = $node->get('field_job_responsibilities')->first()->entity;
+    if ($jr) {
+      if ($jr->get('field_title')->value) {
+        $detail['responsibilities_title'] = $jr->get('field_title')->value;
+      }
+      foreach ($jr->get('field_responsibilities') as $r) {
+        $detail['responsibilities'][] = $r->value;
+      }
+    }
+  }
+
+  return $detail;
+}
+
+/**
+ * Converts one content node into a lightweight frontend card.
+ */
+function drupify_drupify_node_card($node) {
+  $card = [
+    'id' => $node->id(),
+    'type' => $node->bundle(),
+    'title' => $node->label(),
+    'url' => $node->toUrl()->toString(),
+    'summary' => '',
+    'image' => '',
+    'image_alt' => $node->label(),
+    'website_url' => '',
+    'website_title' => t('Visit live site'),
+    'category' => '',
+    'date_iso' => date('Y-m-d', $node->getCreatedTime()),
+    'date_label' => \Drupal::service('date.formatter')->format($node->getCreatedTime(), 'custom', 'M j, Y'),
+  ];
+
+  if ($node->hasField('body') && !$node->get('body')->isEmpty()) {
+    $body = $node->get('body')->first();
+    $text = $body->summary ?: Html::decodeEntities(strip_tags($body->value));
+    $card['summary'] = Unicode::truncate(trim(preg_replace('/\s+/', ' ', $text)), 180, TRUE, TRUE);
+  }
+
+  if ($node->hasField('field_image') && !$node->get('field_image')->isEmpty()) {
+    $image_item = $node->get('field_image')->first();
+    if ($image_item->entity) {
+      $card['image'] = \Drupal::service('file_url_generator')->generateString($image_item->entity->getFileUri());
+      $card['image_alt'] = $image_item->alt ?: $node->label();
+    }
+  }
+
+  if ($node->hasField('field_logo') && !$node->get('field_logo')->isEmpty()) {
+    $logo_item = $node->get('field_logo')->first();
+    if ($logo_item->entity) {
+      $card['image'] = \Drupal::service('file_url_generator')->generateString($logo_item->entity->getFileUri());
+      $card['image_alt'] = $logo_item->alt ?: $node->label();
+    }
+  }
+
+  if ($node->hasField('field_website_link') && !$node->get('field_website_link')->isEmpty()) {
+    $link = $node->get('field_website_link')->first();
+    $card['website_url'] = $link->uri ? Url::fromUri($link->uri)->toString() : '';
+    $card['website_title'] = $link->title ?: t('Visit live site');
+  }
+
+  foreach (['field_portfolio_category', 'field_blog_category', 'field_tags'] as $field_name) {
+    if ($node->hasField($field_name) && !$node->get($field_name)->isEmpty()) {
+      $labels = [];
+      foreach ($node->get($field_name)->referencedEntities() as $term) {
+        $labels[] = $term->label();
+      }
+      $card['category'] = implode(', ', $labels);
+      break;
+    }
+  }
+
+  if ($node->hasField('field_designation') && !$node->get('field_designation')->isEmpty()) {
+    $card['designation'] = $node->get('field_designation')->value;
+  }
+
+  return $card;
+}
+
+function drupify_preprocess_page(&$variables) {
+  $variables['header_variation'] = theme_get_setting('header_variation');
+  $variables['sticky'] = theme_get_setting('sticky');
+  $variables['loader'] = theme_get_setting('loader');
+  $variables['styles'] = theme_get_setting('styles');
+  $variables['primary_color'] = theme_get_setting('primary_color');
+  $variables['secondary_color'] = theme_get_setting('secondary_color');
+  $variables['default_color'] = theme_get_setting('default_color');
+  
+  // CopyRight
+    $variables['copyright_detail'] = theme_get_setting('copyright_detail')['value'];
+  //Footer Bg Image
+  $path = "";
+  if (!empty(theme_get_setting('footer_bg_image'))) {
+    $fid = theme_get_setting('footer_bg_image')[0];
+    if (!empty($fid)) {
+    $file =File::load($fid);
+    $path = Drupal::service('file_url_generator')->generateAbsoluteString($file->getFileUri());
+    }
+  }
+  $variables['footer_bg_image'] = $path;
+  //Page Banner 
+  $path = "";
+  if (!empty(theme_get_setting('banner_image'))) {
+    $fid = theme_get_setting('banner_image')[0];
+    if (!empty($fid)) {
+    $file =File::load($fid);
+    $path = Drupal::service('file_url_generator')->generateAbsoluteString($file->getFileUri());
+    }
+  }
+  $variables['banner_image'] = $path;
+  //Hamburber Icon
+  $path = "";
+  if (!empty(theme_get_setting('hamburger_icon'))) {
+    $fid = theme_get_setting('hamburger_icon')[0];
+    if (!empty($fid)) {
+    $file =File::load($fid);
+    $path = Drupal::service('file_url_generator')->generateAbsoluteString($file->getFileUri());
+    }
+  }
+  $variables['hamburger_icon'] = $path;
+  $variables['about_title'] = theme_get_setting('about_title');
+  $variables['about_site'] = theme_get_setting('about_site');
+  $variables['contact_title'] = theme_get_setting('contact_title');
+  $variables['contact_detail'] = theme_get_setting('contact_detail')['value'];
+  //Search Title
+  $variables['search_banner_title'] = theme_get_setting('search_banner_title');
+  $variables['drupify_layout'] = drupify_drupify_layout_data();
+  $variables['drupify_error_status'] = 0;
+
+  // Redesigned pages only compute view-derived cards when the active page
+  // template actually renders them, avoiding redundant queries on every page.
+  $drupify_services = [];
+  $drupify_portfolio = [];
+  $drupify_blogs = [];
+  $drupify_team = [];
+  $drupify_counts = [];
+  $drupify_careers = [];
+  $drupify_faqs = [];
+  $drupify_job = [];
+  $drupify_job_form = NULL;
+
+  $node = \Drupal::routeMatch()->getParameter('node');
+  $route_name = \Drupal::routeMatch()->getRouteName();
+  if ($node instanceof EntityInterface && $node->getEntityTypeId() === 'node') {
+    switch ($node->bundle()) {
+      case 'page':
+        if ((int) $node->id() === 80) {
+          // Services page template renders the service card grid.
+          $drupify_services = drupify_drupify_view_cards('block_services');
+        }
+        elseif ((int) $node->id() === 62) {
+          // About page template renders the team preview and company counts.
+          $drupify_team = drupify_drupify_team_cards(8);
+          $drupify_counts = [
+            'portfolio' => count(drupify_drupify_view_cards('block_work')),
+            'clients' => count(drupify_drupify_view_cards('block_clients')),
+            'team' => count(drupify_drupify_node_cards('team_member_')),
+          ];
+        }
+        elseif ((int) $node->id() === 87) {
+          // Blog listing page template renders the insights card grid.
+          $drupify_blogs = drupify_drupify_view_cards('block_insights');
+        }
+        elseif ((int) $node->id() === 70) {
+          // Careers page template renders the open roles card grid.
+          $drupify_careers = drupify_drupify_career_cards();
+        }
+        elseif ((int) $node->id() === 71) {
+          // FAQ page template renders the FAQ items.
+          $drupify_faqs = drupify_drupify_faq_items();
+        }
+        break;
+
+      case 'career':
+        // Career detail page template renders job meta, description, and
+        // responsibilities from the node and its paragraphs.
+        $drupify_job = drupify_drupify_job_detail($node);
+        $drupify_careers = drupify_drupify_career_cards();
+        break;
+
+      case 'service':
+      case 'industry':
+        // Service and industry page templates render the service card grid.
+        $drupify_services = drupify_drupify_view_cards('block_services');
+        break;
+
+      case 'portfolio':
+        $drupify_portfolio = drupify_drupify_view_cards('block_work');
+        break;
+
+      case 'blog':
+        $drupify_blogs = drupify_drupify_view_cards('block_insights');
+        break;
+    }
+  }
+  elseif ($route_name === 'view.original_files.page_3') {
+    $drupify_portfolio = drupify_drupify_view_cards('block_work');
+  }
+
+  $variables['drupify_services'] = $drupify_services;
+  $variables['drupify_portfolio'] = $drupify_portfolio;
+  $variables['drupify_blogs'] = $drupify_blogs;
+  $variables['drupify_clients'] = [];
+  $variables['drupify_team'] = $drupify_team;
+  $variables['drupify_counts'] = $drupify_counts;
+  $variables['drupify_careers'] = $drupify_careers;
+  $variables['drupify_faqs'] = $drupify_faqs;
+  $variables['drupify_job'] = $drupify_job;
+  $variables['drupify_job_form'] = $drupify_job_form;
+
+  $exception = \Drupal::requestStack()->getCurrentRequest()->attributes->get('exception');
+  if ($exception instanceof HttpExceptionInterface) {
+    $variables['drupify_error_status'] = $exception->getStatusCode();
+  }
+
+  if ($node instanceof EntityInterface && (int) $node->id() === 97) {
+    $webform = \Drupal::entityTypeManager()->getStorage('webform')->load('contact');
+    if ($webform) {
+      $variables['drupify_contact_form'] = \Drupal::entityTypeManager()
+        ->getViewBuilder('webform')
+        ->view($webform);
+    }
+  }
+
+  if ($node instanceof EntityInterface && $node->bundle() === 'career') {
+    $webform_name = 'cv_upload';
+    if ($node->hasField('field_cv_upload') && !$node->get('field_cv_upload')->isEmpty()) {
+      $webform_name = $node->get('field_cv_upload')->target_id;
+    }
+    $webform = \Drupal::entityTypeManager()->getStorage('webform')->load($webform_name);
+    if ($webform) {
+      $variables['drupify_job_form'] = \Drupal::entityTypeManager()
+        ->getViewBuilder('webform')
+        ->view($webform);
+    }
+  }
+
+}
+
+/**
+ * Implements hook_theme_suggestions_page_alter().
+ */
+function drupify_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+  $route_name = \Drupal::routeMatch()->getRouteName();
+  if ($route_name === 'view.blog.page') {
+    $suggestions[] = 'page__view__blog__page';
+  }
+  elseif ($route_name === 'view.team_member_.page') {
+    $suggestions[] = 'page__view__team_member__page';
+  }
+  elseif ($route_name === 'view.client_.page') {
+    $suggestions[] = 'page__view__client__page';
+  }
+  elseif ($route_name === 'system.404') {
+    $suggestions[] = 'page__system__404';
+  }
+  elseif ($route_name === 'system.403') {
+    $suggestions[] = 'page__system__403';
+  }
+  elseif ($route_name === 'user.login') {
+    $suggestions[] = 'page__user__login';
+  }
+  elseif ($route_name === 'user.register') {
+    $suggestions[] = 'page__user__register';
+  }
+  elseif ($route_name === 'user.pass') {
+    $suggestions[] = 'page__user__pass';
+  }
+  elseif ($route_name && str_starts_with($route_name, 'taxonomy.term')) {
+    $suggestions[] = 'page__taxonomy';
+  }
+}
+//<=========LOGIN PAGE===============>//
+function drupify_preprocess_user_login(&$variables) {
+  $variables['login_banner_title'] = theme_get_setting('login_banner_title');
+  $variables['login_title'] = theme_get_setting('login_title');
+  $variables['login_name_description'] = theme_get_setting('login_name_description');
+  $variables['login_password_description'] = theme_get_setting('login_password_description');
+  //Page Banner 
+  $path = "";
+  if (!empty(theme_get_setting('banner_image'))) {
+    $fid = theme_get_setting('banner_image')[0];
+    if (!empty($fid)) {
+    $file =File::load($fid);
+    $path = Drupal::service('file_url_generator')->generateAbsoluteString($file->getFileUri());
+    }
+  }
+  $variables['banner_image'] = $path;
+  //Company Logo
+  $path = "";
+  if (!empty(theme_get_setting('company_logo'))) {
+    $fid = theme_get_setting('company_logo')[0];
+    if (!empty($fid)) {
+    $file =File::load($fid);
+    $path = Drupal::service('file_url_generator')->generateAbsoluteString($file->getFileUri());
+    }
+  }
+  $variables['company_logo'] = $path;
+}
+//<=========REGISTER PAGE===============>/
+function drupify_preprocess_user_register(&$variables) {
+  $variables['register_banner_title'] = theme_get_setting('register_banner_title');
+  $variables['register_title'] = theme_get_setting('register_title');
+  $variables['register_name_description'] = theme_get_setting('register_name_description');
+  $variables['register_mail_description'] = theme_get_setting('register_mail_description');
+  //Page Banner 
+  $path = "";
+  if (!empty(theme_get_setting('banner_image'))) {
+    $fid = theme_get_setting('banner_image')[0];
+    if (!empty($fid)) {
+    $file =File::load($fid);
+    $path = Drupal::service('file_url_generator')->generateAbsoluteString($file->getFileUri());
+    }
+  }
+  $variables['banner_image'] = $path;
+  //Company Logo
+  $path = "";
+  if (!empty(theme_get_setting('company_logo'))) {
+    $fid = theme_get_setting('company_logo')[0];
+    if (!empty($fid)) {
+    $file =File::load($fid);
+    $path = Drupal::service('file_url_generator')->generateAbsoluteString($file->getFileUri());
+    }
+  }
+  $variables['company_logo'] = $path;
+}
+
+//<=========RESET PASSWORD PAGE===============>//
+function drupify_preprocess_user_pass(&$variables) {
+  $variables['reset_banner_title'] = theme_get_setting('reset_banner_title');
+  $variables['reset_page_title'] = theme_get_setting('reset_page_title');
+  $variables['reset_pass_name_description'] = theme_get_setting('reset_pass_name_description');
+  //Page Banner 
+  $path = "";
+  if (!empty(theme_get_setting('banner_image'))) {
+    $fid = theme_get_setting('banner_image')[0];
+    if (!empty($fid)) {
+    $file =File::load($fid);
+    $path = Drupal::service('file_url_generator')->generateAbsoluteString($file->getFileUri());
+    }
+  }
+  $variables['banner_image'] = $path;
+  //Company Logo
+  $path = "";
+  if (!empty(theme_get_setting('company_logo'))) {
+    $fid = theme_get_setting('company_logo')[0];
+    if (!empty($fid)) {
+    $file =File::load($fid);
+    $path = Drupal::service('file_url_generator')->generateAbsoluteString($file->getFileUri());
+    }
+  }
+  $variables['company_logo'] = $path;
+}
+//<============Maintenance Page===========>
+function drupify_preprocess_maintenance_page(&$variables) {
+  $variables['mode_type'] = theme_get_setting('mode_type');
+  //Maintenance
+  $variables['maintenance_mode_title'] = theme_get_setting('maintenance_mode_title')['value'];
+  $variables['maintenance_mode_description'] = theme_get_setting('maintenance_mode_description'); 
+    //Background Image
+    $path = "";
+    if (!empty(theme_get_setting('bg_image_m'))) {
+      $fid = theme_get_setting('bg_image_m')[0];
+      if (!empty($fid)) {
+      $file =File::load($fid);
+      $path = Drupal::service('file_url_generator')->generateAbsoluteString($file->getFileUri());
+      }
+    }
+    $variables['bg_image_m'] = $path;
+  //Coming Soon
+  $variables['coming_soon_title'] = theme_get_setting('coming_soon_title')['value'];
+  $variables['coming_soon_description'] = theme_get_setting('coming_soon_description');
+    //Background Image
+    $path = "";
+    if (!empty(theme_get_setting('bg_image_c'))) {
+      $fid = theme_get_setting('bg_image_c')[0];
+      if (!empty($fid)) {
+      $file =File::load($fid);
+      $path = Drupal::service('file_url_generator')->generateAbsoluteString($file->getFileUri());
+      }
+    }
+    $variables['bg_image_c'] = $path;
+    $variables['launch_date'] = theme_get_setting('launch_date');
+  $variables['#attached'] = [
+      'drupalSettings' => [
+          'custom_date' => $variables['custom_date'] = theme_get_setting('launch_date'),
+      ],
+  ];
+}
+
+function drupify_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if($form_id == 'user_login_form'){
+    $form['name']['#placeholder']= 'Username *';
+    $form['pass']['#placeholder'] = t('Password *');
+  }
+
+  if($form_id == 'user_register_form'){
+    $form['account']['mail']['#placeholder']= 'Email Id';
+    $form['account']['name']['#placeholder']= 'Username';
+    $form['actions']['submit']['#value'] = t('Register');  
+  }
+
+  if($form_id == 'user_pass'){
+    $form['name']['#attributes']['placeholder']= 'Username or Email Id';
+    $form['actions']['submit']['#value'] = t('Reset');  
+  }
+  
+}
+
+
+function drupify_preprocess_form(&$variables) {
+  global $base_url;
+  $variables['base_url'] = $base_url;
+}
+
+function drupify_preprocess_comment(&$variables) {
+  global $base_url;
+  $variables['base_url'] = $base_url;
+}
+
+
+function drupify_theme(&$existing, $type, $theme, $path) {
+  $hooks = array();
+  $hooks['user_login_form'] = array(
+   'render element' => 'form',
+   'template' => 'user-login-form',
+   'preprocess functions' => array(
+      'drupify_preprocess_user_login'
+   ),
+  );
+  $hooks['user_register_form'] = array(
+   'render element' => 'form',
+   'template' => 'user-register-form',
+   'preprocess functions' => array(
+      'drupify_preprocess_user_register'
+   ),
+  );
+  $hooks['user_pass'] = array(
+   'render element' => 'form',
+   'template' => 'user-pass-form',
+   'preprocess functions' => array(
+      'drupify_preprocess_user_pass'
+   ),
+  );
+  return $hooks;  
+}
+
+/**
+ * Searh Result Page.
+ **
+ */
+function drupify_preprocess_item_list__search_results(&$variables) {
+  global $base_url;
+  $variables['base_url'] = $base_url;
+  // Search Result count
+  $pager = \Drupal::service('pager.manager')->getPager();
+  if (!empty($pager)){
+    $count_results = $pager->getTotalItems();
+    $variables['total_items_count'] = $count_results;
+  }
+  else{
+    $variables['total_items_count'] = 0;
+  }
+  // Search Keyword
+  $current_path = \Drupal::request()->getpathInfo();
+  //echo $current_path;
+  if ($current_path == '/search/node') {
+    if (\Drupal::request()->query->has('keys')) {
+      $keywords = \Drupal::request()->query->get('keys');
+      $variables['keyword'] = $keywords;
+    }
+  }
+}
+
+function drupify_preprocess_node(&$variables){
+  if ($variables['node']->getType() == 'blog')
+    {
+      //Prev Next
+      $block = \Drupal\block\Entity\Block::load('views_block__blog_block_11');
+      $variables['prev_next'] = \Drupal::entityTypeManager()
+      ->getViewBuilder('block')
+      ->view($block);
+
+      // Add to any module
+      $block = \Drupal\block\Entity\Block::load('addtoanybuttons_2');
+      $variables['share'] = \Drupal::entityTypeManager()
+        ->getViewBuilder('block')
+        ->view($block);
+      
+    }
+    if ($variables['node']->getType() == 'portfolio')
+    {
+      // Add to any module
+      $block = \Drupal\block\Entity\Block::load('addtoanybuttons_2');
+      $variables['share'] = \Drupal::entityTypeManager()
+        ->getViewBuilder('block')
+        ->view($block);
+    }
+    
+}
+
+//Delta Value for Work Process Style 1
+function drupify_preprocess_paragraph__work_process_style_1(&$vars) {
+  $vars['delta'] = NULL;
+  foreach ($vars['paragraph']->getParentEntity()->field_work_process_style_1->getValue() as $delta => $item) {
+    if ($item['target_id'] === $vars['paragraph']->id()) {
+      $vars['delta'] = $delta;
+      break;
+    }
+  }
+}
+
+//Delta Value for Our Values Style 2
+function drupify_preprocess_paragraph__our_value_style_2(&$vars) {
+  $vars['delta'] = NULL;
+  foreach ($vars['paragraph']->getParentEntity()->field_our_value_style_2->getValue() as $delta => $item) {
+    if ($item['target_id'] === $vars['paragraph']->id()) {
+      $vars['delta'] = $delta;
+      break;
+    }
+  }
+}
+
+//Delta Value for History
+function drupify_preprocess_paragraph__history(&$vars) {
+  $vars['delta'] = NULL;
+  foreach ($vars['paragraph']->getParentEntity()->field_history->getValue() as $delta => $item) {
+    if ($item['target_id'] === $vars['paragraph']->id()) {
+      $vars['delta'] = $delta;
+      break;
+    }
+  }
+}
+
+function drupify_library_info_alter(&$libraries, $ext){
+  unset($libraries['form']);
+}
+
+
+/**
+ * Implements hook_preprocess_paragraph() for drupify card sections.
+ */
+function drupify_preprocess_paragraph__drupify_clients(&$variables) {
+  $variables['drupify_clients'] = drupify_drupify_view_cards('block_clients');
+}
+
+function drupify_preprocess_paragraph__drupify_work(&$variables) {
+  $variables['drupify_portfolio'] = drupify_drupify_view_cards('block_work');
+}
+
+function drupify_preprocess_paragraph__drupify_services(&$variables) {
+  $variables['drupify_services'] = drupify_drupify_view_cards('block_services');
+}
+
+function drupify_preprocess_paragraph__drupify_insights(&$variables) {
+  $variables['drupify_blogs'] = drupify_drupify_view_cards('block_insights');
+}
+
+/**
+ * Implements hook_preprocess_paragraph() to compute delta for child items.
+ */
+function drupify_preprocess_paragraph__drupify_process_item(&$variables) {
+  drupify_drupify_paragraph_delta($variables);
+}
+
+function drupify_preprocess_paragraph__drupify_why_item(&$variables) {
+  drupify_drupify_paragraph_delta($variables);
+}
+
+function drupify_preprocess_paragraph__drupify_pricing_item(&$variables) {
+  drupify_drupify_paragraph_delta($variables);
+}
+
+function drupify_preprocess_paragraph__drupify_testimonial_item(&$variables) {
+  drupify_drupify_paragraph_delta($variables);
+}
+
+function drupify_preprocess_paragraph__drupify_faq_item(&$variables) {
+  drupify_drupify_paragraph_delta($variables);
+}
+
+function drupify_drupify_paragraph_delta(&$variables) {
+  $variables['delta'] = NULL;
+  $parent = $variables['paragraph']->getParentEntity();
+  if ($parent && $parent->hasField('field_reference_sections')) {
+    foreach ($parent->get('field_reference_sections')->getValue() as $d => $item) {
+      if ($item['target_id'] === $variables['paragraph']->id()) {
+        $variables['delta'] = $d;
+        break;
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_block().
+ */
+function drupify_preprocess_block(&$variables) {
+  // Check if the block has content.field_resume.
+  if (isset($variables['content']['field_resume']) && !empty($variables['content']['field_resume']['#items'])) {
+    $media = $variables['content']['field_resume']['#items'][0]->entity;
+    if ($media && $media->hasField('field_media_file')) {
+      $file = $media->field_media_file->entity;
+      if ($file) {
+        $file_url = \Drupal::service('file_url_generator')->generateAbsoluteString($file->getFileUri());
+        $variables['resume_url'] = $file_url;
+      }
+    }
+  }
+}

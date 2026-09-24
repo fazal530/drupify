@@ -1,0 +1,90 @@
+uuid: 944be7a0-5009-473c-a0fe-fbe32cd2aa7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.drupify_hero.field_description
+    - field.field.paragraph.drupify_hero.field_eyebrow
+    - field.field.paragraph.drupify_hero.field_items
+    - field.field.paragraph.drupify_hero.field_link_title
+    - field.field.paragraph.drupify_hero.field_link_url
+    - field.field.paragraph.drupify_hero.field_secondary_title
+    - field.field.paragraph.drupify_hero.field_secondary_url
+    - field.field.paragraph.drupify_hero.field_title
+    - paragraphs.paragraphs_type.drupify_hero
+  module:
+    - text
+id: paragraph.drupify_hero.default
+targetEntityType: paragraph
+bundle: drupify_hero
+mode: default
+content:
+  field_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_eyebrow:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_items:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_link_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_link_url:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_secondary_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_secondary_url:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

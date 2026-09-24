@@ -1,0 +1,36 @@
+uuid: a5ca7b81-bdcb-48dd-996c-77c812ef00e5
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:portfolio_sidebar:90bef4db-6b77-465e-a75a-3b8742bd5601'
+  module:
+    - block_content
+    - node
+    - system
+  theme:
+    - drupify
+id: sidebar
+theme: drupify
+region: sidebar_second
+weight: -15
+provider: null
+plugin: 'block_content:90bef4db-6b77-465e-a75a-3b8742bd5601'
+settings:
+  id: 'block_content:90bef4db-6b77-465e-a75a-3b8742bd5601'
+  label: 'Portfolio SideBar'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      portfolio: portfolio
+  request_path:
+    id: request_path
+    negate: true
+    pages: /node/21

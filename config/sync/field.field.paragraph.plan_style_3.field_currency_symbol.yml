@@ -1,0 +1,21 @@
+uuid: a57692fd-1a13-4f03-b8d1-f8dcbb33075d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_currency_symbol
+    - paragraphs.paragraphs_type.plan_style_3
+  module:
+    - text
+id: paragraph.plan_style_3.field_currency_symbol
+field_name: field_currency_symbol
+entity_type: paragraph
+bundle: plan_style_3
+label: 'Currency Symbol'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

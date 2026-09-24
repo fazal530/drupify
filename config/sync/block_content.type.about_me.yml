@@ -1,0 +1,8 @@
+uuid: 6bb9ae38-f8a8-42af-a40e-8ae0b9249191
+langcode: en
+status: true
+dependencies: {  }
+id: about_me
+label: 'About me'
+revision: false
+description: 'This block consists for three field body field will contain CTA as will , image field and a title field'

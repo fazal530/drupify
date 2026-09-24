@@ -1,0 +1,25 @@
+uuid: cba05494-816c-4ad8-a602-3b76980e5945
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.support
+  module:
+    - system
+  theme:
+    - drupify
+id: support
+theme: drupify
+region: footer_third
+weight: 0
+provider: null
+plugin: 'system_menu_block:support'
+settings:
+  id: 'system_menu_block:support'
+  label: SUPPORT
+  label_display: visible
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility: {  }

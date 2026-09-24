@@ -1,0 +1,10 @@
+uuid: 121f6880-c40d-41f2-9ee9-0f1d955621ad
+langcode: en
+status: true
+dependencies: {  }
+id: drupify_testimonial_item
+label: 'Testimonial Item'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

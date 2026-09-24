@@ -1,0 +1,24 @@
+uuid: 80b83add-378d-4342-955b-521c8654d4cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.category_sidebar
+    - field.field.block_content.category_sidebar.field_category
+  module:
+    - entity_reference_revisions
+id: block_content.category_sidebar.default
+targetEntityType: block_content
+bundle: category_sidebar
+mode: default
+content:
+  field_category:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

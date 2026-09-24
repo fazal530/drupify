@@ -1,0 +1,11 @@
+{#
+/**
+ * @file paragraph--drupify-process-item.html.twig
+ * Single migration process step.
+ */
+#}
+<li>
+  <span>{{ '%02d'|format(delta + 1) }}</span>
+  <strong>{{ paragraph.field_item_title.value }}</strong>
+  <div class="drupify-process-description">{{ paragraph.field_item_description.processed|raw }}</div>
+</li>

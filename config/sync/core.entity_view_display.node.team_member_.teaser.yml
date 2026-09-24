@@ -1,0 +1,37 @@
+uuid: 6113daf1-db2d-478f-96d7-730a7295a9fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.team_member_.field_designation
+    - field.field.node.team_member_.field_front_page
+    - field.field.node.team_member_.field_image
+    - field.field.node.team_member_.field_meta_tags
+    - field.field.node.team_member_.field_name
+    - field.field.node.team_member_.field_ordering
+    - field.field.node.team_member_.field_profile_link
+    - field.field.node.team_member_.field_social_links
+    - node.type.team_member_
+  module:
+    - user
+id: node.team_member_.teaser
+targetEntityType: node
+bundle: team_member_
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_designation: true
+  field_front_page: true
+  field_image: true
+  field_meta_tags: true
+  field_name: true
+  field_ordering: true
+  field_profile_link: true
+  field_social_links: true

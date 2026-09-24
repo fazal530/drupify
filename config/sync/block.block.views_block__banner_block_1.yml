@@ -1,0 +1,42 @@
+uuid: 9c584767-f553-45c0-92ac-942565b72d3a
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.banner
+  module:
+    - node
+    - system
+    - views
+  theme:
+    - drupify
+id: views_block__banner_block_1
+theme: drupify
+region: breadcrumb
+weight: -18
+provider: null
+plugin: 'views_block:banner-block_1'
+settings:
+  id: 'views_block:banner-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: null
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      career: career
+      page: page
+      portfolio: portfolio
+      service: service
+      short_codes: short_codes
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/node/98\r\n"

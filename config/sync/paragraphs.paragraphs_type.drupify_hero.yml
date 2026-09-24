@@ -1,0 +1,10 @@
+uuid: 8ecc6583-2ec3-4ebc-b172-87331acbb96b
+langcode: en
+status: true
+dependencies: {  }
+id: drupify_hero
+label: Hero
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

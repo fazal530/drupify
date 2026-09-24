@@ -1,0 +1,9 @@
+uuid: 55394f25-e4ac-4168-a812-6c9235b99c5d
+langcode: en
+status: true
+dependencies: {  }
+name: Skills
+vid: skills
+description: 'Category for all skills relating to a Full Stack Developer'
+weight: 0
+new_revision: false

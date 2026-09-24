@@ -1,0 +1,67 @@
+{{ attach_library('drupify/drupify_homepage') }}
+
+{% set asset_base = base_path ~ 'sites/default/files' %}
+
+<div class="drupify-home drupify-maintenance-page" id="page-wrapper">
+  <section class="drupify-maintenance-inner">
+    <div class="drupify-container">
+      <a class="drupify-brand" href="{{ path('<front>') }}" aria-label="{{ 'Drupify home'|t }}">
+        <img src="{{ asset_base }}/2024-07/Drupify-logo.png" alt="Drupify">
+      </a>
+
+      {% if "1" in mode_type %}
+        <p class="drupify-eyebrow">{{ 'Maintenance mode'|t }}</p>
+        <h1>{{ maintenance_mode_title|raw }}</h1>
+        {% if maintenance_mode_description %}
+          <p class="drupify-lead">{{ maintenance_mode_description }}</p>
+        {% endif %}
+        {% if launch_date %}
+          <div class="drupify-countdown" id="drupify-countdown" data-deadline="{{ launch_date }}">
+            <div><strong class="drupify-cd-days">--</strong><span>{{ 'Days'|t }}</span></div>
+            <div><strong class="drupify-cd-hours">--</strong><span>{{ 'Hours'|t }}</span></div>
+            <div><strong class="drupify-cd-minutes">--</strong><span>{{ 'Mins'|t }}</span></div>
+            <div><strong class="drupify-cd-seconds">--</strong><span>{{ 'Secs'|t }}</span></div>
+          </div>
+        {% endif %}
+      {% else %}
+        <p class="drupify-eyebrow">{{ 'Coming soon'|t }}</p>
+        <h1>{{ coming_soon_title|raw }}</h1>
+        {% if coming_soon_description %}
+          <p class="drupify-lead">{{ coming_soon_description }}</p>
+        {% endif %}
+        {% if launch_date %}
+          <div class="drupify-countdown" id="drupify-countdown" data-deadline="{{ launch_date }}">
+            <div><strong class="drupify-cd-days">--</strong><span>{{ 'Days'|t }}</span></div>
+            <div><strong class="drupify-cd-hours">--</strong><span>{{ 'Hours'|t }}</span></div>
+            <div><strong class="drupify-cd-minutes">--</strong><span>{{ 'Mins'|t }}</span></div>
+            <div><strong class="drupify-cd-seconds">--</strong><span>{{ 'Secs'|t }}</span></div>
+          </div>
+        {% endif %}
+      {% endif %}
+
+      <a class="drupify-button drupify-button-primary" href="{{ path('<front>') }}">{{ 'Back to home'|t }}</a>
+    </div>
+  </section>
+</div>
+
+<script>
+(function () {
+  var el = document.getElementById('drupify-countdown');
+  if (!el || !el.dataset.deadline) {
+    return;
+  }
+  var deadline = new Date(el.dataset.deadline.replace(' ', 'T')).getTime();
+  function tick() {
+    var diff = Math.max(0, deadline - Date.now());
+    var s = Math.floor(diff / 1000);
+    el.querySelector('.drupify-cd-days').textContent = Math.floor(s / 86400);
+    el.querySelector('.drupify-cd-hours').textContent = Math.floor(s / 3600) % 24;
+    el.querySelector('.drupify-cd-minutes').textContent = Math.floor(s / 60) % 60;
+    el.querySelector('.drupify-cd-seconds').textContent = s % 60;
+    if (diff > 0) {
+      setTimeout(tick, 1000);
+    }
+  }
+  tick();
+})();
+</script>

@@ -1,0 +1,18 @@
+{#
+/**
+ * @file views-view-unformatted--team-member--page.html.twig
+ * Heading + grid wrapper for the /team view page.
+ */
+#}
+<div class="drupify-container drupify-team-view-head">
+  <div class="drupify-section-head">
+    <p class="drupify-eyebrow">{{ 'Team members'|t }}</p>
+    <h2>{{ 'A focused team for Drupal projects that need careful hands.'|t }}</h2>
+    <p>{{ 'Powered by the Team Member View, so profiles can be managed and ordered from Drupal admin.'|t }}</p>
+  </div>
+  <div class="drupify-team-view-grid">
+    {% for row in rows %}
+      {{ row.content }}
+    {% endfor %}
+  </div>
+</div>

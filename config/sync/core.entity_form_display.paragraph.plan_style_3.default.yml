@@ -1,0 +1,78 @@
+uuid: 29066375-020a-4a41-9868-3009dd4954c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.plan_style_3.field_benefits
+    - field.field.paragraph.plan_style_3.field_button_link
+    - field.field.paragraph.plan_style_3.field_currency_symbol
+    - field.field.paragraph.plan_style_3.field_highlight_it
+    - field.field.paragraph.plan_style_3.field_period_per
+    - field.field.paragraph.plan_style_3.field_price
+    - field.field.paragraph.plan_style_3.field_title
+    - paragraphs.paragraphs_type.plan_style_3
+  module:
+    - link
+    - text
+id: paragraph.plan_style_3.default
+targetEntityType: paragraph
+bundle: plan_style_3
+mode: default
+content:
+  field_benefits:
+    type: string_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_button_link:
+    type: link_default
+    weight: 6
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_currency_symbol:
+    type: text_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_highlight_it:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_period_per:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_price:
+    type: number
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

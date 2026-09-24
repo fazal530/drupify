@@ -1,0 +1,28 @@
+uuid: dbb42a73-8297-4071-b661-4dea58eacbf8
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:about_me:28f60b77-dd18-406a-8441-500ce7a44644'
+  module:
+    - block_content
+    - system
+  theme:
+    - drupify
+id: drupify_aboutishfaq
+theme: drupify
+region: content
+weight: -11
+provider: null
+plugin: 'block_content:28f60b77-dd18-406a-8441-500ce7a44644'
+settings:
+  id: 'block_content:28f60b77-dd18-406a-8441-500ce7a44644'
+  label: 'About Ishfaq'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /portfolio/ishfaq

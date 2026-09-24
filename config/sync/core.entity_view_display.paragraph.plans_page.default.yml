@@ -1,0 +1,24 @@
+uuid: e91faa35-f5d9-43cb-8f54-4f03061a0ffa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.plans_page.field_plan_page
+    - paragraphs.paragraphs_type.plans_page
+  module:
+    - entity_reference_revisions
+id: paragraph.plans_page.default
+targetEntityType: paragraph
+bundle: plans_page
+mode: default
+content:
+  field_plan_page:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

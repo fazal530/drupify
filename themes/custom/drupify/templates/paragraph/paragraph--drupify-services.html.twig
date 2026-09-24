@@ -1,0 +1,29 @@
+{#
+/**
+ * @file paragraph--drupify-services.html.twig
+ * Services section.
+ */
+#}
+<section class="drupify-section drupify-muted" id="services" aria-labelledby="services-title">
+  <div class="drupify-container">
+    <div class="drupify-section-head">
+      <p class="drupify-eyebrow">{{ content.field_eyebrow ?: 'Drupal services'|t }}</p>
+      <h2 id="services-title">{{ content.field_title }}</h2>
+      {% if content.field_description|render %}
+        <p>{{ content.field_description }}</p>
+      {% endif %}
+    </div>
+    {% if drupify_services %}
+      <div class="drupify-service-grid">
+        {% for service in drupify_services %}
+          <article>
+            <span>{{ service.category ?: 'Drupal service'|t }}</span>
+            <h3>{{ service.title }}</h3>
+            <p>{{ service.summary }}</p>
+            <a class="drupify-text-link" href="{{ service.url }}">{{ 'View service'|t }}</a>
+          </article>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</section>

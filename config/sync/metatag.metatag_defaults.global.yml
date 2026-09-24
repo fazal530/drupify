@@ -1,0 +1,21 @@
+uuid: c6be50dd-4dd9-4732-85a0-3be9942d4649
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sL588ui1E_8-2c_UupwyYxcqX2OVyMFp3HTLbbFqvPc
+id: global
+label: Global
+tags:
+  abstract: 'Drupify: Expert Drupal web development, specializing in seamless migration, customization, and maintenance for outstanding digital performance.'
+  canonical_url: '[current-page:url]'
+  description: "Welcome to Drupify, your trusted partner in expert Drupal web development. We specialize in seamless site migration, customization, and comprehensive maintenance for outstanding digital performance.\r\n\r\n\r\n\r\n"
+  image_src: 'https://drupify.com/sites/default/files/2024-07/Logo.png'
+  keywords: 'Drupal web development, Drupal site migration, Drupal customization, Drupal maintenance, Expert Drupal services, Web application development, Drupal portals, Mobile app development, Digital experience optimization, Drupal agency'
+  og_image: 'https://drupify.com/sites/default/files/2024-07/Logo.png'
+  og_image_secure_url: 'https://drupify.com/sites/default/files/2024-07/Logo.png'
+  og_image_type: image/png
+  og_image_url: 'https://drupify.com/sites/default/files/2024-07/Logo.png'
+  og_site_name: Drupify
+  robots: 'max-image-preview:standard'
+  title: '[current-page:title] | [site:name]'

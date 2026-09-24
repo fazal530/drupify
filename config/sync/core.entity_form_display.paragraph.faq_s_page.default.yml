@@ -1,0 +1,27 @@
+uuid: 5299aaa0-e769-462e-b01a-de4dd214c1c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.faq_s_page.field_faq
+    - paragraphs.paragraphs_type.faq_s_page
+  module:
+    - viewsreference
+id: paragraph.faq_s_page.default
+targetEntityType: paragraph
+bundle: faq_s_page
+mode: default
+content:
+  field_faq:
+    type: viewsreference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

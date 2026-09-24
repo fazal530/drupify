@@ -1,0 +1,145 @@
+{{ attach_library('drupify/drupify_homepage') }}
+
+{% set asset_base = base_path ~ 'sites/default/files' %}
+
+<div class="drupify-home drupify-pricing-page" id="page-wrapper">
+  <a class="drupify-skip-link" href="#main-content">{{ 'Skip to main content'|t }}</a>
+
+  {% include '@drupify/includes/drupify-header.html.twig' %}
+
+  <main id="main-content" tabindex="-1">
+    <section class="drupify-page-hero drupify-section">
+      <div class="drupify-container drupify-page-hero-grid">
+        <div>
+          <p class="drupify-eyebrow">{{ 'Drupal pricing'|t }}</p>
+          <h1>{{ 'Clear Drupal pricing paths before the scope grows.'|t }}</h1>
+          <p class="drupify-lead">{{ 'Start with the type of help you need. Drupify can turn that into a fixed quote, support plan, or migration roadmap after reviewing the site.'|t }}</p>
+          <div class="drupify-actions">
+            <a class="drupify-button drupify-button-primary" href="{{ base_path }}contact-us#contact-form">{{ 'Request a Quote'|t }}</a>
+            <a class="drupify-button drupify-button-secondary" href="{{ base_path }}services">{{ 'Explore Services'|t }}</a>
+          </div>
+        </div>
+
+        <div class="drupify-service-overview drupify-pricing-overview">
+          <span>{{ 'How pricing works'|t }}</span>
+          <ol>
+            <li>{{ 'Share the website and goal'|t }}</li>
+            <li>{{ 'Review version, theme, modules, and risk'|t }}</li>
+            <li>{{ 'Confirm scope and timeline'|t }}</li>
+            <li>{{ 'Choose fixed quote or monthly support'|t }}</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="drupify-section drupify-muted" aria-labelledby="pricing-paths-title">
+      <div class="drupify-container">
+        <div class="drupify-section-head">
+          <p class="drupify-eyebrow">{{ 'Pricing paths'|t }}</p>
+          <h2 id="pricing-paths-title">{{ 'Find the right starting point for your Drupal work.'|t }}</h2>
+          <p>{{ 'The goal is to make buying easier without pretending every Drupal site has the same scope, risk, or technical condition.'|t }}</p>
+        </div>
+
+        <div class="drupify-pricing-paths">
+          <article>
+            <span>{{ 'Audit & plan'|t }}</span>
+            <h3>{{ 'Free Drupal audit'|t }}</h3>
+            <p>{{ 'Best for teams who know something is wrong, outdated, slow, or risky but need a clear next step before committing budget.'|t }}</p>
+            <ul>
+              <li>{{ 'Core and contrib review'|t }}</li>
+              <li>{{ 'Theme and frontend risk notes'|t }}</li>
+              <li>{{ 'Upgrade or support recommendation'|t }}</li>
+            </ul>
+            <strong>{{ 'Start with consultation'|t }}</strong>
+          </article>
+          <article>
+            <span>{{ 'Fix & optimize'|t }}</span>
+            <h3>{{ 'Bug fixes, speed, tracking, and hardening'|t }}</h3>
+            <p>{{ 'Focused work for existing Drupal sites that need targeted improvements without a full redesign or migration.'|t }}</p>
+            <ul>
+              <li>{{ 'Drupal bug fixes'|t }}</li>
+              <li>{{ 'Speed optimization'|t }}</li>
+              <li>{{ 'Security audit and ads tracking setup'|t }}</li>
+            </ul>
+            <strong>{{ 'Fixed scope after review'|t }}</strong>
+          </article>
+          <article>
+            <span>{{ 'Build & migrate'|t }}</span>
+            <h3>{{ 'Upgrades, migrations, themes, and multisite work'|t }}</h3>
+            <p>{{ 'Project pricing for larger Drupal work where content, modules, theme behavior, integrations, and launch risk need planning.'|t }}</p>
+            <ul>
+              <li>{{ 'Drupal 7, 8, 9, 10 upgrade paths'|t }}</li>
+              <li>{{ 'Migrate website to Drupal'|t }}</li>
+              <li>{{ 'PSD to Drupal theme and cloud migration'|t }}</li>
+            </ul>
+            <strong>{{ 'Roadmap first, quote second'|t }}</strong>
+          </article>
+          <article>
+            <span>{{ 'Support'|t }}</span>
+            <h3>{{ 'Drupal website maintenance'|t }}</h3>
+            <p>{{ 'Ongoing support for updates, small improvements, release checks, module health, and practical help when your internal team is busy.'|t }}</p>
+            <ul>
+              <li>{{ 'Monthly maintenance'|t }}</li>
+              <li>{{ 'Update and release support'|t }}</li>
+              <li>{{ 'Agency overflow capacity'|t }}</li>
+            </ul>
+            <strong>{{ 'Monthly plan after audit'|t }}</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="drupify-section" aria-labelledby="included-title">
+      <div class="drupify-container drupify-split">
+        <div class="drupify-section-head drupify-align-start">
+          <p class="drupify-eyebrow">{{ 'What you get'|t }}</p>
+          <h2 id="included-title">{{ 'Pricing should explain risk, not hide it.'|t }}</h2>
+          <p>{{ 'A Drupal quote becomes more trustworthy when clients can see what has been checked and what is included in the work.'|t }}</p>
+        </div>
+
+        <div class="drupify-included-grid">
+          <article><strong>{{ 'Scope clarity'|t }}</strong><p>{{ 'What will be changed, migrated, repaired, or built.'|t }}</p></article>
+          <article><strong>{{ 'Technical review'|t }}</strong><p>{{ 'Drupal version, modules, theme, hosting, and integration notes.'|t }}</p></article>
+          <article><strong>{{ 'Timeline'|t }}</strong><p>{{ 'A practical delivery window based on risk and dependencies.'|t }}</p></article>
+          <article><strong>{{ 'Launch support'|t }}</strong><p>{{ 'Cache, deployment, redirects, QA, and rollback awareness.'|t }}</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="drupify-section drupify-muted" aria-labelledby="pricing-options-title">
+      <div class="drupify-container">
+        <div class="drupify-section-head">
+          <p class="drupify-eyebrow">{{ 'Common requests'|t }}</p>
+          <h2 id="pricing-options-title">{{ 'The page now groups the old pricing items into clearer buyer choices.'|t }}</h2>
+        </div>
+
+        <div class="drupify-pricing-menu">
+          <article><h3>{{ 'Website audit'|t }}</h3><p>{{ 'Review UX, frontend quality, Drupal health, and obvious conversion problems.'|t }}</p></article>
+          <article><h3>{{ 'Drupal bug fix'|t }}</h3><p>{{ 'Resolve broken features, theme issues, errors, and post-upgrade regressions.'|t }}</p></article>
+          <article><h3>{{ 'Security hardening'|t }}</h3><p>{{ 'Inspect update status, risky modules, permissions, and common Drupal exposure points.'|t }}</p></article>
+          <article><h3>{{ 'Speed optimization'|t }}</h3><p>{{ 'Improve caching, assets, images, templates, and frontend bottlenecks.'|t }}</p></article>
+          <article><h3>{{ 'Migration or upgrade'|t }}</h3><p>{{ 'Plan and execute Drupal version upgrades or migrations from another platform.'|t }}</p></article>
+          <article><h3>{{ 'Maintenance support'|t }}</h3><p>{{ 'Keep the site updated, stable, monitored, and ready for ongoing improvements.'|t }}</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="drupify-audit-band" aria-labelledby="pricing-cta-title">
+      <div class="drupify-container drupify-audit-inner">
+        <div>
+          <p class="drupify-eyebrow">{{ 'Next step'|t }}</p>
+          <h2 id="pricing-cta-title">{{ 'Send the site first. Get the right pricing path after review.'|t }}</h2>
+          <p>{{ 'This keeps the conversation honest: small fixes stay small, and complex migrations get the planning they need.'|t }}</p>
+          <ul class="drupify-audit-list">
+            <li>{{ 'Free first review'|t }}</li>
+            <li>{{ 'Fixed-scope quotes'|t }}</li>
+            <li>{{ 'Monthly support options'|t }}</li>
+          </ul>
+        </div>
+        <a class="drupify-button drupify-button-light" href="{{ base_path }}contact-us#contact-form">{{ 'Request a Quote'|t }}</a>
+      </div>
+    </section>
+  </main>
+
+  {% include '@drupify/includes/drupify-footer.html.twig' %}
+</div>

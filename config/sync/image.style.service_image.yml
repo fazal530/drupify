@@ -1,0 +1,21 @@
+uuid: 2fb60a87-8790-435c-a6a5-4204977d6736
+langcode: en
+status: true
+dependencies: {  }
+name: service_image
+label: 'service image'
+effects:
+  cc922513-09cc-46c7-a80a-410c2160483c:
+    uuid: cc922513-09cc-46c7-a80a-410c2160483c
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 360
+      height: 360
+      anchor: center-center
+  7ac27837-6886-4ec3-975a-4ec233258c34:
+    uuid: 7ac27837-6886-4ec3-975a-4ec233258c34
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

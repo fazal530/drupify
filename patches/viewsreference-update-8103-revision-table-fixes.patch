@@ -1,0 +1,24 @@
+diff --git a/viewsreference.install b/viewsreference.install
+index c5487c2..8a2ec69 100644
+--- a/viewsreference.install
++++ b/viewsreference.install
+@@ -34,6 +34,7 @@ function viewsreference_update_8102() {
+ function viewsreference_update_8103() {
+   // Retrieve list of all viewsreference fields mapped by entity type.
+   $entity_field_manager = \Drupal::service('entity_field.manager');
++  $types = \Drupal::entityTypeManager()->getDefinitions();
+   $field_map = $entity_field_manager->getFieldMapByFieldType('viewsreference');
+   foreach ($field_map as $entity_type_id => $fields) {
+     foreach ($fields as $field_name => $field) {
+@@ -42,8 +43,10 @@ function viewsreference_update_8103() {
+       $database = \Drupal::database();
+       $tables = [
+         "{$entity_type_id}__$field_name",
+-        "{$entity_type_id}_revision__$field_name",
+       ];
++      if($types[$entity_type_id]->isRevisionable()) {
++        $tables[] = "{$entity_type_id}_revision__$field_name";
++      }
+       $existing_data = [];
+       foreach ($tables as $table) {
+         // Get the old data.

@@ -1,0 +1,68 @@
+{{ attach_library('drupify/drupify_homepage') }}
+
+<div class="drupify-home drupify-faq-page" id="page-wrapper">
+  <a class="drupify-skip-link" href="#main-content">{{ 'Skip to main content'|t }}</a>
+
+  {% include '@drupify/includes/drupify-header.html.twig' %}
+
+  <main id="main-content" tabindex="-1">
+    <section class="drupify-page-hero drupify-section">
+      <div class="drupify-container drupify-page-hero-grid">
+        <div>
+          <p class="drupify-eyebrow">{{ 'FAQ'|t }}</p>
+          <h1>{{ 'Answers before you ask about a Drupal engagement.'|t }}</h1>
+          <p class="drupify-lead">{{ 'Straight answers about Drupal upgrades, migrations, theming, custom builds, support, and how Drupify works with clients.'|t }}</p>
+          <div class="drupify-actions">
+            <a class="drupify-button drupify-button-primary" href="#faq-list">{{ 'Browse questions'|t }}</a>
+            <a class="drupify-button drupify-button-secondary" href="{{ base_path }}contact-us">{{ 'Ask your own question'|t }}</a>
+          </div>
+        </div>
+
+        <div class="drupify-service-overview">
+          <span>{{ 'Common topics'|t }}</span>
+          <ol>
+            <li>{{ 'Upgrades and migrations'|t }}</li>
+            <li>{{ 'Custom Drupal development'|t }}</li>
+            <li>{{ 'Theming and design'|t }}</li>
+            <li>{{ 'Support and maintenance'|t }}</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="drupify-section drupify-muted">
+      <div class="drupify-container drupify-narrow">
+        <div class="drupify-section-head">
+          <p class="drupify-eyebrow">{{ drupify_faqs.eyebrow ?: 'FAQ' }}</p>
+          <h2>{{ drupify_faqs.title ?: 'Common questions before starting.' }}</h2>
+        </div>
+        <div class="drupify-faq-list" id="faq-list">
+          {% for faq in drupify_faqs.items %}
+            <div class="drupify-faq-item">
+              <button type="button" aria-expanded="false">{{ faq.question }}</button>
+              <div hidden>{{ faq.answer|raw }}</div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <section class="drupify-audit-band" aria-labelledby="faq-cta-title">
+      <div class="drupify-container drupify-audit-inner">
+        <div>
+          <p class="drupify-eyebrow">{{ 'Still unsure?'|t }}</p>
+          <h2 id="faq-cta-title">{{ 'Not every Drupal problem fits a standard answer.'|t }}</h2>
+          <p>{{ 'Send the site and the issue. Drupify can recommend whether to fix, upgrade, redesign, migrate, or support.'|t }}</p>
+          <ul class="drupify-audit-list">
+            <li>{{ 'Version risk check'|t }}</li>
+            <li>{{ 'Theme review'|t }}</li>
+            <li>{{ 'Upgrade planning'|t }}</li>
+          </ul>
+        </div>
+        <a class="drupify-button drupify-button-light" href="{{ base_path }}contact-us">{{ 'Request a free audit'|t }}</a>
+      </div>
+    </section>
+  </main>
+
+  {% include '@drupify/includes/drupify-footer.html.twig' %}
+</div>

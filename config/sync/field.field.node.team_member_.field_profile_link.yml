@@ -1,0 +1,19 @@
+uuid: 8de9ced0-f6de-4d07-96ee-0509eafbc7e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_profile_link
+    - node.type.team_member_
+id: node.team_member_.field_profile_link
+field_name: field_profile_link
+entity_type: node
+bundle: team_member_
+label: 'Profile Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

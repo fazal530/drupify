@@ -1,0 +1,75 @@
+uuid: ca24c510-ee0d-44dc-9dd1-cc867838c24f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contact_style_3.field_address
+    - field.field.paragraph.contact_style_3.field_contact_form_style_1
+    - field.field.paragraph.contact_style_3.field_contact_number
+    - field.field.paragraph.contact_style_3.field_description
+    - field.field.paragraph.contact_style_3.field_mail_address
+    - field.field.paragraph.contact_style_3.field_section_title
+    - field.field.paragraph.contact_style_3.field_tag_line
+    - paragraphs.paragraphs_type.contact_style_3
+  module:
+    - text
+    - webform
+id: paragraph.contact_style_3.default
+targetEntityType: paragraph
+bundle: contact_style_3
+mode: default
+content:
+  field_address:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_contact_form_style_1:
+    type: webform_entity_reference_entity_view
+    label: hidden
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_contact_number:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_mail_address:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_section_title:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_tag_line:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

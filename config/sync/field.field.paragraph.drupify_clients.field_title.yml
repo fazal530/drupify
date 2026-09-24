@@ -1,0 +1,19 @@
+uuid: c4324398-0937-42a0-a6fb-8fbf16ea8874
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.drupify_clients
+id: paragraph.drupify_clients.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: drupify_clients
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

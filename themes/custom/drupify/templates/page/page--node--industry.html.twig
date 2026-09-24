@@ -1,0 +1,91 @@
+{{ attach_library('drupify/drupify_homepage') }}
+
+{% set industry_summary = node.body.summary ?: node.body.value|striptags|slice(0, 220) %}
+
+<div class="drupify-home drupify-industry-detail-page" id="page-wrapper">
+  <a class="drupify-skip-link" href="#main-content">{{ 'Skip to main content'|t }}</a>
+
+  {% include '@drupify/includes/drupify-header.html.twig' %}
+
+  <main id="main-content" tabindex="-1">
+    <section class="drupify-page-hero drupify-section">
+      <div class="drupify-container drupify-page-hero-grid">
+        <div>
+          <p class="drupify-eyebrow">{{ 'Industry solution'|t }}</p>
+          <h1>{{ node.label }}</h1>
+          <p class="drupify-lead">{{ industry_summary }}</p>
+          <div class="drupify-actions">
+            <a class="drupify-button drupify-button-primary" href="{{ base_path }}contact-us">{{ 'Request industry audit'|t }}</a>
+            <a class="drupify-button drupify-button-secondary" href="{{ base_path }}services">{{ 'Explore services'|t }}</a>
+          </div>
+        </div>
+
+        <div class="drupify-service-overview">
+          <span>{{ 'Drupal priorities'|t }}</span>
+          <ol>
+            <li>{{ 'Clear content structure and publishing workflows'|t }}</li>
+            <li>{{ 'Accessible responsive frontend implementation'|t }}</li>
+            <li>{{ 'Secure forms, integrations, and maintenance planning'|t }}</li>
+            <li>{{ 'Long-term Drupal support and upgrade readiness'|t }}</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="drupify-section drupify-muted" aria-labelledby="industry-intro-title">
+      <div class="drupify-container drupify-service-detail-intro">
+        {% if node.field_image.entity %}
+          <div class="drupify-service-detail-media">
+            <img src="{{ file_url(node.field_image.entity.uri.value) }}" alt="{{ node.field_image.alt|default(node.label) }}">
+          </div>
+        {% endif %}
+        <div>
+          <p class="drupify-eyebrow">{{ 'How Drupify helps'|t }}</p>
+          <h2 id="industry-intro-title">{{ 'A Drupal approach shaped around the way this audience uses the site.'|t }}</h2>
+          {% if node.body.processed %}
+            <div class="drupify-rich-text">{{ node.body.processed|raw }}</div>
+          {% endif %}
+        </div>
+      </div>
+    </section>
+
+    <section class="drupify-section" aria-labelledby="industry-services-title">
+      <div class="drupify-container">
+        <div class="drupify-section-head">
+          <p class="drupify-eyebrow">{{ 'Relevant services'|t }}</p>
+          <h2 id="industry-services-title">{{ 'Most industry projects connect strategy, structure, frontend, and support.'|t }}</h2>
+        </div>
+
+        <div class="drupify-service-grid drupify-service-page-grid">
+          {% for service in drupify_services %}
+            <article>
+              <span>{{ service.category ?: 'Drupal service'|t }}</span>
+              <h3>{{ service.title }}</h3>
+              <p>{{ service.summary }}</p>
+              <a class="drupify-text-link" href="{{ service.url }}">{{ 'View service'|t }}</a>
+            </article>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <section class="drupify-audit-band" aria-labelledby="industry-cta-title">
+      <div class="drupify-container drupify-audit-inner">
+        <div>
+          <p class="drupify-eyebrow">{{ 'Industry Drupal audit'|t }}</p>
+          <h2 id="industry-cta-title">{{ 'Need this industry page turned into a stronger client journey?'|t }}</h2>
+          <p>{{ 'Share the current website, goals, and pain points. Drupify can review content structure, templates, forms, performance, and maintenance risk.'|t }}</p>
+          <ul class="drupify-audit-list">
+            <li>{{ 'Content model'|t }}</li>
+            <li>{{ 'Frontend quality'|t }}</li>
+            <li>{{ 'Forms and workflows'|t }}</li>
+            <li>{{ 'Support plan'|t }}</li>
+          </ul>
+        </div>
+        <a class="drupify-button drupify-button-light" href="{{ base_path }}contact-us">{{ 'Request Drupal audit'|t }}</a>
+      </div>
+    </section>
+  </main>
+
+  {% include '@drupify/includes/drupify-footer.html.twig' %}
+</div>

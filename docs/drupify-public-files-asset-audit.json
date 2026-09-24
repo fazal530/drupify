@@ -1,0 +1,4522 @@
+{
+    "summary": {
+        "total_files": 426,
+        "total_size": 74340530,
+        "used_files": 366,
+        "candidate_files": 10,
+        "candidate_size": 22813,
+        "generated_files": 50,
+        "generated_size": 4271191,
+        "junk_files": 0,
+        "junk_size": 0
+    },
+    "used": [
+        {
+            "relative": "2024-11/10750.jpg",
+            "path": "/var/www/html/sites/default/files/2024-11/10750.jpg",
+            "basename": "10750.jpg",
+            "size": 2335941,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 410 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-08/last-2876x1440.png",
+            "path": "/var/www/html/sites/default/files/2024-08/last-2876x1440.png",
+            "basename": "last-2876x1440.png",
+            "size": 2039352,
+            "extension": "png",
+            "references": [
+                "file_managed fid 378 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-08/riaz1.png",
+            "path": "/var/www/html/sites/default/files/2024-08/riaz1.png",
+            "basename": "riaz1.png",
+            "size": 2020329,
+            "extension": "png",
+            "references": [
+                "file_managed fid 371 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-08/IMG_1281.png",
+            "path": "/var/www/html/sites/default/files/2024-08/IMG_1281.png",
+            "basename": "IMG_1281.png",
+            "size": 1892047,
+            "extension": "png",
+            "references": [
+                "file_managed fid 387 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/img_0516_2.jpg",
+            "path": "/var/www/html/sites/default/files/2024-07/img_0516_2.jpg",
+            "basename": "img_0516_2.jpg",
+            "size": 1879088,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 364 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/zeeshan.jpeg",
+            "path": "/var/www/html/sites/default/files/2024-07/zeeshan.jpeg",
+            "basename": "zeeshan.jpeg",
+            "size": 1842153,
+            "extension": "jpeg",
+            "references": [
+                "file_managed fid 363 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/1_0.jpg",
+            "path": "/var/www/html/sites/default/files/2024-07/1_0.jpg",
+            "basename": "1_0.jpg",
+            "size": 1798102,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 361 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/1.jpg",
+            "path": "/var/www/html/sites/default/files/2024-07/1.jpg",
+            "basename": "1.jpg",
+            "size": 1798102,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 360 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-08/drupal.jpg",
+            "path": "/var/www/html/sites/default/files/2024-08/drupal.jpg",
+            "basename": "drupal.jpg",
+            "size": 1744495,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 394 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-08/screenshot_2024-08-05_at_2.52.35_pm.png",
+            "path": "/var/www/html/sites/default/files/2024-08/screenshot_2024-08-05_at_2.52.35_pm.png",
+            "basename": "screenshot_2024-08-05_at_2.52.35_pm.png",
+            "size": 1637267,
+            "extension": "png",
+            "references": [
+                "file_managed fid 377 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-08/4.JPG",
+            "path": "/var/www/html/sites/default/files/2024-08/4.JPG",
+            "basename": "4.JPG",
+            "size": 1601974,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 384 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-08/drupal development.jpg",
+            "path": "/var/www/html/sites/default/files/2024-08/drupal development.jpg",
+            "basename": "drupal development.jpg",
+            "size": 1580091,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 393 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-08/screenshot_2024-08-05_at_1.05.08_pm.png",
+            "path": "/var/www/html/sites/default/files/2024-08/screenshot_2024-08-05_at_1.05.08_pm.png",
+            "basename": "screenshot_2024-08-05_at_1.05.08_pm.png",
+            "size": 1546547,
+            "extension": "png",
+            "references": [
+                "file_managed fid 373 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/bb52feef-b8c7-4caa-9972-a1d2f861e908.png",
+            "path": "/var/www/html/sites/default/files/2024-07/bb52feef-b8c7-4caa-9972-a1d2f861e908.png",
+            "basename": "bb52feef-b8c7-4caa-9972-a1d2f861e908.png",
+            "size": 1486273,
+            "extension": "png",
+            "references": [
+                "file_managed fid 328 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-11/orl58z1.jpg",
+            "path": "/var/www/html/sites/default/files/2024-11/orl58z1.jpg",
+            "basename": "orl58z1.jpg",
+            "size": 1449643,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 409 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/1117523b-34d2-4308-a87a-37c7733bd274.png",
+            "path": "/var/www/html/sites/default/files/2024-07/1117523b-34d2-4308-a87a-37c7733bd274.png",
+            "basename": "1117523b-34d2-4308-a87a-37c7733bd274.png",
+            "size": 1433080,
+            "extension": "png",
+            "references": [
+                "file_managed fid 327 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-08/screenshot_2024-08-05_at_12.57.46_pm.png",
+            "path": "/var/www/html/sites/default/files/2024-08/screenshot_2024-08-05_at_12.57.46_pm.png",
+            "basename": "screenshot_2024-08-05_at_12.57.46_pm.png",
+            "size": 1350121,
+            "extension": "png",
+            "references": [
+                "file_managed fid 372 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/1_11zon.png",
+            "path": "/var/www/html/sites/default/files/2024-07/1_11zon.png",
+            "basename": "1_11zon.png",
+            "size": 1309283,
+            "extension": "png",
+            "references": [
+                "file_managed fid 362 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/fd61a5e6-7ff8-4759-bf69-d4a3db409bd0.png",
+            "path": "/var/www/html/sites/default/files/2024-07/fd61a5e6-7ff8-4759-bf69-d4a3db409bd0.png",
+            "basename": "fd61a5e6-7ff8-4759-bf69-d4a3db409bd0.png",
+            "size": 1307915,
+            "extension": "png",
+            "references": [
+                "file_managed fid 326 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-08/a1.png",
+            "path": "/var/www/html/sites/default/files/2024-08/a1.png",
+            "basename": "a1.png",
+            "size": 1276403,
+            "extension": "png",
+            "references": [
+                "file_managed fid 386 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/3.jpg",
+            "path": "/var/www/html/sites/default/files/2024-07/3.jpg",
+            "basename": "3.jpg",
+            "size": 1256515,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 359 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-08/screenshot_2024-08-05_at_2.48.45_pm.png",
+            "path": "/var/www/html/sites/default/files/2024-08/screenshot_2024-08-05_at_2.48.45_pm.png",
+            "basename": "screenshot_2024-08-05_at_2.48.45_pm.png",
+            "size": 1112280,
+            "extension": "png",
+            "references": [
+                "file_managed fid 376 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/img_3649.jpg",
+            "path": "/var/www/html/sites/default/files/2024-07/img_3649.jpg",
+            "basename": "img_3649.jpg",
+            "size": 1083658,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 310 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-08/IMG_3649_0.jpg",
+            "path": "/var/www/html/sites/default/files/2024-08/IMG_3649_0.jpg",
+            "basename": "IMG_3649_0.jpg",
+            "size": 1083658,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 383 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-08/screenshot_2024-08-05_at_1.11.42_pm.png",
+            "path": "/var/www/html/sites/default/files/2024-08/screenshot_2024-08-05_at_1.11.42_pm.png",
+            "basename": "screenshot_2024-08-05_at_1.11.42_pm.png",
+            "size": 985685,
+            "extension": "png",
+            "references": [
+                "file_managed fid 375 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-11/manzoor.png",
+            "path": "/var/www/html/sites/default/files/2024-11/manzoor.png",
+            "basename": "manzoor.png",
+            "size": 953128,
+            "extension": "png",
+            "references": [
+                "file_managed fid 399 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/work-process-2.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/work-process-2.png",
+            "basename": "work-process-2.png",
+            "size": 917572,
+            "extension": "png",
+            "references": [
+                "file_managed fid 287 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/frontend_developer.jpg",
+            "path": "/var/www/html/sites/default/files/2024-07/frontend_developer.jpg",
+            "basename": "frontend_developer.jpg",
+            "size": 776040,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 358 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/ishfaq_ahmad_new.jpg",
+            "path": "/var/www/html/sites/default/files/2024-07/ishfaq_ahmad_new.jpg",
+            "basename": "ishfaq_ahmad_new.jpg",
+            "size": 647395,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 311 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/Drupify-logo.png",
+            "path": "/var/www/html/sites/default/files/2024-07/Drupify-logo.png",
+            "basename": "Drupify-logo.png",
+            "size": 644019,
+            "extension": "png",
+            "references": [
+                "file_managed fid 366 status 1",
+                "database text/html",
+                "theme/custom code"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Team-Page.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Team-Page.png",
+            "basename": "Team-Page.png",
+            "size": 581322,
+            "extension": "png",
+            "references": [
+                "file_managed fid 228 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/digital_creativety.png",
+            "path": "/var/www/html/sites/default/files/2024-07/digital_creativety.png",
+            "basename": "digital_creativety.png",
+            "size": 552793,
+            "extension": "png",
+            "references": [
+                "file_managed fid 302 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2025-01/Riaz Said CV jan 2025.pdf",
+            "path": "/var/www/html/sites/default/files/2025-01/Riaz Said CV jan 2025.pdf",
+            "basename": "Riaz Said CV jan 2025.pdf",
+            "size": 519575,
+            "extension": "pdf",
+            "references": [
+                "file_managed fid 414 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Feature-1.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Feature-1.png",
+            "basename": "Feature-1.png",
+            "size": 513316,
+            "extension": "png",
+            "references": [
+                "file_managed fid 198 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/riaz.jpg",
+            "path": "/var/www/html/sites/default/files/2024-07/riaz.jpg",
+            "basename": "riaz.jpg",
+            "size": 495690,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 312 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/riaz_0.jpg",
+            "path": "/var/www/html/sites/default/files/2024-07/riaz_0.jpg",
+            "basename": "riaz_0.jpg",
+            "size": 495690,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 313 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-08/Resume.pdf",
+            "path": "/var/www/html/sites/default/files/2024-08/Resume.pdf",
+            "basename": "Resume.pdf",
+            "size": 434069,
+            "extension": "pdf",
+            "references": [
+                "file_managed fid 392 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/work-process-2-min.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/work-process-2-min.png",
+            "basename": "work-process-2-min.png",
+            "size": 430363,
+            "extension": "png",
+            "references": [
+                "file_managed fid 188 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/values-1.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/values-1.png",
+            "basename": "values-1.png",
+            "size": 413123,
+            "extension": "png",
+            "references": [
+                "file_managed fid 285 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "image.jpg",
+            "path": "/var/www/html/sites/default/files/image.jpg",
+            "basename": "image.jpg",
+            "size": 400496,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 118 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/riaz-min.jpg",
+            "path": "/var/www/html/sites/default/files/2024-07/riaz-min.jpg",
+            "basename": "riaz-min.jpg",
+            "size": 361486,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 315 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-08/4f82ff1e-4ce2-4817-b14a-54d0adcf79b8_1_11zon.png",
+            "path": "/var/www/html/sites/default/files/2024-08/4f82ff1e-4ce2-4817-b14a-54d0adcf79b8_1_11zon.png",
+            "basename": "4f82ff1e-4ce2-4817-b14a-54d0adcf79b8_1_11zon.png",
+            "size": 348837,
+            "extension": "png",
+            "references": [
+                "file_managed fid 388 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-08/6c77499c-0d3f-4055-aec9-1154792bdd04.jpeg",
+            "path": "/var/www/html/sites/default/files/2024-08/6c77499c-0d3f-4055-aec9-1154792bdd04.jpeg",
+            "basename": "6c77499c-0d3f-4055-aec9-1154792bdd04.jpeg",
+            "size": 338778,
+            "extension": "jpeg",
+            "references": [
+                "file_managed fid 397 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Slider-2-min.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Slider-2-min.png",
+            "basename": "Slider-2-min.png",
+            "size": 320765,
+            "extension": "png",
+            "references": [
+                "file_managed fid 183 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/theme_and_design.jpg",
+            "path": "/var/www/html/sites/default/files/2024-07/theme_and_design.jpg",
+            "basename": "theme_and_design.jpg",
+            "size": 317640,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 339 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/theme_and_design_0.jpg",
+            "path": "/var/www/html/sites/default/files/2024-07/theme_and_design_0.jpg",
+            "basename": "theme_and_design_0.jpg",
+            "size": 317640,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 340 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-08/90420870-518b-4b55-a4a9-71aebf8acb60.jpeg",
+            "path": "/var/www/html/sites/default/files/2024-08/90420870-518b-4b55-a4a9-71aebf8acb60.jpeg",
+            "basename": "90420870-518b-4b55-a4a9-71aebf8acb60.jpeg",
+            "size": 310365,
+            "extension": "jpeg",
+            "references": [
+                "file_managed fid 398 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/web_dev_3.jpg",
+            "path": "/var/www/html/sites/default/files/2024-07/web_dev_3.jpg",
+            "basename": "web_dev_3.jpg",
+            "size": 306239,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 347 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/drupal_migration.jpg",
+            "path": "/var/www/html/sites/default/files/2024-07/drupal_migration.jpg",
+            "basename": "drupal_migration.jpg",
+            "size": 303222,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 338 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/ca_logo.jpg",
+            "path": "/var/www/html/sites/default/files/2024-07/ca_logo.jpg",
+            "basename": "ca_logo.jpg",
+            "size": 296721,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 369 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Counter-1.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Counter-1.png",
+            "basename": "Counter-1.png",
+            "size": 296142,
+            "extension": "png",
+            "references": [
+                "file_managed fid 262 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/web_dev_2.jpg",
+            "path": "/var/www/html/sites/default/files/2024-07/web_dev_2.jpg",
+            "basename": "web_dev_2.jpg",
+            "size": 294024,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 346 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/web_dev_2_0.jpg",
+            "path": "/var/www/html/sites/default/files/2024-07/web_dev_2_0.jpg",
+            "basename": "web_dev_2_0.jpg",
+            "size": 294024,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 349 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/yhfg-min.jpg",
+            "path": "/var/www/html/sites/default/files/2022-03/yhfg-min.jpg",
+            "basename": "yhfg-min.jpg",
+            "size": 289558,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 84 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/values-2-min.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/values-2-min.png",
+            "basename": "values-2-min.png",
+            "size": 266400,
+            "extension": "png",
+            "references": [
+                "file_managed fid 187 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/values-2-min_0.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/values-2-min_0.png",
+            "basename": "values-2-min_0.png",
+            "size": 266400,
+            "extension": "png",
+            "references": [
+                "file_managed fid 278 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-11/digital_productvitiy.jpg",
+            "path": "/var/www/html/sites/default/files/2024-11/digital_productvitiy.jpg",
+            "basename": "digital_productvitiy.jpg",
+            "size": 248114,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 408 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-11/casese_course_2.jpg",
+            "path": "/var/www/html/sites/default/files/2024-11/casese_course_2.jpg",
+            "basename": "casese_course_2.jpg",
+            "size": 247915,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 406 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/rtttt2x.jpg",
+            "path": "/var/www/html/sites/default/files/2022-03/rtttt2x.jpg",
+            "basename": "rtttt2x.jpg",
+            "size": 240958,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 101 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/blog-1.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/blog-1.png",
+            "basename": "blog-1.png",
+            "size": 238438,
+            "extension": "png",
+            "references": [
+                "file_managed fid 192 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/module_development.jpg",
+            "path": "/var/www/html/sites/default/files/2024-07/module_development.jpg",
+            "basename": "module_development.jpg",
+            "size": 235088,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 344 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/contact-1-min.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/contact-1-min.png",
+            "basename": "contact-1-min.png",
+            "size": 227208,
+            "extension": "png",
+            "references": [
+                "file_managed fid 175 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-08/screenshot_2024-08-05_at_1.08.25_pm.png",
+            "path": "/var/www/html/sites/default/files/2024-08/screenshot_2024-08-05_at_1.08.25_pm.png",
+            "basename": "screenshot_2024-08-05_at_1.08.25_pm.png",
+            "size": 224668,
+            "extension": "png",
+            "references": [
+                "file_managed fid 374 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-11/cykel.jpg",
+            "path": "/var/www/html/sites/default/files/2024-11/cykel.jpg",
+            "basename": "cykel.jpg",
+            "size": 224166,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 401 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/team-3-min.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/team-3-min.png",
+            "basename": "team-3-min.png",
+            "size": 219080,
+            "extension": "png",
+            "references": [
+                "file_managed fid 185 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/pexels-fauxels-1.jpg",
+            "path": "/var/www/html/sites/default/files/2022-03/pexels-fauxels-1.jpg",
+            "basename": "pexels-fauxels-1.jpg",
+            "size": 218710,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 85 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-04/side-7.png",
+            "path": "/var/www/html/sites/default/files/2022-04/side-7.png",
+            "basename": "side-7.png",
+            "size": 216617,
+            "extension": "png",
+            "references": [
+                "file_managed fid 148 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "side-7.png",
+            "path": "/var/www/html/sites/default/files/side-7.png",
+            "basename": "side-7.png",
+            "size": 216617,
+            "extension": "png",
+            "references": [
+                "file_managed fid 149 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-08/ff7a75d7-f716-44bb-802f-ecc754e09f66.jpeg",
+            "path": "/var/www/html/sites/default/files/2024-08/ff7a75d7-f716-44bb-802f-ecc754e09f66.jpeg",
+            "basename": "ff7a75d7-f716-44bb-802f-ecc754e09f66.jpeg",
+            "size": 208272,
+            "extension": "jpeg",
+            "references": [
+                "file_managed fid 396 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-08/whatsapp_image_2024-08-28_at_9.42.12_am.jpeg",
+            "path": "/var/www/html/sites/default/files/2024-08/whatsapp_image_2024-08-28_at_9.42.12_am.jpeg",
+            "basename": "whatsapp_image_2024-08-28_at_9.42.12_am.jpeg",
+            "size": 205308,
+            "extension": "jpeg",
+            "references": [
+                "file_managed fid 395 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/contact-2-min.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/contact-2-min.png",
+            "basename": "contact-2-min.png",
+            "size": 202759,
+            "extension": "png",
+            "references": [
+                "file_managed fid 176 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/adv_web_development_0.jpg",
+            "path": "/var/www/html/sites/default/files/2024-07/adv_web_development_0.jpg",
+            "basename": "adv_web_development_0.jpg",
+            "size": 201746,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 348 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/adv_web_development.jpg",
+            "path": "/var/www/html/sites/default/files/2024-07/adv_web_development.jpg",
+            "basename": "adv_web_development.jpg",
+            "size": 201746,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 345 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/03.jpg",
+            "path": "/var/www/html/sites/default/files/2022-03/03.jpg",
+            "basename": "03.jpg",
+            "size": 198206,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 77 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/cta-4.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/cta-4.png",
+            "basename": "cta-4.png",
+            "size": 197517,
+            "extension": "png",
+            "references": [
+                "file_managed fid 196 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/pexels-kampus-production-62489882x.jpg",
+            "path": "/var/www/html/sites/default/files/2022-03/pexels-kampus-production-62489882x.jpg",
+            "basename": "pexels-kampus-production-62489882x.jpg",
+            "size": 192848,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 96 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/our-features-1.png",
+            "path": "/var/www/html/sites/default/files/2022-03/our-features-1.png",
+            "basename": "our-features-1.png",
+            "size": 192708,
+            "extension": "png",
+            "references": [
+                "file_managed fid 57 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/web_4.jpg",
+            "path": "/var/www/html/sites/default/files/2024-07/web_4.jpg",
+            "basename": "web_4.jpg",
+            "size": 192408,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 350 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "banner21.jpg",
+            "path": "/var/www/html/sites/default/files/banner21.jpg",
+            "basename": "banner21.jpg",
+            "size": 192259,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 337 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-04/h2-img-9_1.png",
+            "path": "/var/www/html/sites/default/files/2022-04/h2-img-9_1.png",
+            "basename": "h2-img-9_1.png",
+            "size": 185852,
+            "extension": "png",
+            "references": [
+                "file_managed fid 141 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-11/wizardoorer.jpg",
+            "path": "/var/www/html/sites/default/files/2024-11/wizardoorer.jpg",
+            "basename": "wizardoorer.jpg",
+            "size": 185699,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 400 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/home-banner.jpg",
+            "path": "/var/www/html/sites/default/files/2022-03/home-banner.jpg",
+            "basename": "home-banner.jpg",
+            "size": 180314,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 87 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-08/Raiz.png",
+            "path": "/var/www/html/sites/default/files/2024-08/Raiz.png",
+            "basename": "Raiz.png",
+            "size": 179258,
+            "extension": "png",
+            "references": [
+                "file_managed fid 390 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "Inline Logo (1).png",
+            "path": "/var/www/html/sites/default/files/Inline Logo (1).png",
+            "basename": "Inline Logo (1).png",
+            "size": 177649,
+            "extension": "png",
+            "references": [
+                "file_managed fid 365 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "Inline Logo.png",
+            "path": "/var/www/html/sites/default/files/Inline Logo.png",
+            "basename": "Inline Logo.png",
+            "size": 177649,
+            "extension": "png",
+            "references": [
+                "file_managed fid 296 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/fazal-md.jpeg",
+            "path": "/var/www/html/sites/default/files/2024-07/fazal-md.jpeg",
+            "basename": "fazal-md.jpeg",
+            "size": 174569,
+            "extension": "jpeg",
+            "references": [
+                "file_managed fid 314 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/asset_3288x.png",
+            "path": "/var/www/html/sites/default/files/2024-07/asset_3288x.png",
+            "basename": "asset_3288x.png",
+            "size": 163353,
+            "extension": "png",
+            "references": [
+                "file_managed fid 352 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-11/pic_3.jpg",
+            "path": "/var/www/html/sites/default/files/2024-11/pic_3.jpg",
+            "basename": "pic_3.jpg",
+            "size": 162610,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 411 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-08/Group 6.png",
+            "path": "/var/www/html/sites/default/files/2024-08/Group 6.png",
+            "basename": "Group 6.png",
+            "size": 154516,
+            "extension": "png",
+            "references": [
+                "file_managed fid 389 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/accordion.jpg",
+            "path": "/var/www/html/sites/default/files/2022-03/accordion.jpg",
+            "basename": "accordion.jpg",
+            "size": 153501,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 100 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/ecommerce_solution.jpg",
+            "path": "/var/www/html/sites/default/files/2024-07/ecommerce_solution.jpg",
+            "basename": "ecommerce_solution.jpg",
+            "size": 151495,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 341 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/image-2.jpg",
+            "path": "/var/www/html/sites/default/files/2022-03/image-2.jpg",
+            "basename": "image-2.jpg",
+            "size": 148835,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 60 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-08/Riaz Said CV.docx",
+            "path": "/var/www/html/sites/default/files/2024-08/Riaz Said CV.docx",
+            "basename": "Riaz Said CV.docx",
+            "size": 148539,
+            "extension": "docx",
+            "references": [
+                "file_managed fid 381 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-08/Resume.docx",
+            "path": "/var/www/html/sites/default/files/2024-08/Resume.docx",
+            "basename": "Resume.docx",
+            "size": 148539,
+            "extension": "docx",
+            "references": [
+                "file_managed fid 391 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2026-09/fazal-profile-pic.jpg",
+            "path": "/var/www/html/sites/default/files/2026-09/fazal-profile-pic.jpg",
+            "basename": "fazal-profile-pic.jpg",
+            "size": 146289,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 415 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/ishfaq_work_2_bw.png",
+            "path": "/var/www/html/sites/default/files/2024-07/ishfaq_work_2_bw.png",
+            "basename": "ishfaq_work_2_bw.png",
+            "size": 145479,
+            "extension": "png",
+            "references": [
+                "file_managed fid 324 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/banner.png",
+            "path": "/var/www/html/sites/default/files/2022-03/banner.png",
+            "basename": "banner.png",
+            "size": 144700,
+            "extension": "png",
+            "references": [
+                "file_managed fid 19 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/banner12.jpg",
+            "path": "/var/www/html/sites/default/files/2024-07/banner12.jpg",
+            "basename": "banner12.jpg",
+            "size": 141933,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 342 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "banner12.jpg",
+            "path": "/var/www/html/sites/default/files/banner12.jpg",
+            "basename": "banner12.jpg",
+            "size": 141933,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 336 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/accordion-image-1.png",
+            "path": "/var/www/html/sites/default/files/2022-03/accordion-image-1.png",
+            "basename": "accordion-image-1.png",
+            "size": 137514,
+            "extension": "png",
+            "references": [
+                "file_managed fid 62 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/team-2-min.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/team-2-min.png",
+            "basename": "team-2-min.png",
+            "size": 133567,
+            "extension": "png",
+            "references": [
+                "file_managed fid 184 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/base-image.jpg",
+            "path": "/var/www/html/sites/default/files/2022-03/base-image.jpg",
+            "basename": "base-image.jpg",
+            "size": 133020,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 20 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-04/slide_image.png",
+            "path": "/var/www/html/sites/default/files/2022-04/slide_image.png",
+            "basename": "slide_image.png",
+            "size": 132094,
+            "extension": "png",
+            "references": [
+                "file_managed fid 289 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/about-2-min.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/about-2-min.png",
+            "basename": "about-2-min.png",
+            "size": 131121,
+            "extension": "png",
+            "references": [
+                "file_managed fid 173 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-11/os970w1.jpg",
+            "path": "/var/www/html/sites/default/files/2024-11/os970w1.jpg",
+            "basename": "os970w1.jpg",
+            "size": 129120,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 407 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/cta-2-min.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/cta-2-min.png",
+            "basename": "cta-2-min.png",
+            "size": 118139,
+            "extension": "png",
+            "references": [
+                "file_managed fid 178 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-08/aoo.jpg",
+            "path": "/var/www/html/sites/default/files/2024-08/aoo.jpg",
+            "basename": "aoo.jpg",
+            "size": 115278,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 385 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-11/mockup_2_0.jpg",
+            "path": "/var/www/html/sites/default/files/2024-11/mockup_2_0.jpg",
+            "basename": "mockup_2_0.jpg",
+            "size": 114650,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 403 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-11/mockup_2.jpg",
+            "path": "/var/www/html/sites/default/files/2024-11/mockup_2.jpg",
+            "basename": "mockup_2.jpg",
+            "size": 114650,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 402 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/tips.jpg",
+            "path": "/var/www/html/sites/default/files/2024-07/tips.jpg",
+            "basename": "tips.jpg",
+            "size": 105857,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 332 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Slider-3.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Slider-3.jpg",
+            "basename": "Slider-3.jpg",
+            "size": 104581,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 211 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Slider-3_0.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Slider-3_0.jpg",
+            "basename": "Slider-3_0.jpg",
+            "size": 104581,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 282 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/custom.jpg",
+            "path": "/var/www/html/sites/default/files/2024-07/custom.jpg",
+            "basename": "custom.jpg",
+            "size": 104180,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 331 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/development.jpeg",
+            "path": "/var/www/html/sites/default/files/2024-07/development.jpeg",
+            "basename": "development.jpeg",
+            "size": 100155,
+            "extension": "jpeg",
+            "references": [
+                "file_managed fid 316 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/team2.jpg",
+            "path": "/var/www/html/sites/default/files/2022-03/team2.jpg",
+            "basename": "team2.jpg",
+            "size": 99124,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 55 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/team6.jpg",
+            "path": "/var/www/html/sites/default/files/2022-03/team6.jpg",
+            "basename": "team6.jpg",
+            "size": 96380,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 51 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Recent-post-Details.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Recent-post-Details.png",
+            "basename": "Recent-post-Details.png",
+            "size": 94902,
+            "extension": "png",
+            "references": [
+                "file_managed fid 246 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Recent-post-Details_1.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Recent-post-Details_1.png",
+            "basename": "Recent-post-Details_1.png",
+            "size": 94902,
+            "extension": "png",
+            "references": [
+                "file_managed fid 248 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Recent-post-Details_0.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Recent-post-Details_0.png",
+            "basename": "Recent-post-Details_0.png",
+            "size": 94902,
+            "extension": "png",
+            "references": [
+                "file_managed fid 247 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/team1.jpg",
+            "path": "/var/www/html/sites/default/files/2022-03/team1.jpg",
+            "basename": "team1.jpg",
+            "size": 94451,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 56 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "banner.jpg",
+            "path": "/var/www/html/sites/default/files/banner.jpg",
+            "basename": "banner.jpg",
+            "size": 94313,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 103 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/banner.jpg",
+            "path": "/var/www/html/sites/default/files/2022-03/banner.jpg",
+            "basename": "banner.jpg",
+            "size": 94313,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 102 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/asset_1288x.png",
+            "path": "/var/www/html/sites/default/files/2024-07/asset_1288x.png",
+            "basename": "asset_1288x.png",
+            "size": 94029,
+            "extension": "png",
+            "references": [
+                "file_managed fid 353 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/innovative.jpg",
+            "path": "/var/www/html/sites/default/files/2024-07/innovative.jpg",
+            "basename": "innovative.jpg",
+            "size": 91706,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 329 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/team3.jpg",
+            "path": "/var/www/html/sites/default/files/2022-03/team3.jpg",
+            "basename": "team3.jpg",
+            "size": 91458,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 54 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/elevate.jpg",
+            "path": "/var/www/html/sites/default/files/2024-07/elevate.jpg",
+            "basename": "elevate.jpg",
+            "size": 91407,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 333 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Awards.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Awards.png",
+            "basename": "Awards.png",
+            "size": 90378,
+            "extension": "png",
+            "references": [
+                "file_managed fid 257 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/team4.jpg",
+            "path": "/var/www/html/sites/default/files/2022-03/team4.jpg",
+            "basename": "team4.jpg",
+            "size": 89998,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 53 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-04/image6.jpg",
+            "path": "/var/www/html/sites/default/files/2022-04/image6.jpg",
+            "basename": "image6.jpg",
+            "size": 88373,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 143 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/team5.jpg",
+            "path": "/var/www/html/sites/default/files/2022-03/team5.jpg",
+            "basename": "team5.jpg",
+            "size": 87738,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 52 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/image-1.jpg",
+            "path": "/var/www/html/sites/default/files/2022-03/image-1.jpg",
+            "basename": "image-1.jpg",
+            "size": 81375,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 61 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/goal-1_0.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/goal-1_0.jpg",
+            "basename": "goal-1_0.jpg",
+            "size": 78818,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 271 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/goal-1.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/goal-1.jpg",
+            "basename": "goal-1.jpg",
+            "size": 78818,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 201 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-12/whatsapp_image_2024-11-13_at_10.11.50_am_2.jpeg",
+            "path": "/var/www/html/sites/default/files/2024-12/whatsapp_image_2024-11-13_at_10.11.50_am_2.jpeg",
+            "basename": "whatsapp_image_2024-11-13_at_10.11.50_am_2.jpeg",
+            "size": 77499,
+            "extension": "jpeg",
+            "references": [
+                "file_managed fid 412 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-11/ackerley_lab_2.jpg",
+            "path": "/var/www/html/sites/default/files/2024-11/ackerley_lab_2.jpg",
+            "basename": "ackerley_lab_2.jpg",
+            "size": 76126,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 404 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/faq-3.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/faq-3.jpg",
+            "basename": "faq-3.jpg",
+            "size": 74225,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 197 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Feature-1.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Feature-1.jpg",
+            "basename": "Feature-1.jpg",
+            "size": 73778,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 200 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Feature-1_0.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Feature-1_0.jpg",
+            "basename": "Feature-1_0.jpg",
+            "size": 73778,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 266 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Service list-1.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Service list-1.jpg",
+            "basename": "Service list-1.jpg",
+            "size": 72319,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 235 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/image8.png",
+            "path": "/var/www/html/sites/default/files/2022-03/image8.png",
+            "basename": "image8.png",
+            "size": 70945,
+            "extension": "png",
+            "references": [
+                "file_managed fid 66 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/portfolio-2-min.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/portfolio-2-min.png",
+            "basename": "portfolio-2-min.png",
+            "size": 69802,
+            "extension": "png",
+            "references": [
+                "file_managed fid 181 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/About-3.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/About-3.jpg",
+            "basename": "About-3.jpg",
+            "size": 66716,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 190 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/image_0.png",
+            "path": "/var/www/html/sites/default/files/2022-03/image_0.png",
+            "basename": "image_0.png",
+            "size": 65546,
+            "extension": "png",
+            "references": [
+                "file_managed fid 116 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/value-3.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/value-3.jpg",
+            "basename": "value-3.jpg",
+            "size": 65491,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 204 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/process-arrow.png",
+            "path": "/var/www/html/sites/default/files/2022-03/process-arrow.png",
+            "basename": "process-arrow.png",
+            "size": 65361,
+            "extension": "png",
+            "references": [
+                "file_managed fid 50 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Team-1.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Team-1.jpg",
+            "basename": "Team-1.jpg",
+            "size": 64653,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 212 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Slider-1.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Slider-1.jpg",
+            "basename": "Slider-1.jpg",
+            "size": 64128,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 210 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Slider-1_0.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Slider-1_0.jpg",
+            "basename": "Slider-1_0.jpg",
+            "size": 64128,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 281 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2025-01/whatsapp_image_2025-01-20_at_11.03.57_am.jpeg",
+            "path": "/var/www/html/sites/default/files/2025-01/whatsapp_image_2025-01-20_at_11.03.57_am.jpeg",
+            "basename": "whatsapp_image_2025-01-20_at_11.03.57_am.jpeg",
+            "size": 63912,
+            "extension": "jpeg",
+            "references": [
+                "file_managed fid 413 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/blog-3.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/blog-3.jpg",
+            "basename": "blog-3.jpg",
+            "size": 63854,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 193 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Testimonial Grid.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Testimonial Grid.jpg",
+            "basename": "Testimonial Grid.jpg",
+            "size": 61205,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 229 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/newhome_2.jpg",
+            "path": "/var/www/html/sites/default/files/2022-03/newhome_2.jpg",
+            "basename": "newhome_2.jpg",
+            "size": 60917,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 24 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/image12.jpg",
+            "path": "/var/www/html/sites/default/files/2022-03/image12.jpg",
+            "basename": "image12.jpg",
+            "size": 60596,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 32 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/image.png",
+            "path": "/var/www/html/sites/default/files/2022-03/image.png",
+            "basename": "image.png",
+            "size": 60300,
+            "extension": "png",
+            "references": [
+                "file_managed fid 111 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/ishfaq_work_bw.png",
+            "path": "/var/www/html/sites/default/files/2024-07/ishfaq_work_bw.png",
+            "basename": "ishfaq_work_bw.png",
+            "size": 59069,
+            "extension": "png",
+            "references": [
+                "file_managed fid 323 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/plan-3_0.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/plan-3_0.jpg",
+            "basename": "plan-3_0.jpg",
+            "size": 58533,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 279 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/plan-3.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/plan-3.jpg",
+            "basename": "plan-3.jpg",
+            "size": 58533,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 206 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/scalable.jpg",
+            "path": "/var/www/html/sites/default/files/2024-07/scalable.jpg",
+            "basename": "scalable.jpg",
+            "size": 58230,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 330 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Portfolio grid-4-column.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Portfolio grid-4-column.jpg",
+            "basename": "Portfolio grid-4-column.jpg",
+            "size": 56728,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 234 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/values-1.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/values-1.jpg",
+            "basename": "values-1.jpg",
+            "size": 55975,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 203 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/About-1.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/About-1.jpg",
+            "basename": "About-1.jpg",
+            "size": 55515,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 189 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Testimonial-1.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Testimonial-1.jpg",
+            "basename": "Testimonial-1.jpg",
+            "size": 54957,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 213 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/riaz_work_5_bw.png",
+            "path": "/var/www/html/sites/default/files/2024-07/riaz_work_5_bw.png",
+            "basename": "riaz_work_5_bw.png",
+            "size": 54748,
+            "extension": "png",
+            "references": [
+                "file_managed fid 322 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/asset_4288x.png",
+            "path": "/var/www/html/sites/default/files/2024-07/asset_4288x.png",
+            "basename": "asset_4288x.png",
+            "size": 54292,
+            "extension": "png",
+            "references": [
+                "file_managed fid 356 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/Drupify.png",
+            "path": "/var/www/html/sites/default/files/2024-07/Drupify.png",
+            "basename": "Drupify.png",
+            "size": 51522,
+            "extension": "png",
+            "references": [
+                "file_managed fid 367 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/faq-1-min.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/faq-1-min.png",
+            "basename": "faq-1-min.png",
+            "size": 50639,
+            "extension": "png",
+            "references": [
+                "file_managed fid 179 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Plan-Page.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Plan-Page.jpg",
+            "basename": "Plan-Page.jpg",
+            "size": 50380,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 227 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/blog-2-min.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/blog-2-min.png",
+            "basename": "blog-2-min.png",
+            "size": 50367,
+            "extension": "png",
+            "references": [
+                "file_managed fid 174 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/counters-1.jpg",
+            "path": "/var/www/html/sites/default/files/2022-03/counters-1.jpg",
+            "basename": "counters-1.jpg",
+            "size": 49746,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 31 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/image7.jpg",
+            "path": "/var/www/html/sites/default/files/2022-03/image7.jpg",
+            "basename": "image7.jpg",
+            "size": 49659,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 38 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/plan-1_0.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/plan-1_0.jpg",
+            "basename": "plan-1_0.jpg",
+            "size": 49586,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 276 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/plan-1.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/plan-1.jpg",
+            "basename": "plan-1.jpg",
+            "size": 49586,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 205 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/feature-3.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/feature-3.jpg",
+            "basename": "feature-3.jpg",
+            "size": 49416,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 199 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/feature-3_0.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/feature-3_0.jpg",
+            "basename": "feature-3_0.jpg",
+            "size": 49416,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 270 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-04/image2.jpg",
+            "path": "/var/www/html/sites/default/files/2022-04/image2.jpg",
+            "basename": "image2.jpg",
+            "size": 49187,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 142 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/who-we-are-2.jpg",
+            "path": "/var/www/html/sites/default/files/2022-03/who-we-are-2.jpg",
+            "basename": "who-we-are-2.jpg",
+            "size": 48949,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 79 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Jobs_0.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Jobs_0.jpg",
+            "basename": "Jobs_0.jpg",
+            "size": 48923,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 275 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Jobs.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Jobs.jpg",
+            "basename": "Jobs.jpg",
+            "size": 48923,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 217 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/blog-most-commented.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/blog-most-commented.png",
+            "basename": "blog-most-commented.png",
+            "size": 48630,
+            "extension": "png",
+            "references": [
+                "file_managed fid 245 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/testimonial-3.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/testimonial-3.jpg",
+            "basename": "testimonial-3.jpg",
+            "size": 48450,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 214 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-11/wizard-doorer.png",
+            "path": "/var/www/html/sites/default/files/2024-11/wizard-doorer.png",
+            "basename": "wizard-doorer.png",
+            "size": 47287,
+            "extension": "png",
+            "references": [
+                "file_managed fid 405 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/faq-2.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/faq-2.png",
+            "basename": "faq-2.png",
+            "size": 43472,
+            "extension": "png",
+            "references": [
+                "file_managed fid 168 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/about-4.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/about-4.jpg",
+            "basename": "about-4.jpg",
+            "size": 43446,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 191 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/image9.jpg",
+            "path": "/var/www/html/sites/default/files/2022-03/image9.jpg",
+            "basename": "image9.jpg",
+            "size": 43223,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 36 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Testimonial-2-min.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Testimonial-2-min.png",
+            "basename": "Testimonial-2-min.png",
+            "size": 41917,
+            "extension": "png",
+            "references": [
+                "file_managed fid 186 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Short Codes.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Short Codes.jpg",
+            "basename": "Short Codes.jpg",
+            "size": 40627,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 240 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/image10.jpg",
+            "path": "/var/www/html/sites/default/files/2022-03/image10.jpg",
+            "basename": "image10.jpg",
+            "size": 40584,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 35 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/asset_7288x.png",
+            "path": "/var/www/html/sites/default/files/2024-07/asset_7288x.png",
+            "basename": "asset_7288x.png",
+            "size": 40561,
+            "extension": "png",
+            "references": [
+                "file_managed fid 354 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Counter-1.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Counter-1.jpg",
+            "basename": "Counter-1.jpg",
+            "size": 39437,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 194 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Counter-1_0.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Counter-1_0.jpg",
+            "basename": "Counter-1_0.jpg",
+            "size": 39437,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 263 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Contact-page-2.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Contact-page-2.jpg",
+            "basename": "Contact-page-2.jpg",
+            "size": 39045,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 226 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Service -Lists_1.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Service -Lists_1.jpg",
+            "basename": "Service -Lists_1.jpg",
+            "size": 38805,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 280 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Service -Lists_0.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Service -Lists_0.jpg",
+            "basename": "Service -Lists_0.jpg",
+            "size": 38805,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 253 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/goal-2_0.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/goal-2_0.jpg",
+            "basename": "goal-2_0.jpg",
+            "size": 37940,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 272 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/goal-2.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/goal-2.jpg",
+            "basename": "goal-2.jpg",
+            "size": 37940,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 202 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/work-process-1.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/work-process-1.png",
+            "basename": "work-process-1.png",
+            "size": 37522,
+            "extension": "png",
+            "references": [
+                "file_managed fid 171 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/work-process-1_0.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/work-process-1_0.png",
+            "basename": "work-process-1_0.png",
+            "size": 37522,
+            "extension": "png",
+            "references": [
+                "file_managed fid 286 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/image8.jpg",
+            "path": "/var/www/html/sites/default/files/2022-03/image8.jpg",
+            "basename": "image8.jpg",
+            "size": 37477,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 37 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Portfolio masonry-2.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Portfolio masonry-2.jpg",
+            "basename": "Portfolio masonry-2.jpg",
+            "size": 36819,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 231 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Portfolio grid-3-column.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Portfolio grid-3-column.jpg",
+            "basename": "Portfolio grid-3-column.jpg",
+            "size": 36156,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 233 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Contact-page-1.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Contact-page-1.jpg",
+            "basename": "Contact-page-1.jpg",
+            "size": 36110,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 225 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/service-3.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/service-3.jpg",
+            "basename": "service-3.jpg",
+            "size": 36015,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 209 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Portfolio grid-2-column.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Portfolio grid-2-column.jpg",
+            "basename": "Portfolio grid-2-column.jpg",
+            "size": 35909,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 232 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/images_blog_0.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/images_blog_0.jpg",
+            "basename": "images_blog_0.jpg",
+            "size": 35542,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 268 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/images_blog.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/images_blog.jpg",
+            "basename": "images_blog.jpg",
+            "size": 35542,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 254 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/contact-details-2.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/contact-details-2.jpg",
+            "basename": "contact-details-2.jpg",
+            "size": 35326,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 261 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/image4.jpg",
+            "path": "/var/www/html/sites/default/files/2022-03/image4.jpg",
+            "basename": "image4.jpg",
+            "size": 35106,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 41 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Service-1.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Service-1.png",
+            "basename": "Service-1.png",
+            "size": 34860,
+            "extension": "png",
+            "references": [
+                "file_managed fid 170 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/portfolio-3.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/portfolio-3.jpg",
+            "basename": "portfolio-3.jpg",
+            "size": 34666,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 208 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/contact-details-1.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/contact-details-1.jpg",
+            "basename": "contact-details-1.jpg",
+            "size": 34620,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 260 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/work-process-3.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/work-process-3.png",
+            "basename": "work-process-3.png",
+            "size": 34612,
+            "extension": "png",
+            "references": [
+                "file_managed fid 172 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/work-process-3_0.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/work-process-3_0.png",
+            "basename": "work-process-3_0.png",
+            "size": 34612,
+            "extension": "png",
+            "references": [
+                "file_managed fid 288 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/drupal-web-development.jpg",
+            "path": "/var/www/html/sites/default/files/2024-07/drupal-web-development.jpg",
+            "basename": "drupal-web-development.jpg",
+            "size": 34529,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 334 status 1",
+                "database text/html",
+                "theme/custom code"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Awards.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Awards.jpg",
+            "basename": "Awards.jpg",
+            "size": 34467,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 215 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Service list-2.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Service list-2.jpg",
+            "basename": "Service list-2.jpg",
+            "size": 33845,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 236 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "footer.png",
+            "path": "/var/www/html/sites/default/files/footer.png",
+            "basename": "footer.png",
+            "size": 33627,
+            "extension": "png",
+            "references": [
+                "file_managed fid 15 status 1",
+                "database text/html",
+                "theme/custom code"
+            ]
+        },
+        {
+            "relative": "2024-07/mission.jpg",
+            "path": "/var/www/html/sites/default/files/2024-07/mission.jpg",
+            "basename": "mission.jpg",
+            "size": 33596,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 335 status 1",
+                "database text/html",
+                "theme/custom code"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Feature-2_0.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Feature-2_0.png",
+            "basename": "Feature-2_0.png",
+            "size": 33315,
+            "extension": "png",
+            "references": [
+                "file_managed fid 269 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Feature-2.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Feature-2.png",
+            "basename": "Feature-2.png",
+            "size": 33315,
+            "extension": "png",
+            "references": [
+                "file_managed fid 169 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/grid_sidebar.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/grid_sidebar.jpg",
+            "basename": "grid_sidebar.jpg",
+            "size": 33179,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 258 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Other-projects.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Other-projects.jpg",
+            "basename": "Other-projects.jpg",
+            "size": 32670,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 242 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Portfolio masonry-1.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Portfolio masonry-1.jpg",
+            "basename": "Portfolio masonry-1.jpg",
+            "size": 31863,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 230 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/image11.jpg",
+            "path": "/var/www/html/sites/default/files/2022-03/image11.jpg",
+            "basename": "image11.jpg",
+            "size": 31291,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 34 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/portfolio-deatils-detail.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/portfolio-deatils-detail.png",
+            "basename": "portfolio-deatils-detail.png",
+            "size": 31053,
+            "extension": "png",
+            "references": [
+                "file_managed fid 250 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Blog-List-2.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Blog-List-2.jpg",
+            "basename": "Blog-List-2.jpg",
+            "size": 30570,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 222 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/image2.jpg",
+            "path": "/var/www/html/sites/default/files/2022-03/image2.jpg",
+            "basename": "image2.jpg",
+            "size": 30545,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 43 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/asset_6288x.png",
+            "path": "/var/www/html/sites/default/files/2024-07/asset_6288x.png",
+            "basename": "asset_6288x.png",
+            "size": 30362,
+            "extension": "png",
+            "references": [
+                "file_managed fid 357 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Faq-page.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Faq-page.jpg",
+            "basename": "Faq-page.jpg",
+            "size": 29927,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 224 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Blog-List-1.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Blog-List-1.jpg",
+            "basename": "Blog-List-1.jpg",
+            "size": 29587,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 221 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Blog-2-column.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Blog-2-column.jpg",
+            "basename": "Blog-2-column.jpg",
+            "size": 28794,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 218 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/cta-1.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/cta-1.png",
+            "basename": "cta-1.png",
+            "size": 28747,
+            "extension": "png",
+            "references": [
+                "file_managed fid 166 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/asset_2288x.png",
+            "path": "/var/www/html/sites/default/files/2024-07/asset_2288x.png",
+            "basename": "asset_2288x.png",
+            "size": 28641,
+            "extension": "png",
+            "references": [
+                "file_managed fid 351 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/client-3.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/client-3.png",
+            "basename": "client-3.png",
+            "size": 28192,
+            "extension": "png",
+            "references": [
+                "file_managed fid 164 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/list_sidebar.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/list_sidebar.jpg",
+            "basename": "list_sidebar.jpg",
+            "size": 27939,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 259 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/Logo.png",
+            "path": "/var/www/html/sites/default/files/2024-07/Logo.png",
+            "basename": "Logo.png",
+            "size": 27136,
+            "extension": "png",
+            "references": [
+                "file_managed fid 368 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/plan-2-min.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/plan-2-min.png",
+            "basename": "plan-2-min.png",
+            "size": 26960,
+            "extension": "png",
+            "references": [
+                "file_managed fid 180 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/plan-2-min_0.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/plan-2-min_0.png",
+            "basename": "plan-2-min_0.png",
+            "size": 26960,
+            "extension": "png",
+            "references": [
+                "file_managed fid 277 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Services-detail-page.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Services-detail-page.png",
+            "basename": "Services-detail-page.png",
+            "size": 26908,
+            "extension": "png",
+            "references": [
+                "file_managed fid 251 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/portfolio-1.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/portfolio-1.jpg",
+            "basename": "portfolio-1.jpg",
+            "size": 26847,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 207 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/job_responsibility.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/job_responsibility.png",
+            "basename": "job_responsibility.png",
+            "size": 26390,
+            "extension": "png",
+            "references": [
+                "file_managed fid 256 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/asset_5288x.png",
+            "path": "/var/www/html/sites/default/files/2024-07/asset_5288x.png",
+            "basename": "asset_5288x.png",
+            "size": 26002,
+            "extension": "png",
+            "references": [
+                "file_managed fid 355 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/riaz_work2_bw.png",
+            "path": "/var/www/html/sites/default/files/2024-07/riaz_work2_bw.png",
+            "basename": "riaz_work2_bw.png",
+            "size": 25168,
+            "extension": "png",
+            "references": [
+                "file_managed fid 320 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/image3.jpg",
+            "path": "/var/www/html/sites/default/files/2022-03/image3.jpg",
+            "basename": "image3.jpg",
+            "size": 24812,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 42 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/client-1.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/client-1.png",
+            "basename": "client-1.png",
+            "size": 24283,
+            "extension": "png",
+            "references": [
+                "file_managed fid 162 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Blog-3-column.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Blog-3-column.jpg",
+            "basename": "Blog-3-column.jpg",
+            "size": 24272,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 219 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Service page-3.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Service page-3.jpg",
+            "basename": "Service page-3.jpg",
+            "size": 24109,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 239 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Service-2-min.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Service-2-min.png",
+            "basename": "Service-2-min.png",
+            "size": 23830,
+            "extension": "png",
+            "references": [
+                "file_managed fid 182 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Blog-4-column.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Blog-4-column.jpg",
+            "basename": "Blog-4-column.jpg",
+            "size": 23744,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 220 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "image_0.jpg",
+            "path": "/var/www/html/sites/default/files/image_0.jpg",
+            "basename": "image_0.jpg",
+            "size": 21578,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 119 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/counter-3.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/counter-3.jpg",
+            "basename": "counter-3.jpg",
+            "size": 21442,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 195 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/counter-3_0.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/counter-3_0.jpg",
+            "basename": "counter-3_0.jpg",
+            "size": 21442,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 265 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/client-2.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/client-2.png",
+            "basename": "client-2.png",
+            "size": 21179,
+            "extension": "png",
+            "references": [
+                "file_managed fid 163 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Service page-2.png.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Service page-2.png.jpg",
+            "basename": "Service page-2.png.jpg",
+            "size": 20491,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 238 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/client-grid.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/client-grid.jpg",
+            "basename": "client-grid.jpg",
+            "size": 20463,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 223 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Footer-cta.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Footer-cta.png",
+            "basename": "Footer-cta.png",
+            "size": 19164,
+            "extension": "png",
+            "references": [
+                "file_managed fid 243 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/image6.jpg",
+            "path": "/var/www/html/sites/default/files/2022-03/image6.jpg",
+            "basename": "image6.jpg",
+            "size": 19133,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 39 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/image1_0.jpg",
+            "path": "/var/www/html/sites/default/files/2022-03/image1_0.jpg",
+            "basename": "image1_0.jpg",
+            "size": 19113,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 44 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/image1.jpg",
+            "path": "/var/www/html/sites/default/files/2022-03/image1.jpg",
+            "basename": "image1.jpg",
+            "size": 19113,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 33 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/contact-3.png-min.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/contact-3.png-min.png",
+            "basename": "contact-3.png-min.png",
+            "size": 18860,
+            "extension": "png",
+            "references": [
+                "file_managed fid 177 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/cta-3.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/cta-3.png",
+            "basename": "cta-3.png",
+            "size": 18652,
+            "extension": "png",
+            "references": [
+                "file_managed fid 167 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/blog-category-style-2.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/blog-category-style-2.png",
+            "basename": "blog-category-style-2.png",
+            "size": 18362,
+            "extension": "png",
+            "references": [
+                "file_managed fid 249 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/image5.jpg",
+            "path": "/var/www/html/sites/default/files/2022-03/image5.jpg",
+            "basename": "image5.jpg",
+            "size": 16593,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 40 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/counter-2.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/counter-2.png",
+            "basename": "counter-2.png",
+            "size": 16576,
+            "extension": "png",
+            "references": [
+                "file_managed fid 165 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/error.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/error.png",
+            "basename": "error.png",
+            "size": 16527,
+            "extension": "png",
+            "references": [
+                "file_managed fid 267 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-08/riaz_work_0.jpg",
+            "path": "/var/www/html/sites/default/files/2024-08/riaz_work_0.jpg",
+            "basename": "riaz_work_0.jpg",
+            "size": 15529,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 379 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-08/riaz_work.jpg",
+            "path": "/var/www/html/sites/default/files/2024-08/riaz_work.jpg",
+            "basename": "riaz_work.jpg",
+            "size": 15529,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 370 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/History_0.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/History_0.jpg",
+            "basename": "History_0.jpg",
+            "size": 14802,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 273 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/History.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/History.jpg",
+            "basename": "History.jpg",
+            "size": 14802,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 216 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/ishfaq_work_3_bw.png",
+            "path": "/var/www/html/sites/default/files/2024-07/ishfaq_work_3_bw.png",
+            "basename": "ishfaq_work_3_bw.png",
+            "size": 14330,
+            "extension": "png",
+            "references": [
+                "file_managed fid 325 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/riaz_work_bw.png",
+            "path": "/var/www/html/sites/default/files/2024-07/riaz_work_bw.png",
+            "basename": "riaz_work_bw.png",
+            "size": 13642,
+            "extension": "png",
+            "references": [
+                "file_managed fid 319 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/riaz_work3_bw.png",
+            "path": "/var/www/html/sites/default/files/2024-07/riaz_work3_bw.png",
+            "basename": "riaz_work3_bw.png",
+            "size": 12545,
+            "extension": "png",
+            "references": [
+                "file_managed fid 321 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/banner_png.png",
+            "path": "/var/www/html/sites/default/files/2024-07/banner_png.png",
+            "basename": "banner_png.png",
+            "size": 12202,
+            "extension": "png",
+            "references": [
+                "file_managed fid 343 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/whowe2.jpg",
+            "path": "/var/www/html/sites/default/files/2022-03/whowe2.jpg",
+            "basename": "whowe2.jpg",
+            "size": 11408,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 22 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/whowe1.jpg",
+            "path": "/var/www/html/sites/default/files/2022-03/whowe1.jpg",
+            "basename": "whowe1.jpg",
+            "size": 10725,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 21 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "styles/file_entity_browser_thumbnail/public/2024-07/Drupify-logo.png",
+            "path": "/var/www/html/sites/default/files/styles/file_entity_browser_thumbnail/public/2024-07/Drupify-logo.png",
+            "basename": "Drupify-logo.png",
+            "size": 10467,
+            "extension": "png",
+            "references": [
+                "theme/custom code"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Service page-1.jpg",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Service page-1.jpg",
+            "basename": "Service page-1.jpg",
+            "size": 10255,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 237 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "styles/file_entity_browser_thumbnail/public/2024-07/drupal-web-development.jpg",
+            "path": "/var/www/html/sites/default/files/styles/file_entity_browser_thumbnail/public/2024-07/drupal-web-development.jpg",
+            "basename": "drupal-web-development.jpg",
+            "size": 9319,
+            "extension": "jpg",
+            "references": [
+                "theme/custom code"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/job_deatils_0.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/job_deatils_0.png",
+            "basename": "job_deatils_0.png",
+            "size": 9244,
+            "extension": "png",
+            "references": [
+                "file_managed fid 274 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/job_deatils.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/job_deatils.png",
+            "basename": "job_deatils.png",
+            "size": 9244,
+            "extension": "png",
+            "references": [
+                "file_managed fid 255 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "styles/file_entity_browser_thumbnail/public/2024-07/mission.jpg",
+            "path": "/var/www/html/sites/default/files/styles/file_entity_browser_thumbnail/public/2024-07/mission.jpg",
+            "basename": "mission.jpg",
+            "size": 8883,
+            "extension": "jpg",
+            "references": [
+                "theme/custom code"
+            ]
+        },
+        {
+            "relative": "styles/file_entity_browser_thumbnail/public/footer.png",
+            "path": "/var/www/html/sites/default/files/styles/file_entity_browser_thumbnail/public/footer.png",
+            "basename": "footer.png",
+            "size": 8760,
+            "extension": "png",
+            "references": [
+                "theme/custom code"
+            ]
+        },
+        {
+            "relative": "default_images/ads.jpg",
+            "path": "/var/www/html/sites/default/files/default_images/ads.jpg",
+            "basename": "ads.jpg",
+            "size": 7061,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 120 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/counter-2-min.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/counter-2-min.png",
+            "basename": "counter-2-min.png",
+            "size": 6896,
+            "extension": "png",
+            "references": [
+                "file_managed fid 264 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-10/App.svg",
+            "path": "/var/www/html/sites/default/files/2022-10/App.svg",
+            "basename": "App.svg",
+            "size": 6553,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 291 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/App_0.svg",
+            "path": "/var/www/html/sites/default/files/2022-03/App_0.svg",
+            "basename": "App_0.svg",
+            "size": 6553,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 82 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/App.svg",
+            "path": "/var/www/html/sites/default/files/2022-03/App.svg",
+            "basename": "App.svg",
+            "size": 6553,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 25 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Contact-Social.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Contact-Social.png",
+            "basename": "Contact-Social.png",
+            "size": 6515,
+            "extension": "png",
+            "references": [
+                "file_managed fid 241 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Contact-Social_0.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Contact-Social_0.png",
+            "basename": "Contact-Social_0.png",
+            "size": 6515,
+            "extension": "png",
+            "references": [
+                "file_managed fid 283 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Contact-Social_1.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Contact-Social_1.png",
+            "basename": "Contact-Social_1.png",
+            "size": 6515,
+            "extension": "png",
+            "references": [
+                "file_managed fid 284 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/Group 37279_1.svg",
+            "path": "/var/www/html/sites/default/files/2022-03/Group 37279_1.svg",
+            "basename": "Group 37279_1.svg",
+            "size": 6169,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 92 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/Group 37279_0.svg",
+            "path": "/var/www/html/sites/default/files/2022-03/Group 37279_0.svg",
+            "basename": "Group 37279_0.svg",
+            "size": 6169,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 80 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/Group 37279_2.svg",
+            "path": "/var/www/html/sites/default/files/2022-03/Group 37279_2.svg",
+            "basename": "Group 37279_2.svg",
+            "size": 6169,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 104 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/Group 37279_3.svg",
+            "path": "/var/www/html/sites/default/files/2022-03/Group 37279_3.svg",
+            "basename": "Group 37279_3.svg",
+            "size": 6169,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 110 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/Group 37279.svg",
+            "path": "/var/www/html/sites/default/files/2022-03/Group 37279.svg",
+            "basename": "Group 37279.svg",
+            "size": 6169,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 45 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "pictures/2022-04/2.jpg",
+            "path": "/var/www/html/sites/default/files/pictures/2022-04/2.jpg",
+            "basename": "2.jpg",
+            "size": 6046,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 137 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "pictures/2022-04/1.jpg",
+            "path": "/var/www/html/sites/default/files/pictures/2022-04/1.jpg",
+            "basename": "1.jpg",
+            "size": 5940,
+            "extension": "jpg",
+            "references": [
+                "file_managed fid 138 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-04/noun_Award_4211152.svg",
+            "path": "/var/www/html/sites/default/files/2022-04/noun_Award_4211152.svg",
+            "basename": "noun_Award_4211152.svg",
+            "size": 5928,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 146 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/Award 3.svg",
+            "path": "/var/www/html/sites/default/files/2022-03/Award 3.svg",
+            "basename": "Award 3.svg",
+            "size": 5887,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 114 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/cloud-services-icon.svg",
+            "path": "/var/www/html/sites/default/files/2024-07/cloud-services-icon.svg",
+            "basename": "cloud-services-icon.svg",
+            "size": 5380,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 301 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/Group 36503.svg",
+            "path": "/var/www/html/sites/default/files/2022-03/Group 36503.svg",
+            "basename": "Group 36503.svg",
+            "size": 4811,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 86 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-04/Group 1453.svg",
+            "path": "/var/www/html/sites/default/files/2022-04/Group 1453.svg",
+            "basename": "Group 1453.svg",
+            "size": 4689,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 151 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/head-idea-icon.svg",
+            "path": "/var/www/html/sites/default/files/2024-07/head-idea-icon.svg",
+            "basename": "head-idea-icon.svg",
+            "size": 4633,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 297 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-10/video-2.svg",
+            "path": "/var/www/html/sites/default/files/2022-10/video-2.svg",
+            "basename": "video-2.svg",
+            "size": 4520,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 290 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-10/video-2_0.svg",
+            "path": "/var/www/html/sites/default/files/2022-10/video-2_0.svg",
+            "basename": "video-2_0.svg",
+            "size": 4520,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 292 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/Group 37272.svg",
+            "path": "/var/www/html/sites/default/files/2022-03/Group 37272.svg",
+            "basename": "Group 37272.svg",
+            "size": 4510,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 78 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-04/noun_Award_4194315.svg",
+            "path": "/var/www/html/sites/default/files/2022-04/noun_Award_4194315.svg",
+            "basename": "noun_Award_4194315.svg",
+            "size": 4277,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 145 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-04/noun_Award_4194315_0.svg",
+            "path": "/var/www/html/sites/default/files/2022-04/noun_Award_4194315_0.svg",
+            "basename": "noun_Award_4194315_0.svg",
+            "size": 4277,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 147 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "paragraphs_type_icon/Ad-image.png",
+            "path": "/var/www/html/sites/default/files/paragraphs_type_icon/Ad-image.png",
+            "basename": "Ad-image.png",
+            "size": 4151,
+            "extension": "png",
+            "references": [
+                "file_managed fid 244 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/Group 37281_0.svg",
+            "path": "/var/www/html/sites/default/files/2022-03/Group 37281_0.svg",
+            "basename": "Group 37281_0.svg",
+            "size": 4103,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 47 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/Group 37281.svg",
+            "path": "/var/www/html/sites/default/files/2022-03/Group 37281.svg",
+            "basename": "Group 37281.svg",
+            "size": 4103,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 29 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "media-icons/generic/generic.png",
+            "path": "/var/www/html/sites/default/files/media-icons/generic/generic.png",
+            "basename": "generic.png",
+            "size": 3900,
+            "extension": "png",
+            "references": [
+                "file_managed fid 382 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "styles/file_entity_browser_thumbnail/public/logo.png",
+            "path": "/var/www/html/sites/default/files/styles/file_entity_browser_thumbnail/public/logo.png",
+            "basename": "logo.png",
+            "size": 3425,
+            "extension": "png",
+            "references": [
+                "theme/custom code"
+            ]
+        },
+        {
+            "relative": "Classic_Pro - 1_2.png",
+            "path": "/var/www/html/sites/default/files/Classic_Pro - 1_2.png",
+            "basename": "Classic_Pro - 1_2.png",
+            "size": 3402,
+            "extension": "png",
+            "references": [
+                "file_managed fid 117 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "Classic_Pro - 1.png",
+            "path": "/var/www/html/sites/default/files/Classic_Pro - 1.png",
+            "basename": "Classic_Pro - 1.png",
+            "size": 3402,
+            "extension": "png",
+            "references": [
+                "file_managed fid 16 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/website coding and gear_2.svg",
+            "path": "/var/www/html/sites/default/files/2022-03/website coding and gear_2.svg",
+            "basename": "website coding and gear_2.svg",
+            "size": 3377,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 106 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/website coding and gear_1.svg",
+            "path": "/var/www/html/sites/default/files/2022-03/website coding and gear_1.svg",
+            "basename": "website coding and gear_1.svg",
+            "size": 3377,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 94 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/website coding and gear_0.svg",
+            "path": "/var/www/html/sites/default/files/2022-03/website coding and gear_0.svg",
+            "basename": "website coding and gear_0.svg",
+            "size": 3377,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 83 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/website coding and gear.svg",
+            "path": "/var/www/html/sites/default/files/2022-03/website coding and gear.svg",
+            "basename": "website coding and gear.svg",
+            "size": 3377,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 30 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "styles/file_entity_browser_small/public/2024-07/mission.jpg",
+            "path": "/var/www/html/sites/default/files/styles/file_entity_browser_small/public/2024-07/mission.jpg",
+            "basename": "mission.jpg",
+            "size": 3194,
+            "extension": "jpg",
+            "references": [
+                "theme/custom code"
+            ]
+        },
+        {
+            "relative": "logo.png",
+            "path": "/var/www/html/sites/default/files/logo.png",
+            "basename": "logo.png",
+            "size": 3155,
+            "extension": "png",
+            "references": [
+                "file_managed fid 14 status 1",
+                "database text/html",
+                "theme/custom code"
+            ]
+        },
+        {
+            "relative": "logo_0.png",
+            "path": "/var/www/html/sites/default/files/logo_0.png",
+            "basename": "logo_0.png",
+            "size": 3155,
+            "extension": "png",
+            "references": [
+                "file_managed fid 17 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "logo_3.png",
+            "path": "/var/www/html/sites/default/files/logo_3.png",
+            "basename": "logo_3.png",
+            "size": 3155,
+            "extension": "png",
+            "references": [
+                "file_managed fid 140 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "logo_4.png",
+            "path": "/var/www/html/sites/default/files/logo_4.png",
+            "basename": "logo_4.png",
+            "size": 3155,
+            "extension": "png",
+            "references": [
+                "file_managed fid 150 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "styles/file_entity_browser_small/public/2024-07/drupal-web-development.jpg",
+            "path": "/var/www/html/sites/default/files/styles/file_entity_browser_small/public/2024-07/drupal-web-development.jpg",
+            "basename": "drupal-web-development.jpg",
+            "size": 2813,
+            "extension": "jpg",
+            "references": [
+                "theme/custom code"
+            ]
+        },
+        {
+            "relative": "2022-03/noun_branding_902058.svg",
+            "path": "/var/www/html/sites/default/files/2022-03/noun_branding_902058.svg",
+            "basename": "noun_branding_902058.svg",
+            "size": 2758,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 26 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "styles/thumbnail/public/2024-07/Drupify-logo.png",
+            "path": "/var/www/html/sites/default/files/styles/thumbnail/public/2024-07/Drupify-logo.png",
+            "basename": "Drupify-logo.png",
+            "size": 2576,
+            "extension": "png",
+            "references": [
+                "theme/custom code"
+            ]
+        },
+        {
+            "relative": "2022-03/image4.png",
+            "path": "/var/www/html/sites/default/files/2022-03/image4.png",
+            "basename": "image4.png",
+            "size": 2395,
+            "extension": "png",
+            "references": [
+                "file_managed fid 70 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/Award - 2.svg",
+            "path": "/var/www/html/sites/default/files/2022-03/Award - 2.svg",
+            "basename": "Award - 2.svg",
+            "size": 2284,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 113 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/Award - 2_0.svg",
+            "path": "/var/www/html/sites/default/files/2022-03/Award - 2_0.svg",
+            "basename": "Award - 2_0.svg",
+            "size": 2284,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 115 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "styles/thumbnail/public/2024-07/drupal-web-development.jpg",
+            "path": "/var/www/html/sites/default/files/styles/thumbnail/public/2024-07/drupal-web-development.jpg",
+            "basename": "drupal-web-development.jpg",
+            "size": 2245,
+            "extension": "jpg",
+            "references": [
+                "theme/custom code"
+            ]
+        },
+        {
+            "relative": "2024-07/working-on-office-icon_0.svg",
+            "path": "/var/www/html/sites/default/files/2024-07/working-on-office-icon_0.svg",
+            "basename": "working-on-office-icon_0.svg",
+            "size": 2226,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 300 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/icon-3.png",
+            "path": "/var/www/html/sites/default/files/2022-03/icon-3.png",
+            "basename": "icon-3.png",
+            "size": 2189,
+            "extension": "png",
+            "references": [
+                "file_managed fid 91 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "styles/thumbnail/public/2024-07/mission.jpg",
+            "path": "/var/www/html/sites/default/files/styles/thumbnail/public/2024-07/mission.jpg",
+            "basename": "mission.jpg",
+            "size": 2064,
+            "extension": "jpg",
+            "references": [
+                "theme/custom code"
+            ]
+        },
+        {
+            "relative": "2022-03/image10.png",
+            "path": "/var/www/html/sites/default/files/2022-03/image10.png",
+            "basename": "image10.png",
+            "size": 2058,
+            "extension": "png",
+            "references": [
+                "file_managed fid 64 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/idea.svg",
+            "path": "/var/www/html/sites/default/files/2022-03/idea.svg",
+            "basename": "idea.svg",
+            "size": 2058,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 97 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/image2.png",
+            "path": "/var/www/html/sites/default/files/2022-03/image2.png",
+            "basename": "image2.png",
+            "size": 2039,
+            "extension": "png",
+            "references": [
+                "file_managed fid 72 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/image3.png",
+            "path": "/var/www/html/sites/default/files/2022-03/image3.png",
+            "basename": "image3.png",
+            "size": 1991,
+            "extension": "png",
+            "references": [
+                "file_managed fid 71 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/noun_Graphic Design_3305935_2.svg",
+            "path": "/var/www/html/sites/default/files/2022-03/noun_Graphic Design_3305935_2.svg",
+            "basename": "noun_Graphic Design_3305935_2.svg",
+            "size": 1919,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 93 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/noun_Graphic Design_3305935_3.svg",
+            "path": "/var/www/html/sites/default/files/2022-03/noun_Graphic Design_3305935_3.svg",
+            "basename": "noun_Graphic Design_3305935_3.svg",
+            "size": 1919,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 105 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/noun_Graphic Design_3305935_1.svg",
+            "path": "/var/www/html/sites/default/files/2022-03/noun_Graphic Design_3305935_1.svg",
+            "basename": "noun_Graphic Design_3305935_1.svg",
+            "size": 1919,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 81 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/noun_Graphic Design_3305935_0.svg",
+            "path": "/var/www/html/sites/default/files/2022-03/noun_Graphic Design_3305935_0.svg",
+            "basename": "noun_Graphic Design_3305935_0.svg",
+            "size": 1919,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 46 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/noun_Graphic Design_3305935.svg",
+            "path": "/var/www/html/sites/default/files/2022-03/noun_Graphic Design_3305935.svg",
+            "basename": "noun_Graphic Design_3305935.svg",
+            "size": 1919,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 23 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/Group 37280_0.svg",
+            "path": "/var/www/html/sites/default/files/2022-03/Group 37280_0.svg",
+            "basename": "Group 37280_0.svg",
+            "size": 1865,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 95 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/Group 37280_1.svg",
+            "path": "/var/www/html/sites/default/files/2022-03/Group 37280_1.svg",
+            "basename": "Group 37280_1.svg",
+            "size": 1865,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 107 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/Group 37280.svg",
+            "path": "/var/www/html/sites/default/files/2022-03/Group 37280.svg",
+            "basename": "Group 37280.svg",
+            "size": 1865,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 49 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/Marketing.svg",
+            "path": "/var/www/html/sites/default/files/2022-03/Marketing.svg",
+            "basename": "Marketing.svg",
+            "size": 1800,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 27 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/image6.png",
+            "path": "/var/www/html/sites/default/files/2022-03/image6.png",
+            "basename": "image6.png",
+            "size": 1722,
+            "extension": "png",
+            "references": [
+                "file_managed fid 68 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/icon-2.png",
+            "path": "/var/www/html/sites/default/files/2022-03/icon-2.png",
+            "basename": "icon-2.png",
+            "size": 1708,
+            "extension": "png",
+            "references": [
+                "file_managed fid 89 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2024-07/desktop-smartphone-transfer-icon.svg",
+            "path": "/var/www/html/sites/default/files/2024-07/desktop-smartphone-transfer-icon.svg",
+            "basename": "desktop-smartphone-transfer-icon.svg",
+            "size": 1659,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 298 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/image9.png",
+            "path": "/var/www/html/sites/default/files/2022-03/image9.png",
+            "basename": "image9.png",
+            "size": 1623,
+            "extension": "png",
+            "references": [
+                "file_managed fid 65 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/image5.png",
+            "path": "/var/www/html/sites/default/files/2022-03/image5.png",
+            "basename": "image5.png",
+            "size": 1521,
+            "extension": "png",
+            "references": [
+                "file_managed fid 69 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-04/noun_Award_1591400.svg",
+            "path": "/var/www/html/sites/default/files/2022-04/noun_Award_1591400.svg",
+            "basename": "noun_Award_1591400.svg",
+            "size": 1399,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 144 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/image1.png",
+            "path": "/var/www/html/sites/default/files/2022-03/image1.png",
+            "basename": "image1.png",
+            "size": 1362,
+            "extension": "png",
+            "references": [
+                "file_managed fid 73 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/image11.png",
+            "path": "/var/www/html/sites/default/files/2022-03/image11.png",
+            "basename": "image11.png",
+            "size": 1348,
+            "extension": "png",
+            "references": [
+                "file_managed fid 63 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/image7.png",
+            "path": "/var/www/html/sites/default/files/2022-03/image7.png",
+            "basename": "image7.png",
+            "size": 1280,
+            "extension": "png",
+            "references": [
+                "file_managed fid 67 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/icon-1_0.png",
+            "path": "/var/www/html/sites/default/files/2022-03/icon-1_0.png",
+            "basename": "icon-1_0.png",
+            "size": 1269,
+            "extension": "png",
+            "references": [
+                "file_managed fid 90 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/icon-1.png",
+            "path": "/var/www/html/sites/default/files/2022-03/icon-1.png",
+            "basename": "icon-1.png",
+            "size": 1269,
+            "extension": "png",
+            "references": [
+                "file_managed fid 88 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/XMLID_625__0.svg",
+            "path": "/var/www/html/sites/default/files/2022-03/XMLID_625__0.svg",
+            "basename": "XMLID_625__0.svg",
+            "size": 1237,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 108 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/XMLID_625_.svg",
+            "path": "/var/www/html/sites/default/files/2022-03/XMLID_625_.svg",
+            "basename": "XMLID_625_.svg",
+            "size": 1237,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 74 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/Award 1.svg",
+            "path": "/var/www/html/sites/default/files/2022-03/Award 1.svg",
+            "basename": "Award 1.svg",
+            "size": 1203,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 112 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/Support .svg",
+            "path": "/var/www/html/sites/default/files/2022-03/Support .svg",
+            "basename": "Support .svg",
+            "size": 1092,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 98 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/Qulity.svg",
+            "path": "/var/www/html/sites/default/files/2022-03/Qulity.svg",
+            "basename": "Qulity.svg",
+            "size": 845,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 99 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "2022-03/layer1.svg",
+            "path": "/var/www/html/sites/default/files/2022-03/layer1.svg",
+            "basename": "layer1.svg",
+            "size": 687,
+            "extension": "svg",
+            "references": [
+                "file_managed fid 109 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "file_browser_icon.svg",
+            "path": "/var/www/html/sites/default/files/file_browser_icon.svg",
+            "basename": "file_browser_icon.svg",
+            "size": 509,
+            "extension": "svg",
+            "references": [
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "file_browser_icon.png",
+            "path": "/var/www/html/sites/default/files/file_browser_icon.png",
+            "basename": "file_browser_icon.png",
+            "size": 304,
+            "extension": "png",
+            "references": [
+                "file_managed fid 18 status 1",
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "menu.png",
+            "path": "/var/www/html/sites/default/files/menu.png",
+            "basename": "menu.png",
+            "size": 227,
+            "extension": "png",
+            "references": [
+                "file_managed fid 13 status 1",
+                "database text/html"
+            ]
+        }
+    ],
+    "candidates": [
+        {
+            "relative": "media-icons/generic/no-thumbnail.png",
+            "path": "/var/www/html/sites/default/files/media-icons/generic/no-thumbnail.png",
+            "basename": "no-thumbnail.png",
+            "size": 7318,
+            "extension": "png",
+            "references": []
+        },
+        {
+            "relative": "media-icons/generic/audio.png",
+            "path": "/var/www/html/sites/default/files/media-icons/generic/audio.png",
+            "basename": "audio.png",
+            "size": 5294,
+            "extension": "png",
+            "references": []
+        },
+        {
+            "relative": "media-icons/generic/video.png",
+            "path": "/var/www/html/sites/default/files/media-icons/generic/video.png",
+            "basename": "video.png",
+            "size": 4156,
+            "extension": "png",
+            "references": []
+        },
+        {
+            "relative": "xmlsitemap/NXhscRe0440PFpI5dSznEVgmauL25KojD7u4e9aZwOM/1.xml",
+            "path": "/var/www/html/sites/default/files/xmlsitemap/NXhscRe0440PFpI5dSznEVgmauL25KojD7u4e9aZwOM/1.xml",
+            "basename": "1.xml",
+            "size": 2941,
+            "extension": "xml",
+            "references": []
+        },
+        {
+            "relative": "private/.htaccess",
+            "path": "/var/www/html/sites/default/files/private/.htaccess",
+            "basename": ".htaccess",
+            "size": 686,
+            "extension": "htaccess",
+            "references": []
+        },
+        {
+            "relative": "config_unQroZP1GOm6xUxccE1XuluppYG5mlX43A59v1RepoFCvMU3g6aE5Q41GciaD3yKf4Mfsvm0vA/sync/.htaccess",
+            "path": "/var/www/html/sites/default/files/config_unQroZP1GOm6xUxccE1XuluppYG5mlX43A59v1RepoFCvMU3g6aE5Q41GciaD3yKf4Mfsvm0vA/sync/.htaccess",
+            "basename": ".htaccess",
+            "size": 685,
+            "extension": "htaccess",
+            "references": []
+        },
+        {
+            "relative": "config_r_nlZSRos4pprfW7jAjanTcd2ECWEVFU07lrT9b2Tjd-WN3jbGJVtP6-iwmq3idniwxwq4KqjA/sync/.htaccess",
+            "path": "/var/www/html/sites/default/files/config_r_nlZSRos4pprfW7jAjanTcd2ECWEVFU07lrT9b2Tjd-WN3jbGJVtP6-iwmq3idniwxwq4KqjA/sync/.htaccess",
+            "basename": ".htaccess",
+            "size": 685,
+            "extension": "htaccess",
+            "references": []
+        },
+        {
+            "relative": ".htaccess",
+            "path": "/var/www/html/sites/default/files/.htaccess",
+            "basename": ".htaccess",
+            "size": 487,
+            "extension": "htaccess",
+            "references": []
+        },
+        {
+            "relative": "config_r_nlZSRos4pprfW7jAjanTcd2ECWEVFU07lrT9b2Tjd-WN3jbGJVtP6-iwmq3idniwxwq4KqjA/sync/README.txt",
+            "path": "/var/www/html/sites/default/files/config_r_nlZSRos4pprfW7jAjanTcd2ECWEVFU07lrT9b2Tjd-WN3jbGJVtP6-iwmq3idniwxwq4KqjA/sync/README.txt",
+            "basename": "README.txt",
+            "size": 283,
+            "extension": "txt",
+            "references": []
+        },
+        {
+            "relative": "config_unQroZP1GOm6xUxccE1XuluppYG5mlX43A59v1RepoFCvMU3g6aE5Q41GciaD3yKf4Mfsvm0vA/sync/README.txt",
+            "path": "/var/www/html/sites/default/files/config_unQroZP1GOm6xUxccE1XuluppYG5mlX43A59v1RepoFCvMU3g6aE5Q41GciaD3yKf4Mfsvm0vA/sync/README.txt",
+            "basename": "README.txt",
+            "size": 278,
+            "extension": "txt",
+            "references": []
+        }
+    ],
+    "generated": [
+        {
+            "relative": "css/css_H0P2Ye1qCxe1P8oTm4LgYPHl3jVlauwAfdOmmIvl3LI.css",
+            "path": "/var/www/html/sites/default/files/css/css_H0P2Ye1qCxe1P8oTm4LgYPHl3jVlauwAfdOmmIvl3LI.css",
+            "basename": "css_H0P2Ye1qCxe1P8oTm4LgYPHl3jVlauwAfdOmmIvl3LI.css",
+            "size": 525326,
+            "extension": "css",
+            "references": []
+        },
+        {
+            "relative": "css/css_kNDp8eve5XNxA11DOC6SLt1ITYCJkwtu2L_NokQL2s4.css",
+            "path": "/var/www/html/sites/default/files/css/css_kNDp8eve5XNxA11DOC6SLt1ITYCJkwtu2L_NokQL2s4.css",
+            "basename": "css_kNDp8eve5XNxA11DOC6SLt1ITYCJkwtu2L_NokQL2s4.css",
+            "size": 525098,
+            "extension": "css",
+            "references": [
+                "database text/html"
+            ]
+        },
+        {
+            "relative": "js/js_81pC7JGGE1iaA13Jtay715JRgaCA35PUEEuiiG6p4rY.js",
+            "path": "/var/www/html/sites/default/files/js/js_81pC7JGGE1iaA13Jtay715JRgaCA35PUEEuiiG6p4rY.js",
+            "basename": "js_81pC7JGGE1iaA13Jtay715JRgaCA35PUEEuiiG6p4rY.js",
+            "size": 357302,
+            "extension": "js",
+            "references": []
+        },
+        {
+            "relative": "js/js__0F1vGSJeEd4u4uSBBk8yVBo6dipFpYn7ydeLD9QV5A.js",
+            "path": "/var/www/html/sites/default/files/js/js__0F1vGSJeEd4u4uSBBk8yVBo6dipFpYn7ydeLD9QV5A.js",
+            "basename": "js__0F1vGSJeEd4u4uSBBk8yVBo6dipFpYn7ydeLD9QV5A.js",
+            "size": 342544,
+            "extension": "js",
+            "references": []
+        },
+        {
+            "relative": "js/js_yIUe_zAppJcvjSFH-V4a0ZdwN3BC07rDAThKniiC8PI.js",
+            "path": "/var/www/html/sites/default/files/js/js_yIUe_zAppJcvjSFH-V4a0ZdwN3BC07rDAThKniiC8PI.js",
+            "basename": "js_yIUe_zAppJcvjSFH-V4a0ZdwN3BC07rDAThKniiC8PI.js",
+            "size": 326386,
+            "extension": "js",
+            "references": []
+        },
+        {
+            "relative": "js/js_BusQqaGF-7Pmty32n8to0MG-NYK5L3ohqo-odHSKZGc.js",
+            "path": "/var/www/html/sites/default/files/js/js_BusQqaGF-7Pmty32n8to0MG-NYK5L3ohqo-odHSKZGc.js",
+            "basename": "js_BusQqaGF-7Pmty32n8to0MG-NYK5L3ohqo-odHSKZGc.js",
+            "size": 313930,
+            "extension": "js",
+            "references": []
+        },
+        {
+            "relative": "js/js_0lhhz8DqAjtk54Zupk2QwfRXGhHaH87TBEuY7dt6YT4.js",
+            "path": "/var/www/html/sites/default/files/js/js_0lhhz8DqAjtk54Zupk2QwfRXGhHaH87TBEuY7dt6YT4.js",
+            "basename": "js_0lhhz8DqAjtk54Zupk2QwfRXGhHaH87TBEuY7dt6YT4.js",
+            "size": 312103,
+            "extension": "js",
+            "references": []
+        },
+        {
+            "relative": "js/js_Qm-Qw2iHY1MKRwAPN5RlfY_oyQA3IC8DYCYg9bhqKpM.js",
+            "path": "/var/www/html/sites/default/files/js/js_Qm-Qw2iHY1MKRwAPN5RlfY_oyQA3IC8DYCYg9bhqKpM.js",
+            "basename": "js_Qm-Qw2iHY1MKRwAPN5RlfY_oyQA3IC8DYCYg9bhqKpM.js",
+            "size": 303370,
+            "extension": "js",
+            "references": []
+        },
+        {
+            "relative": "js/js_nwdikHuJhQ_5JgnweU_wva7tOSiEND_Rrn0GdDolNC8.js",
+            "path": "/var/www/html/sites/default/files/js/js_nwdikHuJhQ_5JgnweU_wva7tOSiEND_Rrn0GdDolNC8.js",
+            "basename": "js_nwdikHuJhQ_5JgnweU_wva7tOSiEND_Rrn0GdDolNC8.js",
+            "size": 101604,
+            "extension": "js",
+            "references": []
+        },
+        {
+            "relative": "js/js_81pC7JGGE1iaA13Jtay715JRgaCA35PUEEuiiG6p4rY.js.gz",
+            "path": "/var/www/html/sites/default/files/js/js_81pC7JGGE1iaA13Jtay715JRgaCA35PUEEuiiG6p4rY.js.gz",
+            "basename": "js_81pC7JGGE1iaA13Jtay715JRgaCA35PUEEuiiG6p4rY.js.gz",
+            "size": 99305,
+            "extension": "gz",
+            "references": []
+        },
+        {
+            "relative": "js/js__0F1vGSJeEd4u4uSBBk8yVBo6dipFpYn7ydeLD9QV5A.js.gz",
+            "path": "/var/www/html/sites/default/files/js/js__0F1vGSJeEd4u4uSBBk8yVBo6dipFpYn7ydeLD9QV5A.js.gz",
+            "basename": "js__0F1vGSJeEd4u4uSBBk8yVBo6dipFpYn7ydeLD9QV5A.js.gz",
+            "size": 95324,
+            "extension": "gz",
+            "references": []
+        },
+        {
+            "relative": "js/js_yIUe_zAppJcvjSFH-V4a0ZdwN3BC07rDAThKniiC8PI.js.gz",
+            "path": "/var/www/html/sites/default/files/js/js_yIUe_zAppJcvjSFH-V4a0ZdwN3BC07rDAThKniiC8PI.js.gz",
+            "basename": "js_yIUe_zAppJcvjSFH-V4a0ZdwN3BC07rDAThKniiC8PI.js.gz",
+            "size": 92041,
+            "extension": "gz",
+            "references": []
+        },
+        {
+            "relative": "js/js_BusQqaGF-7Pmty32n8to0MG-NYK5L3ohqo-odHSKZGc.js.gz",
+            "path": "/var/www/html/sites/default/files/js/js_BusQqaGF-7Pmty32n8to0MG-NYK5L3ohqo-odHSKZGc.js.gz",
+            "basename": "js_BusQqaGF-7Pmty32n8to0MG-NYK5L3ohqo-odHSKZGc.js.gz",
+            "size": 88804,
+            "extension": "gz",
+            "references": []
+        },
+        {
+            "relative": "js/js_0lhhz8DqAjtk54Zupk2QwfRXGhHaH87TBEuY7dt6YT4.js.gz",
+            "path": "/var/www/html/sites/default/files/js/js_0lhhz8DqAjtk54Zupk2QwfRXGhHaH87TBEuY7dt6YT4.js.gz",
+            "basename": "js_0lhhz8DqAjtk54Zupk2QwfRXGhHaH87TBEuY7dt6YT4.js.gz",
+            "size": 88336,
+            "extension": "gz",
+            "references": []
+        },
+        {
+            "relative": "js/js_Qm-Qw2iHY1MKRwAPN5RlfY_oyQA3IC8DYCYg9bhqKpM.js.gz",
+            "path": "/var/www/html/sites/default/files/js/js_Qm-Qw2iHY1MKRwAPN5RlfY_oyQA3IC8DYCYg9bhqKpM.js.gz",
+            "basename": "js_Qm-Qw2iHY1MKRwAPN5RlfY_oyQA3IC8DYCYg9bhqKpM.js.gz",
+            "size": 86016,
+            "extension": "gz",
+            "references": []
+        },
+        {
+            "relative": "css/css_H0P2Ye1qCxe1P8oTm4LgYPHl3jVlauwAfdOmmIvl3LI.css.gz",
+            "path": "/var/www/html/sites/default/files/css/css_H0P2Ye1qCxe1P8oTm4LgYPHl3jVlauwAfdOmmIvl3LI.css.gz",
+            "basename": "css_H0P2Ye1qCxe1P8oTm4LgYPHl3jVlauwAfdOmmIvl3LI.css.gz",
+            "size": 78714,
+            "extension": "gz",
+            "references": []
+        },
+        {
+            "relative": "css/css_kNDp8eve5XNxA11DOC6SLt1ITYCJkwtu2L_NokQL2s4.css.gz",
+            "path": "/var/www/html/sites/default/files/css/css_kNDp8eve5XNxA11DOC6SLt1ITYCJkwtu2L_NokQL2s4.css.gz",
+            "basename": "css_kNDp8eve5XNxA11DOC6SLt1ITYCJkwtu2L_NokQL2s4.css.gz",
+            "size": 78659,
+            "extension": "gz",
+            "references": []
+        },
+        {
+            "relative": "css/css_yYlnJ_cxs2bYGNMriKxxk8VHe3ee4dw-BIJoV0gnQ3g.css",
+            "path": "/var/www/html/sites/default/files/css/css_yYlnJ_cxs2bYGNMriKxxk8VHe3ee4dw-BIJoV0gnQ3g.css",
+            "basename": "css_yYlnJ_cxs2bYGNMriKxxk8VHe3ee4dw-BIJoV0gnQ3g.css",
+            "size": 69599,
+            "extension": "css",
+            "references": []
+        },
+        {
+            "relative": "js/js_-TFJLsyr8MNMuk6iJZKdIOr4auPP9UAmrmkL7EGIa-4.js",
+            "path": "/var/www/html/sites/default/files/js/js_-TFJLsyr8MNMuk6iJZKdIOr4auPP9UAmrmkL7EGIa-4.js",
+            "basename": "js_-TFJLsyr8MNMuk6iJZKdIOr4auPP9UAmrmkL7EGIa-4.js",
+            "size": 68908,
+            "extension": "js",
+            "references": []
+        },
+        {
+            "relative": "css/css_bBxOgwmJdLB0oCBDBN82dQh12NM9vvpgiGOflnzw-34.css",
+            "path": "/var/www/html/sites/default/files/css/css_bBxOgwmJdLB0oCBDBN82dQh12NM9vvpgiGOflnzw-34.css",
+            "basename": "css_bBxOgwmJdLB0oCBDBN82dQh12NM9vvpgiGOflnzw-34.css",
+            "size": 66065,
+            "extension": "css",
+            "references": []
+        },
+        {
+            "relative": "css/css_Mwyz7QR0M2YCZ4O-ZqtZ5WySJeaNz64zwBM3Z4syXho.css",
+            "path": "/var/www/html/sites/default/files/css/css_Mwyz7QR0M2YCZ4O-ZqtZ5WySJeaNz64zwBM3Z4syXho.css",
+            "basename": "css_Mwyz7QR0M2YCZ4O-ZqtZ5WySJeaNz64zwBM3Z4syXho.css",
+            "size": 37351,
+            "extension": "css",
+            "references": []
+        },
+        {
+            "relative": "js/js_nwdikHuJhQ_5JgnweU_wva7tOSiEND_Rrn0GdDolNC8.js.gz",
+            "path": "/var/www/html/sites/default/files/js/js_nwdikHuJhQ_5JgnweU_wva7tOSiEND_Rrn0GdDolNC8.js.gz",
+            "basename": "js_nwdikHuJhQ_5JgnweU_wva7tOSiEND_Rrn0GdDolNC8.js.gz",
+            "size": 31563,
+            "extension": "gz",
+            "references": []
+        },
+        {
+            "relative": "js/js_Kj7ZiJrhnAti54PSnQhO2qM-JEBvTUbxSDpiHZhTyYs.js",
+            "path": "/var/www/html/sites/default/files/js/js_Kj7ZiJrhnAti54PSnQhO2qM-JEBvTUbxSDpiHZhTyYs.js",
+            "basename": "js_Kj7ZiJrhnAti54PSnQhO2qM-JEBvTUbxSDpiHZhTyYs.js",
+            "size": 30471,
+            "extension": "js",
+            "references": []
+        },
+        {
+            "relative": "css/css_pP9d3dpXbp20Tq8oviGbpSX1WsRRTAa2wAbpWBN2nPo.css",
+            "path": "/var/www/html/sites/default/files/css/css_pP9d3dpXbp20Tq8oviGbpSX1WsRRTAa2wAbpWBN2nPo.css",
+            "basename": "css_pP9d3dpXbp20Tq8oviGbpSX1WsRRTAa2wAbpWBN2nPo.css",
+            "size": 19292,
+            "extension": "css",
+            "references": []
+        },
+        {
+            "relative": "css/css_2RddTUHRTU9pK2emev1zXcCGsnFatY8NAiw_m7Jdy08.css",
+            "path": "/var/www/html/sites/default/files/css/css_2RddTUHRTU9pK2emev1zXcCGsnFatY8NAiw_m7Jdy08.css",
+            "basename": "css_2RddTUHRTU9pK2emev1zXcCGsnFatY8NAiw_m7Jdy08.css",
+            "size": 19241,
+            "extension": "css",
+            "references": []
+        },
+        {
+            "relative": "js/js_-TFJLsyr8MNMuk6iJZKdIOr4auPP9UAmrmkL7EGIa-4.js.gz",
+            "path": "/var/www/html/sites/default/files/js/js_-TFJLsyr8MNMuk6iJZKdIOr4auPP9UAmrmkL7EGIa-4.js.gz",
+            "basename": "js_-TFJLsyr8MNMuk6iJZKdIOr4auPP9UAmrmkL7EGIa-4.js.gz",
+            "size": 18405,
+            "extension": "gz",
+            "references": []
+        },
+        {
+            "relative": "js/js_YRLObVeWTB2XaRMb7HmzM9D5xBDs5YhfD2fnnF1eOw8.js",
+            "path": "/var/www/html/sites/default/files/js/js_YRLObVeWTB2XaRMb7HmzM9D5xBDs5YhfD2fnnF1eOw8.js",
+            "basename": "js_YRLObVeWTB2XaRMb7HmzM9D5xBDs5YhfD2fnnF1eOw8.js",
+            "size": 12862,
+            "extension": "js",
+            "references": []
+        },
+        {
+            "relative": "css/css_yYlnJ_cxs2bYGNMriKxxk8VHe3ee4dw-BIJoV0gnQ3g.css.gz",
+            "path": "/var/www/html/sites/default/files/css/css_yYlnJ_cxs2bYGNMriKxxk8VHe3ee4dw-BIJoV0gnQ3g.css.gz",
+            "basename": "css_yYlnJ_cxs2bYGNMriKxxk8VHe3ee4dw-BIJoV0gnQ3g.css.gz",
+            "size": 12249,
+            "extension": "gz",
+            "references": []
+        },
+        {
+            "relative": "css/css_bBxOgwmJdLB0oCBDBN82dQh12NM9vvpgiGOflnzw-34.css.gz",
+            "path": "/var/www/html/sites/default/files/css/css_bBxOgwmJdLB0oCBDBN82dQh12NM9vvpgiGOflnzw-34.css.gz",
+            "basename": "css_bBxOgwmJdLB0oCBDBN82dQh12NM9vvpgiGOflnzw-34.css.gz",
+            "size": 11535,
+            "extension": "gz",
+            "references": []
+        },
+        {
+            "relative": "js/js_Kj7ZiJrhnAti54PSnQhO2qM-JEBvTUbxSDpiHZhTyYs.js.gz",
+            "path": "/var/www/html/sites/default/files/js/js_Kj7ZiJrhnAti54PSnQhO2qM-JEBvTUbxSDpiHZhTyYs.js.gz",
+            "basename": "js_Kj7ZiJrhnAti54PSnQhO2qM-JEBvTUbxSDpiHZhTyYs.js.gz",
+            "size": 8689,
+            "extension": "gz",
+            "references": []
+        },
+        {
+            "relative": "css/css_PswyMmzKk1dqFH0R5Ugfnnv-uNT2E3RfpYEZkpGqAJU.css",
+            "path": "/var/www/html/sites/default/files/css/css_PswyMmzKk1dqFH0R5Ugfnnv-uNT2E3RfpYEZkpGqAJU.css",
+            "basename": "css_PswyMmzKk1dqFH0R5Ugfnnv-uNT2E3RfpYEZkpGqAJU.css",
+            "size": 7338,
+            "extension": "css",
+            "references": []
+        },
+        {
+            "relative": "css/css_Mwyz7QR0M2YCZ4O-ZqtZ5WySJeaNz64zwBM3Z4syXho.css.gz",
+            "path": "/var/www/html/sites/default/files/css/css_Mwyz7QR0M2YCZ4O-ZqtZ5WySJeaNz64zwBM3Z4syXho.css.gz",
+            "basename": "css_Mwyz7QR0M2YCZ4O-ZqtZ5WySJeaNz64zwBM3Z4syXho.css.gz",
+            "size": 6358,
+            "extension": "gz",
+            "references": []
+        },
+        {
+            "relative": "css/css_pP9d3dpXbp20Tq8oviGbpSX1WsRRTAa2wAbpWBN2nPo.css.gz",
+            "path": "/var/www/html/sites/default/files/css/css_pP9d3dpXbp20Tq8oviGbpSX1WsRRTAa2wAbpWBN2nPo.css.gz",
+            "basename": "css_pP9d3dpXbp20Tq8oviGbpSX1WsRRTAa2wAbpWBN2nPo.css.gz",
+            "size": 6085,
+            "extension": "gz",
+            "references": []
+        },
+        {
+            "relative": "css/css_2RddTUHRTU9pK2emev1zXcCGsnFatY8NAiw_m7Jdy08.css.gz",
+            "path": "/var/www/html/sites/default/files/css/css_2RddTUHRTU9pK2emev1zXcCGsnFatY8NAiw_m7Jdy08.css.gz",
+            "basename": "css_2RddTUHRTU9pK2emev1zXcCGsnFatY8NAiw_m7Jdy08.css.gz",
+            "size": 6056,
+            "extension": "gz",
+            "references": []
+        },
+        {
+            "relative": "js/js_YRLObVeWTB2XaRMb7HmzM9D5xBDs5YhfD2fnnF1eOw8.js.gz",
+            "path": "/var/www/html/sites/default/files/js/js_YRLObVeWTB2XaRMb7HmzM9D5xBDs5YhfD2fnnF1eOw8.js.gz",
+            "basename": "js_YRLObVeWTB2XaRMb7HmzM9D5xBDs5YhfD2fnnF1eOw8.js.gz",
+            "size": 4694,
+            "extension": "gz",
+            "references": []
+        },
+        {
+            "relative": "css/css_mTyOSf57mSatuleOHfSyHFkjQrJdWTnPTV7B8qtM6lw.css",
+            "path": "/var/www/html/sites/default/files/css/css_mTyOSf57mSatuleOHfSyHFkjQrJdWTnPTV7B8qtM6lw.css",
+            "basename": "css_mTyOSf57mSatuleOHfSyHFkjQrJdWTnPTV7B8qtM6lw.css",
+            "size": 3924,
+            "extension": "css",
+            "references": []
+        },
+        {
+            "relative": "css/css_MjHWwXGr8sqMkIZStps6ktjIPlnowj4jSXFbyD6jbVM.css",
+            "path": "/var/www/html/sites/default/files/css/css_MjHWwXGr8sqMkIZStps6ktjIPlnowj4jSXFbyD6jbVM.css",
+            "basename": "css_MjHWwXGr8sqMkIZStps6ktjIPlnowj4jSXFbyD6jbVM.css",
+            "size": 3760,
+            "extension": "css",
+            "references": []
+        },
+        {
+            "relative": "css/css_8eDZcXFvUiZfYsjIbWpMPWnrbZj1oWl56uYS-zN_vR4.css",
+            "path": "/var/www/html/sites/default/files/css/css_8eDZcXFvUiZfYsjIbWpMPWnrbZj1oWl56uYS-zN_vR4.css",
+            "basename": "css_8eDZcXFvUiZfYsjIbWpMPWnrbZj1oWl56uYS-zN_vR4.css",
+            "size": 2097,
+            "extension": "css",
+            "references": []
+        },
+        {
+            "relative": "css/css_PswyMmzKk1dqFH0R5Ugfnnv-uNT2E3RfpYEZkpGqAJU.css.gz",
+            "path": "/var/www/html/sites/default/files/css/css_PswyMmzKk1dqFH0R5Ugfnnv-uNT2E3RfpYEZkpGqAJU.css.gz",
+            "basename": "css_PswyMmzKk1dqFH0R5Ugfnnv-uNT2E3RfpYEZkpGqAJU.css.gz",
+            "size": 2075,
+            "extension": "gz",
+            "references": []
+        },
+        {
+            "relative": "js/js_fU0LRNsrzQAc2oTH20EzaZ7lgByRrou3pBjbGkldbJ4.js",
+            "path": "/var/www/html/sites/default/files/js/js_fU0LRNsrzQAc2oTH20EzaZ7lgByRrou3pBjbGkldbJ4.js",
+            "basename": "js_fU0LRNsrzQAc2oTH20EzaZ7lgByRrou3pBjbGkldbJ4.js",
+            "size": 1904,
+            "extension": "js",
+            "references": []
+        },
+        {
+            "relative": "css/css_mTyOSf57mSatuleOHfSyHFkjQrJdWTnPTV7B8qtM6lw.css.gz",
+            "path": "/var/www/html/sites/default/files/css/css_mTyOSf57mSatuleOHfSyHFkjQrJdWTnPTV7B8qtM6lw.css.gz",
+            "basename": "css_mTyOSf57mSatuleOHfSyHFkjQrJdWTnPTV7B8qtM6lw.css.gz",
+            "size": 1343,
+            "extension": "gz",
+            "references": []
+        },
+        {
+            "relative": "css/css_MjHWwXGr8sqMkIZStps6ktjIPlnowj4jSXFbyD6jbVM.css.gz",
+            "path": "/var/www/html/sites/default/files/css/css_MjHWwXGr8sqMkIZStps6ktjIPlnowj4jSXFbyD6jbVM.css.gz",
+            "basename": "css_MjHWwXGr8sqMkIZStps6ktjIPlnowj4jSXFbyD6jbVM.css.gz",
+            "size": 1293,
+            "extension": "gz",
+            "references": []
+        },
+        {
+            "relative": "css/css_8eDZcXFvUiZfYsjIbWpMPWnrbZj1oWl56uYS-zN_vR4.css.gz",
+            "path": "/var/www/html/sites/default/files/css/css_8eDZcXFvUiZfYsjIbWpMPWnrbZj1oWl56uYS-zN_vR4.css.gz",
+            "basename": "css_8eDZcXFvUiZfYsjIbWpMPWnrbZj1oWl56uYS-zN_vR4.css.gz",
+            "size": 1000,
+            "extension": "gz",
+            "references": []
+        },
+        {
+            "relative": "js/js_fU0LRNsrzQAc2oTH20EzaZ7lgByRrou3pBjbGkldbJ4.js.gz",
+            "path": "/var/www/html/sites/default/files/js/js_fU0LRNsrzQAc2oTH20EzaZ7lgByRrou3pBjbGkldbJ4.js.gz",
+            "basename": "js_fU0LRNsrzQAc2oTH20EzaZ7lgByRrou3pBjbGkldbJ4.js.gz",
+            "size": 819,
+            "extension": "gz",
+            "references": []
+        },
+        {
+            "relative": "css/css_AiB7tLHnLcPD06h4uQNItT_S1-KqMctvPTrQWdtWboE.css",
+            "path": "/var/www/html/sites/default/files/css/css_AiB7tLHnLcPD06h4uQNItT_S1-KqMctvPTrQWdtWboE.css",
+            "basename": "css_AiB7tLHnLcPD06h4uQNItT_S1-KqMctvPTrQWdtWboE.css",
+            "size": 566,
+            "extension": "css",
+            "references": []
+        },
+        {
+            "relative": "css/css_AiB7tLHnLcPD06h4uQNItT_S1-KqMctvPTrQWdtWboE.css.gz",
+            "path": "/var/www/html/sites/default/files/css/css_AiB7tLHnLcPD06h4uQNItT_S1-KqMctvPTrQWdtWboE.css.gz",
+            "basename": "css_AiB7tLHnLcPD06h4uQNItT_S1-KqMctvPTrQWdtWboE.css.gz",
+            "size": 325,
+            "extension": "gz",
+            "references": []
+        },
+        {
+            "relative": "css/css_CUR1qVAuMRuTTcMEnu9Xa1pD0qvNcT9VvO34T1CqV2I.css.gz",
+            "path": "/var/www/html/sites/default/files/css/css_CUR1qVAuMRuTTcMEnu9Xa1pD0qvNcT9VvO34T1CqV2I.css.gz",
+            "basename": "css_CUR1qVAuMRuTTcMEnu9Xa1pD0qvNcT9VvO34T1CqV2I.css.gz",
+            "size": 130,
+            "extension": "gz",
+            "references": []
+        },
+        {
+            "relative": "css/css_CUR1qVAuMRuTTcMEnu9Xa1pD0qvNcT9VvO34T1CqV2I.css",
+            "path": "/var/www/html/sites/default/files/css/css_CUR1qVAuMRuTTcMEnu9Xa1pD0qvNcT9VvO34T1CqV2I.css",
+            "basename": "css_CUR1qVAuMRuTTcMEnu9Xa1pD0qvNcT9VvO34T1CqV2I.css",
+            "size": 120,
+            "extension": "css",
+            "references": []
+        },
+        {
+            "relative": "css/css_rouaAGTR7U4Mn2FDNSrvgOkfDqbDg3O9PYqLtbBKmUc.css.gz",
+            "path": "/var/www/html/sites/default/files/css/css_rouaAGTR7U4Mn2FDNSrvgOkfDqbDg3O9PYqLtbBKmUc.css.gz",
+            "basename": "css_rouaAGTR7U4Mn2FDNSrvgOkfDqbDg3O9PYqLtbBKmUc.css.gz",
+            "size": 113,
+            "extension": "gz",
+            "references": []
+        },
+        {
+            "relative": "css/css_rouaAGTR7U4Mn2FDNSrvgOkfDqbDg3O9PYqLtbBKmUc.css",
+            "path": "/var/www/html/sites/default/files/css/css_rouaAGTR7U4Mn2FDNSrvgOkfDqbDg3O9PYqLtbBKmUc.css",
+            "basename": "css_rouaAGTR7U4Mn2FDNSrvgOkfDqbDg3O9PYqLtbBKmUc.css",
+            "size": 99,
+            "extension": "css",
+            "references": []
+        }
+    ],
+    "junk": []
+}

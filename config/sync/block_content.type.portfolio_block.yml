@@ -1,0 +1,8 @@
+uuid: aea50411-1782-467d-915d-1453b6b8a7e4
+langcode: en
+status: true
+dependencies: {  }
+id: portfolio_block
+label: 'Portfolio Block'
+revision: false
+description: 'This Block Appears in Portfolio Page'

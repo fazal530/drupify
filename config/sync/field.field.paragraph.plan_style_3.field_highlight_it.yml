@@ -1,0 +1,23 @@
+uuid: 5fb58e87-9520-41d7-84df-260e5a3b29cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_highlight_it
+    - paragraphs.paragraphs_type.plan_style_3
+id: paragraph.plan_style_3.field_highlight_it
+field_name: field_highlight_it
+entity_type: paragraph
+bundle: plan_style_3
+label: 'Highlight It'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

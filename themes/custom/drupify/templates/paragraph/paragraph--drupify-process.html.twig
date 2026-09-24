@@ -1,0 +1,20 @@
+{#
+/**
+ * @file paragraph--drupify-process.html.twig
+ * Migration & upgrade expertise section.
+ */
+#}
+<section class="drupify-section" aria-labelledby="migration-title">
+  <div class="drupify-container drupify-split">
+    <div class="drupify-section-head drupify-align-start">
+      <p class="drupify-eyebrow">{{ content.field_eyebrow ?: 'Migration & upgrade expertise'|t }}</p>
+      <h2 id="migration-title">{{ content.field_title }}</h2>
+      {% if content.field_description|render %}
+        <p>{{ content.field_description }}</p>
+      {% endif %}
+    </div>
+    <ol class="drupify-process-list">
+      {{ content.field_reference_sections }}
+    </ol>
+  </div>
+</section>

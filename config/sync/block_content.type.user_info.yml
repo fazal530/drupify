@@ -1,0 +1,8 @@
+uuid: 77b2150b-3bf5-47ca-8c15-9459fdde37b8
+langcode: en
+status: true
+dependencies: {  }
+id: user_info
+label: 'User Info'
+revision: false
+description: 'We wil Collect data for user like Designation , Name , About , Image and for Cv'

@@ -1,0 +1,19 @@
+uuid: 32aab25b-acb1-4030-a0a3-f5e16305e63f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link_title
+    - paragraphs.paragraphs_type.drupify_audit_cta
+id: paragraph.drupify_audit_cta.field_link_title
+field_name: field_link_title
+entity_type: paragraph
+bundle: drupify_audit_cta
+label: 'Button label'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

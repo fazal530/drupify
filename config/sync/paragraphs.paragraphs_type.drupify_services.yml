@@ -1,0 +1,10 @@
+uuid: d072af42-e9fe-43a0-85e6-079189ae9ea1
+langcode: en
+status: true
+dependencies: {  }
+id: drupify_services
+label: 'Featured Services'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

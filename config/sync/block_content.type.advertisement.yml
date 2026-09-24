@@ -1,0 +1,8 @@
+uuid: 02be26c7-9377-4d8f-834f-ca96b312687d
+langcode: en
+status: true
+dependencies: {  }
+id: advertisement
+label: Advertisement
+revision: false
+description: 'To Show Ad, Displayed as Block'

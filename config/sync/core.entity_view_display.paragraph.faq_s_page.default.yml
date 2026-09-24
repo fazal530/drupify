@@ -1,0 +1,24 @@
+uuid: b869ea7f-ef5b-40dc-8822-400b89c53d25
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.faq_s_page.field_faq
+    - paragraphs.paragraphs_type.faq_s_page
+  module:
+    - viewsreference
+id: paragraph.faq_s_page.default
+targetEntityType: paragraph
+bundle: faq_s_page
+mode: default
+content:
+  field_faq:
+    type: viewsreference_formatter
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

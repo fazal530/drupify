@@ -1,0 +1,23 @@
+uuid: 3d042576-b04a-4fae-a143-467ed89452bb
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:portfolio_block:7280eb52-8ecb-4b10-b50e-25e229d72f3d'
+  module:
+    - block_content
+  theme:
+    - drupify
+id: otherprojects
+theme: drupify
+region: featured_bottom_third
+weight: 0
+provider: null
+plugin: 'block_content:7280eb52-8ecb-4b10-b50e-25e229d72f3d'
+settings:
+  id: 'block_content:7280eb52-8ecb-4b10-b50e-25e229d72f3d'
+  label: 'Other Projects'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility: {  }

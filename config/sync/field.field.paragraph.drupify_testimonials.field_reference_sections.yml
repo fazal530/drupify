@@ -1,0 +1,23 @@
+uuid: d8dcf980-371c-4298-b93e-8c457976ded4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_reference_sections
+    - paragraphs.paragraphs_type.drupify_testimonials
+  module:
+    - entity_reference_revisions
+id: paragraph.drupify_testimonials.field_reference_sections
+field_name: field_reference_sections
+entity_type: paragraph
+bundle: drupify_testimonials
+label: Testimonials
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings: {  }
+field_type: entity_reference_revisions

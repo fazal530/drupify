@@ -1,0 +1,21 @@
+uuid: c4a6969d-31fd-4180-9c3d-853d98c0c6c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_section_title
+    - paragraphs.paragraphs_type.team_members_style_3
+  module:
+    - text
+id: paragraph.team_members_style_3.field_section_title
+field_name: field_section_title
+entity_type: paragraph
+bundle: team_members_style_3
+label: 'Section Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

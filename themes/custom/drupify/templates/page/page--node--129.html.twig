@@ -1,0 +1,52 @@
+{{ attach_library('drupify/drupify_homepage') }}
+
+<div class="drupify-home drupify-error-page" id="page-wrapper">
+  <a class="drupify-skip-link" href="#main-content">{{ 'Skip to main content'|t }}</a>
+
+  {% include '@drupify/includes/drupify-header.html.twig' %}
+
+  <main id="main-content" tabindex="-1">
+    <section class="drupify-page-hero drupify-section">
+      <div class="drupify-container drupify-page-hero-grid">
+        <div>
+          <p class="drupify-eyebrow">{{ '403 error'|t }}</p>
+          <h1>{{ 'This page is not open for your current access level.'|t }}</h1>
+          <p class="drupify-lead">{{ 'You may need to sign in, use a different account, or return to a public Drupify page.'|t }}</p>
+          <div class="drupify-actions">
+            <a class="drupify-button drupify-button-primary" href="{{ path('<front>') }}">{{ 'Go to homepage'|t }}</a>
+            <a class="drupify-button drupify-button-secondary" href="{{ base_path }}contact-us">{{ 'Contact Drupify'|t }}</a>
+          </div>
+        </div>
+
+        <div class="drupify-service-overview drupify-error-panel">
+          <span>{{ 'Public pages'|t }}</span>
+          <ol>
+            <li><a href="{{ base_path }}services">{{ 'Services'|t }}</a></li>
+            <li><a href="{{ base_path }}pricing">{{ 'Pricing'|t }}</a></li>
+            <li><a href="{{ base_path }}blog">{{ 'Blog'|t }}</a></li>
+            <li><a href="{{ base_path }}contact-us">{{ 'Contact'|t }}</a></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="drupify-audit-band" aria-labelledby="forbidden-cta-title">
+      <div class="drupify-container drupify-audit-inner">
+        <div>
+          <p class="drupify-eyebrow">{{ 'Drupal support'|t }}</p>
+          <h2 id="forbidden-cta-title">{{ 'Access problems can also be a site health signal.'|t }}</h2>
+          <p>{{ 'Drupify can review permissions, routes, menus, redirects, forms, and content visibility issues on your Drupal site.'|t }}</p>
+          <ul class="drupify-audit-list">
+            <li>{{ 'Permissions'|t }}</li>
+            <li>{{ 'Routes'|t }}</li>
+            <li>{{ 'Menus'|t }}</li>
+            <li>{{ 'Content access'|t }}</li>
+          </ul>
+        </div>
+        <a class="drupify-button drupify-button-light" href="{{ base_path }}contact-us">{{ 'Request Drupal audit'|t }}</a>
+      </div>
+    </section>
+  </main>
+
+  {% include '@drupify/includes/drupify-footer.html.twig' %}
+</div>

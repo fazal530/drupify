@@ -1,0 +1,239 @@
+uuid: a6edd4a7-f66f-47ed-a25f-ba335bc1d17b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_section
+    - node.type.page
+  module:
+    - entity_reference_revisions
+id: node.page.field_section
+field_name: field_section
+entity_type: node
+bundle: page
+label: Section
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    negate: 0
+    target_bundles_drag_drop:
+      about_style_1_:
+        weight: 72
+        enabled: false
+      about_style_2:
+        weight: 73
+        enabled: false
+      about_style_3:
+        weight: 74
+        enabled: false
+      blogs:
+        weight: 75
+        enabled: false
+      blogs_style_2:
+        weight: 76
+        enabled: false
+      blogs_style_3:
+        weight: 77
+        enabled: false
+      call_to_action_style_1:
+        weight: 78
+        enabled: false
+      call_to_action_style_2:
+        weight: 79
+        enabled: false
+      call_to_action_style_3:
+        weight: 80
+        enabled: false
+      clients_style_1:
+        weight: 81
+        enabled: false
+      clients_style_3:
+        weight: 82
+        enabled: false
+      contact_social:
+        weight: 83
+        enabled: false
+      contact_style_1_:
+        weight: 84
+        enabled: false
+      contact_style_2:
+        weight: 85
+        enabled: false
+      contact_style_3:
+        weight: 86
+        enabled: false
+      counter_style_1:
+        weight: 90
+        enabled: false
+      counter_style_2:
+        weight: 91
+        enabled: false
+      counter_style_3:
+        weight: 92
+        enabled: false
+      counters_style_1:
+        weight: 87
+        enabled: false
+      counters_style_2:
+        weight: 88
+        enabled: false
+      counters_style_3:
+        weight: 89
+        enabled: false
+      detail_image:
+        weight: 93
+        enabled: false
+      detail_images:
+        weight: 94
+        enabled: false
+      faq_s_style_1:
+        weight: 95
+        enabled: false
+      faq_s_style_2:
+        weight: 96
+        enabled: false
+      faq_s_style_3:
+        weight: 97
+        enabled: false
+      feature_style_1:
+        weight: 101
+        enabled: false
+      feature_style_2:
+        weight: 102
+        enabled: false
+      feature_style_3:
+        weight: 103
+        enabled: false
+      features_style_1:
+        weight: 98
+        enabled: false
+      features_style_2:
+        weight: 99
+        enabled: false
+      features_style_3:
+        weight: 100
+        enabled: false
+      footer_cta:
+        weight: 104
+        enabled: false
+      our_value_style_2:
+        weight: 108
+        enabled: false
+      our_values_style_1:
+        weight: 105
+        enabled: false
+      our_values_style_2:
+        weight: 106
+        enabled: false
+      our_values_style_3:
+        weight: 107
+        enabled: false
+      palns_style_1:
+        weight: 109
+        enabled: false
+      plan_style_1:
+        weight: 112
+        enabled: false
+      plan_style_2:
+        weight: 113
+        enabled: false
+      plan_style_3:
+        weight: 114
+        enabled: false
+      plans_style_2:
+        weight: 110
+        enabled: false
+      plans_style_3:
+        weight: 111
+        enabled: false
+      portfolios_style_1:
+        weight: 115
+        enabled: false
+      portfolios_style_2:
+        weight: 116
+        enabled: false
+      portfolios_style_3:
+        weight: 117
+        enabled: false
+      service_list:
+        weight: 121
+        enabled: false
+      service_lists:
+        weight: 122
+        enabled: false
+      services_style_1_:
+        weight: 118
+        enabled: false
+      services_style_2:
+        weight: 119
+        enabled: false
+      services_style_3:
+        weight: 120
+        enabled: false
+      slide_style_1_:
+        weight: 126
+        enabled: false
+      slide_style_3:
+        weight: 127
+        enabled: false
+      slider_style_1_:
+        weight: 123
+        enabled: false
+      slider_style_2:
+        weight: 124
+        enabled: false
+      slider_style_3:
+        weight: 125
+        enabled: false
+      social_links:
+        weight: 128
+        enabled: false
+      team_members_style_1:
+        weight: 129
+        enabled: false
+      team_members_style_2:
+        weight: 130
+        enabled: false
+      team_members_style_3:
+        weight: 131
+        enabled: false
+      team_social_links:
+        weight: 132
+        enabled: false
+      testimonials_:
+        weight: 133
+        enabled: false
+      testimonials_style_2:
+        weight: 134
+        enabled: false
+      testimonials_style_3:
+        weight: 135
+        enabled: false
+      value_style_1:
+        weight: 136
+        enabled: false
+      work_process_style_1:
+        weight: 140
+        enabled: false
+      work_process_style_2:
+        weight: 141
+        enabled: false
+      work_process_style_3:
+        weight: 142
+        enabled: false
+      work_processes_style_1:
+        weight: 137
+        enabled: false
+      work_processes_style_2:
+        weight: 138
+        enabled: false
+      work_processes_style_3:
+        weight: 139
+        enabled: false
+field_type: entity_reference_revisions

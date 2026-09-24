@@ -1,0 +1,261 @@
+{{ attach_library('drupify/drupify_homepage') }}
+
+{% set service_id = node.id() ~ '' %}
+{% set service_map = {
+  '4': {
+    eyebrow: 'Drupal development service',
+    headline: 'Custom Drupal development for platforms that need more than off-the-shelf features.',
+    lead: 'Drupify builds custom Drupal modules, integrations, workflows, and backend features around your business logic and editorial needs.',
+    primary: 'Request development audit',
+    overview_label: 'Development priorities',
+    priorities: ['Understand business logic and content workflow', 'Build maintainable custom Drupal functionality', 'Integrate APIs, tools, and third-party systems', 'Test, document, and support future changes'],
+    intro_title: 'Custom Drupal development should make the platform easier to run, not harder to maintain.',
+    bullets: ['Custom module development', 'API and third-party integrations', 'Editorial workflow improvements', 'Performance, security, and maintainability review'],
+    risk_title: 'Good custom development prevents future technical debt.',
+    process_title: 'A development process built around clarity, implementation, and maintainability.',
+    cta_eyebrow: 'Development audit',
+    cta_title: 'Before you build, know what Drupal should own.',
+    cta: 'Request development audit'
+  },
+  '7': {
+    eyebrow: 'Drupal commerce service',
+    headline: 'Drupal e-commerce systems built for flexible content, catalog, and checkout needs.',
+    lead: 'Drupify helps teams plan and build Drupal-powered commerce experiences with structured content, integrations, and maintainable frontend delivery.',
+    primary: 'Request commerce audit',
+    overview_label: 'Commerce priorities',
+    priorities: ['Map products, content, and buyer journeys', 'Plan checkout, payment, and integration needs', 'Build reusable Drupal commerce components', 'Test performance, forms, and conversion paths'],
+    intro_title: 'Commerce websites need reliable structure behind the buying experience.',
+    bullets: ['Product and content architecture', 'Checkout and payment planning', 'Commerce integrations', 'Responsive frontend and conversion QA'],
+    risk_title: 'A commerce build must protect trust, speed, and manageability.',
+    process_title: 'A commerce process focused on content, checkout, and operational confidence.',
+    cta_eyebrow: 'Commerce audit',
+    cta_title: 'Before you rebuild commerce, know where conversion and operations can break.',
+    cta: 'Request commerce audit'
+  },
+  '8': {
+    eyebrow: 'Drupal theming service',
+    headline: 'Drupal theming and frontend systems that make your brand easier to use.',
+    lead: 'Drupify designs and implements responsive Drupal themes with Twig, libraries, components, accessibility checks, and clean editor-friendly structure.',
+    primary: 'Request theme audit',
+    overview_label: 'Theme priorities',
+    priorities: ['Translate brand direction into reusable sections', 'Build Twig templates and Drupal libraries cleanly', 'Support responsive, accessible page layouts', 'Test forms, menus, Views, and editor output'],
+    intro_title: 'A Drupal theme should look polished and stay editable.',
+    bullets: ['Custom Drupal theme implementation', 'Twig template and component cleanup', 'Responsive design QA', 'Frontend accessibility and performance polish'],
+    risk_title: 'Visual polish fails when templates, fields, and editor output are not planned together.',
+    process_title: 'A theming process built around design accuracy, Drupal structure, and QA.',
+    cta_eyebrow: 'Theme audit',
+    cta_title: 'Before you redesign, know what the current theme is doing.',
+    cta: 'Request theme audit'
+  },
+  '9': {
+    eyebrow: 'Drupal migration service',
+    headline: 'Move to modern Drupal without losing content, SEO, or launch confidence.',
+    lead: 'Drupify plans and executes Drupal upgrades and migrations with careful content mapping, module review, theme adaptation, testing, and post-launch support.',
+    primary: 'Request migration audit',
+    overview_label: 'Migration priorities',
+    priorities: ['Preserve content and URL structure', 'Review modules, custom code, and integrations', 'Adapt themes for modern Drupal', 'Test, launch, monitor, and support'],
+    intro_title: 'Migration is not only a version change. It is a controlled release.',
+    bullets: ['Drupal 7, 8, 9, or 10 upgrade planning', 'Content model and field mapping', 'Module replacement and compatibility review', 'Theme, SEO, redirect, QA, and launch support'],
+    risk_title: 'The page should answer the fears clients actually have.',
+    process_title: 'A migration process built around planning, mapping, and validation.',
+    cta_eyebrow: 'Migration audit',
+    cta_title: 'Before you migrate, know what could break.',
+    cta: 'Request migration audit'
+  },
+  '143': {
+    eyebrow: 'Drupal support service',
+    headline: 'Ongoing Drupal support for stable, secure, and maintainable websites.',
+    lead: 'Drupify helps teams keep Drupal sites healthy with updates, troubleshooting, performance checks, frontend fixes, and practical maintenance planning.',
+    primary: 'Request support audit',
+    overview_label: 'Support priorities',
+    priorities: ['Review the current Drupal health and update status', 'Fix bugs across theme, modules, Views, forms, and content', 'Maintain Composer, security releases, and configuration safely', 'Plan small improvements before they become bigger problems'],
+    intro_title: 'Drupal support should keep your site dependable between major projects.',
+    bullets: ['Security updates and Composer maintenance', 'Theme, module, Views, and form troubleshooting', 'Performance, cache, and frontend quality checks', 'Monthly support planning and upgrade readiness'],
+    risk_title: 'Support work protects trust, uptime, editing workflows, and future upgrade paths.',
+    process_title: 'A support process built around health checks, practical fixes, and steady maintenance.',
+    cta_eyebrow: 'Support audit',
+    cta_title: 'Before support becomes urgent, know what needs attention.',
+    cta: 'Request support audit'
+  }
+} %}
+{% set service = service_map[service_id]|default({
+  eyebrow: 'Drupal service',
+  headline: node.label,
+  lead: node.body.summary|default(node.body.value|striptags|slice(0, 180)),
+  primary: 'Request Drupal audit',
+  overview_label: 'Service priorities',
+  priorities: ['Understand the current Drupal structure', 'Plan the cleanest implementation path', 'Build with reusable Drupal patterns', 'Test, launch, and support'],
+  intro_title: node.label,
+  bullets: ['Drupal structure review', 'Theme and frontend implementation', 'Content and admin workflow support', 'Launch and maintenance planning'],
+  risk_title: 'The right plan keeps the Drupal build easier to maintain.',
+  process_title: 'A service process built around audit, implementation, and launch confidence.',
+  cta_eyebrow: 'Drupal audit',
+  cta_title: 'Before you invest, know what the site needs.',
+  cta: 'Request Drupal audit'
+}) %}
+
+<div class="drupify-home drupify-service-detail-page" id="page-wrapper">
+  <a class="drupify-skip-link" href="#main-content">{{ 'Skip to main content'|t }}</a>
+
+  {% include '@drupify/includes/drupify-header.html.twig' %}
+
+  <main id="main-content" tabindex="-1">
+    <section class="drupify-page-hero drupify-section">
+      <div class="drupify-container drupify-page-hero-grid">
+        <div>
+          <p class="drupify-eyebrow">{{ service.eyebrow|t }}</p>
+          <h1>{{ service.headline|t }}</h1>
+          <p class="drupify-lead">{{ service.lead|t }}</p>
+          <div class="drupify-actions">
+            <a class="drupify-button drupify-button-primary" href="{{ base_path }}contact-us">{{ service.primary|t }}</a>
+            <a class="drupify-button drupify-button-secondary" href="{{ base_path }}pricing">{{ 'View pricing paths'|t }}</a>
+          </div>
+        </div>
+
+        <div class="drupify-service-overview drupify-service-detail-overview">
+          <span>{{ service.overview_label|t }}</span>
+          <ol>
+            {% for priority in service.priorities %}
+              <li>{{ priority|t }}</li>
+            {% endfor %}
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="drupify-section drupify-muted" aria-labelledby="service-intro-title">
+      <div class="drupify-container drupify-service-detail-intro">
+        {% if node.field_image.entity %}
+          <div class="drupify-service-detail-media">
+            <img src="{{ file_url(node.field_image.entity.uri.value) }}" alt="{{ node.field_image.alt|default(node.label) }}">
+          </div>
+        {% endif %}
+        <div>
+          <p class="drupify-eyebrow">{{ 'What this service solves'|t }}</p>
+          <h2 id="service-intro-title">{{ service.intro_title|t }}</h2>
+          {% if node.body.processed %}
+            <div>{{ node.body.processed|raw }}</div>
+          {% endif %}
+          <ul class="drupify-about-list">
+            {% for bullet in service.bullets %}
+              <li>{{ bullet|t }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="drupify-section" aria-labelledby="service-risk-title">
+      <div class="drupify-container">
+        <div class="drupify-section-head">
+          <p class="drupify-eyebrow">{{ 'Common risks'|t }}</p>
+          <h2 id="service-risk-title">{{ service.risk_title|t }}</h2>
+          <p>{{ 'A good Drupal service makes risks visible early, then shows how each risk is handled.'|t }}</p>
+        </div>
+
+        <div class="drupify-service-risk-grid">
+          <article><span>{{ 'Structure'|t }}</span><h3>{{ 'Messy content or fields'|t }}</h3><p>{{ 'Content types, fields, paragraphs, media, taxonomy, and editor workflows need a clear model.'|t }}</p></article>
+          <article><span>{{ 'Frontend'|t }}</span><h3>{{ 'Inconsistent layouts'|t }}</h3><p>{{ 'Twig templates, libraries, responsive states, forms, and Views output need to work together.'|t }}</p></article>
+          <article><span>{{ 'Dependencies'|t }}</span><h3>{{ 'Module or integration risk'|t }}</h3><p>{{ 'Contrib modules, custom code, APIs, and Composer constraints should be checked before release.'|t }}</p></article>
+          <article><span>{{ 'Launch'|t }}</span><h3>{{ 'Broken behavior after go-live'|t }}</h3><p>{{ 'Navigation, forms, cache, redirects, accessibility, performance, and admin editing should be tested.'|t }}</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="drupify-section drupify-muted" aria-labelledby="service-process-title">
+      <div class="drupify-container drupify-split">
+        <div class="drupify-section-head drupify-align-start">
+          <p class="drupify-eyebrow">{{ 'Work strategy'|t }}</p>
+          <h2 id="service-process-title">{{ service.process_title|t }}</h2>
+          <p>{{ 'These steps keep the page specific while using one clean, reusable Drupal service template.'|t }}</p>
+        </div>
+        <ol class="drupify-process-list drupify-service-process">
+          <li><span>01</span><strong>{{ 'Audit and discovery'|t }}</strong><div class="drupify-process-description"><p>{{ 'We inspect the current Drupal setup, business goals, content model, theme layer, dependencies, and risks.'|t }}</p></div></li>
+          <li><span>02</span><strong>{{ 'Plan and implementation'|t }}</strong><div class="drupify-process-description"><p>{{ 'We map the right technical path, then build with reusable templates, fields, Views, and maintainable code.'|t }}</p></div></li>
+          <li><span>03</span><strong>{{ 'Testing and support'|t }}</strong><div class="drupify-process-description"><p>{{ 'We verify frontend behavior, forms, performance, cache, responsive layouts, content editing, and launch readiness.'|t }}</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    {% if node.field_service_lists is not empty %}
+      <section class="drupify-section" aria-labelledby="service-included-title">
+        <div class="drupify-container drupify-service-detail-intro">
+          <div class="drupify-section-head drupify-align-start">
+            <p class="drupify-eyebrow">{{ 'Included details'|t }}</p>
+            <h2 id="service-included-title">{{ 'Current service content from Drupal admin.'|t }}</h2>
+          </div>
+          <div class="drupify-service-overview drupify-service-included">
+            {% for service_list_group in node.field_service_lists %}
+              {% set group = service_list_group.entity %}
+              {% if group %}
+                <div class="drupify-service-included-group">
+                  {% if group.field_title.value %}
+                    <h3>{{ group.field_title.value }}</h3>
+                  {% endif %}
+                  {% if group.field_service_list is not empty %}
+                    <ul>
+                      {% for service_item_ref in group.field_service_list %}
+                        {% set service_item = service_item_ref.entity %}
+                        {% if service_item %}
+                          <li>
+                            {% if service_item.field_title.value %}
+                              <strong>{{ service_item.field_title.value }}</strong>
+                            {% endif %}
+                            {% if service_item.field_description.value %}
+                              <p>{{ service_item.field_description.value }}</p>
+                            {% endif %}
+                          </li>
+                        {% endif %}
+                      {% endfor %}
+                    </ul>
+                  {% endif %}
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+    {% endif %}
+
+    <section class="drupify-section drupify-muted" aria-labelledby="related-services-title">
+      <div class="drupify-container">
+        <div class="drupify-section-head">
+          <p class="drupify-eyebrow">{{ 'Related services'|t }}</p>
+          <h2 id="related-services-title">{{ 'Drupal work often connects across strategy, frontend, development, and support.'|t }}</h2>
+        </div>
+
+        <div class="drupify-service-grid drupify-service-page-grid">
+          {% for related in drupify_services %}
+            {% if related.id != node.id() %}
+              <article>
+                <span>{{ related.category ?: 'Drupal service'|t }}</span>
+                <h3>{{ related.title }}</h3>
+                <p>{{ related.summary }}</p>
+                <a class="drupify-text-link" href="{{ related.url }}">{{ 'View service'|t }}</a>
+              </article>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <section class="drupify-audit-band" aria-labelledby="service-cta-title">
+      <div class="drupify-container drupify-audit-inner">
+        <div>
+          <p class="drupify-eyebrow">{{ service.cta_eyebrow|t }}</p>
+          <h2 id="service-cta-title">{{ service.cta_title|t }}</h2>
+          <p>{{ 'Send your current website or project details. Drupify can review structure, theme behavior, module risk, frontend quality, and launch complexity.'|t }}</p>
+          <ul class="drupify-audit-list">
+            <li>{{ 'Drupal structure'|t }}</li>
+            <li>{{ 'Theme and frontend'|t }}</li>
+            <li>{{ 'Module compatibility'|t }}</li>
+            <li>{{ 'Launch readiness'|t }}</li>
+          </ul>
+        </div>
+        <a class="drupify-button drupify-button-light" href="{{ base_path }}contact-us">{{ service.cta|t }}</a>
+      </div>
+    </section>
+  </main>
+
+  {% include '@drupify/includes/drupify-footer.html.twig' %}
+</div>

@@ -1,0 +1,19 @@
+uuid: 47d48ef9-67c7-4d2a-b2ae-05a8049b0c05
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.drupify_hero
+id: paragraph.drupify_hero.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: drupify_hero
+label: Lead
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

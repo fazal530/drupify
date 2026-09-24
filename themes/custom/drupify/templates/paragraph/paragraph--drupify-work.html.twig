@@ -1,0 +1,74 @@
+{#
+/**
+ * @file paragraph--drupify-work.html.twig
+ * Selected work section (featured + grid).
+ */
+#}
+<section class="drupify-section" id="work" aria-labelledby="work-title">
+  <div class="drupify-container">
+    <div class="drupify-section-head">
+      <p class="drupify-eyebrow">{{ content.field_eyebrow ?: 'Selected work'|t }}</p>
+      <h2 id="work-title">{{ content.field_title }}</h2>
+      {% if content.field_description|render %}
+        <p>{{ content.field_description }}</p>
+      {% endif %}
+    </div>
+    {% if drupify_portfolio %}
+      <div class="drupify-work-list">
+        {% set featured_project = drupify_portfolio|first %}
+        {% if featured_project %}
+          <article class="drupify-work-card drupify-featured">
+            <div class="drupify-work-media">
+              {% if featured_project.image %}
+                <img src="{{ featured_project.image }}" alt="{{ featured_project.image_alt }}">
+              {% endif %}
+            </div>
+            <div class="drupify-work-copy">
+              <p class="drupify-eyebrow">{{ 'Case study'|t }}</p>
+              <h3>{{ featured_project.title }}</h3>
+              <p>{{ featured_project.summary ?: 'Published Drupify portfolio project with existing project imagery and live project context.'|t }}</p>
+              <dl class="drupify-meta-list">
+                {% if featured_project.category %}
+                  <div><dt>{{ 'Category'|t }}</dt><dd>{{ featured_project.category }}</dd></div>
+                {% endif %}
+                {% if featured_project.website_url %}
+                  <div><dt>{{ 'Website'|t }}</dt><dd><a href="{{ featured_project.website_url }}" rel="nofollow">{{ featured_project.website_url|replace({'https://': '', 'http://': '', '/': ''}) }}</a></dd></div>
+                {% endif %}
+                <div><dt>{{ 'Services'|t }}</dt><dd>{{ 'Website build, frontend implementation, content presentation'|t }}</dd></div>
+                <div><dt>{{ 'Technology'|t }}</dt><dd>{{ 'Drupal stack details need verification'|t }}</dd></div>
+                <div><dt>{{ 'Outcome'|t }}</dt><dd>{{ 'Measurable result needed'|t }}</dd></div>
+              </dl>
+              <div class="drupify-work-actions">
+                <a class="drupify-text-link" href="{{ base_path }}portfolio">{{ 'View portfolio'|t }}</a>
+                {% if featured_project.website_url %}
+                  <a class="drupify-text-link" href="{{ featured_project.website_url }}" rel="nofollow">{{ featured_project.website_title }}</a>
+                {% endif %}
+              </div>
+            </div>
+          </article>
+        {% endif %}
+
+        <div class="drupify-work-grid">
+          {% for project in drupify_portfolio|slice(1, 3) %}
+            <article class="drupify-work-card">
+              <div class="drupify-work-media">
+                {% if project.image %}
+                  <img src="{{ project.image }}" alt="{{ project.image_alt }}">
+                {% endif %}
+              </div>
+              <div class="drupify-work-copy">
+                <span class="drupify-work-tag">{{ project.category ?: 'Web Development'|t }}</span>
+                <h3>{{ project.title }}</h3>
+                <p>{{ project.summary ?: 'Published Drupify portfolio project with existing project imagery.'|t }}</p>
+                <a class="drupify-text-link" href="{{ project.url }}">{{ 'View project'|t }}</a>
+                {% if project.website_url %}
+                  <a class="drupify-text-link" href="{{ project.website_url }}" rel="nofollow">{{ project.website_title }}</a>
+                {% endif %}
+              </div>
+            </article>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</section>

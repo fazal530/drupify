@@ -1,0 +1,186 @@
+_core:
+  default_config_hash: w2HQYJGLG4-Mmk19eIIKgoXCiXEJm-NVSNhhv-VdpUI
+favicon:
+  mimetype: image/png
+  path: 'public://Favicon.png'
+  use_default: false
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  path: 'public://Inline Logo.png'
+  use_default: false
+bootstrap_barrio_library: production
+bootstrap_barrio_source: '0'
+bootstrap_barrio_fluid_container: 1
+bootstrap_barrio_container: container-fluid
+bootstrap_barrio_region_clean_top_header: 0
+bootstrap_barrio_region_class_top_header: 'row abc'
+bootstrap_barrio_region_clean_top_header_form: 0
+bootstrap_barrio_region_class_top_header_form: row
+bootstrap_barrio_region_clean_header: 1
+bootstrap_barrio_region_class_header: ''
+bootstrap_barrio_region_clean_header_form: 0
+bootstrap_barrio_region_class_header_form: row
+bootstrap_barrio_region_clean_primary_menu: 1
+bootstrap_barrio_region_class_primary_menu: ''
+bootstrap_barrio_region_clean_secondary_menu: 0
+bootstrap_barrio_region_class_secondary_menu: row
+bootstrap_barrio_region_clean_page_top: 0
+bootstrap_barrio_region_class_page_top: row
+bootstrap_barrio_region_clean_page_bottom: 0
+bootstrap_barrio_region_class_page_bottom: row
+bootstrap_barrio_region_clean_highlighted: 1
+bootstrap_barrio_region_class_highlighted: ''
+bootstrap_barrio_region_clean_featured_top: 0
+bootstrap_barrio_region_class_featured_top: row
+bootstrap_barrio_region_clean_breadcrumb: 1
+bootstrap_barrio_region_class_breadcrumb: ''
+bootstrap_barrio_region_clean_content: 1
+bootstrap_barrio_region_class_content: ''
+bootstrap_barrio_region_clean_sidebar_first: 1
+bootstrap_barrio_region_class_sidebar_first: ''
+bootstrap_barrio_region_clean_sidebar_second: 1
+bootstrap_barrio_region_class_sidebar_second: ''
+bootstrap_barrio_region_clean_featured_bottom_first: 0
+bootstrap_barrio_region_class_featured_bottom_first: row
+bootstrap_barrio_region_clean_featured_bottom_second: 0
+bootstrap_barrio_region_class_featured_bottom_second: row
+bootstrap_barrio_region_clean_featured_bottom_third: 0
+bootstrap_barrio_region_class_featured_bottom_third: row
+bootstrap_barrio_region_clean_footer_first: 0
+bootstrap_barrio_region_class_footer_first: row
+bootstrap_barrio_region_clean_footer_second: 0
+bootstrap_barrio_region_class_footer_second: row
+bootstrap_barrio_region_clean_footer_third: 0
+bootstrap_barrio_region_class_footer_third: row
+bootstrap_barrio_region_clean_footer_fourth: 0
+bootstrap_barrio_region_class_footer_fourth: row
+bootstrap_barrio_region_clean_footer_fifth: 0
+bootstrap_barrio_region_class_footer_fifth: row
+bootstrap_barrio_sidebar_position: both
+bootstrap_barrio_content_offset: 0
+bootstrap_barrio_sidebar_collapse: 0
+bootstrap_barrio_sidebar_first_width: 4
+bootstrap_barrio_sidebar_first_offset: 0
+bootstrap_barrio_sidebar_second_width: 3
+bootstrap_barrio_sidebar_second_offset: 0
+bootstrap_barrio_hide_node_label: 0
+bootstrap_barrio_breadcrumb_divider: ''
+bootstrap_barrio_button: 1
+bootstrap_barrio_button_size: ''
+bootstrap_barrio_button_type: primary
+bootstrap_barrio_button_outline: 0
+bootstrap_barrio_navbar_container: '0'
+bootstrap_barrio_navbar_toggle: navbar-toggleable-lg
+bootstrap_barrio_navbar_top_navbar: 0
+bootstrap_barrio_navbar_top_class: ''
+bootstrap_barrio_navbar_class: ''
+bootstrap_barrio_navbar_top_position: ''
+bootstrap_barrio_navbar_top_color: ''
+bootstrap_barrio_navbar_top_background: ''
+bootstrap_barrio_navbar_position: ''
+bootstrap_barrio_navbar_color: ''
+bootstrap_barrio_navbar_background: ''
+bootstrap_barrio_navbar_flyout: false
+bootstrap_barrio_navbar_slide: false
+bootstrap_barrio_navbar_offcanvas: ''
+bootstrap_barrio_messages_widget: alerts
+bootstrap_barrio_messages_widget_toast_delay: 10000
+bootstrap_barrio_float_label: '1'
+bootstrap_barrio_checkbox: ''
+bootstrap_barrio_navbar_top_affix: 0
+bootstrap_barrio_navbar_affix: 0
+bootstrap_barrio_sidebar_first_affix: 0
+bootstrap_barrio_sidebar_second_affix: 0
+bootstrap_barrio_scroll_spy: ''
+bootstrap_barrio_google_fonts: ''
+bootstrap_barrio_bootstrap_icons: 0
+bootstrap_barrio_icons: ''
+bootstrap_barrio_system_messages: messages_white
+bootstrap_barrio_table_style: table-striped
+bootstrap_barrio_table_hover: 1
+bootstrap_barrio_table_head: ''
+bootstrap_barrio_image_fluid: false
+bootstrap_barrio_tabs_style: ''
+bootstrap_barrio_enable_color: false
+footer_bg_image:
+  - '15'
+copyright_detail:
+  value: '<p>© <span>Copyright Drupify</span>. All Rights Reserved.</p>'
+  format: basic_html
+site_logo:
+  - '17'
+about_title: 'ABOUT US '
+about_site: 'We specialize in creating tailored web development solutions using Drupal, delivering high-quality websites that meet your unique business needs.'
+hamburger_icon:
+  - '13'
+contact_title: "LET'S WORK TOGETHER"
+contact_detail:
+  value: '<p><a href="mailto:info@drupify.com">info@drupify.com</a></p>'
+  format: basic_html
+show_pannel: 1
+color_options:
+  APPLICATION: Application
+  DEVELOPMENT: Development
+  ENHANCEMENT: Enhancement
+header_variation: header-3
+sticky: 1
+banner_image:
+  - '337'
+login_banner_title: Login
+login_title: 'HI, WELCOME BACK !!'
+login_name_description: 'Enter your Drupify Username.'
+login_password_description: 'Enter the password that accompanies your username.'
+reset_banner_title: 'Forgot Password'
+reset_page_title: 'CHANGE PASSWORD'
+reset_pass_name_description: 'Password reset instructions will be sent to your registered email.'
+register_banner_title: Register
+register_title: "LET'S GET STARTED"
+register_mail_description: 'Enter your valid Email address.'
+register_name_description: "Several special characters are allowed, including space, period (.), hyphen (-), apostrophe ('), underscore (_), and the @ sign."
+company_logo:
+  - '296'
+maintenance_mode_title:
+  value: "<h2>UNDER <span>MAINTENANCE</span></h2>\r\n"
+  format: basic_html
+maintenance_mode_description: 'We sincerely apologize for the inconvenience. Our site is currently undergoing scheduled maintenance and upgrades, but will be back shortly. Thank you for your patience!'
+bg_image_m:
+  - '118'
+coming_soon_title:
+  value: '<h2>COMING <span>SOON</span></h2>'
+  format: basic_html
+coming_soon_description: "Our website is getting ready to launch! We're putting on the finishing touches and will be live shortly. Thank you for your anticipation and patience."
+launch_date: '2024-05-25'
+bg_image_c:
+  - '119'
+mode_type: '2'
+search_banner_title: 'Search Result'
+styles: ".nav-link {\r\n  white-space: nowrap;\r\n}\r\n.team-style-2 .item img {\r\n    object-position: top;\r\n}\r\n.home-banner-3 .item-content>span {\r\n   padding-inline: 5px;\r\n}\r\n.header {\r\n    z-index: 12;\r\n}\r\n.team-style-2 .item img {\r\n    width: 100%;\r\n    object-position: top;\r\n    height: 400px;\r\n    object-fit: cover;\r\n}\r\n.header .navigation-sticky.fixed-top {\r\n    background-color: black;\r\n}\r\n.login .brand-name, .register .brand-name, .forgot-password .brand-name{\r\n    background-color: black;\r\n}\r\n    #header-3 .header-content {\r\n        background-color: transparent;\r\n    }\r\n\r\n.footer p {\r\n    opacity: 1  !important;\r\n}\r\n.footer ul a {\r\n    opacity: 90%  !important;\r\n}\r\n\r\n.footer a i {\r\n    opacity: 90% !important;\r\n}\r\n.footer ul a:hover, .footer .social-icon a:hover i {\r\n    opacity: 1 !important;\r\n}\r\n.header .hamburger-btn {\r\n    display:none !important\r\n}\r\n.home-banner-3 .banner-bg svg {\r\n    left: 0;\r\n    transform: scale(1.3);\r\n}\r\n.owl-carousel .owl-item img {\r\n    padding: 20px;\r\n    width: auto;\r\n    height: 87px;\r\n}\r\n@media (max-width: 1079px) {\r\n.header .navbar-wrapper.navigation-sticky{\r\n    background-color: black;\r\n}\r\n.home-banner-3 .banner-bg svg {\r\n    display:none\r\n}\r\n}\r\n@media (min-width: 1080px) and (max-width: 1420px) {\r\n    .carousel-inner {\r\n        width: 100%;\r\n        margin: 0 auto;\r\n    }\r\n}\r\n.portfolio-full-width.portfolio-sidebar .image img {\r\n    height: 480px;\r\n    margin-bottom: 50px;\r\n    object-fit: cover;\r\n    object-position: top;\r\n}\r\n.portfolio-about{\r\ndisplay: unset !important;\r\n}\r\n\r\n.portfolio-full-width i {\r\n    font-size: 20px;\r\n}\r\nul.social-icon {\r\n    display: flex;\r\n    gap: 20px;\r\n}\r\n\r\nli { white-space: nowrap;}\r\n.portfolio-full-width.portfolio-sidebar .image img {\r\nobject-fit: contain !important;}\r\n\r\n\r\n\r\n\r\n/* General Grid Styles */\r\n\r\n\r\n/* Section and Element Layouts */\r\n.userinfo-section,\r\n.profile,\r\n.project {\r\n  display: grid;\r\n  align-items: center;\r\n  grid-template-columns: repeat(4,1fr);\r\n}\r\n\r\n@media (min-width: 1280px) {\r\n  .userinfo-section__left,\r\n  .userinfo-section__right,\r\n  .profile__image-container,\r\n  .profile__content,\r\n  .project__left,\r\n  .project__right {\r\n    grid-column: span 6 !important;\r\n  }\r\n  .userinfo-section__right{\r\n      grid-row: unset !important;\r\n  }\r\n}\r\n\r\n.userinfo-section__left,\r\n.userinfo-section__right,\r\n.profile__image-container,\r\n.profile__content,\r\n.project__left,\r\n.project__right {\r\n  grid-column: span 4;\r\n}\r\n\r\n/* Project Specific Styles */\r\n.project__right {\r\n  display: flex;\r\n  justify-content: center;\r\n  justify-items: center;\r\n  flex-direction: column;\r\n}\r\n\r\n.project__name-text {\r\n  font-size: 2rem;\r\n}\r\n.project__date-text,\r\n.project__category {\r\n  font-size: 1rem;\r\n}\r\n.project__image  img {\r\n  width: 100%;\r\n  height: auto;\r\n  border-radius: 24px;\r\n}\r\n.project {\r\n  padding-bottom: 50px;\r\n}\r\n.project__name  {\r\n  font-size: 40px;\r\n  text-transform: capitalize;\r\n  font-weight: 500;\r\n}\r\n.project__category  {\r\n  font-weight: 500;\r\n}\r\n\r\n/* Profile Specific Styles */\r\n.profile {\r\n  position: relative;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n}\r\n\r\n.profile__image-container img {\r\n         width: 100%;\r\n        height: 100%;\r\n        object-fit: cover;\r\n            border-radius: 50%;\r\n}\r\n@media (min-width: 768px) {\r\n  .profile__image-container img {\r\n    width: 100%;\r\n    height: 100%;\r\n    object-fit: cover;\r\n  }\r\n}\r\n@media (min-width: 1280px) {\r\n  .profile__image-container img {\r\n         width: 100%;\r\n        height: 100%;\r\n        object-fit: cover;\r\n  }\r\n}\r\n\r\n.profile__header {\r\n  font-size: 3.125rem; /* 50px */\r\n  text-align: center;\r\n}\r\n@media (min-width: 768px) {\r\n  .profile__header {\r\n    font-size: 4.375rem; /* 70px */\r\n    margin-top: -5vh;\r\n  }\r\n}\r\n\r\n.profile__body-text {\r\n  text-align: center;\r\n  margin-top: 5vh;\r\n}\r\n\r\n\r\n/* Miscellaneous Styles */\r\n.userinfo-section__right--image .field--name-field-photo{\r\n  height: 350px;\r\n    \r\n}\r\n.userinfo-section__right--image img {\r\n    width: 100%;\r\n    height: 100%;\r\n    object-fit: cover;\r\n    overflow: hidden;\r\n    object-position: top;\r\n}\r\n.file--x-office-document {\r\n  display: flex;\r\n  justify-content: center;\r\n  padding: 10px;\r\n  background: gainsboro;\r\n}\r\n.userinfo-section__left--title h2 {\r\n  margin-top: 2em;\r\n  color: black;\r\n}\r\n@media (min-width: 1280px) {\r\n    .userinfo-section__right--image {\r\n        height: 350px;\r\n    }\r\n  .userinfo-section__left--title {\r\n    margin-top: 0;\r\n  }\r\n \r\n.projects-section{\r\n    margin-top: 2em;\r\n}\r\n}\r\n.userinfo-section__left--name {\r\n    margin-top: 0;\r\n    font-size: 2em;\r\n    font-weight: 500;\r\n}\r\n\r\n.js-pager__items.pager .pager__item .button.btn.btn-primary.btn-style-1-lg {\r\n  margin-bottom: 20px;\r\n  margin-top: -87px;\r\n}\r\n.starrating {\r\n  display: flex;\r\n  gap: 4px;\r\n}\r\n.star1-on {\r\n  background: url(/themes/custom/drupify/assets/icons/on-icon.png) no-repeat !important;\r\n  background-size: contain !important;\r\n}\r\n.star-off {\r\n  background: url(/themes/custom/drupify/assets/icons/off-icon.png) no-repeat !important;\r\n  background-size: contain !important;\r\n}\r\n\r\n\r\n\r\n\r\n.skill {\r\n  display: flex;\r\n  /* justify-content: space-between; */\r\n  align-items: center;\r\n  align-content: center;\r\n  flex-wrap: wrap;\r\n}\r\n.skill-parent {\r\n  display: flex;\r\n  gap: 20px;\r\n  flex: 0 0 50%;\r\n}\r\n.skill__name {\r\n    width: 150px;\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n.grid {\r\n  display: grid;\r\n  grid-template-columns: repeat(4, 1fr);\r\n  column-gap: 20px;\r\n}\r\n@media (min-width: 768px) {\r\n  .grid {\r\n    grid-template-columns: repeat(8, 1fr);\r\n  }\r\n}\r\n@media (min-width: 1280px) {\r\n  .grid {\r\n    grid-template-columns: repeat(12, 1fr);\r\n  }\r\n}\r\n\r\n.portfolio-full-width .image img {\r\n    object-fit: contain;\r\n    \r\n}\r\n.profile__image-container .field--name-field-photo {\r\n    width: 300px;\r\n    height: 300px;\r\n    margin: auto;\r\n\r\n}\r\n@media (min-width: 768px) {\r\n .profile__image-container .field--name-field-photo {\r\n    width: 400px;\r\n    height: 400px;\r\n\r\n}\r\n}\r\n@media (min-width: 1280px) {\r\n.profile__image-container .field--name-field-photo {\r\n    width: 400px;\r\n    height: 400px;\r\n\r\n}\r\n}\r\n\r\n.m-b-4 {\r\n   margin-bottom: 4px !important;\r\n}\r\n.userinfo-section__left--name h2 span {\r\n    color: transparent;\r\n    -webkit-text-stroke: 2px #000;\r\n}\r\n.title-color {\r\n   color: var(--primary-color);\r\n    font-weight: 700;\r\n    font-style: normal;\r\n}\r\n.block-page-title-block .title {\r\n  color: white;\r\n}\r\n.breadcrumb a {\r\n  color: white;\r\n}\r\n.breadcrumb{\r\n  margin-left: 40px;\r\n}\r\n\r\na.document-file {\r\n    background: #04ab97;\r\n    padding: 16px 30px;\r\n    border-radius: 30px;\r\n    color: white;\r\n    margin-top: 10px;\r\n    display: inline-block;\r\n}\r\n\r\na.document-file::after {\r\n  content: \"\";\r\n  display: inline-block; /* Use inline-block for inline elements */\r\n  width: 100px;\r\n  height: 100px;\r\n  background-image: url('../assets/icons/download-icon.jpg');\r\n  background-size: cover;\r\n  background-repeat: no-repeat;\r\n  background-position: center;\r\n}\r\n.ajax-progress.ajax-progress-fullscreen{\r\n  background: #ffffff;\r\n  opacity: .9;\r\n  width: 100%;\r\n  height: 100%;\r\n  top: 0;\r\n  left: 0;\r\n  border-radius: 0;\r\n\r\n  .ajax-throbber{\r\n    background-color: var(--primary-color);\r\n    top: 50%;\r\n    left: 50%;\r\n    margin-left: -20px;\r\n    margin-top: -20px;\r\n  }\r\n}\r\n@media (min-width: 1280px) {\r\n.views-row:nth-of-type(2n) .project__left {\r\n  order: 2; \r\n}\r\n.views-row:nth-of-type(2n) .project__right {\r\n text-align: right;\r\n}\r\n}\r\n\r\n.userinfo-section__left--title .title-color .field__item {\r\n    margin-top: 15px;\r\n}\r\n@media only screen and (max-width: 767px) {\r\n    .userinfo-section__right {\r\n        grid-row: 1;\r\n    }\r\n}\r\n\r\n\r\n\r\n/* Container item */\r\n.item {\r\n    position: relative;\r\n.item-content {\r\nz-index: 4;}\r\n    \r\n}\r\n\r\n/* The overlay */\r\n.overlay {\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    width: 100%;\r\n    height: 100%;\r\n    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    opacity: 0; /* Hidden by default */\r\n    transition: opacity 0.3s ease; /* Smooth transition */\r\n    z-index: 1; /* Ensure it is above the content */\r\n}\r\n\r\n/* Text inside the overlay */\r\n.overlay-text {\r\n    color: white;\r\n    font-size: 24px;\r\n    font-weight: bold;\r\n    text-align: center;\r\n}\r\n\r\n/* Show the overlay on hover */\r\n.item:hover .overlay {\r\n    opacity: 1; /* Show overlay when the item is hovered */\r\n}\r\n\r\n"
+default_color: 0
+primary_color: '#04ab97'
+secondary_color: '#000000'
+bootstrap_barrio_region_width_top_header: 0
+bootstrap_barrio_region_width_top_header_form: 0
+bootstrap_barrio_region_width_header: 0
+bootstrap_barrio_region_width_header_form: 0
+bootstrap_barrio_region_width_primary_menu: 0
+bootstrap_barrio_region_width_secondary_menu: 0
+bootstrap_barrio_region_width_page_top: 0
+bootstrap_barrio_region_width_page_bottom: 0
+bootstrap_barrio_region_width_highlighted: 0
+bootstrap_barrio_region_width_featured_top: 0
+bootstrap_barrio_region_width_breadcrumb: 0
+bootstrap_barrio_region_width_content: 0
+bootstrap_barrio_region_width_sidebar_first: 0
+bootstrap_barrio_region_width_sidebar_second: 0
+bootstrap_barrio_region_width_featured_bottom_first: 0
+bootstrap_barrio_region_width_featured_bottom_second: 0
+bootstrap_barrio_region_width_featured_bottom_third: 0
+bootstrap_barrio_region_width_footer_first: 0
+bootstrap_barrio_region_width_footer_second: 0
+bootstrap_barrio_region_width_footer_third: 0
+bootstrap_barrio_region_width_footer_fourth: 0
+bootstrap_barrio_region_width_footer_fifth: 0

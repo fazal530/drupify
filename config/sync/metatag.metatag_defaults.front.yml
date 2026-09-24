@@ -1,0 +1,17 @@
+uuid: da0c8969-882a-4f23-b380-9abdeaf206c0
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1noCXlegCr5HFehQRF1ViXy1jhU1jZ_sNN99a8Sj5jo
+id: front
+label: 'Front page'
+tags:
+  canonical_url: '[site:url]'
+  og_image: 'https://drupify.com/sites/default/files/2024-07/Logo.png'
+  og_image_secure_url: 'https://drupify.com/sites/default/files/2024-07/Logo.png'
+  og_image_url: 'https://drupify.com/sites/default/files/2024-07/Logo.png'
+  og_site_name: Drupify
+  shortlink: '[site:url]'
+  title: ' [site:name] | [current-page:title]'
+  twitter_cards_image: 'https://drupify.com/sites/default/files/2024-07/Logo.png'

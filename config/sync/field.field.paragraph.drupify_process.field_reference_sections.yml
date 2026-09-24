@@ -1,0 +1,23 @@
+uuid: 36d05dac-3de9-4608-b4ec-51e6266ccf65
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_reference_sections
+    - paragraphs.paragraphs_type.drupify_process
+  module:
+    - entity_reference_revisions
+id: paragraph.drupify_process.field_reference_sections
+field_name: field_reference_sections
+entity_type: paragraph
+bundle: drupify_process
+label: Steps
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings: {  }
+field_type: entity_reference_revisions

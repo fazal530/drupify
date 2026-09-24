@@ -1,0 +1,17 @@
+{#
+/**
+ * @file paragraph--drupify-why.html.twig
+ * Why Drupify section.
+ */
+#}
+<section class="drupify-section drupify-muted" id="about" aria-labelledby="why-title">
+  <div class="drupify-container">
+    <div class="drupify-section-head">
+      <p class="drupify-eyebrow">{{ content.field_eyebrow ?: 'Why Drupify'|t }}</p>
+      <h2 id="why-title">{{ content.field_title }}</h2>
+    </div>
+    <div class="drupify-why-grid">
+      {{ content.field_reference_sections }}
+    </div>
+  </div>
+</section>

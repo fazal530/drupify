@@ -1,0 +1,36 @@
+uuid: c8a6aca5-6707-4f64-972a-60447610b4db
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:advertisement:16d5e08e-2d04-48e3-81b2-6db81cd3b0c2'
+  module:
+    - block_content
+    - node
+    - system
+  theme:
+    - drupify
+id: blogad
+theme: drupify
+region: sidebar_second
+weight: -7
+provider: null
+plugin: 'block_content:16d5e08e-2d04-48e3-81b2-6db81cd3b0c2'
+settings:
+  id: 'block_content:16d5e08e-2d04-48e3-81b2-6db81cd3b0c2'
+  label: 'Blog Ad'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      page: page
+  request_path:
+    id: request_path
+    negate: false
+    pages: /blog-list-sidebar

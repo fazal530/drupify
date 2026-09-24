@@ -1,0 +1,168 @@
+ {# {% if header_variation == "header-1" %}
+      {% set active_1 = "active" %}
+    {% elseif header_variation == "header-2" %}
+      {% set active_2 = "active" %}
+    {% elseif header_variation == "header-3" %}
+      {% set active_3 = "active" %}
+    {% endif %} #}
+        <!-- Header 1 Start -->
+<header id="header-1" class="header {{active_1}}">
+	{% if sticky == 1 %}
+	<div class="navbar-wrapper navigation-sticky sticky-nav">
+	{% else %}
+	<div class="navbar-wrapper navigation-sticky">
+	{% endif %}
+		<div class="container-fluid">
+			<nav class="navbar navbar-expand-lg navbar-light">
+                {{page.header}}
+				{# <a class="navbar-brand" href="#"><img src="{{site_logo}}" alt="Classic Pro"></a> #}
+				<button class="navbar-toggler" type="button"><i class="fas fa-bars"></i></button>
+				<div class="collapse navbar-collapse navbarsExampleDefault" id="navbarNavDropdown-one">
+          				{{ page.primary_menu }}
+					<ul class="search-btn d-none d-lg-block">
+						<li class="dropdown">
+							<a class="btn">
+								<svg xmlns="http://www.w3.org/2000/svg" width="40.49" height="40.501" viewBox="0 0 40.49 40.501">
+									<path data-name="Icon ionic-ios-search" d="M44.516,42.062,33.254,30.7a16.048,16.048,0,1,0-2.436,2.467L42.006,44.456a1.733,1.733,0,0,0,2.446.063A1.744,1.744,0,0,0,44.516,42.062ZM20.643,33.3a12.672,12.672,0,1,1,8.963-3.712A12.594,12.594,0,0,1,20.643,33.3Z" transform="translate(-4.5 -4.493)" fill="#fff"/>
+								</svg>
+							</a>
+							<div class="dropdown-menu search-overlay">
+								{{page.header_form}}
+							</div>
+						</li>
+					</ul>
+					<a class="hamburger-btn  d-none d-lg-block" title="Hamburger Menu">
+						<img src="{{hamburger_icon}}" alt="Menu">
+					</a>
+				</div>
+			</nav>
+		</div>
+	</div>
+</header>
+<!-- Header 2 Start -->
+<header id="header-2" class="header {{active_2}}">
+	{% if sticky == 1 %}
+	<div class="navbar-wrapper navigation-sticky sticky-nav">
+	{% else %}
+	<div class="navbar-wrapper navigation-sticky">
+	{% endif %}
+		<div class="container-fluid">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="header-content">
+					<button class=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown-two" aria-controls="navbarNavDropdown-two" aria-expanded="false" aria-label="Toggle navigation"> <i class="fas fa-bars"></i> </button>
+					{# <a class="navbar-brand" href="#">
+						<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280.35 60"><defs><style>.cls-1{fill:#212121;}.cls-2{fill:#080d13;}.cls-3{fill:#FFF;}</style></defs><title>Logo_Format - 2</title><rect class="cls-1" width="60" height="60"/><path class="cls-2" d="M183.86,268.17h-7.07V231.49h7.07Z" transform="translate(-109.82 -220)"/><path class="cls-2" d="M191.33,266.68a6.42,6.42,0,0,1-2.34-5.22v-.09a6.27,6.27,0,0,1,3.55-5.94A16.26,16.26,0,0,1,199.7,254h2.38c1.26,0,1.89-.58,1.89-1.75,0-1.67-1.35-3-3.87-3a5.77,5.77,0,0,0-5.35,3.24l-5.36-3.2c2.07-3.82,5.76-5.71,11-5.71,6.34,0,10.44,3.37,10.44,9.67v14.9h-6.48v-3l-.09-.05a8.24,8.24,0,0,1-7.2,3.47A8.71,8.71,0,0,1,191.33,266.68Zm12.6-7.83v-.54H199.7c-2,0-3.65.95-3.65,2.75,0,1.62,1.26,2.43,3.06,2.43A4.47,4.47,0,0,0,203.93,258.85Z" transform="translate(-109.82 -220)"/><path class="cls-2" d="M225.61,268.71c-5,0-8.54-1.85-10.48-5.54l5.18-3.06c1,1.94,2.79,2.93,5.4,2.93,1.75,0,2.92-.81,2.92-1.76s-.77-1.66-3.82-2.34c-5.72-1.26-8.55-3.87-8.55-7.78a6.62,6.62,0,0,1,2.7-5.45,10.24,10.24,0,0,1,6.52-2.16c4.46,0,7.7,1.94,9.27,4.86l-5.09,3a4.65,4.65,0,0,0-4.36-2.3c-1.44,0-2.52.81-2.52,1.76s1,1.75,3.15,2.2c6.07,1.26,9.27,3.65,9.27,7.83C235.2,265.56,231.56,268.71,225.61,268.71Z" transform="translate(-109.82 -220)"/><path class="cls-2" d="M248.65,268.71c-5,0-8.54-1.85-10.48-5.54l5.18-3.06c1,1.94,2.79,2.93,5.4,2.93,1.75,0,2.92-.81,2.92-1.76s-.77-1.66-3.82-2.34c-5.72-1.26-8.55-3.87-8.55-7.78a6.62,6.62,0,0,1,2.7-5.45,10.24,10.24,0,0,1,6.52-2.16c4.46,0,7.7,1.94,9.27,4.86l-5.09,3a4.65,4.65,0,0,0-4.36-2.3c-1.44,0-2.52.81-2.52,1.76s1,1.75,3.15,2.2c6.07,1.26,9.27,3.65,9.27,7.83C258.24,265.56,254.6,268.71,248.65,268.71Z" transform="translate(-109.82 -220)"/><path class="cls-2" d="M271.07,235.77a4.37,4.37,0,1,1-4.41-4.37A4.35,4.35,0,0,1,271.07,235.77Zm-7.88,32.4v-24h7.07v24Z" transform="translate(-109.82 -220)"/><path class="cls-2" d="M278.94,265.15a12.65,12.65,0,0,1,.13-17.91,12.73,12.73,0,0,1,9.18-3.64c5.36,0,9.77,2.7,11.34,7.42l-6.16,2.57a5.33,5.33,0,0,0-5.18-3.56c-3.24,0-5.76,2.34-5.76,6.08s2.34,6.12,5.76,6.12a5.37,5.37,0,0,0,5.31-3.56l6.21,2.57c-1.84,4.9-6.21,7.47-11.56,7.47A12.67,12.67,0,0,1,278.94,265.15Z" transform="translate(-109.82 -220)"/><path class="cls-2" d="M338.7,252.82a14.15,14.15,0,0,1-9.32,2.93h-5.53v12.42h-7.29V232.93h13.09a13.53,13.53,0,0,1,9.05,3c2.38,1.94,3.55,4.73,3.55,8.33S341.08,250.84,338.7,252.82Zm-9.68-13h-5.17V249h5.22c3.24,0,5.85-1.48,5.85-4.54S332.4,239.82,329,239.82Z" transform="translate(-109.82 -220)"/><path class="cls-2" d="M362.05,251a10,10,0,0,0-1.66-.14c-4.55,0-6.53,2.84-6.53,7.16v10.17h-7v-24h7v3.69h0a7.42,7.42,0,0,1,6.8-4,3.91,3.91,0,0,1,1.39.18Z" transform="translate(-109.82 -220)"/><path class="cls-2" d="M367.77,247.24a13.79,13.79,0,0,1,18.63,0,11.66,11.66,0,0,1,3.78,8.86,11.93,11.93,0,0,1-3.83,9.05,13.22,13.22,0,0,1-9.31,3.6,13,13,0,0,1-9.32-3.56,12.44,12.44,0,0,1,0-17.91Zm5.08,13.32A6,6,0,0,0,383,256.11a6,6,0,0,0-1.71-4.37A5.68,5.68,0,0,0,377,250a5.58,5.58,0,0,0-4.19,1.75,6,6,0,0,0-1.71,4.37A6.19,6.19,0,0,0,372.85,260.56Z" transform="translate(-109.82 -220)"/><path class="cls-3" d="M128.35,237.87a17.59,17.59,0,0,1,13-5.31,18,18,0,0,1,9.76,2.79,14.7,14.7,0,0,1,6.21,7.6L150.62,246a9.68,9.68,0,0,0-9.36-6.34,10.16,10.16,0,0,0-7.6,3.19,10.87,10.87,0,0,0-3.06,7.79,11.18,11.18,0,0,0,3,7.92,10.36,10.36,0,0,0,17.1-3.33l6.71,3.1a14.76,14.76,0,0,1-6.35,7.7,18.73,18.73,0,0,1-9.9,2.79A17.77,17.77,0,0,1,123,250.74,17.32,17.32,0,0,1,128.35,237.87Z" transform="translate(-109.82 -220)"/></svg>
+					</a> #}
+                    {{page.header}}
+				</div>
+				<div class="collapse navbar-collapse navbarsExampleDefault" id="navbarNavDropdown-two">
+						{{ page.primary_menu }}
+					<ul class="search-btn d-none d-lg-block">
+						<li class="dropdown">
+							<a class="btn">
+								<svg xmlns="http://www.w3.org/2000/svg" width="40.49" height="40.501" viewBox="0 0 40.49 40.501">
+									<path data-name="Icon ionic-ios-search" d="M44.516,42.062,33.254,30.7a16.048,16.048,0,1,0-2.436,2.467L42.006,44.456a1.733,1.733,0,0,0,2.446.063A1.744,1.744,0,0,0,44.516,42.062ZM20.643,33.3a12.672,12.672,0,1,1,8.963-3.712A12.594,12.594,0,0,1,20.643,33.3Z" transform="translate(-4.5 -4.493)" fill="#fff"/>
+								</svg>
+							</a>
+							<div class="dropdown-menu search-overlay">
+								{{page.header_form}}
+							</div>
+						</li>
+					</ul>
+					<a class="hamburger-btn d-none d-lg-block" title="Hamburger Menu">
+						<img src="{{hamburger_icon}}" alt="Menu">
+					</a>
+				</div>
+			</nav>
+		</div>
+	</div>
+</header>
+<!-- Header 3 Start -->
+<header id="header-3" class="header {{active_3}}">
+	{% if sticky == 1 %}
+	<div class="navbar-wrapper navigation-sticky sticky-nav">
+	{% else %}
+	<div class="navbar-wrapper navigation-sticky">
+	{% endif %}
+		<div class="container-fluid">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="header-content">
+					<button class=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown-three" aria-controls="navbarNavDropdown-three" aria-expanded="false" aria-label="Toggle navigation"> <i class="fas fa-bars"></i> </button>
+					{# <a class="navbar-brand" href="#">
+						<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280.35 60"><defs><style>.cls-1{fill:#FFF;}.cls-2{fill:#FFF;}.cls-3{fill:#000;}</style></defs><title>Logo_Format - 2</title><rect class="cls-1" width="60" height="60"/><path class="cls-2" d="M183.86,268.17h-7.07V231.49h7.07Z" transform="translate(-109.82 -220)"/><path class="cls-2" d="M191.33,266.68a6.42,6.42,0,0,1-2.34-5.22v-.09a6.27,6.27,0,0,1,3.55-5.94A16.26,16.26,0,0,1,199.7,254h2.38c1.26,0,1.89-.58,1.89-1.75,0-1.67-1.35-3-3.87-3a5.77,5.77,0,0,0-5.35,3.24l-5.36-3.2c2.07-3.82,5.76-5.71,11-5.71,6.34,0,10.44,3.37,10.44,9.67v14.9h-6.48v-3l-.09-.05a8.24,8.24,0,0,1-7.2,3.47A8.71,8.71,0,0,1,191.33,266.68Zm12.6-7.83v-.54H199.7c-2,0-3.65.95-3.65,2.75,0,1.62,1.26,2.43,3.06,2.43A4.47,4.47,0,0,0,203.93,258.85Z" transform="translate(-109.82 -220)"/><path class="cls-2" d="M225.61,268.71c-5,0-8.54-1.85-10.48-5.54l5.18-3.06c1,1.94,2.79,2.93,5.4,2.93,1.75,0,2.92-.81,2.92-1.76s-.77-1.66-3.82-2.34c-5.72-1.26-8.55-3.87-8.55-7.78a6.62,6.62,0,0,1,2.7-5.45,10.24,10.24,0,0,1,6.52-2.16c4.46,0,7.7,1.94,9.27,4.86l-5.09,3a4.65,4.65,0,0,0-4.36-2.3c-1.44,0-2.52.81-2.52,1.76s1,1.75,3.15,2.2c6.07,1.26,9.27,3.65,9.27,7.83C235.2,265.56,231.56,268.71,225.61,268.71Z" transform="translate(-109.82 -220)"/><path class="cls-2" d="M248.65,268.71c-5,0-8.54-1.85-10.48-5.54l5.18-3.06c1,1.94,2.79,2.93,5.4,2.93,1.75,0,2.92-.81,2.92-1.76s-.77-1.66-3.82-2.34c-5.72-1.26-8.55-3.87-8.55-7.78a6.62,6.62,0,0,1,2.7-5.45,10.24,10.24,0,0,1,6.52-2.16c4.46,0,7.7,1.94,9.27,4.86l-5.09,3a4.65,4.65,0,0,0-4.36-2.3c-1.44,0-2.52.81-2.52,1.76s1,1.75,3.15,2.2c6.07,1.26,9.27,3.65,9.27,7.83C258.24,265.56,254.6,268.71,248.65,268.71Z" transform="translate(-109.82 -220)"/><path class="cls-2" d="M271.07,235.77a4.37,4.37,0,1,1-4.41-4.37A4.35,4.35,0,0,1,271.07,235.77Zm-7.88,32.4v-24h7.07v24Z" transform="translate(-109.82 -220)"/><path class="cls-2" d="M278.94,265.15a12.65,12.65,0,0,1,.13-17.91,12.73,12.73,0,0,1,9.18-3.64c5.36,0,9.77,2.7,11.34,7.42l-6.16,2.57a5.33,5.33,0,0,0-5.18-3.56c-3.24,0-5.76,2.34-5.76,6.08s2.34,6.12,5.76,6.12a5.37,5.37,0,0,0,5.31-3.56l6.21,2.57c-1.84,4.9-6.21,7.47-11.56,7.47A12.67,12.67,0,0,1,278.94,265.15Z" transform="translate(-109.82 -220)"/><path class="cls-2" d="M338.7,252.82a14.15,14.15,0,0,1-9.32,2.93h-5.53v12.42h-7.29V232.93h13.09a13.53,13.53,0,0,1,9.05,3c2.38,1.94,3.55,4.73,3.55,8.33S341.08,250.84,338.7,252.82Zm-9.68-13h-5.17V249h5.22c3.24,0,5.85-1.48,5.85-4.54S332.4,239.82,329,239.82Z" transform="translate(-109.82 -220)"/><path class="cls-2" d="M362.05,251a10,10,0,0,0-1.66-.14c-4.55,0-6.53,2.84-6.53,7.16v10.17h-7v-24h7v3.69h0a7.42,7.42,0,0,1,6.8-4,3.91,3.91,0,0,1,1.39.18Z" transform="translate(-109.82 -220)"/><path class="cls-2" d="M367.77,247.24a13.79,13.79,0,0,1,18.63,0,11.66,11.66,0,0,1,3.78,8.86,11.93,11.93,0,0,1-3.83,9.05,13.22,13.22,0,0,1-9.31,3.6,13,13,0,0,1-9.32-3.56,12.44,12.44,0,0,1,0-17.91Zm5.08,13.32A6,6,0,0,0,383,256.11a6,6,0,0,0-1.71-4.37A5.68,5.68,0,0,0,377,250a5.58,5.58,0,0,0-4.19,1.75,6,6,0,0,0-1.71,4.37A6.19,6.19,0,0,0,372.85,260.56Z" transform="translate(-109.82 -220)"/><path class="cls-3" d="M128.35,237.87a17.59,17.59,0,0,1,13-5.31,18,18,0,0,1,9.76,2.79,14.7,14.7,0,0,1,6.21,7.6L150.62,246a9.68,9.68,0,0,0-9.36-6.34,10.16,10.16,0,0,0-7.6,3.19,10.87,10.87,0,0,0-3.06,7.79,11.18,11.18,0,0,0,3,7.92,10.36,10.36,0,0,0,17.1-3.33l6.71,3.1a14.76,14.76,0,0,1-6.35,7.7,18.73,18.73,0,0,1-9.9,2.79A17.77,17.77,0,0,1,123,250.74,17.32,17.32,0,0,1,128.35,237.87Z" transform="translate(-109.82 -220)"/></svg>
+					</a> #}
+                    {{page.header}}
+				</div>
+				<div class="collapse navbar-collapse navbarsExampleDefault" id="navbarNavDropdown-three">
+						{{ page.primary_menu }}
+					<ul class="search-btn d-none d-lg-block">
+						<li class="dropdown">
+							<a class="btn">
+								<svg xmlns="http://www.w3.org/2000/svg" width="40.49" height="40.501" viewBox="0 0 40.49 40.501">
+									<path data-name="Icon ionic-ios-search" d="M44.516,42.062,33.254,30.7a16.048,16.048,0,1,0-2.436,2.467L42.006,44.456a1.733,1.733,0,0,0,2.446.063A1.744,1.744,0,0,0,44.516,42.062ZM20.643,33.3a12.672,12.672,0,1,1,8.963-3.712A12.594,12.594,0,0,1,20.643,33.3Z" transform="translate(-4.5 -4.493)" fill="#fff"/>
+								</svg>
+							</a>
+							<div class="dropdown-menu search-overlay">
+								{{page.header_form}}
+							</div>
+						</li>
+					</ul>
+					<a class="hamburger-btn d-none d-lg-block" title="Hamburger Menu">
+						<img src="{{hamburger_icon}}" alt="Menu">
+					</a>
+				</div>
+			</nav>
+		</div>
+	</div>
+</header>
+<!-- Hamberger -->
+<div class="hamburger-menu">
+	<div class="hamburger-item">
+		<a class="hamburger-btn" title="Hamburger Menu">
+			<span></span>
+		</a>
+		<div class="item-content">
+			<div class="item">
+				<h3>{{about_title}}</h3>
+				<p>{{about_site}}</p>
+			</div>
+			<div class="item">
+				<h3>{{contact_title}}</h3>
+					{{contact_detail|raw}}
+			</div>
+			<div class="item">
+				{{ page.footer_fourth }}
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Header Collapse -->
+<div class="header header-1-menu">
+	<div class="menu-content">
+		<div class="collapsed navbar-collapse" id="navbarNavDropdown-1">
+			{{ page.primary_menu }}
+			<ul class="search-btn d-none d-lg-block">
+				<li class="dropdown">
+					<a class="btn">
+						<svg xmlns="http://www.w3.org/2000/svg" width="40.49" height="40.501" viewBox="0 0 40.49 40.501">
+							<path data-name="Icon ionic-ios-search" d="M44.516,42.062,33.254,30.7a16.048,16.048,0,1,0-2.436,2.467L42.006,44.456a1.733,1.733,0,0,0,2.446.063A1.744,1.744,0,0,0,44.516,42.062ZM20.643,33.3a12.672,12.672,0,1,1,8.963-3.712A12.594,12.594,0,0,1,20.643,33.3Z" transform="translate(-4.5 -4.493)" fill="#fff"/>
+						</svg>
+					</a>
+					<div class="dropdown-menu search-overlay">
+						{{page.header_form}}
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="close">
+		<a href="#" class="close-icon" title="Close">
+			<svg xmlns="http://www.w3.org/2000/svg" width="23.336" height="23.334" viewBox="0 0 23.336 23.334">
+				<g id="Icon_feather-cross" data-name="Icon feather-cross" transform="translate(11.668 -16.617) rotate(45)">
+					<path id="Path_1362" data-name="Path 1362" d="M18,7.5v25" transform="translate(2 0)" fill="none" stroke="#1b1c21" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+					<path id="Path_1363" data-name="Path 1363" d="M7.5,18h25" transform="translate(0 2)" fill="none" stroke="#1b1c21" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+				</g>
+			</svg>
+		</a>
+	</div>
+</div>

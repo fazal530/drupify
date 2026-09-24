@@ -1,0 +1,77 @@
+{#
+/**
+ * @file paragraph--drupify-hero.html.twig
+ * Default theme implementation for the Drupify hero section.
+ */
+#}
+<section class="drupify-hero drupify-section">
+  <div class="drupify-container drupify-hero-grid">
+    <div class="drupify-hero-copy">
+      {% if content.field_eyebrow|render %}
+        <p class="drupify-eyebrow">{{ content.field_eyebrow }}</p>
+      {% endif %}
+      {% if content.field_title|render %}
+        <h1>{{ content.field_title }}</h1>
+      {% endif %}
+      {% if content.field_description|render %}
+        <p class="drupify-lead">{{ content.field_description }}</p>
+      {% endif %}
+      {% if (content.field_link_title|render and content.field_link_url|render) or (content.field_secondary_title|render and content.field_secondary_url|render) %}
+        <div class="drupify-actions">
+          {% if paragraph.field_link_title.value and paragraph.field_link_url.value %}
+            <a class="drupify-button drupify-button-primary" href="{{ paragraph.field_link_url.value }}">{{ paragraph.field_link_title.value }}</a>
+          {% endif %}
+          {% if paragraph.field_secondary_title.value and paragraph.field_secondary_url.value %}
+            <a class="drupify-button drupify-button-secondary" href="{{ paragraph.field_secondary_url.value }}">{{ paragraph.field_secondary_title.value }}</a>
+          {% endif %}
+        </div>
+      {% endif %}
+      {% if content.field_items|render %}
+        <ul class="drupify-signal-list">
+          {% for item in paragraph.field_items.value|split('\n') %}
+            {% if item|trim %}
+              <li>{{ item|trim }}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+
+    <div class="drupify-hero-visual" aria-label="{{ 'Drupal engineering workflow preview'|t }}">
+      <div class="drupify-browser-shell">
+        <div class="drupify-browser-bar">
+          <span></span><span></span><span></span>
+          <strong>upgrade-status.drupal</strong>
+        </div>
+        <div class="drupify-workspace">
+          <div class="drupify-release-card">
+            <span>{{ 'Release readiness'|t }}</span>
+            <strong>{{ 'Mapped'|t }}</strong>
+            <p>{{ 'Core, contrib, custom code, content, theme, and launch risks reviewed before development.'|t }}</p>
+          </div>
+          <div class="drupify-status-panel">
+            <div><span>{{ 'Drupal core'|t }}</span><strong>{{ '11.x ready'|t }}</strong></div>
+            <div><span>{{ 'Modules'|t }}</span><strong>{{ 'compatibility audit'|t }}</strong></div>
+            <div><span>{{ 'Theme layer'|t }}</span><strong>{{ 'Twig + CSS review'|t }}</strong></div>
+            <div><span>{{ 'Launch gate'|t }}</span><strong>{{ 'tested'|t }}</strong></div>
+          </div>
+          <pre class="drupify-code-panel" aria-hidden="true"><code>{% verbatim %}{% if site.secure %}
+  {{ cache_contexts }}
+  {{ performance_budget }}
+{% endif %}{% endverbatim %}</code></pre>
+          <div class="drupify-flow-panel">
+            <span>{{ 'Audit'|t }}</span>
+            <span>{{ 'Plan'|t }}</span>
+            <span>{{ 'Migrate'|t }}</span>
+            <span>{{ 'Launch'|t }}</span>
+          </div>
+        </div>
+      </div>
+      <div class="drupify-hero-proof">
+        <span>{{ 'Composer-safe updates'|t }}</span>
+        <span>{{ 'Theme compatibility'|t }}</span>
+        <span>{{ 'Rollback-aware launch'|t }}</span>
+      </div>
+    </div>
+  </div>
+</section>

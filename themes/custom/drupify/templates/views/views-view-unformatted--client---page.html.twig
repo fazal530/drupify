@@ -1,0 +1,18 @@
+{#
+/**
+ * @file views-view-unformatted--client---page.html.twig
+ * Heading + logo grid wrapper for the /clients view page.
+ */
+#}
+<div class="drupify-container drupify-clients-view-head">
+  <div class="drupify-section-head">
+    <p class="drupify-eyebrow">{{ 'Client proof'|t }}</p>
+    <h2>{{ 'Client logos from the current Drupify content model.'|t }}</h2>
+    <p>{{ 'Powered by the Client View, so logos and clients can be managed from Drupal admin.'|t }}</p>
+  </div>
+  <div class="drupify-client-grid">
+    {% for row in rows %}
+      {{ row.content }}
+    {% endfor %}
+  </div>
+</div>

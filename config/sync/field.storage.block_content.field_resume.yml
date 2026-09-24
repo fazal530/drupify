@@ -1,0 +1,20 @@
+uuid: 0dac7755-d6b9-40e6-9fd3-f5c93671bf07
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - media
+id: block_content.field_resume
+field_name: field_resume
+entity_type: block_content
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

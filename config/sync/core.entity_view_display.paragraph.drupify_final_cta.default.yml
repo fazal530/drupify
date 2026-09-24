@@ -1,0 +1,52 @@
+uuid: 82502cf9-4d8a-4292-b374-fc29b6fb9a2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.drupify_final_cta.field_description
+    - field.field.paragraph.drupify_final_cta.field_link_title
+    - field.field.paragraph.drupify_final_cta.field_link_url
+    - field.field.paragraph.drupify_final_cta.field_title
+    - paragraphs.paragraphs_type.drupify_final_cta
+  module:
+    - text
+id: paragraph.drupify_final_cta.default
+targetEntityType: paragraph
+bundle: drupify_final_cta
+mode: default
+content:
+  field_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_link_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_link_url:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

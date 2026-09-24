@@ -1,0 +1,18 @@
+uuid: 43b7234a-effb-4adb-9139-2095c295cf84
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Home Page'
+type: home_page
+description: 'Home pages are Available in this Content type'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

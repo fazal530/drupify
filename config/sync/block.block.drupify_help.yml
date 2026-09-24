@@ -1,0 +1,22 @@
+uuid: 6f7e4307-a271-407c-a50e-08efe44ab6f3
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - drupify
+_core:
+  default_config_hash: '-laWx8WA-ikiIEH3NJQ0hVbjqk3iEuBms91LB0B4IQU'
+id: drupify_help
+theme: drupify
+region: content
+weight: -17
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

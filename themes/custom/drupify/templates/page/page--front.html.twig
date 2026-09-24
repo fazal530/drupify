@@ -1,0 +1,13 @@
+{{ attach_library('drupify/drupify_homepage') }}
+
+<div class="drupify-home" id="page-wrapper">
+  <a class="drupify-skip-link" href="#main-content">{{ 'Skip to main content'|t }}</a>
+
+  {% include '@drupify/includes/drupify-header.html.twig' %}
+
+  <main id="main-content" tabindex="-1">
+    {{ page.content }}
+  </main>
+
+  {% include '@drupify/includes/drupify-footer.html.twig' %}
+</div>

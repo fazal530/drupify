@@ -1,0 +1,51 @@
+{{ attach_library('drupify/drupify_homepage') }}
+
+<div class="drupify-home drupify-error-page" id="page-wrapper">
+  <a class="drupify-skip-link" href="#main-content">{{ 'Skip to main content'|t }}</a>
+
+  {% include '@drupify/includes/drupify-header.html.twig' %}
+
+  <main id="main-content" tabindex="-1">
+    <section class="drupify-page-hero drupify-section">
+      <div class="drupify-container drupify-page-hero-grid">
+        <div>
+          <p class="drupify-eyebrow">{{ '404 error'|t }}</p>
+          <h1>{{ 'This page is not available anymore.'|t }}</h1>
+          <p class="drupify-lead">{{ 'The link may be old, the page may have moved, or the content may have been retired during the site cleanup.'|t }}</p>
+          <div class="drupify-actions">
+            <a class="drupify-button drupify-button-primary" href="{{ path('<front>') }}">{{ 'Go to homepage'|t }}</a>
+            <a class="drupify-button drupify-button-secondary" href="{{ base_path }}services">{{ 'Explore services'|t }}</a>
+          </div>
+        </div>
+
+        <div class="drupify-service-overview drupify-error-panel">
+          <span>{{ 'Useful paths'|t }}</span>
+          <ol>
+            <li><a href="{{ base_path }}services">{{ 'Drupal services'|t }}</a></li>
+            <li><a href="{{ base_path }}portfolio">{{ 'Portfolio'|t }}</a></li>
+            <li><a href="{{ base_path }}blog">{{ 'Blog'|t }}</a></li>
+            <li><a href="{{ base_path }}contact-us">{{ 'Contact Drupify'|t }}</a></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="drupify-section drupify-muted" aria-labelledby="error-support-title">
+      <div class="drupify-container drupify-split">
+        <div class="drupify-section-head drupify-align-start">
+          <p class="drupify-eyebrow">{{ 'Need help?'|t }}</p>
+          <h2 id="error-support-title">{{ 'Looking for a Drupal page, service, or article?'|t }}</h2>
+          <p>{{ 'If you expected something specific here, send us the URL. We can help find the right page or review a similar issue on your own Drupal site.'|t }}</p>
+        </div>
+        <div class="drupify-blog-topics">
+          <article><strong>{{ 'Migration help'|t }}</strong><p>{{ 'Move old content, URLs, and features into a cleaner Drupal structure.'|t }}</p></article>
+          <article><strong>{{ 'Theme cleanup'|t }}</strong><p>{{ 'Repair outdated templates, Views output, and frontend inconsistencies.'|t }}</p></article>
+          <article><strong>{{ 'Content structure'|t }}</strong><p>{{ 'Clean content types, paragraphs, blocks, and reusable page patterns.'|t }}</p></article>
+          <article><strong>{{ 'Support'|t }}</strong><p>{{ 'Fix broken links, forms, cache behavior, and production issues.'|t }}</p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  {% include '@drupify/includes/drupify-footer.html.twig' %}
+</div>

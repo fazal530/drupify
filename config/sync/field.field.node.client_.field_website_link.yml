@@ -1,0 +1,23 @@
+uuid: 8205ef1d-27ec-4393-861c-a8255adfa4f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_website_link
+    - node.type.client_
+  module:
+    - link
+id: node.client_.field_website_link
+field_name: field_website_link
+entity_type: node
+bundle: client_
+label: 'Website Link'
+description: 'This Website Link field is optional'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

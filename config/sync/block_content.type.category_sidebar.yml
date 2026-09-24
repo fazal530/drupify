@@ -1,0 +1,8 @@
+uuid: b3e4adaa-ba42-4746-b880-2e91fee5706d
+langcode: en
+status: true
+dependencies: {  }
+id: category_sidebar
+label: 'Category Sidebar'
+revision: false
+description: ''

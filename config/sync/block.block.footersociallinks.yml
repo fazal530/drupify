@@ -1,0 +1,23 @@
+uuid: 8c91e3a5-85e8-4514-9f45-c40bfb3367be
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:social_links:109b2524-fd07-4ec9-b0f7-ca0888d59d20'
+  module:
+    - block_content
+  theme:
+    - drupify
+id: footersociallinks
+theme: drupify
+region: footer_fourth
+weight: 0
+provider: null
+plugin: 'block_content:109b2524-fd07-4ec9-b0f7-ca0888d59d20'
+settings:
+  id: 'block_content:109b2524-fd07-4ec9-b0f7-ca0888d59d20'
+  label: 'Footer Social Links'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,46 @@
+uuid: 20a1f3d0-8f6d-4cd4-b155-c493bd0d24f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.drupify_testimonials.field_description
+    - field.field.paragraph.drupify_testimonials.field_eyebrow
+    - field.field.paragraph.drupify_testimonials.field_reference_sections
+    - field.field.paragraph.drupify_testimonials.field_title
+    - paragraphs.paragraphs_type.drupify_testimonials
+  module:
+    - entity_reference_revisions
+id: paragraph.drupify_testimonials.default
+targetEntityType: paragraph
+bundle: drupify_testimonials
+mode: default
+content:
+  field_eyebrow:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_reference_sections:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_description: true

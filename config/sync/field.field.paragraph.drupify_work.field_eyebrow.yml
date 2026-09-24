@@ -1,0 +1,19 @@
+uuid: 88f161b5-77cb-42c0-918d-e18cfc6531b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_eyebrow
+    - paragraphs.paragraphs_type.drupify_work
+id: paragraph.drupify_work.field_eyebrow
+field_name: field_eyebrow
+entity_type: paragraph
+bundle: drupify_work
+label: Eyebrow
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

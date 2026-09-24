@@ -1,0 +1,41 @@
+uuid: d8ffb26c-0573-4f69-9906-c001d5516bac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.drupify_platforms.field_eyebrow
+    - field.field.paragraph.drupify_platforms.field_items
+    - field.field.paragraph.drupify_platforms.field_title
+    - paragraphs.paragraphs_type.drupify_platforms
+id: paragraph.drupify_platforms.default
+targetEntityType: paragraph
+bundle: drupify_platforms
+mode: default
+content:
+  field_eyebrow:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_items:
+    type: string_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

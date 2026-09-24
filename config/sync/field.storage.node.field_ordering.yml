@@ -1,0 +1,20 @@
+uuid: d488091d-d60f-4779-90a6-4c778669a98c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_ordering
+field_name: field_ordering
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

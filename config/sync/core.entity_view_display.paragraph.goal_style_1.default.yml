@@ -1,0 +1,29 @@
+uuid: 8847e912-6d06-4b1e-8f4d-2b5fe2e7f1d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.goal_style_1.field_description
+    - field.field.paragraph.goal_style_1.field_title
+    - paragraphs.paragraphs_type.goal_style_1
+id: paragraph.goal_style_1.default
+targetEntityType: paragraph
+bundle: goal_style_1
+mode: default
+content:
+  field_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

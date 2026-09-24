@@ -1,0 +1,365 @@
+uuid: 127a2316-c605-42e1-8759-56c4c8bbe5d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.blogs_side_bar
+    - field.storage.block_content.field_sidebar
+  module:
+    - entity_reference_revisions
+id: block_content.blogs_side_bar.field_sidebar
+field_name: field_sidebar
+entity_type: block_content
+bundle: blogs_side_bar
+label: Sidebar
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: {  }
+    negate: 0
+    target_bundles_drag_drop:
+      about_style_1_:
+        weight: 114
+        enabled: false
+      about_style_2:
+        weight: 115
+        enabled: false
+      about_style_3:
+        weight: 116
+        enabled: false
+      about_style_4:
+        weight: 117
+        enabled: false
+      advertisement_image_:
+        weight: 118
+        enabled: false
+      award:
+        weight: 119
+        enabled: false
+      awards:
+        weight: 120
+        enabled: false
+      blog_2_column:
+        weight: 127
+        enabled: false
+      blog_3_column:
+        weight: 128
+        enabled: false
+      blog_4_column:
+        weight: 129
+        enabled: false
+      blogs:
+        weight: 121
+        enabled: false
+      blogs_list_1:
+        weight: 122
+        enabled: false
+      blogs_list_2:
+        weight: 123
+        enabled: false
+      blogs_sidebar:
+        weight: 124
+        enabled: true
+      blogs_style_2:
+        weight: 125
+        enabled: false
+      blogs_style_3:
+        weight: 126
+        enabled: false
+      call_to_action_style_1:
+        weight: 130
+        enabled: false
+      call_to_action_style_2:
+        weight: 131
+        enabled: false
+      call_to_action_style_3:
+        weight: 132
+        enabled: false
+      call_to_action_style_4:
+        weight: 133
+        enabled: false
+      clients_grid:
+        weight: 134
+        enabled: false
+      clients_style_1:
+        weight: 135
+        enabled: false
+      clients_style_2:
+        weight: 136
+        enabled: false
+      clients_style_3:
+        weight: 137
+        enabled: false
+      contact_social:
+        weight: 138
+        enabled: false
+      contact_style_1_:
+        weight: 139
+        enabled: false
+      contact_style_2:
+        weight: 140
+        enabled: false
+      contact_style_3:
+        weight: 141
+        enabled: false
+      counter_style_1:
+        weight: 145
+        enabled: false
+      counter_style_2:
+        weight: 146
+        enabled: false
+      counter_style_3:
+        weight: 147
+        enabled: false
+      counters_style_1:
+        weight: 142
+        enabled: false
+      counters_style_2:
+        weight: 143
+        enabled: false
+      counters_style_3:
+        weight: 144
+        enabled: false
+      detail_image:
+        weight: 148
+        enabled: false
+      detail_images:
+        weight: 149
+        enabled: false
+      error_page:
+        weight: 150
+        enabled: false
+      faq_s_page:
+        weight: 151
+        enabled: false
+      faq_s_style_1:
+        weight: 152
+        enabled: false
+      faq_s_style_2:
+        weight: 153
+        enabled: false
+      faq_s_style_3:
+        weight: 154
+        enabled: false
+      feature_style_1:
+        weight: 158
+        enabled: false
+      feature_style_2:
+        weight: 159
+        enabled: false
+      feature_style_3:
+        weight: 160
+        enabled: false
+      features_style_1:
+        weight: 155
+        enabled: false
+      features_style_2:
+        weight: 156
+        enabled: false
+      features_style_3:
+        weight: 157
+        enabled: false
+      footer_cta:
+        weight: 161
+        enabled: false
+      goal_style_1:
+        weight: 164
+        enabled: false
+      goal_style_2:
+        weight: 165
+        enabled: false
+      goals_style_1:
+        weight: 162
+        enabled: false
+      goals_style_2:
+        weight: 163
+        enabled: false
+      histories:
+        weight: 166
+        enabled: false
+      history:
+        weight: 167
+        enabled: false
+      job:
+        weight: 168
+        enabled: false
+      job_detail:
+        weight: 170
+        enabled: false
+      job_details:
+        weight: 171
+        enabled: false
+      job_responsibilities:
+        weight: 172
+        enabled: false
+      jobs:
+        weight: 169
+        enabled: false
+      our_value_style_2:
+        weight: 176
+        enabled: false
+      our_values_style_1:
+        weight: 173
+        enabled: false
+      our_values_style_2:
+        weight: 174
+        enabled: false
+      our_values_style_3:
+        weight: 175
+        enabled: false
+      palns_style_1:
+        weight: 177
+        enabled: false
+      plan_style_1:
+        weight: 181
+        enabled: false
+      plan_style_2:
+        weight: 182
+        enabled: false
+      plan_style_3:
+        weight: 183
+        enabled: false
+      plans_page:
+        weight: 178
+        enabled: false
+      plans_style_2:
+        weight: 179
+        enabled: false
+      plans_style_3:
+        weight: 180
+        enabled: false
+      portfolio_masonary_2:
+        weight: 191
+        enabled: false
+      portfolio_masonry_1:
+        weight: 192
+        enabled: false
+      portfolio_sidebar:
+        weight: 193
+        enabled: false
+      portfolios_block:
+        weight: 184
+        enabled: false
+      portfolios_page:
+        weight: 185
+        enabled: false
+      portfolios_page_2:
+        weight: 186
+        enabled: false
+      portfolios_page_3:
+        weight: 187
+        enabled: false
+      portfolios_style_1:
+        weight: 188
+        enabled: false
+      portfolios_style_2:
+        weight: 189
+        enabled: false
+      portfolios_style_3:
+        weight: 190
+        enabled: false
+      service_list:
+        weight: 202
+        enabled: false
+      service_lists:
+        weight: 203
+        enabled: false
+      service_sidebar:
+        weight: 204
+        enabled: false
+      services_list_1:
+        weight: 194
+        enabled: false
+      services_list_2:
+        weight: 195
+        enabled: false
+      services_page_1:
+        weight: 196
+        enabled: false
+      services_page_2:
+        weight: 197
+        enabled: false
+      services_page_3:
+        weight: 198
+        enabled: false
+      services_style_1_:
+        weight: 199
+        enabled: false
+      services_style_2:
+        weight: 200
+        enabled: false
+      services_style_3:
+        weight: 201
+        enabled: false
+      slide_style_1_:
+        weight: 208
+        enabled: false
+      slide_style_3:
+        weight: 209
+        enabled: false
+      slider_style_1_:
+        weight: 205
+        enabled: false
+      slider_style_2:
+        weight: 206
+        enabled: false
+      slider_style_3:
+        weight: 207
+        enabled: false
+      social_links:
+        weight: 210
+        enabled: false
+      team_members_grid:
+        weight: 211
+        enabled: false
+      team_members_style_1:
+        weight: 212
+        enabled: false
+      team_members_style_2:
+        weight: 213
+        enabled: false
+      team_members_style_3:
+        weight: 214
+        enabled: false
+      team_social_links:
+        weight: 215
+        enabled: false
+      testimonials_:
+        weight: 216
+        enabled: false
+      testimonials_page:
+        weight: 217
+        enabled: false
+      testimonials_style_2:
+        weight: 218
+        enabled: false
+      testimonials_style_3:
+        weight: 219
+        enabled: false
+      value_style_1:
+        weight: 220
+        enabled: false
+      work_process_style_1:
+        weight: 224
+        enabled: false
+      work_process_style_2:
+        weight: 225
+        enabled: false
+      work_process_style_3:
+        weight: 226
+        enabled: false
+      work_processes_style_1:
+        weight: 221
+        enabled: false
+      work_processes_style_2:
+        weight: 222
+        enabled: false
+      work_processes_style_3:
+        weight: 223
+        enabled: false
+field_type: entity_reference_revisions

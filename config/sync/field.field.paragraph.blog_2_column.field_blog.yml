@@ -1,0 +1,74 @@
+uuid: cc605878-3ff7-4f45-a571-f5f9c8490ca2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_blog
+    - paragraphs.paragraphs_type.blog_2_column
+    - views.view.blog
+  module:
+    - viewsreference
+id: paragraph.blog_2_column.field_blog
+field_name: field_blog
+entity_type: paragraph
+bundle: blog_2_column
+label: Blog
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    options:
+      title: 0
+      argument: ''
+    display_id: block_4
+    argument: null
+    title: 0
+    data: null
+    target_uuid: 9d94ae0c-2b95-4c77-b0b7-2fd6c54f1d99
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: 0
+  plugin_types:
+    block: block
+    default: 0
+    page: 0
+    entity_browser: 0
+    feed: 0
+    embed: 0
+  preselect_views:
+    banner: 0
+    block_content: 0
+    blog: 0
+    career: 0
+    client_: 0
+    comment: 0
+    comments_recent: 0
+    content: 0
+    content_recent: 0
+    faq: 0
+    files: 0
+    file_entity_browser: 0
+    frontpage: 0
+    media: 0
+    portfolio: 0
+    portfolio_category_style1: 0
+    services: 0
+    taxonomy_term: 0
+    team_member_: 0
+    testimonial: 0
+    user_admin_people: 0
+    watchdog: 0
+    webform_submissions: 0
+    who_s_new: 0
+    who_s_online: 0
+  enabled_settings:
+    argument: argument
+    offset: 0
+    limit: 0
+    pager: 0
+    title: title
+field_type: viewsreference

@@ -1,0 +1,52 @@
+{{ attach_library('drupify/drupify_homepage') }}
+
+{% set member_name = node.field_name.value ?: node.label %}
+{% set designation = node.field_designation.value ?: 'Drupal delivery team'|t %}
+{% set profile_link = node.field_profile_link.value %}
+
+<div class="drupify-home drupify-team-detail-page" id="page-wrapper">
+  <a class="drupify-skip-link" href="#main-content">{{ 'Skip to main content'|t }}</a>
+
+  {% include '@drupify/includes/drupify-header.html.twig' %}
+
+  <main id="main-content" tabindex="-1">
+    <section class="drupify-page-hero drupify-section">
+      <div class="drupify-container drupify-service-detail-intro">
+        {% if node.field_image.entity %}
+          <div class="drupify-service-detail-media drupify-profile-media">
+            <img src="{{ file_url(node.field_image.entity.uri.value) }}" alt="{{ node.field_image.alt|default(member_name) }}">
+          </div>
+        {% endif %}
+        <div>
+          <p class="drupify-eyebrow">{{ 'Team member'|t }}</p>
+          <h1>{{ member_name }}</h1>
+          <p class="drupify-lead">{{ designation }}</p>
+          <div class="drupify-actions">
+            {% if profile_link %}
+              <a class="drupify-button drupify-button-primary" href="{{ profile_link }}">{{ 'View work'|t }}</a>
+            {% endif %}
+            <a class="drupify-button drupify-button-secondary" href="{{ path('view.team_member_.page') }}">{{ 'Back to team'|t }}</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="drupify-section drupify-muted" aria-labelledby="team-profile-title">
+      <div class="drupify-container drupify-split">
+        <div class="drupify-section-head drupify-align-start">
+          <p class="drupify-eyebrow">{{ 'Profile'|t }}</p>
+          <h2 id="team-profile-title">{{ 'Part of the Drupify delivery team.'|t }}</h2>
+          <p>{{ 'This profile is powered by Team Member content. More detailed bio, skills, and social links can be added later if public profile pages become important for trust and hiring.'|t }}</p>
+        </div>
+        <div class="drupify-blog-topics">
+          <article><strong>{{ 'Role'|t }}</strong><p>{{ designation }}</p></article>
+          <article><strong>{{ 'Focus'|t }}</strong><p>{{ 'Drupal implementation, frontend quality, support, and project delivery.'|t }}</p></article>
+          <article><strong>{{ 'Team page'|t }}</strong><p><a class="drupify-text-link" href="{{ path('view.team_member_.page') }}">{{ 'Meet the team'|t }}</a></p></article>
+          <article><strong>{{ 'Contact'|t }}</strong><p><a class="drupify-text-link" href="{{ base_path }}contact-us">{{ 'Work with Drupify'|t }}</a></p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  {% include '@drupify/includes/drupify-footer.html.twig' %}
+</div>

@@ -1,0 +1,23 @@
+uuid: fb1f82b2-c4e7-46ec-92ec-d92dc21bd272
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.short_codes
+  module:
+    - node
+id: element_page
+label: 'Element Page'
+type: 'canonical_entities:node'
+pattern: '/element/[node:title]'
+selection_criteria:
+  5420c21a-0a5d-440b-b07c-56ec1d3ecd9d:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      short_codes: short_codes
+selection_logic: and
+weight: -5
+relationships: {  }

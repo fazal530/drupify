@@ -1,0 +1,22 @@
+uuid: e7530117-3810-4341-a50e-3bbdd02ed679
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_item_answer
+    - paragraphs.paragraphs_type.drupify_faq_item
+  module:
+    - text
+id: paragraph.drupify_faq_item.field_item_answer
+field_name: field_item_answer
+entity_type: paragraph
+bundle: drupify_faq_item
+label: Answer
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

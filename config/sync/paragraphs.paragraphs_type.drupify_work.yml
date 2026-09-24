@@ -1,0 +1,10 @@
+uuid: 02cd449a-827c-447e-804d-f1fd4bc029c6
+langcode: en
+status: true
+dependencies: {  }
+id: drupify_work
+label: 'Featured Work'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

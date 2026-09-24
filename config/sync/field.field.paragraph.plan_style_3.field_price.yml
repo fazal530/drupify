@@ -1,0 +1,23 @@
+uuid: 24a41400-5fb3-4cab-995d-490b2ed34e4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_price
+    - paragraphs.paragraphs_type.plan_style_3
+id: paragraph.plan_style_3.field_price
+field_name: field_price
+entity_type: paragraph
+bundle: plan_style_3
+label: Price
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

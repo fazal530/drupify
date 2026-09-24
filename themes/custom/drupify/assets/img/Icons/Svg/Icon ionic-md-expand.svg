@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="Icon_ionic-md-expand" data-name="Icon ionic-md-expand" transform="translate(-4.5 -4.5)">
+    <path id="Path_1573" data-name="Path 1573" d="M34.842,34.843H22.5v8.229H43.071V22.5H34.842Z" transform="translate(21.429 21.429)" fill="#1b1c21"/>
+    <path id="Path_1574" data-name="Path 1574" d="M34.843,12.729V25.071h8.229V4.5H22.5v8.229Z" transform="translate(21.429 0)" fill="#1b1c21"/>
+    <path id="Path_1575" data-name="Path 1575" d="M12.729,12.729H25.071V4.5H4.5V25.071h8.229Z" transform="translate(0 0)" fill="#1b1c21"/>
+    <path id="Path_1576" data-name="Path 1576" d="M12.729,34.842V22.5H4.5V43.071H25.071V34.842Z" transform="translate(0 21.429)" fill="#1b1c21"/>
+  </g>
+</svg>

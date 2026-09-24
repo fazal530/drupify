@@ -1,0 +1,10 @@
+uuid: ae99bbcf-39b7-436f-820e-6a408ea32f70
+langcode: en
+status: true
+dependencies: {  }
+id: drupify_process
+label: Process
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

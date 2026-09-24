@@ -1,0 +1,23 @@
+uuid: a23bfa78-415b-46a2-8a73-a32ea126b686
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_background_style
+    - paragraphs.paragraphs_type.team_members_style_3
+id: paragraph.team_members_style_3.field_background_style
+field_name: field_background_style
+entity_type: paragraph
+bundle: team_members_style_3
+label: 'Background Style'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

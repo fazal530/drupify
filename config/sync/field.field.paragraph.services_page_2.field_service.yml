@@ -1,0 +1,73 @@
+uuid: abe99aae-6f72-4a93-8012-4cde69a49bd8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_service
+    - paragraphs.paragraphs_type.services_page_2
+    - views.view.services
+  module:
+    - viewsreference
+id: paragraph.services_page_2.field_service
+field_name: field_service
+entity_type: paragraph
+bundle: services_page_2
+label: Service
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    options:
+      title: 0
+      argument: ''
+    display_id: block_5
+    argument: null
+    title: 0
+    data: null
+    target_uuid: 752de99a-98cf-4f00-845c-ae9fff8fa1b0
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: 0
+  plugin_types:
+    block: block
+    default: 0
+    page: 0
+    entity_browser: 0
+    feed: 0
+    embed: 0
+  preselect_views:
+    banner: 0
+    block_content: 0
+    blog: 0
+    client_: 0
+    comment: 0
+    comments_recent: 0
+    content: 0
+    content_recent: 0
+    faq: 0
+    files: 0
+    file_entity_browser: 0
+    frontpage: 0
+    media: 0
+    portfolio: 0
+    portfolio_category_style1: 0
+    services: 0
+    taxonomy_term: 0
+    team_member_: 0
+    testimonial: 0
+    user_admin_people: 0
+    watchdog: 0
+    webform_submissions: 0
+    who_s_new: 0
+    who_s_online: 0
+  enabled_settings:
+    argument: argument
+    offset: 0
+    limit: 0
+    pager: 0
+    title: title
+field_type: viewsreference

@@ -1,0 +1,32 @@
+uuid: 348d611a-1e71-4f08-a675-a22ff7b89b13
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.blog
+  module:
+    - node
+    - views
+  theme:
+    - drupify
+id: views_block__blog_block_11
+theme: drupify
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:blog-block_11'
+settings:
+  id: 'views_block:blog-block_11'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: null
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      blog: blog

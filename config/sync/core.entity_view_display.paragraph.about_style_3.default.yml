@@ -1,0 +1,66 @@
+uuid: cead93c5-d299-4510-a8ca-acdbcacf0b37
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.about_style_3.field_button_link
+    - field.field.paragraph.about_style_3.field_description
+    - field.field.paragraph.about_style_3.field_image
+    - field.field.paragraph.about_style_3.field_section_title
+    - field.field.paragraph.about_style_3.field_tag_line
+    - paragraphs.paragraphs_type.about_style_3
+  module:
+    - image
+    - link
+    - text
+id: paragraph.about_style_3.default
+targetEntityType: paragraph
+bundle: about_style_3
+mode: default
+content:
+  field_button_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_section_title:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_tag_line:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,23 @@
+uuid: f032054d-269c-4d7f-8440-071307c4e870
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_reference_sections
+    - paragraphs.paragraphs_type.drupify_faq
+  module:
+    - entity_reference_revisions
+id: paragraph.drupify_faq.field_reference_sections
+field_name: field_reference_sections
+entity_type: paragraph
+bundle: drupify_faq
+label: 'FAQ items'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings: {  }
+field_type: entity_reference_revisions

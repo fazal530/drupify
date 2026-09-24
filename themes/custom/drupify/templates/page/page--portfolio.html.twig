@@ -1,0 +1,124 @@
+{{ attach_library('drupify/drupify_homepage') }}
+
+{% set asset_base = base_path ~ 'sites/default/files' %}
+
+<div class="drupify-home drupify-portfolio-page" id="page-wrapper">
+  <a class="drupify-skip-link" href="#main-content">{{ 'Skip to main content'|t }}</a>
+
+  {% include '@drupify/includes/drupify-header.html.twig' %}
+
+  <main id="main-content" tabindex="-1">
+    <section class="drupify-page-hero drupify-section">
+      <div class="drupify-container drupify-page-hero-grid">
+        <div>
+          <p class="drupify-eyebrow">{{ 'Selected Drupal work'|t }}</p>
+          <h1>{{ 'Real projects that show Drupify can ship practical web platforms.'|t }}</h1>
+          <p class="drupify-lead">{{ 'This portfolio uses published Drupify project records with existing screenshots and live URLs. Deeper Drupal versions and measurable outcomes should be added as each case study is verified.'|t }}</p>
+          <div class="drupify-actions">
+            <a class="drupify-button drupify-button-primary" href="{{ base_path }}contact-us">{{ 'Discuss a Drupal project'|t }}</a>
+            <a class="drupify-button drupify-button-secondary" href="{{ base_path }}services">{{ 'Explore services'|t }}</a>
+          </div>
+        </div>
+
+        <div class="drupify-service-overview">
+          <span>{{ 'Portfolio proof'|t }}</span>
+          <ol>
+            <li>{{ '@count published portfolio entries'|t({'@count': drupify_portfolio|length}) }}</li>
+            <li>{{ 'Screenshots and live URLs present'|t }}</li>
+            <li>{{ 'Service and category context visible'|t }}</li>
+            <li>{{ 'Outcome metrics still need verification'|t }}</li>
+          </ol>
+          <a class="drupify-text-link drupify-overview-link" href="{{ base_path }}clients">{{ 'View client list'|t }}</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="drupify-section" aria-labelledby="featured-work-title">
+      <div class="drupify-container">
+        <div class="drupify-section-head">
+          <p class="drupify-eyebrow">{{ 'Featured work'|t }}</p>
+          <h2 id="featured-work-title">{{ 'A stronger project presentation starts with evidence.'|t }}</h2>
+          <p>{{ 'The layout prioritizes screenshots, project names, categories, and links before making any performance or business-result claims.'|t }}</p>
+        </div>
+
+        {% set featured_project = drupify_portfolio|first %}
+        {% if featured_project %}
+        <article class="drupify-work-card drupify-featured drupify-portfolio-featured">
+          <div class="drupify-work-media">
+            {% if featured_project.image %}
+              <img src="{{ featured_project.image }}" alt="{{ featured_project.image_alt }}">
+            {% endif %}
+          </div>
+          <div class="drupify-work-copy">
+            <p class="drupify-eyebrow">{{ 'Featured project'|t }}</p>
+            <h3>{{ featured_project.title }}</h3>
+            <p>{{ featured_project.summary ?: 'Published Drupify portfolio project with existing screenshot and live project URL.'|t }}</p>
+            <dl class="drupify-meta-list">
+              {% if featured_project.category %}
+                <div><dt>{{ 'Category'|t }}</dt><dd>{{ featured_project.category }}</dd></div>
+              {% endif %}
+              {% if featured_project.website_url %}
+                <div><dt>{{ 'Website'|t }}</dt><dd><a href="{{ featured_project.website_url }}" rel="nofollow">{{ featured_project.website_url|replace({'https://': '', 'http://': '', '/': ''}) }}</a></dd></div>
+              {% endif %}
+              <div><dt>{{ 'Services'|t }}</dt><dd>{{ 'Website build, frontend implementation, content presentation'|t }}</dd></div>
+              <div><dt>{{ 'Proof status'|t }}</dt><dd>{{ 'Screenshot and URL verified; Drupal version and measurable outcomes needed'|t }}</dd></div>
+            </dl>
+            <div class="drupify-work-actions">
+              <a class="drupify-text-link" href="{{ featured_project.url }}">{{ 'View project page'|t }}</a>
+              {% if featured_project.website_url %}
+                <a class="drupify-text-link" href="{{ featured_project.website_url }}" rel="nofollow">{{ featured_project.website_title }}</a>
+              {% endif %}
+            </div>
+          </div>
+        </article>
+        {% endif %}
+      </div>
+    </section>
+
+    <section class="drupify-section drupify-muted" aria-labelledby="portfolio-grid-title">
+      <div class="drupify-container">
+        <div class="drupify-section-head">
+          <p class="drupify-eyebrow">{{ 'Project library'|t }}</p>
+          <h2 id="portfolio-grid-title">{{ 'Published work from the Drupify portfolio.'|t }}</h2>
+        </div>
+
+        <div class="drupify-portfolio-grid">
+          {% for project in drupify_portfolio|slice(1) %}
+            <article>
+              {% if project.image %}
+                <img src="{{ project.image }}" alt="{{ project.image_alt }}">
+              {% endif %}
+              <div>
+                <span>{{ project.category ?: 'Web Development'|t }}</span>
+                <h3>{{ project.title }}</h3>
+                <p>{{ project.summary ?: 'Published Drupify portfolio project with existing project imagery.'|t }}</p>
+                <a class="drupify-text-link" href="{{ project.url }}">{{ 'View project'|t }}</a>
+                {% if project.website_url %}
+                  <a class="drupify-text-link" href="{{ project.website_url }}" rel="nofollow">{{ project.website_title }}</a>
+                {% endif %}
+              </div>
+            </article>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <section class="drupify-audit-band" aria-labelledby="portfolio-cta-title">
+      <div class="drupify-container drupify-audit-inner">
+        <div>
+          <p class="drupify-eyebrow">{{ 'Project fit'|t }}</p>
+          <h2 id="portfolio-cta-title">{{ 'Want work like this, but with a Drupal upgrade plan behind it?'|t }}</h2>
+          <p>{{ 'Share your current site, business goals, and technical blockers. Drupify can recommend the right service path before scope is locked.'|t }}</p>
+          <ul class="drupify-audit-list">
+            <li>{{ 'Migration planning'|t }}</li>
+            <li>{{ 'Theme implementation'|t }}</li>
+            <li>{{ 'Ongoing support'|t }}</li>
+          </ul>
+        </div>
+        <a class="drupify-button drupify-button-light" href="{{ base_path }}contact-us">{{ 'Book Free Consultation'|t }}</a>
+      </div>
+    </section>
+  </main>
+
+  {% include '@drupify/includes/drupify-footer.html.twig' %}
+</div>

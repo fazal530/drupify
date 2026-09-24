@@ -1,0 +1,41 @@
+uuid: 837e821e-2bd1-49d5-be19-465b7ee0580e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slide_style_1_
+    - paragraphs.paragraphs_type.slider_style_1_
+  module:
+    - entity_reference_revisions
+id: paragraph.slider_style_1_.field_slide_style_1_
+field_name: field_slide_style_1_
+entity_type: paragraph
+bundle: slider_style_1_
+label: 'Slide (Style 1)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: {  }
+    negate: 0
+    target_bundles_drag_drop:
+      contact_social:
+        weight: 6
+        enabled: false
+      footer_cta:
+        weight: 7
+        enabled: false
+      slide_style_1_:
+        weight: 8
+        enabled: true
+      slider_style_1_:
+        weight: 9
+        enabled: false
+      social_links:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

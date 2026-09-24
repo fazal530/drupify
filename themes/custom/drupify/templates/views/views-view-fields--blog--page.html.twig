@@ -1,0 +1,15 @@
+{#
+/**
+ * @file views-view-fields--blog--page.html.twig
+ * Single article card for the /blog view page.
+ */
+#}
+{% set article_path = fields.view_node.content|striptags|trim %}
+<article>
+  <div class="drupify-blog-list-media">{{ fields.field_image.content }}</div>
+  <div>
+    {{ fields.created.content }}
+    <h3><a href="{{ article_path }}">{{ fields.title.content }}</a></h3>
+    <a class="drupify-text-link" href="{{ article_path }}">{{ 'Read article'|t }}</a>
+  </div>
+</article>

@@ -1,0 +1,19 @@
+uuid: a584fa12-86d1-4137-a95e-c50981a3e7e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tag_line
+    - paragraphs.paragraphs_type.team_members_style_3
+id: paragraph.team_members_style_3.field_tag_line
+field_name: field_tag_line
+entity_type: paragraph
+bundle: team_members_style_3
+label: 'Tag Line'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

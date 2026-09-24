@@ -1,0 +1,102 @@
+{{ attach_library('drupify/drupify_homepage') }}
+
+{% set asset_base = base_path ~ 'sites/default/files' %}
+
+<div class="drupify-home drupify-contact-page" id="page-wrapper">
+  <a class="drupify-skip-link" href="#main-content">{{ 'Skip to main content'|t }}</a>
+
+  {% include '@drupify/includes/drupify-header.html.twig' %}
+
+  <main id="main-content" tabindex="-1">
+    <section class="drupify-page-hero drupify-section">
+      <div class="drupify-container drupify-page-hero-grid">
+        <div>
+          <p class="drupify-eyebrow">{{ 'Contact Drupify'|t }}</p>
+          <h1>{{ 'Tell us what is happening with your Drupal site.'|t }}</h1>
+          <p class="drupify-lead">{{ 'Share the website, the problem, and what you want to improve. Drupify will help you choose the right path: audit, fix, migration, build, or ongoing support.'|t }}</p>
+          <div class="drupify-actions">
+            <a class="drupify-button drupify-button-primary" href="#contact-form">{{ 'Send project details'|t }}</a>
+            <a class="drupify-button drupify-button-secondary" href="mailto:info@drupify.com">{{ 'Email info@drupify.com'|t }}</a>
+          </div>
+        </div>
+
+        <div class="drupify-service-overview drupify-contact-overview">
+          <span>{{ 'Good first message'|t }}</span>
+          <ol>
+            <li>{{ 'Current website URL'|t }}</li>
+            <li>{{ 'Drupal version or upgrade goal'|t }}</li>
+            <li>{{ 'Main blocker or business goal'|t }}</li>
+            <li>{{ 'Preferred timeline'|t }}</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="drupify-section drupify-muted" aria-labelledby="contact-form-title">
+      <div class="drupify-container drupify-contact-grid">
+        <div class="drupify-contact-copy">
+          <p class="drupify-eyebrow">{{ 'Start here'|t }}</p>
+          <h2 id="contact-form-title">{{ 'Get a practical Drupal answer, not a generic sales pitch.'|t }}</h2>
+          <p>{{ 'Use the form for project requests, upgrade problems, support needs, audits, bug fixes, and agency overflow work.'|t }}</p>
+
+          <div class="drupify-contact-methods">
+            <article>
+              <span>{{ 'Email'|t }}</span>
+              <a href="mailto:info@drupify.com">info@drupify.com</a>
+            </article>
+            <article>
+              <span>{{ 'Call'|t }}</span>
+              <a href="tel:+923371605998">+92 337 1605998</a>
+            </article>
+            <article>
+              <span>{{ 'Location'|t }}</span>
+              <p>{{ 'Office No. 2C, 2nd Floor, Peshawar Tiles Center, Achini Stop, Ring Road, Peshawar, Pakistan'|t }}</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="drupify-contact-form-panel" id="contact-form">
+          <p class="drupify-eyebrow">{{ 'Project details'|t }}</p>
+          {% if drupify_contact_form %}
+            {{ drupify_contact_form }}
+          {% else %}
+            {{ page.content }}
+          {% endif %}
+        </div>
+      </div>
+    </section>
+
+    <section class="drupify-section" aria-labelledby="contact-fit-title">
+      <div class="drupify-container">
+        <div class="drupify-section-head">
+          <p class="drupify-eyebrow">{{ 'What happens next'|t }}</p>
+          <h2 id="contact-fit-title">{{ 'Your request is routed by problem type.'|t }}</h2>
+        </div>
+
+        <div class="drupify-contact-steps">
+          <article><span>01</span><h3>{{ 'Review'|t }}</h3><p>{{ 'We check the message, website context, and obvious technical risks.'|t }}</p></article>
+          <article><span>02</span><h3>{{ 'Clarify'|t }}</h3><p>{{ 'If needed, we ask for access, screenshots, version details, or priority goals.'|t }}</p></article>
+          <article><span>03</span><h3>{{ 'Recommend'|t }}</h3><p>{{ 'You get a suggested path: quick fix, audit, migration plan, build scope, or support plan.'|t }}</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="drupify-audit-band" aria-labelledby="contact-cta-title">
+      <div class="drupify-container drupify-audit-inner">
+        <div>
+          <p class="drupify-eyebrow">{{ 'Free Drupal audit'|t }}</p>
+          <h2 id="contact-cta-title">{{ 'Not sure what to ask for? Send the site anyway.'|t }}</h2>
+          <p>{{ 'Drupify can look at version risk, theme behavior, broken UI, performance, and module health before recommending the next step.'|t }}</p>
+          <ul class="drupify-audit-list">
+            <li>{{ 'Upgrade risk'|t }}</li>
+            <li>{{ 'Theme issues'|t }}</li>
+            <li>{{ 'Support fit'|t }}</li>
+          </ul>
+        </div>
+        <a class="drupify-button drupify-button-light" href="#contact-form">{{ 'Send project details'|t }}</a>
+      </div>
+    </section>
+  </main>
+
+  {% include '@drupify/includes/drupify-footer.html.twig' %}
+</div>

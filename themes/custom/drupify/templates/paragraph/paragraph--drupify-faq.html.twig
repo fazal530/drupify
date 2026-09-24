@@ -1,0 +1,17 @@
+{#
+/**
+ * @file paragraph--drupify-faq.html.twig
+ * FAQ section.
+ */
+#}
+<section class="drupify-section drupify-muted" aria-labelledby="faq-title">
+  <div class="drupify-container drupify-narrow">
+    <div class="drupify-section-head">
+      <p class="drupify-eyebrow">{{ content.field_eyebrow.value ?: 'FAQ' }}</p>
+      <h2 id="faq-title">{{ content.field_title }}</h2>
+    </div>
+    <div class="drupify-faq-list">
+      {{ content.field_reference_sections }}
+    </div>
+  </div>
+</section>

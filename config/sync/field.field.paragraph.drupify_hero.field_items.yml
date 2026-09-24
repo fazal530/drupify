@@ -1,0 +1,22 @@
+uuid: 2dd39480-e733-4c3c-bc00-13954945995f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_items
+    - paragraphs.paragraphs_type.drupify_hero
+  module:
+    - text
+id: paragraph.drupify_hero.field_items
+field_name: field_items
+entity_type: paragraph
+bundle: drupify_hero
+label: 'Signal list (one per line)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

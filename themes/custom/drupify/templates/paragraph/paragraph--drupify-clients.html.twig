@@ -1,0 +1,28 @@
+{#
+/**
+ * @file paragraph--drupify-clients.html.twig
+ * Client proof section.
+ */
+#}
+{% if drupify_clients %}
+<section class="drupify-section-tight drupify-client-section" aria-labelledby="clients-title">
+  <div class="drupify-container">
+    <div class="drupify-section-head drupify-compact">
+      <p class="drupify-eyebrow">{{ content.field_eyebrow ?: 'Client proof'|t }}</p>
+      <h2 id="clients-title">{{ content.field_title }}</h2>
+      <a class="drupify-text-link" href="{{ path('view.client_.page') }}">{{ 'View all clients'|t }}</a>
+    </div>
+    <div class="drupify-client-grid">
+      {% for client in drupify_clients %}
+        <a href="{{ client.website_url ?: client.url }}" {% if client.website_url %}rel="nofollow"{% endif %}>
+          {% if client.image %}
+            <img src="{{ client.image }}" alt="{{ client.image_alt }}">
+          {% else %}
+            <span>{{ client.title }}</span>
+          {% endif %}
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}

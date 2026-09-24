@@ -1,0 +1,55 @@
+{{ attach_library('drupify/drupify_homepage') }}
+
+<div class="drupify-home drupify-testimonial-detail-page" id="page-wrapper">
+  <a class="drupify-skip-link" href="#main-content">{{ 'Skip to main content'|t }}</a>
+
+  {% include '@drupify/includes/drupify-header.html.twig' %}
+
+  <main id="main-content" tabindex="-1">
+    <section class="drupify-page-hero drupify-section">
+      <div class="drupify-container drupify-narrow">
+        <p class="drupify-eyebrow">{{ 'Client story'|t }}</p>
+        <h1>{{ node.label }}</h1>
+      </div>
+    </section>
+
+    <section class="drupify-section">
+      <div class="drupify-container drupify-narrow">
+        <figure class="drupify-testimonial-single">
+          {% if node.field_image.entity %}
+            <div class="drupify-testimonial-avatar">
+              <img src="{{ file_url(node.field_image.entity.uri.value) }}" alt="{{ node.field_name.value ?: node.label }}">
+            </div>
+          {% endif %}
+          {% if node.field_feedback.value %}
+            <blockquote>{{ node.field_feedback.value }}</blockquote>
+          {% endif %}
+          <figcaption>
+            <strong>{{ node.field_name.value ?: node.label }}</strong>
+            {% if node.field_designation.value %}
+              <span>{{ node.field_designation.value }}</span>
+            {% endif %}
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="drupify-audit-band" aria-labelledby="testimonial-cta-title">
+      <div class="drupify-container drupify-audit-inner">
+        <div>
+          <p class="drupify-eyebrow">{{ 'Work with Drupify'|t }}</p>
+          <h2 id="testimonial-cta-title">{{ 'Clients trust Drupify for dependable Drupal delivery.'|t }}</h2>
+          <p>{{ 'Send the site and the problem. Drupify can recommend a fix, upgrade, theme, or support path.'|t }}</p>
+          <ul class="drupify-audit-list">
+            <li>{{ 'Free technical review'|t }}</li>
+            <li>{{ 'No-pressure advice'|t }}</li>
+            <li>{{ 'Recommend a path'|t }}</li>
+          </ul>
+        </div>
+        <a class="drupify-button drupify-button-light" href="{{ base_path }}contact-us">{{ 'Talk to Drupify'|t }}</a>
+      </div>
+    </section>
+  </main>
+
+  {% include '@drupify/includes/drupify-footer.html.twig' %}
+</div>

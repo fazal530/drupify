@@ -1,0 +1,23 @@
+uuid: a646b736-0ec8-4203-ba54-29b19d5aeb5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.portfolio
+  module:
+    - node
+id: blog
+label: Portfolio
+type: 'canonical_entities:node'
+pattern: '/portfolio/[node:title]'
+selection_criteria:
+  3ed5eaeb-b196-4c43-a66c-e77eec33be26:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      portfolio: portfolio
+selection_logic: and
+weight: -5
+relationships: {  }

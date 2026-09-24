@@ -1,0 +1,25 @@
+{{ attach_library('drupify/drupify_homepage') }}
+
+<div class="drupify-home drupify-auth-page" id="page-wrapper">
+  <a class="drupify-skip-link" href="#main-content">{{ 'Skip to main content'|t }}</a>
+
+  {% include '@drupify/includes/drupify-header.html.twig' %}
+
+  <main id="main-content" tabindex="-1">
+    <section class="drupify-page-hero drupify-section">
+      <div class="drupify-container">
+        <p class="drupify-eyebrow">{{ 'Drupify member access'|t }}</p>
+        <h1>{{ reset_banner_title ? reset_banner_title : 'Reset your password'|t }}</h1>
+        <p class="drupify-lead">{{ 'Enter your username or email and we will send a reset link.'|t }}</p>
+      </div>
+    </section>
+
+    <section class="drupify-section">
+      <div class="drupify-container drupify-narrow">
+        {{ page.content }}
+      </div>
+    </section>
+  </main>
+
+  {% include '@drupify/includes/drupify-footer.html.twig' %}
+</div>

@@ -1,0 +1,8 @@
+uuid: 99f282b2-9e72-409c-bb68-70d3bf32236a
+langcode: en
+status: true
+dependencies: {  }
+id: footer_cta
+label: 'Footer Cta'
+revision: false
+description: 'Call to Action in Footer Section'

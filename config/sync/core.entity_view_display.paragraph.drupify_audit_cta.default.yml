@@ -1,0 +1,70 @@
+uuid: f568bdd3-5f16-4e90-a2cd-a067732bc33e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.drupify_audit_cta.field_description
+    - field.field.paragraph.drupify_audit_cta.field_eyebrow
+    - field.field.paragraph.drupify_audit_cta.field_items
+    - field.field.paragraph.drupify_audit_cta.field_link_title
+    - field.field.paragraph.drupify_audit_cta.field_link_url
+    - field.field.paragraph.drupify_audit_cta.field_title
+    - paragraphs.paragraphs_type.drupify_audit_cta
+  module:
+    - text
+id: paragraph.drupify_audit_cta.default
+targetEntityType: paragraph
+bundle: drupify_audit_cta
+mode: default
+content:
+  field_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_eyebrow:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_items:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_link_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_link_url:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

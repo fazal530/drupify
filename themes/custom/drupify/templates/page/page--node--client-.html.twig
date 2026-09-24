@@ -1,0 +1,54 @@
+{{ attach_library('drupify/drupify_homepage') }}
+
+{% set website_url = node.field_website_link.uri ? node.field_website_link.0.url : '' %}
+{% set website_title = node.field_website_link.title ?: 'Visit website'|t %}
+
+<div class="drupify-home drupify-client-detail-page" id="page-wrapper">
+  <a class="drupify-skip-link" href="#main-content">{{ 'Skip to main content'|t }}</a>
+
+  {% include '@drupify/includes/drupify-header.html.twig' %}
+
+  <main id="main-content" tabindex="-1">
+    <section class="drupify-page-hero drupify-section">
+      <div class="drupify-container drupify-page-hero-grid">
+        <div>
+          <p class="drupify-eyebrow">{{ 'Client record'|t }}</p>
+          <h1>{{ node.label }}</h1>
+          <p class="drupify-lead">{{ 'A Drupify client record with logo and website link. This can become a fuller case study if project details are added later.'|t }}</p>
+          <div class="drupify-actions">
+            {% if website_url %}
+              <a class="drupify-button drupify-button-primary" href="{{ website_url }}" target="_blank" rel="noopener nofollow">{{ website_title }}</a>
+            {% endif %}
+            <a class="drupify-button drupify-button-secondary" href="{{ path('view.client_.page') }}">{{ 'Back to clients'|t }}</a>
+          </div>
+        </div>
+
+        <div class="drupify-client-detail-logo">
+          {% if node.field_logo.entity %}
+            <img src="{{ file_url(node.field_logo.entity.uri.value) }}" alt="{{ node.field_logo.alt|default(node.label) }}">
+          {% else %}
+            <strong>{{ node.label }}</strong>
+          {% endif %}
+        </div>
+      </div>
+    </section>
+
+    <section class="drupify-section drupify-muted" aria-labelledby="client-detail-title">
+      <div class="drupify-container drupify-split">
+        <div class="drupify-section-head drupify-align-start">
+          <p class="drupify-eyebrow">{{ 'Client context'|t }}</p>
+          <h2 id="client-detail-title">{{ 'Client records support proof across the site.'|t }}</h2>
+          <p>{{ 'Client content powers logo grids and trust sections. For stronger SEO and sales proof, convert selected client records into portfolio case studies with scope, screenshots, Drupal details, and outcomes.'|t }}</p>
+        </div>
+        <div class="drupify-blog-topics">
+          <article><strong>{{ 'Client'|t }}</strong><p>{{ node.label }}</p></article>
+          <article><strong>{{ 'Website'|t }}</strong><p>{% if website_url %}<a class="drupify-text-link" href="{{ website_url }}" target="_blank" rel="noopener nofollow">{{ website_title }}</a>{% else %}{{ 'Not provided'|t }}{% endif %}</p></article>
+          <article><strong>{{ 'Client list'|t }}</strong><p><a class="drupify-text-link" href="{{ path('view.client_.page') }}">{{ 'View all clients'|t }}</a></p></article>
+          <article><strong>{{ 'Portfolio'|t }}</strong><p><a class="drupify-text-link" href="{{ base_path }}portfolio">{{ 'View project work'|t }}</a></p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  {% include '@drupify/includes/drupify-footer.html.twig' %}
+</div>

@@ -1,0 +1,16 @@
+{#
+/**
+ * @file views-view-fields--team-member--page.html.twig
+ * Individual team member card for the /team view page.
+ */
+#}
+<article class="drupify-team-view-card">
+  <div class="drupify-team-view-media">{{ fields.field_image.content }}</div>
+  <div>
+    <h3>{{ fields.field_name.content }}</h3>
+    <p>{{ fields.field_designation.content }}</p>
+    {% if fields.field_profile_link.content|striptags|trim %}
+      <a class="drupify-text-link" href="{{ fields.field_profile_link.content|striptags|trim }}">{{ 'View profile'|t }}</a>
+    {% endif %}
+  </div>
+</article>

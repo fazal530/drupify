@@ -1,0 +1,103 @@
+{{ attach_library('drupify/drupify_homepage') }}
+
+{% set category = node.field_blog_category.entity ? node.field_blog_category.entity.label : 'Drupal insights' %}
+{% set article_body = node.body.processed ?: node.body.value %}
+
+<div class="drupify-home drupify-blog-detail-page" id="page-wrapper">
+  <a class="drupify-skip-link" href="#main-content">{{ 'Skip to main content'|t }}</a>
+
+  {% include '@drupify/includes/drupify-header.html.twig' %}
+
+  <main id="main-content" tabindex="-1">
+    <article>
+      <header class="drupify-page-hero drupify-section">
+        <div class="drupify-container drupify-narrow">
+          <p class="drupify-eyebrow">{{ category }}</p>
+          <h1>{{ node.label }}</h1>
+          <div class="drupify-article-meta">
+            <time datetime="{{ node.createdtime|date('Y-m-d') }}">{{ node.createdtime|date('M d, Y') }}</time>
+            <span>{{ 'Drupify'|t }}</span>
+          </div>
+        </div>
+      </header>
+
+      {% if node.field_image.entity %}
+        <section class="drupify-section-tight">
+          <div class="drupify-container">
+            <figure class="drupify-article-hero-image">
+              <img src="{{ file_url(node.field_image.entity.uri.value) }}" alt="{{ node.field_image.alt|default(node.label) }}">
+            </figure>
+          </div>
+        </section>
+      {% endif %}
+
+      <section class="drupify-section">
+        <div class="drupify-container drupify-article-layout">
+          <div class="drupify-article-body">
+            {% if article_body %}
+              {{ article_body|raw }}
+            {% elseif node.body.summary %}
+              <p>{{ node.body.summary }}</p>
+            {% endif %}
+            {% if content.field_detail_images is defined %}
+              <div class="drupify-article-gallery">
+                {{ content.field_detail_images }}
+              </div>
+            {% endif %}
+            {% if content.field_contents is defined %}
+              {{ content.field_contents }}
+            {% endif %}
+          </div>
+
+          <aside class="drupify-article-aside" aria-label="{{ 'Article actions'|t }}">
+            <div>
+              <span>{{ 'Need Drupal help?'|t }}</span>
+              <p>{{ 'Drupify can review your website structure, theme, modules, and upgrade path.'|t }}</p>
+              <a class="drupify-button drupify-button-primary" href="{{ base_path }}contact-us">{{ 'Request Drupal audit'|t }}</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </article>
+
+    <section class="drupify-section drupify-muted" aria-labelledby="related-insights-title">
+      <div class="drupify-container">
+        <div class="drupify-section-head">
+          <p class="drupify-eyebrow">{{ 'Related insights'|t }}</p>
+          <h2 id="related-insights-title">{{ 'More Drupal thinking from Drupify.'|t }}</h2>
+        </div>
+
+        <div class="drupify-insight-list">
+          {% for blog in drupify_blogs %}
+            {% if blog.id != node.id() %}
+              <article>
+                <span>{{ blog.category ?: 'Drupal'|t }}</span>
+                <h3>{{ blog.title }}</h3>
+                <p>{{ blog.summary }}</p>
+                <a class="drupify-text-link" href="{{ blog.url }}">{{ 'Read article'|t }}</a>
+              </article>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <section class="drupify-audit-band" aria-labelledby="blog-detail-cta-title">
+      <div class="drupify-container drupify-audit-inner">
+        <div>
+          <p class="drupify-eyebrow">{{ 'Free Drupal audit'|t }}</p>
+          <h2 id="blog-detail-cta-title">{{ 'Have a Drupal problem behind the article you just read?'|t }}</h2>
+          <p>{{ 'Share the site and the issue. Drupify can suggest a practical fix, upgrade path, or support plan.'|t }}</p>
+          <ul class="drupify-audit-list">
+            <li>{{ 'Code review'|t }}</li>
+            <li>{{ 'Theme review'|t }}</li>
+            <li>{{ 'Upgrade planning'|t }}</li>
+          </ul>
+        </div>
+        <a class="drupify-button drupify-button-light" href="{{ base_path }}contact-us">{{ 'Request Drupal audit'|t }}</a>
+      </div>
+    </section>
+  </main>
+
+  {% include '@drupify/includes/drupify-footer.html.twig' %}
+</div>

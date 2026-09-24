@@ -1,0 +1,19 @@
+uuid: 50e689fa-6f38-46ef-b102-d61a2549fefc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link_url
+    - paragraphs.paragraphs_type.drupify_audit_cta
+id: paragraph.drupify_audit_cta.field_link_url
+field_name: field_link_url
+entity_type: paragraph
+bundle: drupify_audit_cta
+label: 'Button URL'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

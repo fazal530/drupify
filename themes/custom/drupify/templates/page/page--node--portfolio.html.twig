@@ -1,0 +1,109 @@
+{{ attach_library('drupify/drupify_homepage') }}
+
+{% set category = node.field_portfolio_category.entity ? node.field_portfolio_category.entity.label : 'Portfolio' %}
+{% set summary = node.body.summary ?: node.body.value|striptags|slice(0, 220) %}
+{% set website_url = node.field_website_link.uri ? node.field_website_link.0.url : '' %}
+{% set website_title = node.field_website_link.title ?: 'Visit website'|t %}
+
+<div class="drupify-home drupify-portfolio-detail-page" id="page-wrapper">
+  <a class="drupify-skip-link" href="#main-content">{{ 'Skip to main content'|t }}</a>
+
+  {% include '@drupify/includes/drupify-header.html.twig' %}
+
+  <main id="main-content" tabindex="-1">
+    <section class="drupify-page-hero drupify-section">
+      <div class="drupify-container drupify-page-hero-grid">
+        <div>
+          <p class="drupify-eyebrow">{{ category }}</p>
+          <h1>{{ node.label }}</h1>
+          <p class="drupify-lead">{{ summary ?: 'A published Drupify portfolio project with existing project media, client context, and website link.'|t }}</p>
+          <div class="drupify-actions">
+            {% if website_url %}
+              <a class="drupify-button drupify-button-primary" href="{{ website_url }}" target="_blank" rel="noopener nofollow">{{ website_title }}</a>
+            {% endif %}
+            <a class="drupify-button drupify-button-secondary" href="{{ base_path }}portfolio">{{ 'Back to portfolio'|t }}</a>
+          </div>
+        </div>
+
+        <div class="drupify-service-overview">
+          <span>{{ 'Project context'|t }}</span>
+          <ol>
+            {% if node.field_caption_1.value or node.field_caption_content_1.value %}
+              <li>{{ node.field_caption_1.value ?: 'Detail' }}: {{ node.field_caption_content_1.value }}</li>
+            {% endif %}
+            {% if node.field_caption_2.value or node.field_caption_content_2.value %}
+              <li>{{ node.field_caption_2.value ?: 'Client' }}: {{ node.field_caption_content_2.value ?: node.label }}</li>
+            {% endif %}
+            <li>{{ 'Category'|t }}: {{ category }}</li>
+            <li>{{ 'Status'|t }}: {{ 'Published portfolio record'|t }}</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    {% if node.field_image.entity %}
+      <section class="drupify-section-tight">
+        <div class="drupify-container">
+          <figure class="drupify-detail-hero-image">
+            <img src="{{ file_url(node.field_image.entity.uri.value) }}" alt="{{ node.field_image.alt|default(node.label) }}">
+          </figure>
+        </div>
+      </section>
+    {% endif %}
+
+    <section class="drupify-section drupify-muted" aria-labelledby="portfolio-detail-title">
+      <div class="drupify-container drupify-article-layout">
+        <div class="drupify-article-body">
+          <p class="drupify-eyebrow">{{ 'Project notes'|t }}</p>
+          <h2 id="portfolio-detail-title">{{ 'What this portfolio record shows.'|t }}</h2>
+          {% if node.body.processed %}
+            {{ node.body.processed|raw }}
+          {% else %}
+            <p>{{ 'This project has a verified title, image, category, and website link. Deeper case-study details such as Drupal version, delivery scope, and measurable outcomes can be added later from the Portfolio content form.'|t }}</p>
+          {% endif %}
+          {% if content.field_sections is defined %}
+            <div class="drupify-article-gallery">
+              {{ content.field_sections }}
+            </div>
+          {% endif %}
+        </div>
+
+        <aside class="drupify-article-aside" aria-label="{{ 'Project actions'|t }}">
+          <div>
+            <span>{{ 'Need similar Drupal work?'|t }}</span>
+            <p>{{ 'Drupify can review your existing site and recommend a practical development, migration, theming, or support path.'|t }}</p>
+            <a class="drupify-button drupify-button-primary" href="{{ base_path }}contact-us">{{ 'Discuss your project'|t }}</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="drupify-section" aria-labelledby="related-work-title">
+      <div class="drupify-container">
+        <div class="drupify-section-head">
+          <p class="drupify-eyebrow">{{ 'More work'|t }}</p>
+          <h2 id="related-work-title">{{ 'Explore more Drupify portfolio entries.'|t }}</h2>
+        </div>
+        <div class="drupify-portfolio-grid">
+          {% for project in drupify_portfolio|slice(0, 4) %}
+            {% if project.id != node.id() %}
+              <article>
+                {% if project.image %}
+                  <img src="{{ project.image }}" alt="{{ project.image_alt }}">
+                {% endif %}
+                <div>
+                  <span>{{ project.category ?: 'Web Development'|t }}</span>
+                  <h3>{{ project.title }}</h3>
+                  <p>{{ project.summary ?: 'Published Drupify portfolio project.'|t }}</p>
+                  <a class="drupify-text-link" href="{{ project.url }}">{{ 'View project'|t }}</a>
+                </div>
+              </article>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+  </main>
+
+  {% include '@drupify/includes/drupify-footer.html.twig' %}
+</div>

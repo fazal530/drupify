@@ -1,0 +1,21 @@
+uuid: c1329bf1-2e9f-4a07-8943-6168e3df99fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_error_name
+    - paragraphs.paragraphs_type.error_page
+  module:
+    - text
+id: paragraph.error_page.field_error_name
+field_name: field_error_name
+entity_type: paragraph
+bundle: error_page
+label: 'Error Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

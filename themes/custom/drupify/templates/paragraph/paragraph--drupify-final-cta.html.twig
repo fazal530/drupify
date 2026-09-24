@@ -1,0 +1,17 @@
+{#
+/**
+ * @file paragraph--drupify-final-cta.html.twig
+ * Final call to action.
+ */
+#}
+<section class="drupify-final-cta" id="contact" aria-labelledby="contact-title">
+  <div class="drupify-container drupify-final-inner">
+    <h2 id="contact-title">{{ content.field_title }}</h2>
+    {% if content.field_description|render %}
+      <p>{{ content.field_description }}</p>
+    {% endif %}
+    {% if paragraph.field_link_title.value %}
+      <a class="drupify-button drupify-button-primary" href="{{ paragraph.field_link_url.value }}">{{ paragraph.field_link_title.value }}</a>
+    {% endif %}
+  </div>
+</section>

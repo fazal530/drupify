@@ -1,0 +1,91 @@
+{{ attach_library('drupify/drupify_homepage') }}
+
+{% set asset_base = base_path ~ 'sites/default/files' %}
+
+<div class="drupify-home drupify-services-page" id="page-wrapper">
+  <a class="drupify-skip-link" href="#main-content">{{ 'Skip to main content'|t }}</a>
+
+  {% include '@drupify/includes/drupify-header.html.twig' %}
+
+  <main id="main-content" tabindex="-1">
+    <section class="drupify-page-hero drupify-section">
+      <div class="drupify-container drupify-page-hero-grid">
+        <div>
+          <p class="drupify-eyebrow">{{ 'Drupal services'|t }}</p>
+          <h1>{{ 'Specialist Drupal help for builds, upgrades, migrations, and support.'|t }}</h1>
+          <p class="drupify-lead">{{ 'Choose a focused service path, or start with a free audit if you are not sure what your Drupal site needs next.'|t }}</p>
+          <div class="drupify-actions">
+            <a class="drupify-button drupify-button-primary" href="{{ base_path }}contact-us#contact-form">{{ 'Book Free Consultation'|t }}</a>
+            <a class="drupify-button drupify-button-secondary" href="{{ base_path }}pricing">{{ 'View Pricing Paths'|t }}</a>
+          </div>
+        </div>
+
+        <div class="drupify-service-overview">
+          <span>{{ 'Service map'|t }}</span>
+          <ol>
+            <li>{{ 'Audit the platform'|t }}</li>
+            <li>{{ 'Choose the right service path'|t }}</li>
+            <li>{{ 'Plan scope and release risk'|t }}</li>
+            <li>{{ 'Build, migrate, optimize, or support'|t }}</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="drupify-section drupify-muted" aria-labelledby="service-paths-title">
+      <div class="drupify-container">
+        <div class="drupify-section-head">
+          <p class="drupify-eyebrow">{{ 'Service paths'|t }}</p>
+          <h2 id="service-paths-title">{{ 'Pick the Drupal engagement that fits the problem.'|t }}</h2>
+          <p>{{ 'The page keeps Drupify positioned as a technical Drupal partner, while making each service easier to understand and hire.'|t }}</p>
+        </div>
+
+        <div class="drupify-service-grid drupify-service-page-grid">
+          {% for service in drupify_services %}
+            <article>
+              <span>{{ service.category ?: 'Drupal service'|t }}</span>
+              <h3>{{ service.title }}</h3>
+              <p>{{ service.summary }}</p>
+              <a class="drupify-text-link" href="{{ service.url }}">{{ 'View service'|t }}</a>
+            </article>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <section class="drupify-section" aria-labelledby="choose-title">
+      <div class="drupify-container drupify-decision-grid">
+        <div class="drupify-section-head drupify-align-start">
+          <p class="drupify-eyebrow">{{ 'How to choose'|t }}</p>
+          <h2 id="choose-title">{{ 'Not every Drupal problem needs a rebuild.'|t }}</h2>
+          <p>{{ 'Drupify should help clients make a practical technical decision before scope expands.'|t }}</p>
+        </div>
+        <div class="drupify-decision-list">
+          <article><strong>{{ 'If the site is outdated'|t }}</strong><p>{{ 'Start with migration and upgrade planning.'|t }}</p></article>
+          <article><strong>{{ 'If features are missing'|t }}</strong><p>{{ 'Start with custom Drupal development.'|t }}</p></article>
+          <article><strong>{{ 'If the site looks or feels old'|t }}</strong><p>{{ 'Start with theming and frontend implementation.'|t }}</p></article>
+          <article><strong>{{ 'If the site is slow or risky'|t }}</strong><p>{{ 'Start with performance and security review.'|t }}</p></article>
+          <article><strong>{{ 'If the team is overloaded'|t }}</strong><p>{{ 'Start with support or agency overflow help.'|t }}</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="drupify-audit-band" aria-labelledby="services-audit-title">
+      <div class="drupify-container drupify-audit-inner">
+        <div>
+          <p class="drupify-eyebrow">{{ 'Free Drupal audit'|t }}</p>
+          <h2 id="services-audit-title">{{ 'Unsure which service you need? Start with the audit.'|t }}</h2>
+          <p>{{ 'Get a practical read on version risk, module compatibility, theme issues, performance, security, and the safest next step.'|t }}</p>
+          <ul class="drupify-audit-list">
+            <li>{{ 'Core and contrib review'|t }}</li>
+            <li>{{ 'Theme risk notes'|t }}</li>
+            <li>{{ 'Recommended service path'|t }}</li>
+          </ul>
+        </div>
+        <a class="drupify-button drupify-button-light" href="{{ base_path }}contact-us#contact-form">{{ 'Request Free Drupal Audit'|t }}</a>
+      </div>
+    </section>
+  </main>
+
+  {% include '@drupify/includes/drupify-footer.html.twig' %}
+</div>

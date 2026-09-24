@@ -1,0 +1,229 @@
+@media (prefers-reduced-motion: reduce) {
+  .drupify-home *,
+  .drupify-home *::before,
+  .drupify-home *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (max-width: 1080px) {
+  .drupify-header-inner {
+    grid-template-columns: auto auto 1fr;
+  }
+
+  .drupify-menu-toggle {
+    display: block;
+    justify-self: end;
+    order: 3;
+  }
+
+  .drupify-header-cta {
+    grid-column: 2;
+    justify-self: end;
+  }
+
+  .drupify-primary-nav {
+    position: fixed;
+    inset: 76px 16px auto;
+    display: none;
+    justify-items: stretch;
+    align-items: stretch;
+    gap: 0;
+    padding: 0.75rem;
+    border: 1px solid var(--dp-border);
+    border-radius: var(--dp-radius-md);
+    background: #fff;
+    box-shadow: var(--dp-shadow);
+  }
+
+  .drupify-primary-nav.is-open {
+    display: grid;
+  }
+
+  .drupify-primary-nav a {
+    padding: 0.9rem;
+    border-radius: var(--dp-radius-sm);
+  }
+
+  .drupify-hero {
+    min-height: auto;
+  }
+
+  .drupify-hero-grid,
+  .drupify-split,
+  .drupify-contact-grid,
+  .drupify-about-story,
+  .drupify-service-detail-intro,
+  .drupify-page-hero-grid,
+  .drupify-decision-grid,
+  .drupify-featured {
+    grid-template-columns: 1fr;
+  }
+
+  .drupify-service-grid,
+  .drupify-why-grid,
+  .drupify-pricing-grid,
+  .drupify-portfolio-grid,
+  .drupify-contact-steps,
+  .drupify-about-proof,
+  .drupify-about-values,
+  .drupify-about-team,
+  .drupify-blog-grid,
+  .drupify-blog-list,
+  .drupify-team-grid,
+  .drupify-team-view-grid,
+  .drupify-client-page-grid,
+  .drupify-service-risk-grid,
+  .drupify-pricing-paths,
+  .drupify-pricing-menu {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .drupify-contact-copy {
+    position: static;
+  }
+
+  .drupify-footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .drupify-footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 760px) {
+  .drupify-container {
+    width: min(100% - 24px, var(--dp-container));
+  }
+
+  .drupify-section {
+    padding: 3.25rem 0;
+  }
+
+  .drupify-header-inner {
+    min-height: 68px;
+    grid-template-columns: auto 1fr auto;
+    gap: 0.75rem;
+  }
+
+  .drupify-brand img {
+    width: 142px;
+    height: 42px;
+  }
+
+  .drupify-header-cta {
+    display: none;
+  }
+
+  .drupify-primary-nav {
+    inset: 68px 12px auto;
+  }
+
+  .drupify-home h1 {
+    font-size: 2.35rem;
+    line-height: 1.05;
+  }
+
+  .drupify-home h2 {
+    font-size: 2.05rem;
+  }
+
+  .drupify-service-overview {
+    padding: 1.45rem;
+  }
+
+  .drupify-service-overview li {
+    padding: 0.85rem;
+    font-size: 0.9rem;
+  }
+
+  .drupify-actions {
+    display: grid;
+  }
+
+  .drupify-hero-copy {
+    padding-top: 0.5rem;
+  }
+
+  .drupify-process-list li {
+    grid-template-columns: 42px minmax(0, 1fr);
+    gap: 0 0.85rem;
+  }
+
+  .drupify-process-list span {
+    width: 34px;
+    height: 34px;
+    font-size: 0.7rem;
+  }
+
+  .drupify-workspace,
+  .drupify-work-grid,
+  .drupify-service-grid,
+  .drupify-why-grid,
+  .drupify-pricing-grid,
+  .drupify-pricing-paths,
+  .drupify-pricing-menu,
+  .drupify-contact-steps,
+  .drupify-about-proof,
+  .drupify-about-values,
+  .drupify-about-team,
+  .drupify-blog-grid,
+  .drupify-blog-list,
+  .drupify-blog-topics,
+  .drupify-team-grid,
+  .drupify-team-view-grid,
+  .drupify-client-page-grid,
+  .drupify-client-grid,
+  .drupify-service-risk-grid,
+  .drupify-testimonial-grid,
+  .drupify-insight-list,
+  .drupify-portfolio-grid,
+  .drupify-footer-grid,
+  .drupify-included-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .drupify-flow-panel,
+  .drupify-hero-proof {
+    grid-template-columns: 1fr;
+  }
+
+  .drupify-release-card {
+    grid-template-columns: 1fr;
+  }
+
+  .drupify-code-panel {
+    min-height: 150px;
+  }
+
+  .drupify-work-media {
+    min-height: 230px;
+  }
+
+  .drupify-work-copy,
+  .drupify-service-grid article,
+  .drupify-why-grid article,
+  .drupify-pricing-grid article,
+  .drupify-testimonial-grid figure,
+  .drupify-insight-list article {
+    padding: 1.25rem;
+  }
+
+  .drupify-meta-list div {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+
+  .drupify-audit-inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .drupify-footer-bottom {
+    flex-direction: column;
+  }
+}

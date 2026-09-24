@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: da7f40eb-a2a1-4e8c-9d34-86a73e18028b
+name: Drupify
+mail: info@drupify.com
+slogan: ''
+page:
+  403: /node/129
+  404: /node/128
+  front: /node/1
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: ''

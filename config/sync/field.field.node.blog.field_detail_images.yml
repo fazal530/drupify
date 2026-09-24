@@ -1,0 +1,109 @@
+uuid: 2cfa9200-4672-4026-8515-db2c6c43d582
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_detail_images
+    - node.type.blog
+    - paragraphs.paragraphs_type.detail_images
+  module:
+    - entity_reference_revisions
+id: node.blog.field_detail_images
+field_name: field_detail_images
+entity_type: node
+bundle: blog
+label: 'Detail Images'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      detail_images: detail_images
+    negate: 0
+    target_bundles_drag_drop:
+      about_style_1_:
+        weight: 28
+        enabled: false
+      call_to_action_style_1:
+        weight: 29
+        enabled: false
+      clients_style_1:
+        weight: 30
+        enabled: false
+      contact_social:
+        weight: 31
+        enabled: false
+      counter_style_1:
+        weight: 33
+        enabled: false
+      counters_style_1:
+        weight: 32
+        enabled: false
+      detail_image:
+        weight: 34
+        enabled: false
+      detail_images:
+        weight: 35
+        enabled: true
+      faq_s_style_1:
+        weight: 36
+        enabled: false
+      feature_style_1:
+        weight: 38
+        enabled: false
+      features_style_1:
+        weight: 37
+        enabled: false
+      footer_cta:
+        weight: 39
+        enabled: false
+      our_values_style_1:
+        weight: 40
+        enabled: false
+      palns_style_1:
+        weight: 41
+        enabled: false
+      plan_style_1:
+        weight: 42
+        enabled: false
+      portfolios_style_1:
+        weight: 43
+        enabled: false
+      service_list:
+        weight: 45
+        enabled: false
+      service_lists:
+        weight: 46
+        enabled: false
+      services_style_1_:
+        weight: 44
+        enabled: false
+      slide_style_1_:
+        weight: 48
+        enabled: false
+      slider_style_1_:
+        weight: 47
+        enabled: false
+      social_links:
+        weight: 49
+        enabled: false
+      team_members_style_1:
+        weight: 50
+        enabled: false
+      testimonials_:
+        weight: 51
+        enabled: false
+      value_style_1:
+        weight: 52
+        enabled: false
+      work_process_style_1:
+        weight: 54
+        enabled: false
+      work_processes_style_1:
+        weight: 53
+        enabled: false
+field_type: entity_reference_revisions

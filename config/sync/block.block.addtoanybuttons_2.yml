@@ -1,0 +1,32 @@
+uuid: 8aaa23d6-6049-4970-a9ba-96ce45d35567
+langcode: en
+status: false
+dependencies:
+  module:
+    - addtoany
+    - node
+  theme:
+    - drupify
+id: addtoanybuttons_2
+theme: drupify
+region: content
+weight: -7
+provider: null
+plugin: addtoany_block
+settings:
+  id: addtoany_block
+  label: 'AddToAny buttons'
+  label_display: '0'
+  provider: addtoany
+  buttons_size: null
+  addtoany_html: ''
+  link_url: ''
+  link_title: ''
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      portfolio: portfolio

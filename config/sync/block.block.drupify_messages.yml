@@ -1,0 +1,22 @@
+uuid: 50c1a680-c0d1-4294-af18-dd4fcc649f2b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupify
+_core:
+  default_config_hash: KC12e0aosUnBBs5bd374JVcQjJaFNOSIHzu0dUGf22o
+id: drupify_messages
+theme: drupify
+region: content
+weight: -8
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

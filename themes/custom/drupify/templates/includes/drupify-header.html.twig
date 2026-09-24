@@ -1,0 +1,22 @@
+{% set asset_base = base_path ~ 'sites/default/files' %}
+
+<header class="drupify-site-header">
+  <div class="drupify-container drupify-header-inner">
+    <a class="drupify-brand" href="{{ path('<front>') }}" aria-label="{{ 'Drupify home'|t }}">
+      <img src="{{ asset_base }}/2024-07/Drupify-logo.png" alt="Drupify">
+    </a>
+
+    <button class="drupify-menu-toggle" type="button" aria-controls="drupify-primary-nav" aria-expanded="false">
+      <span></span><span></span><span></span>
+      <span class="visually-hidden">{{ 'Menu'|t }}</span>
+    </button>
+
+    <nav class="drupify-primary-nav" id="drupify-primary-nav" aria-label="{{ 'Primary navigation'|t }}">
+      {% for item in drupify_layout.nav %}
+        <a href="{{ item.url }}">{{ item.title }}</a>
+      {% endfor %}
+    </nav>
+
+    <a class="drupify-header-cta" href="{{ base_path }}contact-us">{{ 'Book Free Consultation'|t }}</a>
+  </div>
+</header>

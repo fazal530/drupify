@@ -1,0 +1,25 @@
+uuid: b4b470ff-f1c0-4fc6-867e-8ed554a1a7b6
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupify
+_core:
+  default_config_hash: d-0emr1mEq7sFKDu5RHUJckvNk62hvIZdRwPEfnJyGg
+id: drupify_branding
+theme: drupify
+region: header
+weight: -19
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: Drupify
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

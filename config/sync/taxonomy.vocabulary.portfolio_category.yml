@@ -1,0 +1,9 @@
+uuid: e4ee0992-749a-4560-b563-da35b2e25291
+langcode: en
+status: true
+dependencies: {  }
+name: Portfolio_Category
+vid: portfolio_category
+description: 'This is the Portfolio Category'
+weight: 0
+new_revision: false

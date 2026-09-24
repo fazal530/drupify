@@ -1,0 +1,22 @@
+uuid: 92347179-c6b4-4f14-b370-083d9afc2d3e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drupify
+_core:
+  default_config_hash: Qf2BoIzd9py5AYXZj8fJzCYDyVk1-AWXcu-AqQeDZKA
+id: drupify_local_tasks
+theme: drupify
+region: content
+weight: -18
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

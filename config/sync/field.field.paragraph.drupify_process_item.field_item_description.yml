@@ -1,0 +1,22 @@
+uuid: a5451fb6-5c4d-4199-85aa-27f4ee0ce9e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_item_description
+    - paragraphs.paragraphs_type.drupify_process_item
+  module:
+    - text
+id: paragraph.drupify_process_item.field_item_description
+field_name: field_item_description
+entity_type: paragraph
+bundle: drupify_process_item
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

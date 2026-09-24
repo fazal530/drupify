@@ -1,0 +1,21 @@
+uuid: 9ea3682a-15cb-4054-9407-4db667331ff4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_map_link
+    - paragraphs.paragraphs_type.contact_page_style_1
+  module:
+    - text
+id: paragraph.contact_page_style_1.field_map_link
+field_name: field_map_link
+entity_type: paragraph
+bundle: contact_page_style_1
+label: 'Map Link'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

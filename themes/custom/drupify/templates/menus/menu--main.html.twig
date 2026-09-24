@@ -1,0 +1,75 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a menu.
+ *
+ * Available variables:
+ * - menu_name: The machine name of the menu.
+ * - items: A nested list of menu items. Each menu item contains:
+ *   - attributes: HTML attributes for the menu item.
+ *   - below: The menu item child items.
+ *   - title: The menu link title.
+ *   - url: The menu link url, instance of \Drupal\Core\Url
+ *   - localized_options: Menu link localized options.
+ *   - is_expanded: TRUE if the link has visible children within the current
+ *     menu tree.
+ *   - is_collapsed: TRUE if the link has children within the current menu tree
+ *     that are not currently visible.
+ *   - in_active_trail: TRUE if the link is in the active trail.
+ *
+ * @ingroup themeable
+ */
+#}
+ {% import _self as menus %}
+
+
+{{ menus.menu_links(items, attributes, 0) }}
+
+{% macro menu_links(items, attributes, menu_level) %}
+  {% import _self as menus %}
+  {% if items %}
+  {% if menu_level == 0 %} 
+     <ul class="navbar-nav ms-auto">
+  {% else %}
+   {% if menu_level == 1 %} 
+    <ul class="dropdown-wrapper dropdown-menu rounded-0 primary-color border-0">
+   {% else %}
+    <ul class="dropdown-menu">
+  {% endif %} 
+  {% endif %}
+    {% for item in items %}
+      {% set active = item.in_active_trail ? 'active': '' %}
+            {% if menu_level == 0 %}
+              <li class="nav-item dropdown">
+                {% if item.below %}
+                <a class="nav-link {{active}}" data-bs-toggle="dropdown" title="{{ item.title }}" href="{{ item.url }}">
+                  {{ item.title }} <svg xmlns="http://www.w3.org/2000/svg" width="46.428" height="25" viewBox="0 0 46.428 25"> <path id="Icon_"  data-name="Icon " d="M29.41,28.71,46.966,12.164a3.45,3.45,0,0,1,4.686,0,3.022,3.022,0,0,1,0,4.426L31.76,35.336a3.461,3.461,0,0,1-4.575.091L7.155,16.6a3.015,3.015,0,0,1,0-4.426,3.45,3.45,0,0,1,4.686,0Z" transform="translate(-6.188 -11.246)"/> </svg>
+                </a>
+                {% else %}
+                <a class="nav-link {{active}}" title="{{ item.title }}" href="{{ item.url }}">
+                  {{ item.title }} <svg xmlns="http://www.w3.org/2000/svg" width="46.428" height="25" viewBox="0 0 46.428 25"> <path id="Icon_"  data-name="Icon " d="M29.41,28.71,46.966,12.164a3.45,3.45,0,0,1,4.686,0,3.022,3.022,0,0,1,0,4.426L31.76,35.336a3.461,3.461,0,0,1-4.575.091L7.155,16.6a3.015,3.015,0,0,1,0-4.426,3.45,3.45,0,0,1,4.686,0Z" transform="translate(-6.188 -11.246)"/> </svg>
+                </a>
+                {% endif %}
+                {% if item.below %}
+                  {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
+                {% endif %}
+                </li>
+            {% else %}
+               {% if item.below %}
+                  <li class="dropdown-item dropdown-submenu">
+                    <a href="{{ item.url }}" class="drop-toggle" title="{{ item.title }}">{{ item.title }}</a>
+                  {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
+                  </li>
+                  <li class="dropdown-divider"></li>
+                {% else %}
+                <li class="dropdown-item">
+                  <a href="{{ item.url }}" title="{{ item.title }}">{{ item.title }}</a></li>
+                  <li class="dropdown-divider"></li>
+                {% endif %}
+            {% endif %}
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endmacro %}
+
+      

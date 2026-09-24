@@ -1,0 +1,19 @@
+uuid: af81c191-48fe-4ead-b1c6-1b41f5d66f29
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_eyebrow
+    - paragraphs.paragraphs_type.drupify_audit_cta
+id: paragraph.drupify_audit_cta.field_eyebrow
+field_name: field_eyebrow
+entity_type: paragraph
+bundle: drupify_audit_cta
+label: Eyebrow
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

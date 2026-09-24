@@ -1,0 +1,39 @@
+uuid: ba4169fd-1709-4dd7-a5ea-ed0b6dabf710
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.short_codes.field_meta_tags
+    - field.field.node.short_codes.field_short_codes
+    - node.type.short_codes
+  module:
+    - entity_reference_revisions
+    - metatag
+    - user
+id: node.short_codes.default
+targetEntityType: node
+bundle: short_codes
+mode: default
+content:
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_short_codes:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

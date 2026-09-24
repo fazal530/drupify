@@ -1,0 +1,10 @@
+uuid: 45b67bc9-065b-4693-af1d-61584d63fafc
+langcode: en
+status: true
+dependencies: {  }
+id: drupify_clients
+label: 'Client Proof'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

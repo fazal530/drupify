@@ -1,0 +1,32 @@
+uuid: 552136f2-ac8c-4d07-b253-b2967abe37c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_contact_form_style_1
+    - paragraphs.paragraphs_type.contact_page_style_1
+    - webform.webform.contact_style_2
+  module:
+    - webform
+id: paragraph.contact_page_style_1.field_contact_form_style_1
+field_name: field_contact_form_style_1
+entity_type: paragraph
+bundle: contact_page_style_1
+label: 'Contact Form Style 1'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    target_uuid: f47b0b3a-271b-4963-ba06-e87bbaa68d89
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

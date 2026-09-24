@@ -1,0 +1,19 @@
+uuid: 5bb79686-d4b4-4a1c-9913-79e3a63b2e2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link_title
+    - paragraphs.paragraphs_type.drupify_final_cta
+id: paragraph.drupify_final_cta.field_link_title
+field_name: field_link_title
+entity_type: paragraph
+bundle: drupify_final_cta
+label: 'Button label'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

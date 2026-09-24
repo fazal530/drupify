@@ -1,0 +1,66 @@
+uuid: b401bb9c-e65c-4d9f-8241-a56e94e60efe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_faq
+    - paragraphs.paragraphs_type.faq_s_page
+  module:
+    - viewsreference
+id: paragraph.faq_s_page.field_faq
+field_name: field_faq
+entity_type: paragraph
+bundle: faq_s_page
+label: FAQ
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+  plugin_types:
+    block: block
+    default: '0'
+    page: '0'
+    entity_browser: '0'
+    feed: '0'
+    embed: '0'
+  preselect_views:
+    faq: faq
+    banner: '0'
+    block_content: '0'
+    blog: '0'
+    blog_category: '0'
+    career: '0'
+    client_: '0'
+    comment: '0'
+    comments_recent: '0'
+    content: '0'
+    content_recent: '0'
+    entity_pager_example: '0'
+    files: '0'
+    file_entity_browser: '0'
+    frontpage: '0'
+    media: '0'
+    portfolio: '0'
+    portfolio_category_style1: '0'
+    services: '0'
+    taxonomy_term: '0'
+    team_member_: '0'
+    testimonial: '0'
+    user_admin_people: '0'
+    watchdog: '0'
+    webform_submissions: '0'
+    who_s_new: '0'
+    who_s_online: '0'
+  enabled_settings:
+    argument: argument
+    offset: '0'
+    limit: '0'
+    pager: '0'
+    title: title
+field_type: viewsreference

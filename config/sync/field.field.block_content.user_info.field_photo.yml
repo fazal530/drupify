@@ -1,0 +1,38 @@
+uuid: 648aabba-6901-48cd-a442-c63142e74ff3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.user_info
+    - field.storage.block_content.field_photo
+  module:
+    - image
+id: block_content.user_info.field_photo
+field_name: field_photo
+entity_type: block_content
+bundle: user_info
+label: Photo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg webp'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

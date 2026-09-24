@@ -1,0 +1,22 @@
+uuid: 700639d3-1755-484a-af9d-20c8bf9db6de
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupify
+_core:
+  default_config_hash: I6Esh8cDlPdl2POZg4MOSRUrQNYA1UNCJCxL2yqT_wc
+id: drupify_powered
+theme: drupify
+region: footer_fifth
+weight: 10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

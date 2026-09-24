@@ -1,0 +1,19 @@
+uuid: 9ab3a9c5-d3b1-4f74-9163-96db9f3b5aeb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mail_address
+    - paragraphs.paragraphs_type.contact_style_3
+id: paragraph.contact_style_3.field_mail_address
+field_name: field_mail_address
+entity_type: paragraph
+bundle: contact_style_3
+label: 'Mail Address'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

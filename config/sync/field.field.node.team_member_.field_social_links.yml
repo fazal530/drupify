@@ -1,0 +1,178 @@
+uuid: c1e2427a-ab8b-4694-8267-d9b7aee3fa40
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_social_links
+    - node.type.team_member_
+    - paragraphs.paragraphs_type.team_social_links
+  module:
+    - entity_reference_revisions
+id: node.team_member_.field_social_links
+field_name: field_social_links
+entity_type: node
+bundle: team_member_
+label: 'Social Links'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      team_social_links: team_social_links
+    negate: 0
+    target_bundles_drag_drop:
+      about_style_1_:
+        weight: 51
+        enabled: false
+      about_style_2:
+        weight: 52
+        enabled: false
+      blogs:
+        weight: 53
+        enabled: false
+      blogs_style_2:
+        weight: 54
+        enabled: false
+      call_to_action_style_1:
+        weight: 55
+        enabled: false
+      call_to_action_style_2:
+        weight: 56
+        enabled: false
+      clients_style_1:
+        weight: 57
+        enabled: false
+      contact_social:
+        weight: 58
+        enabled: false
+      contact_style_1_:
+        weight: 59
+        enabled: false
+      contact_style_2:
+        weight: 60
+        enabled: false
+      counter_style_1:
+        weight: 63
+        enabled: false
+      counter_style_2:
+        weight: 64
+        enabled: false
+      counters_style_1:
+        weight: 61
+        enabled: false
+      counters_style_2:
+        weight: 62
+        enabled: false
+      detail_image:
+        weight: 65
+        enabled: false
+      detail_images:
+        weight: 66
+        enabled: false
+      faq_s_style_1:
+        weight: 67
+        enabled: false
+      faq_s_style_2:
+        weight: 68
+        enabled: false
+      feature_style_1:
+        weight: 71
+        enabled: false
+      feature_style_2:
+        weight: 72
+        enabled: false
+      features_style_1:
+        weight: 69
+        enabled: false
+      features_style_2:
+        weight: 70
+        enabled: false
+      footer_cta:
+        weight: 73
+        enabled: false
+      our_value_style_2:
+        weight: 76
+        enabled: false
+      our_values_style_1:
+        weight: 74
+        enabled: false
+      our_values_style_2:
+        weight: 75
+        enabled: false
+      palns_style_1:
+        weight: 77
+        enabled: false
+      plan_style_1:
+        weight: 79
+        enabled: false
+      plan_style_2:
+        weight: 80
+        enabled: false
+      plans_style_2:
+        weight: 78
+        enabled: false
+      portfolios_style_1:
+        weight: 81
+        enabled: false
+      portfolios_style_2:
+        weight: 82
+        enabled: false
+      service_list:
+        weight: 85
+        enabled: false
+      service_lists:
+        weight: 86
+        enabled: false
+      services_style_1_:
+        weight: 83
+        enabled: false
+      services_style_2:
+        weight: 84
+        enabled: false
+      slide_style_1_:
+        weight: 89
+        enabled: false
+      slider_style_1_:
+        weight: 87
+        enabled: false
+      slider_style_2:
+        weight: 88
+        enabled: false
+      social_links:
+        weight: 90
+        enabled: false
+      team_members_style_1:
+        weight: 91
+        enabled: false
+      team_members_style_2:
+        weight: 92
+        enabled: false
+      team_social_links:
+        weight: 93
+        enabled: true
+      testimonials_:
+        weight: 94
+        enabled: false
+      testimonials_style_2:
+        weight: 95
+        enabled: false
+      value_style_1:
+        weight: 96
+        enabled: false
+      work_process_style_1:
+        weight: 99
+        enabled: false
+      work_process_style_2:
+        weight: 100
+        enabled: false
+      work_processes_style_1:
+        weight: 97
+        enabled: false
+      work_processes_style_2:
+        weight: 98
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,37 @@
+uuid: bfd776c1-44b5-4360-83cb-23866ec0fbd9
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:blog_comments:2638f843-3954-4f65-8f99-73e5df3a301f'
+  module:
+    - block_content
+    - node
+    - system
+  theme:
+    - drupify
+id: blogmostcommentedsidebar
+theme: drupify
+region: sidebar_second
+weight: -8
+provider: null
+plugin: 'block_content:2638f843-3954-4f65-8f99-73e5df3a301f'
+settings:
+  id: 'block_content:2638f843-3954-4f65-8f99-73e5df3a301f'
+  label: 'Blog Most Commented Sidebar'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      blog: blog
+      page: page
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/91\r\n/node/95\r\n/node/96"
