@@ -4,11 +4,10 @@ set -Eeuo pipefail
 
 readonly PROJECT_ROOT="${HOME}/public_html"
 readonly BACKUP_DIR="${HOME}/deployment-backups"
-readonly LOG_DIR="${HOME}/deployment-logs"
 readonly COMPOSER_BIN="${HOME}/bin/composer"
 readonly DRUSH_BIN="${PROJECT_ROOT}/vendor/bin/drush"
 
-mkdir -p "${BACKUP_DIR}" "${LOG_DIR}"
+mkdir -p "${BACKUP_DIR}"
 exec 9>"${HOME}/.drupify-production-deploy.lock"
 
 if ! flock -n 9; then
@@ -17,8 +16,6 @@ if ! flock -n 9; then
 fi
 
 readonly TIMESTAMP="$(date +%Y%m%d-%H%M%S)"
-readonly LOG_FILE="${LOG_DIR}/deploy-${TIMESTAMP}.log"
-exec > >(tee -a "${LOG_FILE}") 2>&1
 
 cd "${PROJECT_ROOT}"
 
@@ -30,7 +27,7 @@ restore_site() {
     "${DRUSH_BIN}" cache:rebuild || true
   fi
   if [[ "${exit_code}" -ne 0 ]]; then
-    echo "Deployment failed with exit code ${exit_code}. See ${LOG_FILE}."
+    echo "Deployment failed with exit code ${exit_code}. See the GitHub Actions log."
   fi
 }
 trap restore_site EXIT
