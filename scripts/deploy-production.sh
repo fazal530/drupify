@@ -82,11 +82,25 @@ readonly DATABASE_BACKUP="${BACKUP_DIR}/database-before-${TIMESTAMP}.sql.gz"
 rm -f "${database_defaults_file}"
 database_defaults_file=""
 
+if ! update_status="$("${DRUSH_BIN}" updatedb:status 2>&1)"; then
+  printf '%s\n' "${update_status}"
+  echo "Unable to check database update status; deployment stopped before maintenance mode."
+  exit 1
+fi
+
+if [[ "${update_status}" != *"No database updates required."* ]]; then
+  printf '%s\n' "${update_status}"
+  echo "Pending database updates cannot be automated because proc_open is disabled on this host."
+  echo "Run /update.php manually, then retry this deployment."
+  exit 1
+fi
+
+echo "No database updates are required."
+
 "${DRUSH_BIN}" state:set system.maintenance_mode 1 --input-format=integer
 maintenance_enabled=1
 "${DRUSH_BIN}" cache:rebuild
 
-"${DRUSH_BIN}" updatedb -y
 "${DRUSH_BIN}" config:import -y
 
 "${DRUSH_BIN}" state:set system.maintenance_mode 0 --input-format=integer
