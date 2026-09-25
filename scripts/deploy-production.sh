@@ -58,11 +58,8 @@ fi
 database_defaults_file="$(mktemp)"
 chmod 600 "${database_defaults_file}"
 export DRUPIFY_DB_DEFAULTS_FILE="${database_defaults_file}"
-database_name="$(php -r '
-  define("DRUPAL_ROOT", getcwd());
-  $databases = $settings = $config = [];
-  require DRUPAL_ROOT . "/sites/default/settings.php";
-  $db = $databases["default"]["default"];
+database_name="$("${DRUSH_BIN}" php:eval '
+  $db = \Drupal\Core\Database\Database::getConnectionInfo("default")["default"];
   $quote = static fn($value) => "\"" . addcslashes((string) $value, "\\\"") . "\"";
   $defaults = "[client]\n";
   $defaults .= "user=" . $quote($db["username"]) . "\n";
