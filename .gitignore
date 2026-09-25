@@ -36,7 +36,12 @@
 *.zip
 *.tar
 *.tgz
+*.tar.gz
 /drupify-clean-backup.sql
+
+# Deployment/server artifacts.
+__MACOSX/
+error_log
 
 # DDEV generated runtime/build files.
 /.ddev/.dbimageBuild/
