@@ -28,6 +28,10 @@
   .drupify-primary-nav {
     position: fixed;
     inset: 76px 16px auto;
+    width: auto;
+    max-height: calc(100vh - 92px);
+    overflow-y: auto;
+    justify-self: stretch;
     display: none;
     justify-items: stretch;
     align-items: stretch;
