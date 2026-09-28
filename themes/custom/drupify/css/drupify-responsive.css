@@ -159,6 +159,10 @@
     padding-top: 0.5rem;
   }
 
+  .drupify-hero {
+    padding-block: 3.5rem;
+  }
+
   .drupify-process-list li {
     grid-template-columns: 42px minmax(0, 1fr);
     gap: 0 0.85rem;
