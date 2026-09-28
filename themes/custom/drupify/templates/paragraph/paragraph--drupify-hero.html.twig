@@ -7,8 +7,8 @@
 <section class="drupify-hero drupify-section">
   <div class="drupify-container drupify-hero-grid">
     <div class="drupify-hero-copy">
-      {% if content.field_eyebrow|render %}
-        <p class="drupify-eyebrow">{{ content.field_eyebrow }}</p>
+      {% if paragraph.field_eyebrow.value %}
+        <p class="drupify-eyebrow">{{ paragraph.field_eyebrow.value }}</p>
       {% endif %}
       {% if content.field_title|render %}
         <h1>{{ content.field_title }}</h1>

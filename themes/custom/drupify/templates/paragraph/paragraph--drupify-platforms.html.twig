@@ -7,8 +7,8 @@
 <section class="drupify-section-tight" aria-labelledby="proof-title">
   <div class="drupify-container">
     <div class="drupify-section-head drupify-compact">
-      {% if content.field_eyebrow|render %}
-        <p class="drupify-eyebrow">{{ content.field_eyebrow }}</p>
+      {% if paragraph.field_eyebrow.value %}
+        <p class="drupify-eyebrow">{{ paragraph.field_eyebrow.value }}</p>
       {% endif %}
       {% if content.field_title|render %}
         <h2 id="proof-title">{{ content.field_title }}</h2>

@@ -7,7 +7,7 @@
 <section class="drupify-section" id="work" aria-labelledby="work-title">
   <div class="drupify-container">
     <div class="drupify-section-head">
-      <p class="drupify-eyebrow">{{ content.field_eyebrow ?: 'Selected work'|t }}</p>
+      <p class="drupify-eyebrow">{{ paragraph.field_eyebrow.value ?: 'Selected work'|t }}</p>
       <h2 id="work-title">{{ content.field_title }}</h2>
       {% if content.field_description|render %}
         <p>{{ content.field_description }}</p>

@@ -8,7 +8,7 @@
 <section class="drupify-section-tight drupify-client-section" aria-labelledby="clients-title">
   <div class="drupify-container">
     <div class="drupify-section-head drupify-compact">
-      <p class="drupify-eyebrow">{{ content.field_eyebrow ?: 'Client proof'|t }}</p>
+      <p class="drupify-eyebrow">{{ paragraph.field_eyebrow.value ?: 'Client proof'|t }}</p>
       <h2 id="clients-title">{{ content.field_title }}</h2>
       <a class="drupify-text-link" href="{{ path('view.client_.page') }}">{{ 'View all clients'|t }}</a>
     </div>
