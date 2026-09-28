@@ -8,9 +8,9 @@
   <div class="drupify-container drupify-split">
     <div class="drupify-section-head drupify-align-start">
       <p class="drupify-eyebrow">{{ paragraph.field_eyebrow.value ?: 'Migration & upgrade expertise'|t }}</p>
-      <h2 id="migration-title">{{ content.field_title }}</h2>
-      {% if content.field_description|render %}
-        <p>{{ content.field_description }}</p>
+      <h2 id="migration-title">{{ paragraph.field_title.value }}</h2>
+      {% if paragraph.field_description.value %}
+        <p>{{ paragraph.field_description.value }}</p>
       {% endif %}
     </div>
     <ol class="drupify-process-list">

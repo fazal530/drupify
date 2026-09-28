@@ -16,6 +16,8 @@
   --dp-radius-md: 8px;
   --dp-radius-lg: 12px;
   --dp-shadow: 0 20px 60px rgba(21, 23, 28, 0.08);
+  --dp-section-space: 4.25rem;
+  --dp-section-space-compact: 2.25rem;
   background: var(--dp-bg);
   color: var(--dp-text);
   font-family: "DM Sans", "Gordita", "Segoe UI", Arial, sans-serif;
@@ -74,11 +76,11 @@ body.drupify-nav-open {
 }
 
 .drupify-section {
-  padding: 4.5rem 0;
+  padding: var(--dp-section-space) 0;
 }
 
 .drupify-section-tight {
-  padding: 2rem 0;
+  padding: var(--dp-section-space-compact) 0;
 }
 
 .drupify-muted {
@@ -150,7 +152,7 @@ body.drupify-nav-open {
   border-color: var(--dp-accent);
   color: #fff !important;
   min-width: 178px;
-  box-shadow: 0 16px 34px rgba(0, 168, 150, 0.24);
+  box-shadow: none;
 }
 
 .drupify-button-primary:hover,

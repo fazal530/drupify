@@ -131,7 +131,7 @@
   font-size: 0.98rem;
   font-weight: 900;
   line-height: 1.1;
-  box-shadow: 0 16px 34px rgba(0, 168, 150, 0.24);
+  box-shadow: none;
   transition: transform 160ms ease, background-color 160ms ease, border-color 160ms ease, color 160ms ease;
 }
 
@@ -258,7 +258,10 @@
 }
 
 .drupify-about-proof article {
-  min-height: 150px;
+  min-height: 132px;
+  display: grid;
+  align-content: center;
+  text-align: center;
   padding: 1.5rem;
 }
 
@@ -610,6 +613,26 @@
 }
 
 .drupify-service-included {
+  background: var(--dp-surface);
+  color: var(--dp-text);
+  border-color: var(--dp-border);
+  box-shadow: none;
+}
+
+.drupify-service-included-group + .drupify-service-included-group {
+  margin-top: 1.5rem;
+}
+
+.drupify-service-included-group h3,
+.drupify-service-included-group strong {
+  color: var(--dp-primary);
+}
+
+.drupify-service-included-group p {
+  color: var(--dp-muted);
+}
+
+.drupify-service-included {
   align-self: stretch;
 }
 
@@ -792,7 +815,7 @@
   border-color: var(--dp-accent);
   color: #fff !important;
   font-weight: 900;
-  box-shadow: 0 18px 45px rgba(0, 168, 150, 0.28);
+  box-shadow: none;
 }
 
 .drupify-audit-band .drupify-button-light:hover {
@@ -815,6 +838,10 @@
   font-size: 1.15rem;
   font-weight: 800;
   line-height: 1.42;
+}
+
+.drupify-testimonial-grid figcaption {
+  margin-top: auto;
 }
 
 .drupify-faq-list {
@@ -1053,9 +1080,23 @@
 }
 
 .drupify-search-page .search-form h2,
-.drupify-search-page .search-result h2 {
+.drupify-search-page .drupify-search-results h2 {
   font-size: 1.4rem;
   margin: 1rem 0 0.25rem;
+}
+
+.drupify-search-page .alert-heading {
+  display: none;
+}
+
+.drupify-search-page .alert-danger {
+  border-color: rgba(0, 168, 150, 0.25);
+  background: var(--dp-accent-soft);
+  color: var(--dp-primary);
+}
+
+.drupify-search-summary {
+  margin: 0 0 1.5rem;
 }
 
 .drupify-search-page .search-form p {

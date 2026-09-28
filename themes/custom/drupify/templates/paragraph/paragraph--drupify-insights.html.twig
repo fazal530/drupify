@@ -8,7 +8,7 @@
   <div class="drupify-container">
     <div class="drupify-section-head">
       <p class="drupify-eyebrow">{{ paragraph.field_eyebrow.value ?: 'Insights'|t }}</p>
-      <h2 id="insights-title">{{ content.field_title }}</h2>
+      <h2 id="insights-title">{{ paragraph.field_title.value }}</h2>
     </div>
     <div class="drupify-insight-list">
       {% for blog in drupify_blogs|slice(0, 3) %}
@@ -16,7 +16,9 @@
           <span>{{ blog.category ?: 'Drupal'|t }}</span>
           <h3>{{ blog.title }}</h3>
           <p>{{ blog.summary }}</p>
-          <a class="drupify-text-link" href="{{ blog.url }}">{{ 'Read article'|t }}</a>
+          <div class="drupify-card-actions">
+            <a class="drupify-text-link" href="{{ blog.url }}">{{ 'Read article'|t }}</a>
+          </div>
         </article>
       {% endfor %}
     </div>

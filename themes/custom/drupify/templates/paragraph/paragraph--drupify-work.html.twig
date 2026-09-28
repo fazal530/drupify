@@ -8,9 +8,9 @@
   <div class="drupify-container">
     <div class="drupify-section-head">
       <p class="drupify-eyebrow">{{ paragraph.field_eyebrow.value ?: 'Selected work'|t }}</p>
-      <h2 id="work-title">{{ content.field_title }}</h2>
-      {% if content.field_description|render %}
-        <p>{{ content.field_description }}</p>
+      <h2 id="work-title">{{ paragraph.field_title.value }}</h2>
+      {% if paragraph.field_description.value %}
+        <p>{{ paragraph.field_description.value }}</p>
       {% endif %}
     </div>
     {% if drupify_portfolio %}
@@ -60,10 +60,12 @@
                 <span class="drupify-work-tag">{{ project.category ?: 'Web Development'|t }}</span>
                 <h3>{{ project.title }}</h3>
                 <p>{{ project.summary ?: 'Published Drupify portfolio project with existing project imagery.'|t }}</p>
-                <a class="drupify-text-link" href="{{ project.url }}">{{ 'View project'|t }}</a>
-                {% if project.website_url %}
-                  <a class="drupify-text-link" href="{{ project.website_url }}" rel="nofollow">{{ project.website_title }}</a>
-                {% endif %}
+                <div class="drupify-card-actions">
+                  <a class="drupify-text-link" href="{{ project.url }}">{{ 'View project'|t }}</a>
+                  {% if project.website_url %}
+                    <a class="drupify-text-link" href="{{ project.website_url }}" rel="nofollow">{{ project.website_title }}</a>
+                  {% endif %}
+                </div>
               </div>
             </article>
           {% endfor %}

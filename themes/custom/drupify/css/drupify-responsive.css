@@ -100,12 +100,13 @@
 }
 
 @media (max-width: 760px) {
-  .drupify-container {
-    width: min(100% - 24px, var(--dp-container));
+  .drupify-home {
+    --dp-section-space: 3rem;
+    --dp-section-space-compact: 1.75rem;
   }
 
-  .drupify-section {
-    padding: 3.25rem 0;
+  .drupify-container {
+    width: min(100% - 24px, var(--dp-container));
   }
 
   .drupify-header-inner {
@@ -133,7 +134,12 @@
   }
 
   .drupify-home h2 {
-    font-size: 2.05rem;
+    font-size: clamp(1.75rem, 8vw, 2rem);
+    line-height: 1.12;
+  }
+
+  .drupify-section-head {
+    margin-bottom: 2rem;
   }
 
   .drupify-service-overview {
@@ -205,7 +211,23 @@
   }
 
   .drupify-work-media {
-    min-height: 230px;
+    min-height: 0;
+    aspect-ratio: 16 / 10;
+  }
+
+  .drupify-featured .drupify-work-media,
+  .drupify-service-detail-media img {
+    aspect-ratio: 16 / 9;
+    max-height: 260px;
+  }
+
+  .drupify-about-proof article {
+    min-height: 0;
+    padding: 1.1rem;
+  }
+
+  .drupify-about-proof strong {
+    font-size: 2rem;
   }
 
   .drupify-work-copy,

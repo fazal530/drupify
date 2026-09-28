@@ -182,7 +182,7 @@
         <div class="drupify-container drupify-service-detail-intro">
           <div class="drupify-section-head drupify-align-start">
             <p class="drupify-eyebrow">{{ 'Included details'|t }}</p>
-            <h2 id="service-included-title">{{ 'Current service content from Drupal admin.'|t }}</h2>
+            <h2 id="service-included-title">{{ 'What’s included in this service'|t }}</h2>
           </div>
           <div class="drupify-service-overview drupify-service-included">
             {% for service_list_group in node.field_service_lists %}
@@ -231,7 +231,9 @@
                 <span>{{ related.category ?: 'Drupal service'|t }}</span>
                 <h3>{{ related.title }}</h3>
                 <p>{{ related.summary }}</p>
-                <a class="drupify-text-link" href="{{ related.url }}">{{ 'View service'|t }}</a>
+                <div class="drupify-card-actions">
+                  <a class="drupify-text-link" href="{{ related.url }}">{{ 'View service'|t }}</a>
+                </div>
               </article>
             {% endif %}
           {% endfor %}

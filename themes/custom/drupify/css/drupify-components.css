@@ -422,6 +422,8 @@
 
 .drupify-work-card {
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .drupify-featured {
@@ -461,6 +463,12 @@
   padding: 2rem;
 }
 
+.drupify-work-copy {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
 .drupify-work-copy > p:not(.drupify-eyebrow) {
   color: var(--dp-muted);
 }
@@ -486,17 +494,29 @@
   margin-top: 1.5rem;
 }
 
+.drupify-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1rem;
+  margin-top: auto;
+  padding-top: 1.25rem;
+}
+
 .drupify-text-link {
+  display: inline-flex;
+  align-items: center;
   color: var(--dp-primary);
   font-size: 0.9rem;
   font-weight: 900;
   text-decoration-color: var(--dp-accent);
   text-decoration-thickness: 2px;
   text-underline-offset: 0.28em;
+  transition: color 160ms ease, text-underline-offset 160ms ease;
 }
 
 .drupify-text-link:hover {
   color: var(--dp-accent-dark);
+  text-underline-offset: 0.42em;
 }
 
 .drupify-meta-list {
@@ -529,17 +549,14 @@
 }
 
 .drupify-work-grid .drupify-work-media {
-  min-height: 210px;
+  min-height: 0;
+  aspect-ratio: 16 / 10;
 }
 
 .drupify-work-grid .drupify-work-copy {
   min-height: 260px;
   display: flex;
   flex-direction: column;
-}
-
-.drupify-work-grid .drupify-text-link {
-  margin-top: auto;
 }
 
 .drupify-portfolio-featured .drupify-work-media {
@@ -638,6 +655,13 @@
   display: flex;
   flex-direction: column;
   min-height: 310px;
+}
+
+.drupify-insight-list article,
+.drupify-why-grid article,
+.drupify-testimonial-grid figure {
+  display: flex;
+  flex-direction: column;
 }
 
 .drupify-service-page-grid article {

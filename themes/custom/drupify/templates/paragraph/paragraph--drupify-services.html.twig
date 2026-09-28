@@ -8,9 +8,9 @@
   <div class="drupify-container">
     <div class="drupify-section-head">
       <p class="drupify-eyebrow">{{ paragraph.field_eyebrow.value ?: 'Drupal services'|t }}</p>
-      <h2 id="services-title">{{ content.field_title }}</h2>
-      {% if content.field_description|render %}
-        <p>{{ content.field_description }}</p>
+      <h2 id="services-title">{{ paragraph.field_title.value }}</h2>
+      {% if paragraph.field_description.value %}
+        <p>{{ paragraph.field_description.value }}</p>
       {% endif %}
     </div>
     {% if drupify_services %}
@@ -20,7 +20,9 @@
             <span>{{ service.category ?: 'Drupal service'|t }}</span>
             <h3>{{ service.title }}</h3>
             <p>{{ service.summary }}</p>
-            <a class="drupify-text-link" href="{{ service.url }}">{{ 'View service'|t }}</a>
+            <div class="drupify-card-actions">
+              <a class="drupify-text-link" href="{{ service.url }}">{{ 'View service'|t }}</a>
+            </div>
           </article>
         {% endfor %}
       </div>

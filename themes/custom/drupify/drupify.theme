@@ -21,7 +21,24 @@ use Symfony\Component\HttpKernel\Exception\HttpExceptionInterface;
  */
 
 function drupify_preprocess_html(&$variables) {
-  
+  $favicon_path = base_path() . 'sites/default/files/Favicon.png?v=2';
+  $variables['#attached']['html_head_link'][] = [
+    [
+      'rel' => 'icon',
+      'href' => $favicon_path,
+      'type' => 'image/png',
+      'sizes' => '32x32',
+    ],
+    TRUE,
+  ];
+  $variables['#attached']['html_head_link'][] = [
+    [
+      'rel' => 'apple-touch-icon',
+      'href' => $favicon_path,
+    ],
+    TRUE,
+  ];
+
   $variables['time'] = \Drupal::time()->getCurrentTime();
   global $base_url;
   $variables['base_url'] = $base_url;

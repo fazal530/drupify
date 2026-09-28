@@ -1,1 +1,8 @@
-{# <input{{ attributes.addClass('form-control', 'my-0', 'py-1').removeClass("form-text") }} placeholder="search" />{{ children }} #}
+<input{{ attributes
+  .addClass('form-control')
+  .removeClass('form-text')
+  .setAttribute('placeholder', 'Search Drupify'|t)
+  .setAttribute('required', 'required')
+  .setAttribute('minlength', '1')
+  .setAttribute('aria-label', 'Search Drupify'|t)
+}}>{{ children }}

@@ -8,9 +8,9 @@
   <div class="drupify-container drupify-audit-inner">
     <div>
       <p class="drupify-eyebrow">{{ paragraph.field_eyebrow.value ?: 'Free Drupal audit'|t }}</p>
-      <h2 id="audit-title">{{ content.field_title }}</h2>
-      {% if content.field_description|render %}
-        <p>{{ content.field_description }}</p>
+      <h2 id="audit-title">{{ paragraph.field_title.value }}</h2>
+      {% if paragraph.field_description.value %}
+        <p>{{ paragraph.field_description.value }}</p>
       {% endif %}
       {% if paragraph.field_items.value %}
         <ul class="drupify-audit-list">

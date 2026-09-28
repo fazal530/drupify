@@ -98,6 +98,8 @@ fi
 
 echo "No database updates are required."
 
+"${DRUSH_BIN}" php:eval '\Drupal::keyValue("development_settings")->setMultiple(["twig_debug" => FALSE, "twig_cache_disable" => FALSE]);'
+
 "${DRUSH_BIN}" state:set system.maintenance_mode 1 --input-format=integer
 maintenance_enabled=1
 "${DRUSH_BIN}" cache:rebuild

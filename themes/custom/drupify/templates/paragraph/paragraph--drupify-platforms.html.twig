@@ -10,8 +10,8 @@
       {% if paragraph.field_eyebrow.value %}
         <p class="drupify-eyebrow">{{ paragraph.field_eyebrow.value }}</p>
       {% endif %}
-      {% if content.field_title|render %}
-        <h2 id="proof-title">{{ content.field_title }}</h2>
+      {% if paragraph.field_title.value %}
+        <h2 id="proof-title">{{ paragraph.field_title.value }}</h2>
       {% endif %}
     </div>
     {% if paragraph.field_items.value %}
