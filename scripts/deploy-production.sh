@@ -41,6 +41,7 @@ echo "Deploying commit $(git rev-parse --short HEAD) at $(date -Is)"
 if [[ -n "$(git status --porcelain --untracked-files=no)" ]]; then
   echo "Tracked production files contain local changes; deployment stopped."
   git status --short
+  git diff --no-ext-diff
   exit 1
 fi
 
